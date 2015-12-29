@@ -1,0 +1,651 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Elite: MetaScriptRunner类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/elite-lang/Elite" title="Elite GitHub Repository"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classMetaScriptRunner.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classMetaScriptRunner-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">MetaScriptRunner类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>元脚本解析器类  
+ <a href="classMetaScriptRunner.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="MetaScriptRunner_8h_source.html">MetaScriptRunner.h</a>&gt;</code></p>
+<div class="dynheader">
+类 MetaScriptRunner 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classMetaScriptRunner.png" usemap="#MetaScriptRunner_map" alt=""/>
+  <map id="MetaScriptRunner_map" name="MetaScriptRunner_map">
+<area href="classScriptRunner.html" title="脚本解析器类(其实这个类应该放到MetaScriptRunner中) " alt="ScriptRunner" shape="rect" coords="0,0,114,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa713fdcb4613e0ba73e22b38bd2ef66f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#aa713fdcb4613e0ba73e22b38bd2ef66f">Init</a> ()</td></tr>
+<tr class="memdesc:aa713fdcb4613e0ba73e22b38bd2ef66f"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化脚本解析器  <a href="#aa713fdcb4613e0ba73e22b38bd2ef66f">更多...</a><br/></td></tr>
+<tr class="separator:aa713fdcb4613e0ba73e22b38bd2ef66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d044b4d408d289d162f8b052e82374e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#a1d044b4d408d289d162f8b052e82374e">getRoot</a> ()</td></tr>
+<tr class="memdesc:a1d044b4d408d289d162f8b052e82374e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取语法树根节点  <a href="#a1d044b4d408d289d162f8b052e82374e">更多...</a><br/></td></tr>
+<tr class="separator:a1d044b4d408d289d162f8b052e82374e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e1eb34bd8b3bd00dbc48d1a72f39599"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#a1e1eb34bd8b3bd00dbc48d1a72f39599">Finished</a> ()</td></tr>
+<tr class="memdesc:a1e1eb34bd8b3bd00dbc48d1a72f39599"><td class="mdescLeft">&#160;</td><td class="mdescRight">解析完成后由语法分析器调用  <a href="#a1e1eb34bd8b3bd00dbc48d1a72f39599">更多...</a><br/></td></tr>
+<tr class="separator:a1e1eb34bd8b3bd00dbc48d1a72f39599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e85293b65bde2b7597d68ecfca691d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#a9e85293b65bde2b7597d68ecfca691d5">run_file</a> (string const &amp;filename)</td></tr>
+<tr class="memdesc:a9e85293b65bde2b7597d68ecfca691d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行一个lua脚本  <a href="#a9e85293b65bde2b7597d68ecfca691d5">更多...</a><br/></td></tr>
+<tr class="separator:a9e85293b65bde2b7597d68ecfca691d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0f176bed538468e31ad565e12f5e00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#aac0f176bed538468e31ad565e12f5e00">load_file</a> (string const &amp;filename)</td></tr>
+<tr class="memdesc:aac0f176bed538468e31ad565e12f5e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载一个脚本, 但暂不执行 (需要pcall才执行)  <a href="#aac0f176bed538468e31ad565e12f5e00">更多...</a><br/></td></tr>
+<tr class="separator:aac0f176bed538468e31ad565e12f5e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0677c381d68aa7e832c491b4a1df10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#a8d0677c381d68aa7e832c491b4a1df10">load_chunk</a> (string const &amp;chunk)</td></tr>
+<tr class="memdesc:a8d0677c381d68aa7e832c491b4a1df10"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载一段内存中的lua脚本 (不执行)  <a href="#a8d0677c381d68aa7e832c491b4a1df10">更多...</a><br/></td></tr>
+<tr class="separator:a8d0677c381d68aa7e832c491b4a1df10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a20f73d512da290c95f0ace68711ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#ad6a20f73d512da290c95f0ace68711ca">run_chunk</a> (string const &amp;chunk)</td></tr>
+<tr class="memdesc:ad6a20f73d512da290c95f0ace68711ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">运行一段内存中的lua脚本  <a href="#ad6a20f73d512da290c95f0ace68711ca">更多...</a><br/></td></tr>
+<tr class="separator:ad6a20f73d512da290c95f0ace68711ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1dcfbc611bf5585431e438808a770ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#ad1dcfbc611bf5585431e438808a770ef">setUpLoader</a> (const string &amp;path)</td></tr>
+<tr class="separator:ad1dcfbc611bf5585431e438808a770ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016c5b8fbabbb2d4512026c9ff8e3eeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#a016c5b8fbabbb2d4512026c9ff8e3eeb">setCodeGenContext</a> (<a class="el" href="classCodeGenContext.html">CodeGenContext</a> *ctx)</td></tr>
+<tr class="separator:a016c5b8fbabbb2d4512026c9ff8e3eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580b85a804a71b204fff551597c987b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCodeGenContext.html">CodeGenContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#a580b85a804a71b204fff551597c987b8">getCodeGenContext</a> ()</td></tr>
+<tr class="separator:a580b85a804a71b204fff551597c987b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classScriptRunner"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classScriptRunner')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classScriptRunner.html">ScriptRunner</a></td></tr>
+<tr class="memitem:a31990ea9ec40fa1fb4e5ac836ccc63c3 inherit pub_methods_classScriptRunner"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScriptRunner.html#a31990ea9ec40fa1fb4e5ac836ccc63c3">MakeEnv</a> (const char *, <a class="el" href="classGrammer__Node.html">Grammer_Node</a> *)</td></tr>
+<tr class="separator:a31990ea9ec40fa1fb4e5ac836ccc63c3 inherit pub_methods_classScriptRunner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44deb9e0603f9177ebff3ffd4f001cc0 inherit pub_methods_classScriptRunner"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScriptRunner.html#a44deb9e0603f9177ebff3ffd4f001cc0">MakeNewLuaTable</a> (<a class="el" href="structToken.html">Token</a> *t)</td></tr>
+<tr class="separator:a44deb9e0603f9177ebff3ffd4f001cc0 inherit pub_methods_classScriptRunner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcdbd1f905cb46f5dc4f4dece06e9638 inherit pub_methods_classScriptRunner"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScriptRunner.html#adcdbd1f905cb46f5dc4f4dece06e9638">Run</a> (int &amp;, char *, <a class="el" href="classGrammer__Node.html">Grammer_Node</a> *)</td></tr>
+<tr class="separator:adcdbd1f905cb46f5dc4f4dece06e9638 inherit pub_methods_classScriptRunner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ee0b77c0e47d5858246b45c32ebaf9 inherit pub_methods_classScriptRunner"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScriptRunner.html#a95ee0b77c0e47d5858246b45c32ebaf9">ClearEnv</a> ()</td></tr>
+<tr class="separator:a95ee0b77c0e47d5858246b45c32ebaf9 inherit pub_methods_classScriptRunner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede8839f136e1621bd16bbdca400f629 inherit pub_methods_classScriptRunner"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScriptRunner.html#aede8839f136e1621bd16bbdca400f629">RunLine</a> (const char *line)</td></tr>
+<tr class="separator:aede8839f136e1621bd16bbdca400f629 inherit pub_methods_classScriptRunner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adebdd950af3eb631d3b12410d902fb43 inherit pub_methods_classScriptRunner"><td class="memItemLeft" align="right" valign="top">virtual vector&lt; pair&lt; string, <br class="typebreak"/>
+<a class="el" href="classGrammer__Node.html">Grammer_Node</a> * &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScriptRunner.html#adebdd950af3eb631d3b12410d902fb43">getEnv</a> ()</td></tr>
+<tr class="separator:adebdd950af3eb631d3b12410d902fb43 inherit pub_methods_classScriptRunner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e337442ef6311e751e54a2ffac69fe7 inherit pub_methods_classScriptRunner"><td class="memItemLeft" align="right" valign="top">virtual struct lua_State *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScriptRunner.html#a6e337442ef6311e751e54a2ffac69fe7">getLuaState</a> ()</td></tr>
+<tr class="separator:a6e337442ef6311e751e54a2ffac69fe7 inherit pub_methods_classScriptRunner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fb985834b1830778f9dc9d2efeffd21 inherit pub_methods_classScriptRunner"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScriptRunner.html#a7fb985834b1830778f9dc9d2efeffd21">isRunMeta</a> ()</td></tr>
+<tr class="separator:a7fb985834b1830778f9dc9d2efeffd21 inherit pub_methods_classScriptRunner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581acec0d91dc394863c001c99c370bd inherit pub_methods_classScriptRunner"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScriptRunner.html#a581acec0d91dc394863c001c99c370bd">setRunMeta</a> (bool b)</td></tr>
+<tr class="separator:a581acec0d91dc394863c001c99c370bd inherit pub_methods_classScriptRunner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a4d1765371f6f214aeb9c2f9c69c8f2b6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classMetaScriptRunner.html">MetaScriptRunner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#a4d1765371f6f214aeb9c2f9c69c8f2b6">Create</a> ()</td></tr>
+<tr class="memdesc:a4d1765371f6f214aeb9c2f9c69c8f2b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建默认的脚本解析器  <a href="#a4d1765371f6f214aeb9c2f9c69c8f2b6">更多...</a><br/></td></tr>
+<tr class="separator:a4d1765371f6f214aeb9c2f9c69c8f2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a24c5d9871e6b764b492cb3aa6c44a538"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#a24c5d9871e6b764b492cb3aa6c44a538">MetaScriptRunner</a> ()</td></tr>
+<tr class="separator:a24c5d9871e6b764b492cb3aa6c44a538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00edb96f64459cc349d65354ccfd09d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#a00edb96f64459cc349d65354ccfd09d9">~MetaScriptRunner</a> ()</td></tr>
+<tr class="separator:a00edb96f64459cc349d65354ccfd09d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classScriptRunner"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classScriptRunner')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classScriptRunner.html">ScriptRunner</a></td></tr>
+<tr class="memitem:a2c9f7de575f159cc7785c40a81693004 inherit pro_methods_classScriptRunner"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScriptRunner.html#a2c9f7de575f159cc7785c40a81693004">ScriptRunner</a> ()</td></tr>
+<tr class="separator:a2c9f7de575f159cc7785c40a81693004 inherit pro_methods_classScriptRunner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6402bcb4b1443b73754ec4d14be659 inherit pro_methods_classScriptRunner"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScriptRunner.html#afd6402bcb4b1443b73754ec4d14be659">~ScriptRunner</a> ()</td></tr>
+<tr class="separator:afd6402bcb4b1443b73754ec4d14be659 inherit pro_methods_classScriptRunner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31365c3b1b263b06890a67d43b236d57 inherit pro_methods_classScriptRunner"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScriptRunner.html#a31365c3b1b263b06890a67d43b236d57">addFunction</a> (char *data)</td></tr>
+<tr class="separator:a31365c3b1b263b06890a67d43b236d57 inherit pro_methods_classScriptRunner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ac7bfe7834c40de42a6454b8d3c4dd4ec"><td class="memItemLeft" align="right" valign="top">OOLUA::Script *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#ac7bfe7834c40de42a6454b8d3c4dd4ec">vm</a></td></tr>
+<tr class="separator:ac7bfe7834c40de42a6454b8d3c4dd4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28fb3731df23207b574c1c2ba7bb174f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#a28fb3731df23207b574c1c2ba7bb174f">root</a></td></tr>
+<tr class="separator:a28fb3731df23207b574c1c2ba7bb174f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e533466bb0c256a418d1097c1ac266b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPackageLoader.html">PackageLoader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#a3e533466bb0c256a418d1097c1ac266b">loader</a></td></tr>
+<tr class="separator:a3e533466bb0c256a418d1097c1ac266b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a859caa9b6b3c432f83de9a1594435a7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCodeGenContext.html">CodeGenContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMetaScriptRunner.html#a859caa9b6b3c432f83de9a1594435a7b">context</a></td></tr>
+<tr class="separator:a859caa9b6b3c432f83de9a1594435a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classScriptRunner"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classScriptRunner')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classScriptRunner.html">ScriptRunner</a></td></tr>
+<tr class="memitem:a9831b9a91248c4e0abf151a01ac6a7f0 inherit pro_attribs_classScriptRunner"><td class="memItemLeft" align="right" valign="top">struct lua_State *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScriptRunner.html#a9831b9a91248c4e0abf151a01ac6a7f0">L</a> = NULL</td></tr>
+<tr class="separator:a9831b9a91248c4e0abf151a01ac6a7f0 inherit pro_attribs_classScriptRunner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a2c04b88f3d1cdf3e046b1e505662e2 inherit pro_attribs_classScriptRunner"><td class="memItemLeft" align="right" valign="top">vector&lt; pair&lt; string, <br class="typebreak"/>
+<a class="el" href="classGrammer__Node.html">Grammer_Node</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScriptRunner.html#a9a2c04b88f3d1cdf3e046b1e505662e2">env</a></td></tr>
+<tr class="separator:a9a2c04b88f3d1cdf3e046b1e505662e2 inherit pro_attribs_classScriptRunner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae86c04421030b3cc6a325b33c85e91df inherit pro_attribs_classScriptRunner"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScriptRunner.html#ae86c04421030b3cc6a325b33c85e91df">runMeta</a></td></tr>
+<tr class="separator:ae86c04421030b3cc6a325b33c85e91df inherit pro_attribs_classScriptRunner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>元脚本解析器类 </p>
+<p>元脚本是一种编译时脚本, 负责在编译时执行特定动作和用户自定义行为<br/>
+ 元脚本的首要功能是提供构建语法树的接口, 有此接口, 语法解析器才能在特定的时刻调用元脚本解析器 进行代码生成工作<br/>
+ 其次, 元脚本具有配置项目环境, 查看编译状态, 控制包导入, 特殊内容输出等诸多功能, 绝大部分功能可以在本子项目中实现<br/>
+ 本元脚本解析器, 采用lua语言作为脚本, 为了安全的向lua中注册函数, 又引入了oolua 做C++到lua的绑定 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a24c5d9871e6b764b492cb3aa6c44a538"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MetaScriptRunner::MetaScriptRunner </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classMetaScriptRunner.html#ac7bfe7834c40de42a6454b8d3c4dd4ec">vm</a>.</p>
+
+<p>参考自 <a class="el" href="classMetaScriptRunner.html#a4d1765371f6f214aeb9c2f9c69c8f2b6">Create()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a00edb96f64459cc349d65354ccfd09d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MetaScriptRunner::~MetaScriptRunner </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classMetaScriptRunner.html#a3e533466bb0c256a418d1097c1ac266b">loader</a> , 以及 <a class="el" href="classMetaScriptRunner.html#ac7bfe7834c40de42a6454b8d3c4dd4ec">vm</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a4d1765371f6f214aeb9c2f9c69c8f2b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMetaScriptRunner.html">MetaScriptRunner</a> * MetaScriptRunner::Create </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建默认的脚本解析器 </p>
+
+<p>参考 <a class="el" href="classMetaScriptRunner.html#a24c5d9871e6b764b492cb3aa6c44a538">MetaScriptRunner()</a>.</p>
+
+<p>参考自 <a class="el" href="classWorker.html#a4f5dcc91e2e8157f7ce3615ad3353b17">Worker::CreateDefault()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e1eb34bd8b3bd00dbc48d1a72f39599"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MetaScriptRunner::Finished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解析完成后由语法分析器调用 </p>
+
+<p>重载 <a class="el" href="classScriptRunner.html#aa4ced57e89d86f1a09f335a3d38df91c">ScriptRunner</a> .</p>
+
+<p>参考 <a class="el" href="MetaScriptRunner_8cpp.html#a903dad23f192ca13380d3327cd1be347">node_root</a> , 以及 <a class="el" href="classMetaScriptRunner.html#a28fb3731df23207b574c1c2ba7bb174f">root</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a580b85a804a71b204fff551597c987b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCodeGenContext.html">CodeGenContext</a>* MetaScriptRunner::getCodeGenContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classPackageJIT__private.html#a4b8a475f8cdd7c3ca91bd626c42ef4e4">PackageJIT_private::LoadPlugin()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d044b4d408d289d162f8b052e82374e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNode.html">Node</a> * MetaScriptRunner::getRoot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取语法树根节点 </p>
+<p>这个设计稍稍有点不好, 仅仅对RedApple后端有效 </p>
+<dl class="section return"><dt>返回</dt><dd>语法树根节点 </dd></dl>
+
+<p>重载 <a class="el" href="classScriptRunner.html#a1c7ebeb23f4f0a7231a55f2797c2d3c6">ScriptRunner</a> .</p>
+
+<p>参考 <a class="el" href="classMetaScriptRunner.html#a28fb3731df23207b574c1c2ba7bb174f">root</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa713fdcb4613e0ba73e22b38bd2ef66f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MetaScriptRunner::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初始化脚本解析器 </p>
+
+<p>重载 <a class="el" href="classScriptRunner.html#a24b496bfbd576da91449bdecc78694f6">ScriptRunner</a> .</p>
+
+<p>参考 <a class="el" href="classScriptRunner.html#a24b496bfbd576da91449bdecc78694f6">ScriptRunner::Init()</a>, <a class="el" href="MetaScriptRunner_8cpp.html#a4018e037f83e1b5655a64a5d97e00b6e">InitMetaAPI()</a>, <a class="el" href="classScriptRunner.html#a9831b9a91248c4e0abf151a01ac6a7f0">ScriptRunner::L</a> , 以及 <a class="el" href="classMetaScriptRunner.html#ac7bfe7834c40de42a6454b8d3c4dd4ec">vm</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8d0677c381d68aa7e832c491b4a1df10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MetaScriptRunner::load_chunk </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>chunk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载一段内存中的lua脚本 (不执行) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chunk</td><td>脚本字符串 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功为true, 异常为false </dd></dl>
+
+<p>参考 <a class="el" href="classMetaScriptRunner.html#ac7bfe7834c40de42a6454b8d3c4dd4ec">vm</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac0f176bed538468e31ad565e12f5e00"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MetaScriptRunner::load_file </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载一个脚本, 但暂不执行 (需要pcall才执行) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>脚本的完整或相对路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功为true, 异常为false </dd></dl>
+
+<p>参考 <a class="el" href="classMetaScriptRunner.html#ac7bfe7834c40de42a6454b8d3c4dd4ec">vm</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad6a20f73d512da290c95f0ace68711ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MetaScriptRunner::run_chunk </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>chunk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>运行一段内存中的lua脚本 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chunk</td><td>脚本字符串 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功为true, 异常为false </dd></dl>
+
+<p>参考 <a class="el" href="classMetaScriptRunner.html#ac7bfe7834c40de42a6454b8d3c4dd4ec">vm</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e85293b65bde2b7597d68ecfca691d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MetaScriptRunner::run_file </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>执行一个lua脚本 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>脚本的完整或相对路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功为true, 异常为false </dd></dl>
+
+<p>参考 <a class="el" href="classMetaScriptRunner.html#ac7bfe7834c40de42a6454b8d3c4dd4ec">vm</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a016c5b8fbabbb2d4512026c9ff8e3eeb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MetaScriptRunner::setCodeGenContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCodeGenContext.html">CodeGenContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classWorker.html#a4f5dcc91e2e8157f7ce3615ad3353b17">Worker::CreateDefault()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1dcfbc611bf5585431e438808a770ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MetaScriptRunner::setUpLoader </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classPackageLoader.html#abdb29a9034386434ad627a602b735fbc">PackageLoader::FindAll()</a>, <a class="el" href="classPackageLoader.html#a2d35fcb989dfd069aa1e58817878b885">PackageLoader::LoadDefault()</a> , 以及 <a class="el" href="classMetaScriptRunner.html#a3e533466bb0c256a418d1097c1ac266b">loader</a>.</p>
+
+<p>参考自 <a class="el" href="classWorker.html#a4f5dcc91e2e8157f7ce3615ad3353b17">Worker::CreateDefault()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a859caa9b6b3c432f83de9a1594435a7b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCodeGenContext.html">CodeGenContext</a>* MetaScriptRunner::context</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3e533466bb0c256a418d1097c1ac266b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPackageLoader.html">PackageLoader</a>* MetaScriptRunner::loader</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classMetaScriptRunner.html#ad1dcfbc611bf5585431e438808a770ef">setUpLoader()</a> , 以及 <a class="el" href="classMetaScriptRunner.html#a00edb96f64459cc349d65354ccfd09d9">~MetaScriptRunner()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a28fb3731df23207b574c1c2ba7bb174f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNode.html">Node</a>* MetaScriptRunner::root</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classMetaScriptRunner.html#a1e1eb34bd8b3bd00dbc48d1a72f39599">Finished()</a> , 以及 <a class="el" href="classMetaScriptRunner.html#a1d044b4d408d289d162f8b052e82374e">getRoot()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac7bfe7834c40de42a6454b8d3c4dd4ec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OOLUA::Script* MetaScriptRunner::vm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classMetaScriptRunner.html#aa713fdcb4613e0ba73e22b38bd2ef66f">Init()</a>, <a class="el" href="classMetaScriptRunner.html#a8d0677c381d68aa7e832c491b4a1df10">load_chunk()</a>, <a class="el" href="classMetaScriptRunner.html#aac0f176bed538468e31ad565e12f5e00">load_file()</a>, <a class="el" href="classMetaScriptRunner.html#a24c5d9871e6b764b492cb3aa6c44a538">MetaScriptRunner()</a>, <a class="el" href="classMetaScriptRunner.html#ad6a20f73d512da290c95f0ace68711ca">run_chunk()</a>, <a class="el" href="classMetaScriptRunner.html#a9e85293b65bde2b7597d68ecfca691d5">run_file()</a> , 以及 <a class="el" href="classMetaScriptRunner.html#a00edb96f64459cc349d65354ccfd09d9">~MetaScriptRunner()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>MetaScriptRunner/include/<a class="el" href="MetaScriptRunner_8h_source.html">MetaScriptRunner.h</a></li>
+<li>MetaScriptRunner/src/<a class="el" href="MetaScriptRunner_8cpp.html">MetaScriptRunner.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classMetaScriptRunner.html">MetaScriptRunner</a></li>
+  </ul>
+</div>
+</body>
+</html>

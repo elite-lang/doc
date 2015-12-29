@@ -1,0 +1,463 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Elite: IDTable类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/elite-lang/Elite" title="Elite GitHub Repository"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classIDTable.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classIDTable-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IDTable类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>简易栈式符号表，需要在进入函数后手动压栈等操作  
+ <a href="classIDTable.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="LR__Scanner_2src_2idtable_8h_source.html">idtable.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a89e8ae81d5ea1c36c063e675e2f887d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIDTable.html#a89e8ae81d5ea1c36c063e675e2f887d8">IDTable</a> ()</td></tr>
+<tr class="separator:a89e8ae81d5ea1c36c063e675e2f887d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d13796af3023862020921df792f1300"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structid.html">id</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIDTable.html#a3d13796af3023862020921df792f1300">find</a> (string) const </td></tr>
+<tr class="separator:a3d13796af3023862020921df792f1300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e2eac77208bd19753b07e91cf21ff4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIDTable.html#a0e2eac77208bd19753b07e91cf21ff4b">insert</a> (string, <a class="el" href="structid.html">id</a> *)</td></tr>
+<tr class="separator:a0e2eac77208bd19753b07e91cf21ff4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae80bc7b19a1cb84825c15ffb6e501bc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIDTable.html#ae80bc7b19a1cb84825c15ffb6e501bc8">push</a> ()</td></tr>
+<tr class="separator:ae80bc7b19a1cb84825c15ffb6e501bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba8a3e9cca0f1b34c87a76af9a5e0619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIDTable.html#aba8a3e9cca0f1b34c87a76af9a5e0619">pop</a> ()</td></tr>
+<tr class="separator:aba8a3e9cca0f1b34c87a76af9a5e0619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685019c2a7da6cb2f46c389dada6f41b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIDTable.html#a685019c2a7da6cb2f46c389dada6f41b">getLevel</a> ()</td></tr>
+<tr class="separator:a685019c2a7da6cb2f46c389dada6f41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e8ae81d5ea1c36c063e675e2f887d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIDTable.html#a89e8ae81d5ea1c36c063e675e2f887d8">IDTable</a> ()</td></tr>
+<tr class="separator:a89e8ae81d5ea1c36c063e675e2f887d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af07c9594c265553be9e983f71b1d3899"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structid.html">id</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIDTable.html#af07c9594c265553be9e983f71b1d3899">find</a> (const string &amp;str) const </td></tr>
+<tr class="memdesc:af07c9594c265553be9e983f71b1d3899"><td class="mdescLeft">&#160;</td><td class="mdescRight">查找元素是否在符号表中  <a href="#af07c9594c265553be9e983f71b1d3899">更多...</a><br/></td></tr>
+<tr class="separator:af07c9594c265553be9e983f71b1d3899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e5587c4179e62b0c56b831a450eaba6"><td class="memItemLeft" align="right" valign="top">map&lt; string, <a class="el" href="structid.html">id</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIDTable.html#a3e5587c4179e62b0c56b831a450eaba6">getAll</a> (int level)</td></tr>
+<tr class="memdesc:a3e5587c4179e62b0c56b831a450eaba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回一层的全部元素  <a href="#a3e5587c4179e62b0c56b831a450eaba6">更多...</a><br/></td></tr>
+<tr class="separator:a3e5587c4179e62b0c56b831a450eaba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0718a4c67f3837e5326e92ea9f7cac62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIDTable.html#a0718a4c67f3837e5326e92ea9f7cac62">insert</a> (const string &amp;str, <a class="el" href="RedApple_2src_2idmap_8h.html#add8909e1085c0c32f8380ff493a243b3">SymbolType</a> type, <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> data)</td></tr>
+<tr class="memdesc:a0718a4c67f3837e5326e92ea9f7cac62"><td class="mdescLeft">&#160;</td><td class="mdescRight">插入一个元素  <a href="#a0718a4c67f3837e5326e92ea9f7cac62">更多...</a><br/></td></tr>
+<tr class="separator:a0718a4c67f3837e5326e92ea9f7cac62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae80bc7b19a1cb84825c15ffb6e501bc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIDTable.html#ae80bc7b19a1cb84825c15ffb6e501bc8">push</a> ()</td></tr>
+<tr class="memdesc:ae80bc7b19a1cb84825c15ffb6e501bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">压栈，一般在进入新的符号区域，例如函数体中  <a href="#ae80bc7b19a1cb84825c15ffb6e501bc8">更多...</a><br/></td></tr>
+<tr class="separator:ae80bc7b19a1cb84825c15ffb6e501bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba8a3e9cca0f1b34c87a76af9a5e0619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIDTable.html#aba8a3e9cca0f1b34c87a76af9a5e0619">pop</a> ()</td></tr>
+<tr class="memdesc:aba8a3e9cca0f1b34c87a76af9a5e0619"><td class="mdescLeft">&#160;</td><td class="mdescRight">弹栈，在离开一个符号区域时需要手动调用  <a href="#aba8a3e9cca0f1b34c87a76af9a5e0619">更多...</a><br/></td></tr>
+<tr class="separator:aba8a3e9cca0f1b34c87a76af9a5e0619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685019c2a7da6cb2f46c389dada6f41b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIDTable.html#a685019c2a7da6cb2f46c389dada6f41b">getLevel</a> ()</td></tr>
+<tr class="memdesc:a685019c2a7da6cb2f46c389dada6f41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前层级  <a href="#a685019c2a7da6cb2f46c389dada6f41b">更多...</a><br/></td></tr>
+<tr class="separator:a685019c2a7da6cb2f46c389dada6f41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a1722e5fbe194314e7964822cb48a1fde"><td class="memItemLeft" align="right" valign="top">deque&lt; <a class="el" href="classIDMap.html">IDMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIDTable.html#a1722e5fbe194314e7964822cb48a1fde">ID_stack</a></td></tr>
+<tr class="separator:a1722e5fbe194314e7964822cb48a1fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>简易栈式符号表，需要在进入函数后手动压栈等操作 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a89e8ae81d5ea1c36c063e675e2f887d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IDTable::IDTable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classIDTable.html#a1722e5fbe194314e7964822cb48a1fde">ID_stack</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a89e8ae81d5ea1c36c063e675e2f887d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IDTable::IDTable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a3d13796af3023862020921df792f1300"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structid.html">id</a> * IDTable::find </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>idname</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classIDMap.html#ad72f36a65d662dab6611d92346766055">IDMap::find()</a> , 以及 <a class="el" href="classIDTable.html#a1722e5fbe194314e7964822cb48a1fde">ID_stack</a>.</p>
+
+<p>参考自 <a class="el" href="PCodeScriptRunner_8cpp.html#a498eaa80e54d1a43505bd19aab3afbc5">find_id()</a>, <a class="el" href="Prescan_8cpp.html#a14f36cfb196ef8d844ecfa9d4c05cd7e">function_type_macro()</a>, <a class="el" href="PCodeScriptRunner_8cpp.html#a23f5e80ce8dea1b3e0ef5be47053112f">save_id()</a> , 以及 <a class="el" href="Prescan_8cpp.html#a59f79aa0ec7f6ed97759a06f2081b041">struct_type_macro()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af07c9594c265553be9e983f71b1d3899"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structid.html">id</a> * IDTable::find </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查找元素是否在符号表中 </p>
+<p>查找元素是否在当前符号表中，若当前符号栈不只一层，还好向上层符号表进行查找</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>要查找的符号名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>若找到，返回id结构体的指针，无需释放内存。未找到返回NULL </dd></dl>
+
+<p>参考 <a class="el" href="classIDMap.html#ad72f36a65d662dab6611d92346766055">IDMap::find()</a> , 以及 <a class="el" href="classIDTable.html#a1722e5fbe194314e7964822cb48a1fde">ID_stack</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e5587c4179e62b0c56b831a450eaba6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt; string, <a class="el" href="structid.html">id</a> * &gt; &amp; IDTable::getAll </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回一层的全部元素 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>返回一层的全部元素，level是传入的层级 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回的元素map </dd></dl>
+
+<p>参考 <a class="el" href="classIDTable.html#a1722e5fbe194314e7964822cb48a1fde">ID_stack</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a685019c2a7da6cb2f46c389dada6f41b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IDTable::getLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classIDTable.html#a1722e5fbe194314e7964822cb48a1fde">ID_stack</a>.</p>
+
+<p>参考自 <a class="el" href="classIDTable.html#a0718a4c67f3837e5326e92ea9f7cac62">insert()</a>, <a class="el" href="PCodeScriptRunner_8cpp.html#a931d7d90e1a31b9859cd2d4dcc1ba593">make_code()</a> , 以及 <a class="el" href="PCodeScriptRunner_8cpp.html#a23f5e80ce8dea1b3e0ef5be47053112f">save_id()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a685019c2a7da6cb2f46c389dada6f41b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IDTable::getLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前层级 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0e2eac77208bd19753b07e91cf21ff4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IDTable::insert </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structid.html">id</a> *&#160;</td>
+          <td class="paramname"><em>pid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classIDTable.html#a1722e5fbe194314e7964822cb48a1fde">ID_stack</a> , 以及 <a class="el" href="classIDMap.html#a08bdc50967ec129db19bbaf5b0d2aac3">IDMap::insert()</a>.</p>
+
+<p>参考自 <a class="el" href="classStructModel.html#a8ccfb9d2b3f0544e5a70314d6460ba3a">StructModel::insertToST()</a>, <a class="el" href="classFunctionModel.html#ad3869c9ca7f2a2cd3164f8516d7dfd6e">FunctionModel::insertToST()</a> , 以及 <a class="el" href="PCodeScriptRunner_8cpp.html#a23f5e80ce8dea1b3e0ef5be47053112f">save_id()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0718a4c67f3837e5326e92ea9f7cac62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IDTable::insert </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="RedApple_2src_2idmap_8h.html#add8909e1085c0c32f8380ff493a243b3">SymbolType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>插入一个元素 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>要插入的名称 </td></tr>
+    <tr><td class="paramname">type</td><td>类型的枚举 </td></tr>
+    <tr><td class="paramname">data</td><td>数据指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>参考 <a class="el" href="classIDTable.html#a685019c2a7da6cb2f46c389dada6f41b">getLevel()</a>, <a class="el" href="classIDTable.html#a1722e5fbe194314e7964822cb48a1fde">ID_stack</a> , 以及 <a class="el" href="classIDMap.html#a08bdc50967ec129db19bbaf5b0d2aac3">IDMap::insert()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba8a3e9cca0f1b34c87a76af9a5e0619"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IDTable::pop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classIDTable.html#a1722e5fbe194314e7964822cb48a1fde">ID_stack</a>.</p>
+
+<p>参考自 <a class="el" href="PCodeScriptRunner_8cpp.html#a6dee1ce35f7842b7bdc1ef4d4904e16e">pop_stack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba8a3e9cca0f1b34c87a76af9a5e0619"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IDTable::pop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>弹栈，在离开一个符号区域时需要手动调用 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae80bc7b19a1cb84825c15ffb6e501bc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IDTable::push </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classIDTable.html#a1722e5fbe194314e7964822cb48a1fde">ID_stack</a>.</p>
+
+<p>参考自 <a class="el" href="PCodeScriptRunner_8cpp.html#a1ffad3c497f6ce8980677a1399b07d80">push_stack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae80bc7b19a1cb84825c15ffb6e501bc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IDTable::push </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>压栈，一般在进入新的符号区域，例如函数体中 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a1722e5fbe194314e7964822cb48a1fde"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">deque&lt; <a class="el" href="classIDMap.html">IDMap</a> &gt; IDTable::ID_stack</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classIDTable.html#a3d13796af3023862020921df792f1300">find()</a>, <a class="el" href="classIDTable.html#a3e5587c4179e62b0c56b831a450eaba6">getAll()</a>, <a class="el" href="classIDTable.html#a685019c2a7da6cb2f46c389dada6f41b">getLevel()</a>, <a class="el" href="classIDTable.html#a89e8ae81d5ea1c36c063e675e2f887d8">IDTable()</a>, <a class="el" href="classIDTable.html#a0e2eac77208bd19753b07e91cf21ff4b">insert()</a>, <a class="el" href="classIDTable.html#aba8a3e9cca0f1b34c87a76af9a5e0619">pop()</a> , 以及 <a class="el" href="classIDTable.html#ae80bc7b19a1cb84825c15ffb6e501bc8">push()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>LR_Scanner/src/<a class="el" href="LR__Scanner_2src_2idtable_8h_source.html">idtable.h</a></li>
+<li>LR_Scanner/src/<a class="el" href="LR__Scanner_2src_2idtable_8cpp.html">idtable.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classIDTable.html">IDTable</a></li>
+  </ul>
+</div>
+</body>
+</html>

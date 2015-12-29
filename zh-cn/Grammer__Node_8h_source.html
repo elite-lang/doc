@@ -1,0 +1,155 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Elite: LR_Scanner/includes/Grammer_Node.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/elite-lang/Elite" title="Elite GitHub Repository"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Grammer__Node_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Grammer_Node.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Grammer__Node_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">* @Author: sxf</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">* @Date:   2015-01-02 16:28:17</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* @Last Modified by:   sxf</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">* @Last Modified time: 2015-12-14 19:04:18</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef GRAMMER_NODE_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GRAMMER_NODE_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="Grammer__Node_8h.html#a9da3db11ad5807e5f452e498e8a06667">   14</a></span>&#160;<span class="preprocessor">#define remove_ptr(P) if (P != 0) { delete P; P = 0; }</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classGrammer__Node.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGrammer__Node.html">Grammer_Node</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classGrammer__Node.html#a4ad4f4bc5be29b7e60dc7d85d10e1540">   21</a></span>&#160;    <a class="code" href="classGrammer__Node.html">Grammer_Node</a>* <a class="code" href="classGrammer__Node.html#a4ad4f4bc5be29b7e60dc7d85d10e1540">children</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classGrammer__Node.html#a8e859d21a397919d165a591de605c2ac">   22</a></span>&#160;    <a class="code" href="classGrammer__Node.html">Grammer_Node</a>* <a class="code" href="classGrammer__Node.html#a8e859d21a397919d165a591de605c2ac">brother</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classGrammer__Node.html#ac839c3577530499851b63ed8e6332228">   23</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGrammer__Node.html#ac839c3577530499851b63ed8e6332228">grammer_id</a>; <span class="comment">// 唯一的语法翻译标识符</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classGrammer__Node.html#a6d190747c17a9ccab9056a76c19ee68d">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGrammer__Node.html#a6d190747c17a9ccab9056a76c19ee68d">token_type</a>; <span class="comment">// 词法元素的类型</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classGrammer__Node.html#af44b2b83c5129655546f3c06e633008d">   25</a></span>&#160;    <span class="keywordtype">void</span>* <a class="code" href="classGrammer__Node.html#af44b2b83c5129655546f3c06e633008d">token_data</a>; <span class="comment">// 词法元素的值，根据类型进行强制转换</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classGrammer__Node.html#a7673aec9626ce0b06178ecc2e7ddfd98">   26</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGrammer__Node.html#a7673aec9626ce0b06178ecc2e7ddfd98">lua_data</a>; <span class="comment">// lua中节点属性表的引用</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classGrammer__Node.html#a7fbe05c60267c52e8268ccba70e19ca0">   28</a></span>&#160;    <a class="code" href="classGrammer__Node.html#a7fbe05c60267c52e8268ccba70e19ca0">Grammer_Node</a>(){</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classGrammer__Node.html#a4ad4f4bc5be29b7e60dc7d85d10e1540">children</a> = NULL;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classGrammer__Node.html#a8e859d21a397919d165a591de605c2ac">brother</a>  = NULL;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classGrammer__Node.html#a8aaa0975b1ecd0d632f918d3189df651">   32</a></span>&#160;    <a class="code" href="classGrammer__Node.html#a8aaa0975b1ecd0d632f918d3189df651">Grammer_Node</a>(<span class="keyword">const</span> <a class="code" href="classGrammer__Node.html">Grammer_Node</a>&amp; _node){</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classGrammer__Node.html#a4ad4f4bc5be29b7e60dc7d85d10e1540">children</a> = _node.<a class="code" href="classGrammer__Node.html#a4ad4f4bc5be29b7e60dc7d85d10e1540">children</a>; <a class="code" href="classGrammer__Node.html#a8e859d21a397919d165a591de605c2ac">brother</a> = _node.<a class="code" href="classGrammer__Node.html#a8e859d21a397919d165a591de605c2ac">brother</a>; <a class="code" href="classGrammer__Node.html#ac839c3577530499851b63ed8e6332228">grammer_id</a> = _node.<a class="code" href="classGrammer__Node.html#ac839c3577530499851b63ed8e6332228">grammer_id</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classGrammer__Node.html#a6d190747c17a9ccab9056a76c19ee68d">token_type</a> = _node.<a class="code" href="classGrammer__Node.html#a6d190747c17a9ccab9056a76c19ee68d">token_type</a>; <a class="code" href="classGrammer__Node.html#af44b2b83c5129655546f3c06e633008d">token_data</a> = _node.<a class="code" href="classGrammer__Node.html#af44b2b83c5129655546f3c06e633008d">token_data</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classGrammer__Node.html#af119887d8fa33693abede63cfa00c0ce">   36</a></span>&#160;    <a class="code" href="classGrammer__Node.html#af119887d8fa33693abede63cfa00c0ce">Grammer_Node</a>(<a class="code" href="classGrammer__Node.html">Grammer_Node</a>* _children, <a class="code" href="classGrammer__Node.html">Grammer_Node</a>* _borther){</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;       <a class="code" href="classGrammer__Node.html#a4ad4f4bc5be29b7e60dc7d85d10e1540">children</a> = _children; <a class="code" href="classGrammer__Node.html#a8e859d21a397919d165a591de605c2ac">brother</a>  = _borther;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classGrammer__Node.html#ae886ca276eb021a74e3b7a82185e2409">   39</a></span>&#160;    <a class="code" href="classGrammer__Node.html#ae886ca276eb021a74e3b7a82185e2409">~Grammer_Node</a>(){</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="Grammer__Node_8h.html#a9da3db11ad5807e5f452e498e8a06667">remove_ptr</a>(<a class="code" href="classGrammer__Node.html#a4ad4f4bc5be29b7e60dc7d85d10e1540">children</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="Grammer__Node_8h.html#a9da3db11ad5807e5f452e498e8a06667">remove_ptr</a>(<a class="code" href="classGrammer__Node.html#a8e859d21a397919d165a591de605c2ac">brother</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classGrammer__Node.html">Grammer_Node</a>* <a class="code" href="classGrammer__Node.html#a2e9d22f57ea5c0c9d6db1f9d389cac13">AddBortherNode</a>(<a class="code" href="classGrammer__Node.html">Grammer_Node</a>* _brother);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classGrammer__Node.html">Grammer_Node</a>* <a class="code" href="classGrammer__Node.html#ac0867abc487c0c96c7bea097dae1e94b">AddChildrenNode</a>(<a class="code" href="classGrammer__Node.html">Grammer_Node</a>* _children);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> <a class="code" href="classGrammer__Node.html">Grammer_Node</a>* <a class="code" href="classGrammer__Node.html#a5d6e73b04c2b2ad059db4bdc9b7e87e9">NewNode</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // GRAMMER_NODE_H</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="ttc" id="classGrammer__Node_html_ac839c3577530499851b63ed8e6332228"><div class="ttname"><a href="classGrammer__Node.html#ac839c3577530499851b63ed8e6332228">Grammer_Node::grammer_id</a></div><div class="ttdeci">int grammer_id</div><div class="ttdef"><b>Definition:</b> Grammer_Node.h:23</div></div>
+<div class="ttc" id="classGrammer__Node_html_a6d190747c17a9ccab9056a76c19ee68d"><div class="ttname"><a href="classGrammer__Node.html#a6d190747c17a9ccab9056a76c19ee68d">Grammer_Node::token_type</a></div><div class="ttdeci">int token_type</div><div class="ttdef"><b>Definition:</b> Grammer_Node.h:24</div></div>
+<div class="ttc" id="classGrammer__Node_html_a7fbe05c60267c52e8268ccba70e19ca0"><div class="ttname"><a href="classGrammer__Node.html#a7fbe05c60267c52e8268ccba70e19ca0">Grammer_Node::Grammer_Node</a></div><div class="ttdeci">Grammer_Node()</div><div class="ttdef"><b>Definition:</b> Grammer_Node.h:28</div></div>
+<div class="ttc" id="classGrammer__Node_html_ac0867abc487c0c96c7bea097dae1e94b"><div class="ttname"><a href="classGrammer__Node.html#ac0867abc487c0c96c7bea097dae1e94b">Grammer_Node::AddChildrenNode</a></div><div class="ttdeci">virtual Grammer_Node * AddChildrenNode(Grammer_Node *_children)</div><div class="ttdef"><b>Definition:</b> Grammer_Node.cpp:13</div></div>
+<div class="ttc" id="classGrammer__Node_html_a5d6e73b04c2b2ad059db4bdc9b7e87e9"><div class="ttname"><a href="classGrammer__Node.html#a5d6e73b04c2b2ad059db4bdc9b7e87e9">Grammer_Node::NewNode</a></div><div class="ttdeci">static Grammer_Node * NewNode()</div><div class="ttdef"><b>Definition:</b> Grammer_Node.cpp:21</div></div>
+<div class="ttc" id="classGrammer__Node_html_a7673aec9626ce0b06178ecc2e7ddfd98"><div class="ttname"><a href="classGrammer__Node.html#a7673aec9626ce0b06178ecc2e7ddfd98">Grammer_Node::lua_data</a></div><div class="ttdeci">int lua_data</div><div class="ttdef"><b>Definition:</b> Grammer_Node.h:26</div></div>
+<div class="ttc" id="classGrammer__Node_html_af44b2b83c5129655546f3c06e633008d"><div class="ttname"><a href="classGrammer__Node.html#af44b2b83c5129655546f3c06e633008d">Grammer_Node::token_data</a></div><div class="ttdeci">void * token_data</div><div class="ttdef"><b>Definition:</b> Grammer_Node.h:25</div></div>
+<div class="ttc" id="classGrammer__Node_html_af119887d8fa33693abede63cfa00c0ce"><div class="ttname"><a href="classGrammer__Node.html#af119887d8fa33693abede63cfa00c0ce">Grammer_Node::Grammer_Node</a></div><div class="ttdeci">Grammer_Node(Grammer_Node *_children, Grammer_Node *_borther)</div><div class="ttdef"><b>Definition:</b> Grammer_Node.h:36</div></div>
+<div class="ttc" id="classGrammer__Node_html_a8aaa0975b1ecd0d632f918d3189df651"><div class="ttname"><a href="classGrammer__Node.html#a8aaa0975b1ecd0d632f918d3189df651">Grammer_Node::Grammer_Node</a></div><div class="ttdeci">Grammer_Node(const Grammer_Node &amp;_node)</div><div class="ttdef"><b>Definition:</b> Grammer_Node.h:32</div></div>
+<div class="ttc" id="classGrammer__Node_html_a4ad4f4bc5be29b7e60dc7d85d10e1540"><div class="ttname"><a href="classGrammer__Node.html#a4ad4f4bc5be29b7e60dc7d85d10e1540">Grammer_Node::children</a></div><div class="ttdeci">Grammer_Node * children</div><div class="ttdef"><b>Definition:</b> Grammer_Node.h:21</div></div>
+<div class="ttc" id="classGrammer__Node_html_ae886ca276eb021a74e3b7a82185e2409"><div class="ttname"><a href="classGrammer__Node.html#ae886ca276eb021a74e3b7a82185e2409">Grammer_Node::~Grammer_Node</a></div><div class="ttdeci">~Grammer_Node()</div><div class="ttdef"><b>Definition:</b> Grammer_Node.h:39</div></div>
+<div class="ttc" id="Grammer__Node_8h_html_a9da3db11ad5807e5f452e498e8a06667"><div class="ttname"><a href="Grammer__Node_8h.html#a9da3db11ad5807e5f452e498e8a06667">remove_ptr</a></div><div class="ttdeci">#define remove_ptr(P)</div><div class="ttdef"><b>Definition:</b> Grammer_Node.h:14</div></div>
+<div class="ttc" id="classGrammer__Node_html_a2e9d22f57ea5c0c9d6db1f9d389cac13"><div class="ttname"><a href="classGrammer__Node.html#a2e9d22f57ea5c0c9d6db1f9d389cac13">Grammer_Node::AddBortherNode</a></div><div class="ttdeci">virtual Grammer_Node * AddBortherNode(Grammer_Node *_brother)</div><div class="ttdef"><b>Definition:</b> Grammer_Node.cpp:3</div></div>
+<div class="ttc" id="classGrammer__Node_html"><div class="ttname"><a href="classGrammer__Node.html">Grammer_Node</a></div><div class="ttdoc">BNF语法节点 </div><div class="ttdef"><b>Definition:</b> Grammer_Node.h:19</div></div>
+<div class="ttc" id="classGrammer__Node_html_a8e859d21a397919d165a591de605c2ac"><div class="ttname"><a href="classGrammer__Node.html#a8e859d21a397919d165a591de605c2ac">Grammer_Node::brother</a></div><div class="ttdeci">Grammer_Node * brother</div><div class="ttdef"><b>Definition:</b> Grammer_Node.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ef88c6a543216cd8b8576f223a666a0e.html">LR_Scanner</a></li><li class="navelem"><a class="el" href="dir_56ea03c0609cb3bb1c93cfba7212c9c7.html">includes</a></li><li class="navelem"><a class="el" href="Grammer__Node_8h.html">Grammer_Node.h</a></li>
+  </ul>
+</div>
+</body>
+</html>

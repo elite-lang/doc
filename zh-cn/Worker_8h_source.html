@@ -1,0 +1,155 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Elite: Builder/include/Worker.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/elite-lang/Elite" title="Elite GitHub Repository"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Worker_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Worker.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Worker_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">* @Author: sxf</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">* @Date:   2015-11-11 13:52:11</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* @Last Modified by:   sxf</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">* @Last Modified time: 2015-12-25 10:12:56</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef WORKER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WORKER_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="classLexInterface.html">LexInterface</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="classParser.html">Parser</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="classScriptRunner.html">ScriptRunner</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="classCodeGen.html">CodeGen</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classWorker.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classWorker.html">Worker</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWorker.html#a353641f48b1c294b24e4fb313ae99eca">Init</a>(<a class="code" href="classLexInterface.html">LexInterface</a>* l, <a class="code" href="classParser.html">Parser</a>* p, <a class="code" href="classScriptRunner.html">ScriptRunner</a>* s, <a class="code" href="classCodeGen.html">CodeGen</a>* c);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWorker.html#ab7946480d976c0479ee1982af612db7f">Run</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* input, <span class="keyword">const</span> <span class="keywordtype">char</span>* output);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWorker.html#ac685e27edd32bdf71640c8bb5cb56602">MetaGen</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* output);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">static</span> <a class="code" href="classWorker.html">Worker</a>* <a class="code" href="classWorker.html#a4f5dcc91e2e8157f7ce3615ad3353b17">CreateDefault</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* lex_cfg, <span class="keyword">const</span> <span class="keywordtype">char</span>* parser_cfg, <span class="keyword">const</span> <span class="keywordtype">char</span>* package_path);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> <a class="code" href="classWorker.html">Worker</a>* <a class="code" href="classWorker.html#a833f0ce8280e5a56f125220506e4ba28">Create</a>(<a class="code" href="classLexInterface.html">LexInterface</a>* l, <a class="code" href="classParser.html">Parser</a>* p, <a class="code" href="classScriptRunner.html">ScriptRunner</a>* s, <a class="code" href="classCodeGen.html">CodeGen</a>* c);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classWorker.html#ab5d7649c9e6314f5f333e51f30ff2edb">   29</a></span>&#160;    <a class="code" href="classLexInterface.html">LexInterface</a>* <a class="code" href="classWorker.html#ab5d7649c9e6314f5f333e51f30ff2edb">getLex</a>() { <span class="keywordflow">return</span> <a class="code" href="classWorker.html#a23dd9436ca490ac594f750707f1cc4a5">lex</a>; }</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classWorker.html#ab3e17931d3684e071c717ea5cfcc7c22">   30</a></span>&#160;    <a class="code" href="classParser.html">Parser</a>* <a class="code" href="classWorker.html#ab3e17931d3684e071c717ea5cfcc7c22">getParser</a>() { <span class="keywordflow">return</span> <a class="code" href="classWorker.html#a79de9d49434fc6a83361ac264463d588">parser</a>; }</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classWorker.html#aee29086ea9183c61475dfe4f4930d4aa">   31</a></span>&#160;    <a class="code" href="classScriptRunner.html">ScriptRunner</a>* <a class="code" href="classWorker.html#aee29086ea9183c61475dfe4f4930d4aa">getScriptRunner</a>() { <span class="keywordflow">return</span> <a class="code" href="classWorker.html#ae702d2d5e9ac6b5a1365381b9b48b591">script_runner</a>; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classWorker.html#a45660737d5cdbbf636c38dc763cf060a">   32</a></span>&#160;    <a class="code" href="classCodeGen.html">CodeGen</a>* <a class="code" href="classWorker.html#a45660737d5cdbbf636c38dc763cf060a">getCodegen</a>() { <span class="keywordflow">return</span> <a class="code" href="classWorker.html#ab00110a7e34f562b95871864cff36cf4">codegen</a>; }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classWorker.html#a3754817df06ffe220f7f0d903c78ccac">Worker</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classWorker.html#aa8e4543ef1e93fd9d884269ba30c5bfe">~Worker</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classWorker.html#a23dd9436ca490ac594f750707f1cc4a5">   37</a></span>&#160;    <a class="code" href="classLexInterface.html">LexInterface</a>* <a class="code" href="classWorker.html#a23dd9436ca490ac594f750707f1cc4a5">lex</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classWorker.html#a79de9d49434fc6a83361ac264463d588">   38</a></span>&#160;    <a class="code" href="classParser.html">Parser</a>* <a class="code" href="classWorker.html#a79de9d49434fc6a83361ac264463d588">parser</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classWorker.html#ae702d2d5e9ac6b5a1365381b9b48b591">   39</a></span>&#160;    <a class="code" href="classScriptRunner.html">ScriptRunner</a>* <a class="code" href="classWorker.html#ae702d2d5e9ac6b5a1365381b9b48b591">script_runner</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classWorker.html#ab00110a7e34f562b95871864cff36cf4">   40</a></span>&#160;    <a class="code" href="classCodeGen.html">CodeGen</a>* <a class="code" href="classWorker.html#ab00110a7e34f562b95871864cff36cf4">codegen</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif // WORKER_H</span></div>
+<div class="ttc" id="classWorker_html_a833f0ce8280e5a56f125220506e4ba28"><div class="ttname"><a href="classWorker.html#a833f0ce8280e5a56f125220506e4ba28">Worker::Create</a></div><div class="ttdeci">static Worker * Create(LexInterface *l, Parser *p, ScriptRunner *s, CodeGen *c)</div><div class="ttdef"><b>Definition:</b> Worker.cpp:72</div></div>
+<div class="ttc" id="classWorker_html"><div class="ttname"><a href="classWorker.html">Worker</a></div><div class="ttdoc">工作流类, 是词法分析器, 语法分析器, 元脚本解析器, 后端代码生成器整合后的工作流 </div><div class="ttdef"><b>Definition:</b> Worker.h:19</div></div>
+<div class="ttc" id="classWorker_html_aa8e4543ef1e93fd9d884269ba30c5bfe"><div class="ttname"><a href="classWorker.html#aa8e4543ef1e93fd9d884269ba30c5bfe">Worker::~Worker</a></div><div class="ttdeci">~Worker()</div><div class="ttdef"><b>Definition:</b> Worker.cpp:82</div></div>
+<div class="ttc" id="classLexInterface_html"><div class="ttname"><a href="classLexInterface.html">LexInterface</a></div><div class="ttdoc">Lex的关键接口 </div><div class="ttdef"><b>Definition:</b> LexInterface.h:25</div></div>
+<div class="ttc" id="classWorker_html_aee29086ea9183c61475dfe4f4930d4aa"><div class="ttname"><a href="classWorker.html#aee29086ea9183c61475dfe4f4930d4aa">Worker::getScriptRunner</a></div><div class="ttdeci">ScriptRunner * getScriptRunner()</div><div class="ttdef"><b>Definition:</b> Worker.h:31</div></div>
+<div class="ttc" id="classWorker_html_ab5d7649c9e6314f5f333e51f30ff2edb"><div class="ttname"><a href="classWorker.html#ab5d7649c9e6314f5f333e51f30ff2edb">Worker::getLex</a></div><div class="ttdeci">LexInterface * getLex()</div><div class="ttdef"><b>Definition:</b> Worker.h:29</div></div>
+<div class="ttc" id="classWorker_html_ab7946480d976c0479ee1982af612db7f"><div class="ttname"><a href="classWorker.html#ab7946480d976c0479ee1982af612db7f">Worker::Run</a></div><div class="ttdeci">void Run(const char *input, const char *output)</div><div class="ttdef"><b>Definition:</b> Worker.cpp:27</div></div>
+<div class="ttc" id="classWorker_html_a79de9d49434fc6a83361ac264463d588"><div class="ttname"><a href="classWorker.html#a79de9d49434fc6a83361ac264463d588">Worker::parser</a></div><div class="ttdeci">Parser * parser</div><div class="ttdef"><b>Definition:</b> Worker.h:38</div></div>
+<div class="ttc" id="classWorker_html_ab3e17931d3684e071c717ea5cfcc7c22"><div class="ttname"><a href="classWorker.html#ab3e17931d3684e071c717ea5cfcc7c22">Worker::getParser</a></div><div class="ttdeci">Parser * getParser()</div><div class="ttdef"><b>Definition:</b> Worker.h:30</div></div>
+<div class="ttc" id="classWorker_html_ac685e27edd32bdf71640c8bb5cb56602"><div class="ttname"><a href="classWorker.html#ac685e27edd32bdf71640c8bb5cb56602">Worker::MetaGen</a></div><div class="ttdeci">void MetaGen(const char *output)</div><div class="ttdef"><b>Definition:</b> Worker.cpp:41</div></div>
+<div class="ttc" id="classWorker_html_a353641f48b1c294b24e4fb313ae99eca"><div class="ttname"><a href="classWorker.html#a353641f48b1c294b24e4fb313ae99eca">Worker::Init</a></div><div class="ttdeci">void Init(LexInterface *l, Parser *p, ScriptRunner *s, CodeGen *c)</div><div class="ttdef"><b>Definition:</b> Worker.cpp:18</div></div>
+<div class="ttc" id="classWorker_html_a23dd9436ca490ac594f750707f1cc4a5"><div class="ttname"><a href="classWorker.html#a23dd9436ca490ac594f750707f1cc4a5">Worker::lex</a></div><div class="ttdeci">LexInterface * lex</div><div class="ttdef"><b>Definition:</b> Worker.h:37</div></div>
+<div class="ttc" id="classWorker_html_ab00110a7e34f562b95871864cff36cf4"><div class="ttname"><a href="classWorker.html#ab00110a7e34f562b95871864cff36cf4">Worker::codegen</a></div><div class="ttdeci">CodeGen * codegen</div><div class="ttdef"><b>Definition:</b> Worker.h:40</div></div>
+<div class="ttc" id="classScriptRunner_html"><div class="ttname"><a href="classScriptRunner.html">ScriptRunner</a></div><div class="ttdoc">脚本解析器类(其实这个类应该放到MetaScriptRunner中) </div><div class="ttdef"><b>Definition:</b> ScriptRunner.h:17</div></div>
+<div class="ttc" id="classWorker_html_a45660737d5cdbbf636c38dc763cf060a"><div class="ttname"><a href="classWorker.html#a45660737d5cdbbf636c38dc763cf060a">Worker::getCodegen</a></div><div class="ttdeci">CodeGen * getCodegen()</div><div class="ttdef"><b>Definition:</b> Worker.h:32</div></div>
+<div class="ttc" id="classWorker_html_a4f5dcc91e2e8157f7ce3615ad3353b17"><div class="ttname"><a href="classWorker.html#a4f5dcc91e2e8157f7ce3615ad3353b17">Worker::CreateDefault</a></div><div class="ttdeci">static Worker * CreateDefault(const char *lex_cfg, const char *parser_cfg, const char *package_path)</div><div class="ttdef"><b>Definition:</b> Worker.cpp:46</div></div>
+<div class="ttc" id="classWorker_html_a3754817df06ffe220f7f0d903c78ccac"><div class="ttname"><a href="classWorker.html#a3754817df06ffe220f7f0d903c78ccac">Worker::Worker</a></div><div class="ttdeci">Worker()</div><div class="ttdef"><b>Definition:</b> Worker.cpp:78</div></div>
+<div class="ttc" id="classWorker_html_ae702d2d5e9ac6b5a1365381b9b48b591"><div class="ttname"><a href="classWorker.html#ae702d2d5e9ac6b5a1365381b9b48b591">Worker::script_runner</a></div><div class="ttdeci">ScriptRunner * script_runner</div><div class="ttdef"><b>Definition:</b> Worker.h:39</div></div>
+<div class="ttc" id="classParser_html"><div class="ttname"><a href="classParser.html">Parser</a></div><div class="ttdoc">核心的语法分析器接口 </div><div class="ttdef"><b>Definition:</b> Parser.h:20</div></div>
+<div class="ttc" id="classCodeGen_html"><div class="ttname"><a href="classCodeGen.html">CodeGen</a></div><div class="ttdoc">代码生成器的接口类 </div><div class="ttdef"><b>Definition:</b> CodeGen.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_34d2e001555a4d4c029612295f0935b4.html">Builder</a></li><li class="navelem"><a class="el" href="dir_a3fa9f66711255d8c58b46b20164c7bf.html">include</a></li><li class="navelem"><a class="el" href="Worker_8h.html">Worker.h</a></li>
+  </ul>
+</div>
+</body>
+</html>

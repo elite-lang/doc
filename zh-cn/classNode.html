@@ -1,0 +1,1240 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Elite: Node类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/elite-lang/Elite" title="Elite GitHub Repository"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classNode.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classNode-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Node类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>List的基本组成元素，表示一个代码中的基本节点  
+ <a href="classNode.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Node_8h_source.html">Node.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Node 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classNode.png" usemap="#Node_map" alt=""/>
+  <map id="Node_map" name="Node_map">
+<area href="classByteNode.html" alt="ByteNode" shape="rect" coords="0,56,75,80"/>
+<area href="classCharNode.html" alt="CharNode" shape="rect" coords="85,56,160,80"/>
+<area href="classFloatNode.html" alt="FloatNode" shape="rect" coords="170,56,245,80"/>
+<area href="classIDNode.html" alt="IDNode" shape="rect" coords="255,56,330,80"/>
+<area href="classIntNode.html" alt="IntNode" shape="rect" coords="340,56,415,80"/>
+<area href="classStringNode.html" alt="StringNode" shape="rect" coords="425,56,500,80"/>
+<area href="classTypeNode.html" alt="TypeNode" shape="rect" coords="510,56,585,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a40c43f56d1873059f6886a84bfc31c61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a40c43f56d1873059f6886a84bfc31c61">addChildren</a> (<a class="el" href="classNode.html">Node</a> *n)</td></tr>
+<tr class="memdesc:a40c43f56d1873059f6886a84bfc31c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加一个孩子节点  <a href="#a40c43f56d1873059f6886a84bfc31c61">更多...</a><br/></td></tr>
+<tr class="separator:a40c43f56d1873059f6886a84bfc31c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc1158891442ed222ce34ee2802212ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#abc1158891442ed222ce34ee2802212ec">addBrother</a> (<a class="el" href="classNode.html">Node</a> *n)</td></tr>
+<tr class="memdesc:abc1158891442ed222ce34ee2802212ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加一个兄弟节点  <a href="#abc1158891442ed222ce34ee2802212ec">更多...</a><br/></td></tr>
+<tr class="separator:abc1158891442ed222ce34ee2802212ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35067cf2fcb0dcf46d82b1fc51650ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#ab35067cf2fcb0dcf46d82b1fc51650ea">isSingle</a> ()</td></tr>
+<tr class="memdesc:ab35067cf2fcb0dcf46d82b1fc51650ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断当前节点是一个元素, 还是一个链表  <a href="#ab35067cf2fcb0dcf46d82b1fc51650ea">更多...</a><br/></td></tr>
+<tr class="separator:ab35067cf2fcb0dcf46d82b1fc51650ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8557bfd8ff3979e326611dd919f1987d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a8557bfd8ff3979e326611dd919f1987d">copy</a> ()</td></tr>
+<tr class="separator:a8557bfd8ff3979e326611dd919f1987d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f2f89b95b26aa0f0500da5376492a1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#ae6f2f89b95b26aa0f0500da5376492a1">copyAll</a> ()</td></tr>
+<tr class="separator:ae6f2f89b95b26aa0f0500da5376492a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3edc0526e297799e4e2978987995d961"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a3edc0526e297799e4e2978987995d961">copyChild</a> ()</td></tr>
+<tr class="separator:a3edc0526e297799e4e2978987995d961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a624ae93d10587282ea475ff0a734ca0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a624ae93d10587282ea475ff0a734ca0b">replaceNext</a> (<a class="el" href="classNode.html">Node</a> *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="separator:a624ae93d10587282ea475ff0a734ca0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66537f1ace2068e6763b0293ceddc0fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a66537f1ace2068e6763b0293ceddc0fe">replaceChild</a> (<a class="el" href="classNode.html">Node</a> *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="separator:a66537f1ace2068e6763b0293ceddc0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ff12a8ae778d778b11c2c862177c4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a46ff12a8ae778d778b11c2c862177c4b">replaceChildFirst</a> (<a class="el" href="classNode.html">Node</a> *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="separator:a46ff12a8ae778d778b11c2c862177c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9920eb88d846024cc0d436123beb1f9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a9920eb88d846024cc0d436123beb1f9a">print</a> (int k)</td></tr>
+<tr class="memdesc:a9920eb88d846024cc0d436123beb1f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">可用于调试的打印指令  <a href="#a9920eb88d846024cc0d436123beb1f9a">更多...</a><br/></td></tr>
+<tr class="separator:a9920eb88d846024cc0d436123beb1f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a340086dc64ad8c65adc6c69bd7a37f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a7a340086dc64ad8c65adc6c69bd7a37f">getNext</a> ()</td></tr>
+<tr class="separator:a7a340086dc64ad8c65adc6c69bd7a37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9352552c0d36151eebe21b4e0d1b69e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a9352552c0d36151eebe21b4e0d1b69e7">getChild</a> ()</td></tr>
+<tr class="separator:a9352552c0d36151eebe21b4e0d1b69e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e98547f228f342ae17d4fbed5531183"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a6e98547f228f342ae17d4fbed5531183">codeGen</a> (<a class="el" href="classCodeGenContext.html">CodeGenContext</a> *context)</td></tr>
+<tr class="memdesc:a6e98547f228f342ae17d4fbed5531183"><td class="mdescLeft">&#160;</td><td class="mdescRight">重要的代码生成函数  <a href="#a6e98547f228f342ae17d4fbed5531183">更多...</a><br/></td></tr>
+<tr class="separator:a6e98547f228f342ae17d4fbed5531183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69908baed4650f6b3a873d6be745b5a9"><td class="memItemLeft" align="right" valign="top">virtual std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a69908baed4650f6b3a873d6be745b5a9">getStr</a> ()</td></tr>
+<tr class="memdesc:a69908baed4650f6b3a873d6be745b5a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前节点内存放的字符串  <a href="#a69908baed4650f6b3a873d6be745b5a9">更多...</a><br/></td></tr>
+<tr class="separator:a69908baed4650f6b3a873d6be745b5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d127eef31e5d7da5699c101e865677a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a5d127eef31e5d7da5699c101e865677a">getTypeName</a> ()</td></tr>
+<tr class="memdesc:a5d127eef31e5d7da5699c101e865677a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取类型名  <a href="#a5d127eef31e5d7da5699c101e865677a">更多...</a><br/></td></tr>
+<tr class="separator:a5d127eef31e5d7da5699c101e865677a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e0b8ae8465abe33e335cb7fefc036a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16">NodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#ae0e0b8ae8465abe33e335cb7fefc036a">getType</a> ()</td></tr>
+<tr class="memdesc:ae0e0b8ae8465abe33e335cb7fefc036a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取节点类型  <a href="#ae0e0b8ae8465abe33e335cb7fefc036a">更多...</a><br/></td></tr>
+<tr class="separator:ae0e0b8ae8465abe33e335cb7fefc036a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a991d900ac72f7c9f0da3366033cb4530"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a991d900ac72f7c9f0da3366033cb4530">isNode</a> ()</td></tr>
+<tr class="separator:a991d900ac72f7c9f0da3366033cb4530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63dc1e989939aa4838b7c4f16c08066"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#ae63dc1e989939aa4838b7c4f16c08066">isIntNode</a> ()</td></tr>
+<tr class="separator:ae63dc1e989939aa4838b7c4f16c08066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa504c1c8cc508f598fbf0e3bd670bd1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#aa504c1c8cc508f598fbf0e3bd670bd1f">isFloatNode</a> ()</td></tr>
+<tr class="separator:aa504c1c8cc508f598fbf0e3bd670bd1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ddd5922d70f5f4e591330475bec30b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a5ddd5922d70f5f4e591330475bec30b9">isIDNode</a> ()</td></tr>
+<tr class="separator:a5ddd5922d70f5f4e591330475bec30b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c5740f928e98602b7232423b5c95da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#ae9c5740f928e98602b7232423b5c95da">isStringNode</a> ()</td></tr>
+<tr class="separator:ae9c5740f928e98602b7232423b5c95da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e0fc887867a93f4c1cf7a13526e75cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a1e0fc887867a93f4c1cf7a13526e75cb">isCharNode</a> ()</td></tr>
+<tr class="separator:a1e0fc887867a93f4c1cf7a13526e75cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9968cf59137b1a6adbe35529488b103"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#ad9968cf59137b1a6adbe35529488b103">isTypeNode</a> ()</td></tr>
+<tr class="separator:ad9968cf59137b1a6adbe35529488b103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a9790bd21129c17dee6dc739206794861"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a9790bd21129c17dee6dc739206794861">make_list</a> (int num,...)</td></tr>
+<tr class="memdesc:a9790bd21129c17dee6dc739206794861"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++语言版的接口, 用来方便地构造一个列表  <a href="#a9790bd21129c17dee6dc739206794861">更多...</a><br/></td></tr>
+<tr class="separator:a9790bd21129c17dee6dc739206794861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c6a57a788f92cee7211f0dbc1263e80"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a0c6a57a788f92cee7211f0dbc1263e80">makeList</a> (int num, <a class="el" href="classNode.html">Node</a> *plist[])</td></tr>
+<tr class="memdesc:a0c6a57a788f92cee7211f0dbc1263e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">其他语言的接口, 用来方便地构造一个列表  <a href="#a0c6a57a788f92cee7211f0dbc1263e80">更多...</a><br/></td></tr>
+<tr class="separator:a0c6a57a788f92cee7211f0dbc1263e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06260e70f7aca9a81e196e38c1df5701"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a06260e70f7aca9a81e196e38c1df5701">getList</a> (<a class="el" href="classNode.html">Node</a> *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:a06260e70f7aca9a81e196e38c1df5701"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果传入节点是单一元素,则为其包裹一层Node节点  <a href="#a06260e70f7aca9a81e196e38c1df5701">更多...</a><br/></td></tr>
+<tr class="separator:a06260e70f7aca9a81e196e38c1df5701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e297191b06aa16cda1410ccd3eea27c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a6e297191b06aa16cda1410ccd3eea27c">Create</a> (<a class="el" href="classNode.html">Node</a> *n)</td></tr>
+<tr class="memdesc:a6e297191b06aa16cda1410ccd3eea27c"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个节点, 并为其添加一个子元素链表  <a href="#a6e297191b06aa16cda1410ccd3eea27c">更多...</a><br/></td></tr>
+<tr class="separator:a6e297191b06aa16cda1410ccd3eea27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3f418011e67b879c280d20b1506692"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a8d3f418011e67b879c280d20b1506692">Create</a> ()</td></tr>
+<tr class="memdesc:a8d3f418011e67b879c280d20b1506692"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个空节点  <a href="#a8d3f418011e67b879c280d20b1506692">更多...</a><br/></td></tr>
+<tr class="separator:a8d3f418011e67b879c280d20b1506692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f65756ff7cba9bdca8b417867dd3b0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a87f65756ff7cba9bdca8b417867dd3b0">Free</a> (<a class="el" href="classNode.html">Node</a> *&amp;p)</td></tr>
+<tr class="memdesc:a87f65756ff7cba9bdca8b417867dd3b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放一个节点资源  <a href="#a87f65756ff7cba9bdca8b417867dd3b0">更多...</a><br/></td></tr>
+<tr class="separator:a87f65756ff7cba9bdca8b417867dd3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a202a579370183cf80525f3321fdbb612"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a202a579370183cf80525f3321fdbb612">FreeAll</a> (<a class="el" href="classNode.html">Node</a> *&amp;p)</td></tr>
+<tr class="memdesc:a202a579370183cf80525f3321fdbb612"><td class="mdescLeft">&#160;</td><td class="mdescRight">递归释放节点资源  <a href="#a202a579370183cf80525f3321fdbb612">更多...</a><br/></td></tr>
+<tr class="separator:a202a579370183cf80525f3321fdbb612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ad7a34779cad45d997bfd6d3d8043c75f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#ad7a34779cad45d997bfd6d3d8043c75f">Node</a> ()</td></tr>
+<tr class="separator:ad7a34779cad45d997bfd6d3d8043c75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49671be091a3b75f20a4cdaf114dcdef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a49671be091a3b75f20a4cdaf114dcdef">Node</a> (<a class="el" href="classNode.html">Node</a> *n)</td></tr>
+<tr class="separator:a49671be091a3b75f20a4cdaf114dcdef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0840c3cb5c7159be6d992adecd2097c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#aa0840c3cb5c7159be6d992adecd2097c">~Node</a> ()</td></tr>
+<tr class="separator:aa0840c3cb5c7159be6d992adecd2097c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62bb8dac7a552c6f2aa937221c25374b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a62bb8dac7a552c6f2aa937221c25374b">printSelf</a> ()</td></tr>
+<tr class="separator:a62bb8dac7a552c6f2aa937221c25374b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab87776adae83149e235e37ed469f4e10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#ab87776adae83149e235e37ed469f4e10">init</a> ()</td></tr>
+<tr class="separator:ab87776adae83149e235e37ed469f4e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a2559a716f69ccaa76d648d9f1b83065e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#a2559a716f69ccaa76d648d9f1b83065e">next</a></td></tr>
+<tr class="separator:a2559a716f69ccaa76d648d9f1b83065e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55e191b2855879d7b761258d64e2667"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNode.html#ad55e191b2855879d7b761258d64e2667">child</a></td></tr>
+<tr class="separator:ad55e191b2855879d7b761258d64e2667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>List的基本组成元素，表示一个代码中的基本节点 </p>
+<p>编译器后端代码生成时，会构建Node节点串连起来的语法树，结构为左孩子 右兄弟的二叉树，这样即可表示代码的基本结构</p>
+<p>Node节点的类型一般有如下几种(char 暂未使用)： <br/>
+ id - 标识符 - 对应NodeType为：id_node_t <br/>
+ int - 整型 - 对应NodeType为：int_node_t <br/>
+ float - 浮点型 - 对应NodeType为：float_node_t <br/>
+ string - 字符串 - 对应NodeType为：string_node_t <br/>
+ type - 类型 - 对应NodeType为：type_node_t <br/>
+ </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16">NodeType</a></dd></dl>
+<p>一般语法解析器在连接这款后端代码生成器时，只需要控制生成Node构造的语法树即可， 语法树的形状符合RedApple中的定义，即可正确编译为后端代码。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="ad7a34779cad45d997bfd6d3d8043c75f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node::Node </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#ab87776adae83149e235e37ed469f4e10">init()</a>.</p>
+
+<p>参考自 <a class="el" href="classNode.html#a8557bfd8ff3979e326611dd919f1987d">copy()</a>, <a class="el" href="classNode.html#a6e297191b06aa16cda1410ccd3eea27c">Create()</a>, <a class="el" href="classNode.html#a06260e70f7aca9a81e196e38c1df5701">getList()</a>, <a class="el" href="classNode.html#a9790bd21129c17dee6dc739206794861">make_list()</a> , 以及 <a class="el" href="classNode.html#a0c6a57a788f92cee7211f0dbc1263e80">makeList()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a49671be091a3b75f20a4cdaf114dcdef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node::Node </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#a40c43f56d1873059f6886a84bfc31c61">addChildren()</a> , 以及 <a class="el" href="classNode.html#ab87776adae83149e235e37ed469f4e10">init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0840c3cb5c7159be6d992adecd2097c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node::~Node </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="abc1158891442ed222ce34ee2802212ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::addBrother </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加一个兄弟节点 </p>
+<p>为当前Node添加一个兄弟节点, 将自己链表的末尾next指针设置为传入指针 由于为了减少语法树的大小, 这里采用的是单链表, 所以插入速度可能有点慢, 后期优化时, 可以权衡内存占用和速度, 再进行选择</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>添加的节点指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>参考 <a class="el" href="classNode.html#a2559a716f69ccaa76d648d9f1b83065e">next</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#a62c0537dd5671f099382f53edd757a04">add_brother_meta_api()</a>, <a class="el" href="classNode.html#a40c43f56d1873059f6886a84bfc31c61">addChildren()</a>, <a class="el" href="classNode.html#a9790bd21129c17dee6dc739206794861">make_list()</a> , 以及 <a class="el" href="classNode.html#a0c6a57a788f92cee7211f0dbc1263e80">makeList()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a40c43f56d1873059f6886a84bfc31c61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::addChildren </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加一个孩子节点 </p>
+<p>为当前Node添加一个孩子节点, 将child指针指向它, 可以是链表的首节点</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>一个孩子节点,或孩子链表的首节点 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>参考 <a class="el" href="classNode.html#abc1158891442ed222ce34ee2802212ec">addBrother()</a> , 以及 <a class="el" href="classNode.html#ad55e191b2855879d7b761258d64e2667">child</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#ae677570da4560ce011b5ae620b72d6e0">add_children_meta_api()</a> , 以及 <a class="el" href="classNode.html#a49671be091a3b75f20a4cdaf114dcdef">Node()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e98547f228f342ae17d4fbed5531183"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> Node::codeGen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCodeGenContext.html">CodeGenContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重要的代码生成函数 </p>
+<p>重要的代码生成函数, 对于不同的节点, 会有不同的代码生成策略, 这个函数是多态调用的, 在每个Node的子类中都有相关实现 Node的代码生成会按照表处理, 将第一个元素视为宏名 ID会自动去符号表中查找定义, 返回符号表中存储的变量 Type会自动去符号表中查找, 返回一个类型的定义 Int会自动构造常量数字 String会自动构造常量字符串</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>代码生成上下文类 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回代码生成的结果指针LValue </dd></dl>
+
+<p>被 <a class="el" href="classStringNode.html#ab536144f1f7344aacefc6e2ae854f653">StringNode</a>, <a class="el" href="classIDNode.html#ac765c5ac99e6a316685b5c00928d131e">IDNode</a>, <a class="el" href="classFloatNode.html#a43ae1833549ba695ae7fbb6d5de11dac">FloatNode</a> , 以及 <a class="el" href="classIntNode.html#a52439be26f5db56f76302375bd27c360">IntNode</a> 重载.</p>
+
+<p>参考 <a class="el" href="classCodeGenContext.html#a692a0fa38d81fd42262db75209bf929f">CodeGenContext::MacroMake()</a>.</p>
+
+<p>参考自 <a class="el" href="Prescan_8cpp.html#af3d86060cd54772dfa0dc61b86e5f0b9">function_macro()</a>, <a class="el" href="Functions_8cpp.html#a960b9d77d7414c445177203ab5086e36">opt1_macro()</a>, <a class="el" href="Functions_8cpp.html#a41c41207527c279c0419f83846d67796">opt2_macro()</a>, <a class="el" href="Functions_8cpp.html#aeaeba5d199fd44e7c6f7e2e504e8d80f">return_macro()</a>, <a class="el" href="Functions_8cpp.html#a8b98c02cfd2db6e041e684b80f870e41">select_macro()</a> , 以及 <a class="el" href="Functions_8cpp.html#aae8be085b3f95436aa58935472af105e">set_macro()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8557bfd8ff3979e326611dd919f1987d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNode.html">Node</a> * Node::copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="classTypeNode.html#a78ccb1f3ce4e68df492667601dee64f4">TypeNode</a>, <a class="el" href="classStringNode.html#a240e961b2cb11f6e532dae807f160e3b">StringNode</a>, <a class="el" href="classIDNode.html#a7ea382844b9b5d657ab98f991519d389">IDNode</a>, <a class="el" href="classFloatNode.html#a77bc274079ba706b49a31553af12fb84">FloatNode</a> , 以及 <a class="el" href="classIntNode.html#a4dd06c77ce8305b13ce46c5ca884b2f4">IntNode</a> 重载.</p>
+
+<p>参考 <a class="el" href="classNode.html#ad7a34779cad45d997bfd6d3d8043c75f">Node()</a>.</p>
+
+<p>参考自 <a class="el" href="classNode.html#ae6f2f89b95b26aa0f0500da5376492a1">copyAll()</a> , 以及 <a class="el" href="classNode.html#a3edc0526e297799e4e2978987995d961">copyChild()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae6f2f89b95b26aa0f0500da5376492a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNode.html">Node</a> * Node::copyAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#ad55e191b2855879d7b761258d64e2667">child</a>, <a class="el" href="classNode.html#a8557bfd8ff3979e326611dd919f1987d">copy()</a>, <a class="el" href="classNode.html#ae6f2f89b95b26aa0f0500da5376492a1">copyAll()</a> , 以及 <a class="el" href="classNode.html#a2559a716f69ccaa76d648d9f1b83065e">next</a>.</p>
+
+<p>参考自 <a class="el" href="classNode.html#ae6f2f89b95b26aa0f0500da5376492a1">copyAll()</a> , 以及 <a class="el" href="classNode.html#a3edc0526e297799e4e2978987995d961">copyChild()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3edc0526e297799e4e2978987995d961"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNode.html">Node</a> * Node::copyChild </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#ad55e191b2855879d7b761258d64e2667">child</a>, <a class="el" href="classNode.html#a8557bfd8ff3979e326611dd919f1987d">copy()</a>, <a class="el" href="classNode.html#ae6f2f89b95b26aa0f0500da5376492a1">copyAll()</a> , 以及 <a class="el" href="classNode.html#a2559a716f69ccaa76d648d9f1b83065e">next</a>.</p>
+
+<p>参考自 <a class="el" href="classMacroTranslate.html#a7a6121485845470ab61613188212b25c">MacroTranslate::Marco()</a> , 以及 <a class="el" href="classMacroTranslate.html#a546f4a822efec7f9a56532699a019afc">MacroTranslate::marcoReplace()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e297191b06aa16cda1410ccd3eea27c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNode.html">Node</a> * Node::Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造一个节点, 并为其添加一个子元素链表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>子元素链表, 相当于对空节点添加了孩子 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>新构造的节点 </dd></dl>
+
+<p>参考 <a class="el" href="classNode.html#ad7a34779cad45d997bfd6d3d8043c75f">Node()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8d3f418011e67b879c280d20b1506692"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNode.html">Node</a> * Node::Create </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造一个空节点 </p>
+<dl class="section return"><dt>返回</dt><dd>新构造的节点 </dd></dl>
+
+<p>参考 <a class="el" href="classNode.html#ad7a34779cad45d997bfd6d3d8043c75f">Node()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#aaca2d77c65912633fd16da294b0a7094">new_floatnode_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#a4600c5da2e92daf341b7fb641a018b1d">new_idnode_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#a4d5325739232b1d7d96d9b81642ace79">new_intnode_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#a3b33c84f06231db70ac46809aa777708">new_stringnode_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#ac39dc619b50ad9687e06e0ea8dafca55">new_typenode_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#a1e883b87c23d237f756f31f9fb626034">newnode_meta_api()</a> , 以及 <a class="el" href="MetaAPI_8cpp.html#acc50e0fdcc78136a23e299929708c3f3">newparent_meta_api()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a87f65756ff7cba9bdca8b417867dd3b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::Free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>释放一个节点资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>这里是一个指针的引用, 会自动将指针置为NULL </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>参考自 <a class="el" href="classNode.html#a46ff12a8ae778d778b11c2c862177c4b">replaceChildFirst()</a> , 以及 <a class="el" href="classNode.html#a624ae93d10587282ea475ff0a734ca0b">replaceNext()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a202a579370183cf80525f3321fdbb612"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::FreeAll </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>递归释放节点资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>要释放的节点, 这里会递归调用子节点 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>参考 <a class="el" href="classNode.html#ad55e191b2855879d7b761258d64e2667">child</a> , 以及 <a class="el" href="classNode.html#a2559a716f69ccaa76d648d9f1b83065e">next</a>.</p>
+
+<p>参考自 <a class="el" href="classCodeGenContext.html#a692a0fa38d81fd42262db75209bf929f">CodeGenContext::MacroMake()</a>, <a class="el" href="classNode.html#a66537f1ace2068e6763b0293ceddc0fe">replaceChild()</a>, <a class="el" href="classNode.html#a46ff12a8ae778d778b11c2c862177c4b">replaceChildFirst()</a> , 以及 <a class="el" href="classNode.html#a624ae93d10587282ea475ff0a734ca0b">replaceNext()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9352552c0d36151eebe21b4e0d1b69e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNode.html">Node</a>* Node::getChild </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#ad55e191b2855879d7b761258d64e2667">child</a>.</p>
+
+<p>参考自 <a class="el" href="Functions_8cpp.html#af3d86060cd54772dfa0dc61b86e5f0b9">function_macro()</a>, <a class="el" href="classCodeGenContext.html#a692a0fa38d81fd42262db75209bf929f">CodeGenContext::MacroMake()</a>, <a class="el" href="classMacroTranslate.html#a7a6121485845470ab61613188212b25c">MacroTranslate::Marco()</a>, <a class="el" href="classMacroTranslate.html#a546f4a822efec7f9a56532699a019afc">MacroTranslate::marcoReplace()</a>, <a class="el" href="Functions_8cpp.html#ab7c1a3d868420a18c9bbe725ca348a08">new_macro()</a> , 以及 <a class="el" href="Prescan_8cpp.html#a325b019bf4e4f1e596cfb94df683a5d2">struct_macro()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a06260e70f7aca9a81e196e38c1df5701"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNode.html">Node</a> * Node::getList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>如果传入节点是单一元素,则为其包裹一层Node节点 </p>
+<p>如果传入节点是单一元素,则为其包裹一层Node节点 如果传入的是链表,能够方便地将其作为一个新Node的子元素 然后将新的Node节点返回, 这样就形成了一个完整的链表 如果是单一元素,那么该函数什么都不做,将传入节点返回</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>要处理的节点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是链表则包围一层, 否则直接返回传入的节点 </dd></dl>
+
+<p>参考 <a class="el" href="classNode.html#ab35067cf2fcb0dcf46d82b1fc51650ea">isSingle()</a> , 以及 <a class="el" href="classNode.html#ad7a34779cad45d997bfd6d3d8043c75f">Node()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#aa5775b6bdc0f6e73b7f09fe8fe79a147">getlist_meta_api()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a340086dc64ad8c65adc6c69bd7a37f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNode.html">Node</a>* Node::getNext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#a2559a716f69ccaa76d648d9f1b83065e">next</a>.</p>
+
+<p>参考自 <a class="el" href="Functions_8cpp.html#a986ce436be431a4ed34a52ce8569ef23">call_macro()</a>, <a class="el" href="Prescan_8cpp.html#a5c782d6a927590307ac2c0fdf0ca942c">defmacro_macro()</a>, <a class="el" href="Functions_8cpp.html#af8a710fcb32bd608b8b370ba480601de">for_macro()</a>, <a class="el" href="Functions_8cpp.html#af3d86060cd54772dfa0dc61b86e5f0b9">function_macro()</a>, <a class="el" href="Prescan_8cpp.html#a14f36cfb196ef8d844ecfa9d4c05cd7e">function_type_macro()</a>, <a class="el" href="Functions_8cpp.html#afde405fcb0aa56ae7b3b6e6e6e6edfdf">if_macro()</a>, <a class="el" href="classCodeGenContext.html#a692a0fa38d81fd42262db75209bf929f">CodeGenContext::MacroMake()</a>, <a class="el" href="classMacroTranslate.html#a7a6121485845470ab61613188212b25c">MacroTranslate::Marco()</a>, <a class="el" href="classMacroTranslate.html#a546f4a822efec7f9a56532699a019afc">MacroTranslate::marcoReplace()</a>, <a class="el" href="Functions_8cpp.html#ab7c1a3d868420a18c9bbe725ca348a08">new_macro()</a>, <a class="el" href="Functions_8cpp.html#a960b9d77d7414c445177203ab5086e36">opt1_macro()</a>, <a class="el" href="Functions_8cpp.html#a41c41207527c279c0419f83846d67796">opt2_macro()</a>, <a class="el" href="Functions_8cpp.html#a8b98c02cfd2db6e041e684b80f870e41">select_macro()</a>, <a class="el" href="Functions_8cpp.html#aae8be085b3f95436aa58935472af105e">set_macro()</a>, <a class="el" href="Prescan_8cpp.html#a325b019bf4e4f1e596cfb94df683a5d2">struct_macro()</a> , 以及 <a class="el" href="Functions_8cpp.html#a51a0b728fe682470500a35d508650c8a">while_macro()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a69908baed4650f6b3a873d6be745b5a9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string &amp; Node::getStr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取当前节点内存放的字符串 </p>
+<p>只有含有字符串的节点该函数有效, 目前ID和String有效 如果是普通的节点, 则会报异常 </p>
+<dl class="section return"><dt>返回</dt><dd>返回字符串的引用 </dd></dl>
+
+<p>被 <a class="el" href="classTypeNode.html#aa1388f97e267ea1915e68b0c1e436e5c">TypeNode</a>, <a class="el" href="classStringNode.html#a7881b3ae1dd4aea18275fddebfbcb4fb">StringNode</a> , 以及 <a class="el" href="classIDNode.html#a2a1d68684f605a0d817f50f40a840bed">IDNode</a> 重载.</p>
+
+<p>参考 <a class="el" href="classNode.html#a5d127eef31e5d7da5699c101e865677a">getTypeName()</a>.</p>
+
+<p>参考自 <a class="el" href="Functions_8cpp.html#a986ce436be431a4ed34a52ce8569ef23">call_macro()</a>, <a class="el" href="Prescan_8cpp.html#a5c782d6a927590307ac2c0fdf0ca942c">defmacro_macro()</a>, <a class="el" href="classCodeGenContext.html#a727393572ed53f6431a192879d512343">CodeGenContext::FindSrcType()</a>, <a class="el" href="classCodeGenContext.html#a8f2f9344b59ea32fc1f20b9fceeaab83">CodeGenContext::FindST()</a>, <a class="el" href="classCodeGenContext.html#a899fab718c23d5ffe265997a519b7042">CodeGenContext::FindType()</a>, <a class="el" href="Functions_8cpp.html#af3d86060cd54772dfa0dc61b86e5f0b9">function_macro()</a>, <a class="el" href="Prescan_8cpp.html#a14f36cfb196ef8d844ecfa9d4c05cd7e">function_type_macro()</a>, <a class="el" href="classCodeGenContext.html#a723934127d7eba399b5f4fbba3b4fb43">CodeGenContext::getFunction()</a>, <a class="el" href="classCodeGenContext.html#a692a0fa38d81fd42262db75209bf929f">CodeGenContext::MacroMake()</a>, <a class="el" href="classMacroTranslate.html#a7a6121485845470ab61613188212b25c">MacroTranslate::Marco()</a>, <a class="el" href="classMacroTranslate.html#a546f4a822efec7f9a56532699a019afc">MacroTranslate::marcoReplace()</a>, <a class="el" href="Functions_8cpp.html#a960b9d77d7414c445177203ab5086e36">opt1_macro()</a>, <a class="el" href="Functions_8cpp.html#a41c41207527c279c0419f83846d67796">opt2_macro()</a>, <a class="el" href="Functions_8cpp.html#aae8be085b3f95436aa58935472af105e">set_macro()</a>, <a class="el" href="Functions_8cpp.html#a325b019bf4e4f1e596cfb94df683a5d2">struct_macro()</a> , 以及 <a class="el" href="Prescan_8cpp.html#a59f79aa0ec7f6ed97759a06f2081b041">struct_type_macro()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0e0b8ae8465abe33e335cb7fefc036a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16">NodeType</a> Node::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取节点类型 </p>
+<dl class="section return"><dt>返回</dt><dd>节点类型的枚举 </dd></dl>
+
+<p>被 <a class="el" href="classTypeNode.html#a0191f4018f8dce132bcea4b2d28e8f09">TypeNode</a>, <a class="el" href="classStringNode.html#a4806909f3ff45d01a49c6f832c88952f">StringNode</a>, <a class="el" href="classIDNode.html#a8e115fc01ded1c57daee3d8be6de26fe">IDNode</a>, <a class="el" href="classFloatNode.html#a7307ab65e5f9147b9eac1b6a1e18d6be">FloatNode</a> , 以及 <a class="el" href="classIntNode.html#afafa1dead80d3563ddb88f15078a0642">IntNode</a> 重载.</p>
+
+<p>参考 <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16a25b00d0131b6dc2c9ce0abb93cbfb0ce">node_t</a>.</p>
+
+<p>参考自 <a class="el" href="classNode.html#a5d127eef31e5d7da5699c101e865677a">getTypeName()</a>, <a class="el" href="classNode.html#a1e0fc887867a93f4c1cf7a13526e75cb">isCharNode()</a>, <a class="el" href="classNode.html#aa504c1c8cc508f598fbf0e3bd670bd1f">isFloatNode()</a>, <a class="el" href="classNode.html#a5ddd5922d70f5f4e591330475bec30b9">isIDNode()</a>, <a class="el" href="classNode.html#ae63dc1e989939aa4838b7c4f16c08066">isIntNode()</a>, <a class="el" href="classNode.html#a991d900ac72f7c9f0da3366033cb4530">isNode()</a>, <a class="el" href="classNode.html#ae9c5740f928e98602b7232423b5c95da">isStringNode()</a> , 以及 <a class="el" href="classNode.html#ad9968cf59137b1a6adbe35529488b103">isTypeNode()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d127eef31e5d7da5699c101e865677a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Node::getTypeName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取类型名 </p>
+<dl class="section return"><dt>返回</dt><dd>节点的名字 </dd></dl>
+
+<p>参考 <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16aabf4dcb2d50bc9d107d179bdc8bad65e">char_node_t</a>, <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16a8e1510dd6090a5660c4b7c1ae9d5e999">float_node_t</a>, <a class="el" href="classNode.html#ae0e0b8ae8465abe33e335cb7fefc036a">getType()</a>, <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16a42db89be8571cc766ceebcb4f640bd9f">id_node_t</a>, <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16aabc11785ff68f111d0062f0ca1ce30c6">int_node_t</a>, <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16a25b00d0131b6dc2c9ce0abb93cbfb0ce">node_t</a>, <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16a3eab74a26a34625bbd836f3728024796">string_node_t</a> , 以及 <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16a816f0aaecf2e8c913e77ba3738e5af8b">type_node_t</a>.</p>
+
+<p>参考自 <a class="el" href="classNode.html#a69908baed4650f6b3a873d6be745b5a9">getStr()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab87776adae83149e235e37ed469f4e10"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#ad55e191b2855879d7b761258d64e2667">child</a> , 以及 <a class="el" href="classNode.html#a2559a716f69ccaa76d648d9f1b83065e">next</a>.</p>
+
+<p>参考自 <a class="el" href="classNode.html#ad7a34779cad45d997bfd6d3d8043c75f">Node()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e0fc887867a93f4c1cf7a13526e75cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Node::isCharNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16aabf4dcb2d50bc9d107d179bdc8bad65e">char_node_t</a> , 以及 <a class="el" href="classNode.html#ae0e0b8ae8465abe33e335cb7fefc036a">getType()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa504c1c8cc508f598fbf0e3bd670bd1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Node::isFloatNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16a8e1510dd6090a5660c4b7c1ae9d5e999">float_node_t</a> , 以及 <a class="el" href="classNode.html#ae0e0b8ae8465abe33e335cb7fefc036a">getType()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5ddd5922d70f5f4e591330475bec30b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Node::isIDNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#ae0e0b8ae8465abe33e335cb7fefc036a">getType()</a> , 以及 <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16a42db89be8571cc766ceebcb4f640bd9f">id_node_t</a>.</p>
+
+<p>参考自 <a class="el" href="classCodeGenContext.html#a692a0fa38d81fd42262db75209bf929f">CodeGenContext::MacroMake()</a> , 以及 <a class="el" href="classMacroTranslate.html#a546f4a822efec7f9a56532699a019afc">MacroTranslate::marcoReplace()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae63dc1e989939aa4838b7c4f16c08066"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Node::isIntNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#ae0e0b8ae8465abe33e335cb7fefc036a">getType()</a> , 以及 <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16aabc11785ff68f111d0062f0ca1ce30c6">int_node_t</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a991d900ac72f7c9f0da3366033cb4530"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Node::isNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#ae0e0b8ae8465abe33e335cb7fefc036a">getType()</a> , 以及 <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16a25b00d0131b6dc2c9ce0abb93cbfb0ce">node_t</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab35067cf2fcb0dcf46d82b1fc51650ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Node::isSingle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断当前节点是一个元素, 还是一个链表 </p>
+<p>判断当前节点是一个元素, 还是一个链表, 主要用于getList方法和makeList方法 由于构造语法树时,很多情况不知道要添加的是一个节点还是一个链表. 这个方法可以用来判断.<br/>
+ 但一般情况, getList方法应该足够使用了. </p>
+<dl class="section return"><dt>返回</dt><dd>是单一元素返回true, 是链表返回false </dd></dl>
+
+<p>参考 <a class="el" href="classNode.html#a2559a716f69ccaa76d648d9f1b83065e">next</a>.</p>
+
+<p>参考自 <a class="el" href="classNode.html#a06260e70f7aca9a81e196e38c1df5701">getList()</a>, <a class="el" href="classNode.html#a9790bd21129c17dee6dc739206794861">make_list()</a> , 以及 <a class="el" href="classNode.html#a0c6a57a788f92cee7211f0dbc1263e80">makeList()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae9c5740f928e98602b7232423b5c95da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Node::isStringNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#ae0e0b8ae8465abe33e335cb7fefc036a">getType()</a> , 以及 <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16a3eab74a26a34625bbd836f3728024796">string_node_t</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9968cf59137b1a6adbe35529488b103"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Node::isTypeNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#ae0e0b8ae8465abe33e335cb7fefc036a">getType()</a> , 以及 <a class="el" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16a816f0aaecf2e8c913e77ba3738e5af8b">type_node_t</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#ac858c1900938e5415496f4eef3dc179b">adddimension_meta_api()</a> , 以及 <a class="el" href="Functions_8cpp.html#aae8be085b3f95436aa58935472af105e">set_macro()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9790bd21129c17dee6dc739206794861"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNode.html">Node</a> * Node::make_list </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>C++语言版的接口, 用来方便地构造一个列表 </p>
+<p>用来方便地构造一个列表, make_list里不定参数如果传入空, 那么该位置会被跳过 使用时务必注意, num和后面不定参数的个数一定要相当</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>不定参数的格式 </td></tr>
+    <tr><td class="paramname">...</td><td>每个是一个 Node* 指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>构造好的列表的首节点指针 </dd></dl>
+
+<p>参考 <a class="el" href="classNode.html#abc1158891442ed222ce34ee2802212ec">addBrother()</a>, <a class="el" href="classNode.html#ab35067cf2fcb0dcf46d82b1fc51650ea">isSingle()</a> , 以及 <a class="el" href="classNode.html#ad7a34779cad45d997bfd6d3d8043c75f">Node()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c6a57a788f92cee7211f0dbc1263e80"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNode.html">Node</a> * Node::makeList </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>plist</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>其他语言的接口, 用来方便地构造一个列表 </p>
+<p>用来方便地构造一个列表, 功能和 make_list 一样 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classNode.html#a9790bd21129c17dee6dc739206794861" title="C++语言版的接口, 用来方便地构造一个列表 ">make_list()</a></dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>参数的个数 </td></tr>
+    <tr><td class="paramname">plist</td><td>一个指针数组</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>构造好的列表的首节点指针 </dd></dl>
+
+<p>参考 <a class="el" href="classNode.html#abc1158891442ed222ce34ee2802212ec">addBrother()</a>, <a class="el" href="classNode.html#ab35067cf2fcb0dcf46d82b1fc51650ea">isSingle()</a> , 以及 <a class="el" href="classNode.html#ad7a34779cad45d997bfd6d3d8043c75f">Node()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#a3a39c9ad72b812705868b8a44a3dfa6a">l_make_list_meta_api()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9920eb88d846024cc0d436123beb1f9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::print </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>可用于调试的打印指令 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>缩进层次, 首次传0或1皆可 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>参考 <a class="el" href="classNode.html#ad55e191b2855879d7b761258d64e2667">child</a>, <a class="el" href="classNode.html#a2559a716f69ccaa76d648d9f1b83065e">next</a>, <a class="el" href="classNode.html#a9920eb88d846024cc0d436123beb1f9a">print()</a> , 以及 <a class="el" href="classNode.html#a62bb8dac7a552c6f2aa937221c25374b">printSelf()</a>.</p>
+
+<p>参考自 <a class="el" href="classCodeGenContext.html#a692a0fa38d81fd42262db75209bf929f">CodeGenContext::MacroMake()</a>, <a class="el" href="RedApple_2src_2main_8cpp.html#acddee363396c6595d7a3188517642657">parseFile()</a>, <a class="el" href="classNode.html#a9920eb88d846024cc0d436123beb1f9a">print()</a> , 以及 <a class="el" href="classWorker.html#ab7946480d976c0479ee1982af612db7f">Worker::Run()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a62bb8dac7a552c6f2aa937221c25374b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::printSelf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="classTypeNode.html#a5a3e54ffe6fd207aa141833212ed0353">TypeNode</a>, <a class="el" href="classStringNode.html#a1569a88863e27e9642ef804f901305c6">StringNode</a>, <a class="el" href="classIDNode.html#af9f74ae7afb5dd6b365376a08f6fa1ae">IDNode</a> , 以及 <a class="el" href="classIntNode.html#a2fb8289b0a7abb7e9cd257d1a36289ec">IntNode</a> 重载.</p>
+
+<p>参考自 <a class="el" href="classNode.html#a9920eb88d846024cc0d436123beb1f9a">print()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a66537f1ace2068e6763b0293ceddc0fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::replaceChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#ad55e191b2855879d7b761258d64e2667">child</a> , 以及 <a class="el" href="classNode.html#a202a579370183cf80525f3321fdbb612">FreeAll()</a>.</p>
+
+<p>参考自 <a class="el" href="classMacroTranslate.html#a546f4a822efec7f9a56532699a019afc">MacroTranslate::marcoReplace()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a46ff12a8ae778d778b11c2c862177c4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::replaceChildFirst </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#ad55e191b2855879d7b761258d64e2667">child</a>, <a class="el" href="classNode.html#a87f65756ff7cba9bdca8b417867dd3b0">Free()</a>, <a class="el" href="classNode.html#a202a579370183cf80525f3321fdbb612">FreeAll()</a> , 以及 <a class="el" href="classNode.html#a2559a716f69ccaa76d648d9f1b83065e">next</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a624ae93d10587282ea475ff0a734ca0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::replaceNext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#ad55e191b2855879d7b761258d64e2667">child</a>, <a class="el" href="classNode.html#a87f65756ff7cba9bdca8b417867dd3b0">Free()</a>, <a class="el" href="classNode.html#a202a579370183cf80525f3321fdbb612">FreeAll()</a> , 以及 <a class="el" href="classNode.html#a2559a716f69ccaa76d648d9f1b83065e">next</a>.</p>
+
+<p>参考自 <a class="el" href="classMacroTranslate.html#a546f4a822efec7f9a56532699a019afc">MacroTranslate::marcoReplace()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ad55e191b2855879d7b761258d64e2667"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNode.html">Node</a>* Node::child</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classNode.html#a40c43f56d1873059f6886a84bfc31c61">addChildren()</a>, <a class="el" href="classNode.html#ae6f2f89b95b26aa0f0500da5376492a1">copyAll()</a>, <a class="el" href="classNode.html#a3edc0526e297799e4e2978987995d961">copyChild()</a>, <a class="el" href="classNode.html#a202a579370183cf80525f3321fdbb612">FreeAll()</a>, <a class="el" href="classNode.html#a9352552c0d36151eebe21b4e0d1b69e7">getChild()</a>, <a class="el" href="classNode.html#ab87776adae83149e235e37ed469f4e10">init()</a>, <a class="el" href="classNode.html#a9920eb88d846024cc0d436123beb1f9a">print()</a>, <a class="el" href="classNode.html#a66537f1ace2068e6763b0293ceddc0fe">replaceChild()</a>, <a class="el" href="classNode.html#a46ff12a8ae778d778b11c2c862177c4b">replaceChildFirst()</a> , 以及 <a class="el" href="classNode.html#a624ae93d10587282ea475ff0a734ca0b">replaceNext()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2559a716f69ccaa76d648d9f1b83065e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNode.html">Node</a>* Node::next</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classNode.html#abc1158891442ed222ce34ee2802212ec">addBrother()</a>, <a class="el" href="classNode.html#ae6f2f89b95b26aa0f0500da5376492a1">copyAll()</a>, <a class="el" href="classNode.html#a3edc0526e297799e4e2978987995d961">copyChild()</a>, <a class="el" href="classNode.html#a202a579370183cf80525f3321fdbb612">FreeAll()</a>, <a class="el" href="classNode.html#a7a340086dc64ad8c65adc6c69bd7a37f">getNext()</a>, <a class="el" href="classNode.html#ab87776adae83149e235e37ed469f4e10">init()</a>, <a class="el" href="classNode.html#ab35067cf2fcb0dcf46d82b1fc51650ea">isSingle()</a>, <a class="el" href="classNode.html#a9920eb88d846024cc0d436123beb1f9a">print()</a>, <a class="el" href="classNode.html#a46ff12a8ae778d778b11c2c862177c4b">replaceChildFirst()</a> , 以及 <a class="el" href="classNode.html#a624ae93d10587282ea475ff0a734ca0b">replaceNext()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>RedApple/includes/Model/<a class="el" href="Node_8h_source.html">Node.h</a></li>
+<li>RedApple/src/Model/<a class="el" href="ModelCodeGen_8cpp.html">ModelCodeGen.cpp</a></li>
+<li>RedApple/src/Model/<a class="el" href="Node_8cpp.html">Node.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classNode.html">Node</a></li>
+  </ul>
+</div>
+</body>
+</html>

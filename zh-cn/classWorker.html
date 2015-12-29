@@ -1,0 +1,554 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Elite: Worker类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/elite-lang/Elite" title="Elite GitHub Repository"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classWorker.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classWorker-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Worker类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>工作流类, 是词法分析器, 语法分析器, 元脚本解析器, 后端代码生成器整合后的工作流  
+ <a href="classWorker.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Worker_8h_source.html">Worker.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a353641f48b1c294b24e4fb313ae99eca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorker.html#a353641f48b1c294b24e4fb313ae99eca">Init</a> (<a class="el" href="classLexInterface.html">LexInterface</a> *l, <a class="el" href="classParser.html">Parser</a> *p, <a class="el" href="classScriptRunner.html">ScriptRunner</a> *s, <a class="el" href="classCodeGen.html">CodeGen</a> *c)</td></tr>
+<tr class="separator:a353641f48b1c294b24e4fb313ae99eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7946480d976c0479ee1982af612db7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorker.html#ab7946480d976c0479ee1982af612db7f">Run</a> (const char *input, const char *output)</td></tr>
+<tr class="separator:ab7946480d976c0479ee1982af612db7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac685e27edd32bdf71640c8bb5cb56602"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorker.html#ac685e27edd32bdf71640c8bb5cb56602">MetaGen</a> (const char *output)</td></tr>
+<tr class="separator:ac685e27edd32bdf71640c8bb5cb56602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d7649c9e6314f5f333e51f30ff2edb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLexInterface.html">LexInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorker.html#ab5d7649c9e6314f5f333e51f30ff2edb">getLex</a> ()</td></tr>
+<tr class="separator:ab5d7649c9e6314f5f333e51f30ff2edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e17931d3684e071c717ea5cfcc7c22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParser.html">Parser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorker.html#ab3e17931d3684e071c717ea5cfcc7c22">getParser</a> ()</td></tr>
+<tr class="separator:ab3e17931d3684e071c717ea5cfcc7c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee29086ea9183c61475dfe4f4930d4aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScriptRunner.html">ScriptRunner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorker.html#aee29086ea9183c61475dfe4f4930d4aa">getScriptRunner</a> ()</td></tr>
+<tr class="separator:aee29086ea9183c61475dfe4f4930d4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45660737d5cdbbf636c38dc763cf060a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCodeGen.html">CodeGen</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorker.html#a45660737d5cdbbf636c38dc763cf060a">getCodegen</a> ()</td></tr>
+<tr class="separator:a45660737d5cdbbf636c38dc763cf060a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3754817df06ffe220f7f0d903c78ccac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorker.html#a3754817df06ffe220f7f0d903c78ccac">Worker</a> ()</td></tr>
+<tr class="separator:a3754817df06ffe220f7f0d903c78ccac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e4543ef1e93fd9d884269ba30c5bfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorker.html#aa8e4543ef1e93fd9d884269ba30c5bfe">~Worker</a> ()</td></tr>
+<tr class="separator:aa8e4543ef1e93fd9d884269ba30c5bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a4f5dcc91e2e8157f7ce3615ad3353b17"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classWorker.html">Worker</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorker.html#a4f5dcc91e2e8157f7ce3615ad3353b17">CreateDefault</a> (const char *lex_cfg, const char *parser_cfg, const char *package_path)</td></tr>
+<tr class="separator:a4f5dcc91e2e8157f7ce3615ad3353b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833f0ce8280e5a56f125220506e4ba28"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classWorker.html">Worker</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorker.html#a833f0ce8280e5a56f125220506e4ba28">Create</a> (<a class="el" href="classLexInterface.html">LexInterface</a> *l, <a class="el" href="classParser.html">Parser</a> *p, <a class="el" href="classScriptRunner.html">ScriptRunner</a> *s, <a class="el" href="classCodeGen.html">CodeGen</a> *c)</td></tr>
+<tr class="separator:a833f0ce8280e5a56f125220506e4ba28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a23dd9436ca490ac594f750707f1cc4a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLexInterface.html">LexInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorker.html#a23dd9436ca490ac594f750707f1cc4a5">lex</a></td></tr>
+<tr class="separator:a23dd9436ca490ac594f750707f1cc4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79de9d49434fc6a83361ac264463d588"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParser.html">Parser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorker.html#a79de9d49434fc6a83361ac264463d588">parser</a></td></tr>
+<tr class="separator:a79de9d49434fc6a83361ac264463d588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae702d2d5e9ac6b5a1365381b9b48b591"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScriptRunner.html">ScriptRunner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorker.html#ae702d2d5e9ac6b5a1365381b9b48b591">script_runner</a></td></tr>
+<tr class="separator:ae702d2d5e9ac6b5a1365381b9b48b591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00110a7e34f562b95871864cff36cf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCodeGen.html">CodeGen</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorker.html#ab00110a7e34f562b95871864cff36cf4">codegen</a></td></tr>
+<tr class="separator:ab00110a7e34f562b95871864cff36cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>工作流类, 是词法分析器, 语法分析器, 元脚本解析器, 后端代码生成器整合后的工作流 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a3754817df06ffe220f7f0d903c78ccac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Worker::Worker </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classWorker.html#a833f0ce8280e5a56f125220506e4ba28">Create()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa8e4543ef1e93fd9d884269ba30c5bfe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Worker::~Worker </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a833f0ce8280e5a56f125220506e4ba28"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classWorker.html">Worker</a> * Worker::Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classLexInterface.html">LexInterface</a> *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classParser.html">Parser</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classScriptRunner.html">ScriptRunner</a> *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCodeGen.html">CodeGen</a> *&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classWorker.html#a353641f48b1c294b24e4fb313ae99eca">Init()</a> , 以及 <a class="el" href="classWorker.html#a3754817df06ffe220f7f0d903c78ccac">Worker()</a>.</p>
+
+<p>参考自 <a class="el" href="classWorker.html#a4f5dcc91e2e8157f7ce3615ad3353b17">CreateDefault()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f5dcc91e2e8157f7ce3615ad3353b17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classWorker.html">Worker</a> * Worker::CreateDefault </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>lex_cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>parser_cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>package_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classParser.html#a955aee2713369abcee28ff28b3358ed9">Parser::AddBNF()</a>, <a class="el" href="classRedCodeGen.html#a17657b89c02723cfe1e87ad935579b9c">RedCodeGen::Create()</a>, <a class="el" href="classWorker.html#a833f0ce8280e5a56f125220506e4ba28">Create()</a>, <a class="el" href="classMetaScriptRunner.html#a4d1765371f6f214aeb9c2f9c69c8f2b6">MetaScriptRunner::Create()</a>, <a class="el" href="classRedCodeGen.html#a127e9f9d225506551b42f714fdff1def">RedCodeGen::getContext()</a>, <a class="el" href="classRedCodeGen.html#a8cb4795fd321635e6957563a243357c6">RedCodeGen::Init()</a>, <a class="el" href="classParser.html#a749676684ba70a96244dbb6bd6bc5394">Parser::NewLRParser()</a>, <a class="el" href="classLex.html#a5bf0e524a817743a66b2bac7c932dba1">Lex::ReadConfig()</a>, <a class="el" href="classMetaScriptRunner.html#a016c5b8fbabbb2d4512026c9ff8e3eeb">MetaScriptRunner::setCodeGenContext()</a>, <a class="el" href="classParser.html#a826fe888d441c50929ccc028d0146abc">Parser::setLex()</a>, <a class="el" href="classParser.html#a4da6ecc0a3cae5b6e6a7415febe610a1">Parser::setScriptRunner()</a> , 以及 <a class="el" href="classMetaScriptRunner.html#ad1dcfbc611bf5585431e438808a770ef">MetaScriptRunner::setUpLoader()</a>.</p>
+
+<p>参考自 <a class="el" href="classBuilder.html#a989fda58af904d7ce00f97afda458ba4">Builder::Builder()</a> , 以及 <a class="el" href="src_2main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c">main()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45660737d5cdbbf636c38dc763cf060a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCodeGen.html">CodeGen</a>* Worker::getCodegen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classWorker.html#ab00110a7e34f562b95871864cff36cf4">codegen</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5d7649c9e6314f5f333e51f30ff2edb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLexInterface.html">LexInterface</a>* Worker::getLex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classWorker.html#a23dd9436ca490ac594f750707f1cc4a5">lex</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3e17931d3684e071c717ea5cfcc7c22"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classParser.html">Parser</a>* Worker::getParser </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classWorker.html#a79de9d49434fc6a83361ac264463d588">parser</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aee29086ea9183c61475dfe4f4930d4aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classScriptRunner.html">ScriptRunner</a>* Worker::getScriptRunner </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classWorker.html#ae702d2d5e9ac6b5a1365381b9b48b591">script_runner</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a353641f48b1c294b24e4fb313ae99eca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Worker::Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classLexInterface.html">LexInterface</a> *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classParser.html">Parser</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classScriptRunner.html">ScriptRunner</a> *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCodeGen.html">CodeGen</a> *&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classParser.html#a1bd418a26a264474f4d84bfaebee1ea9">Parser::BuildParser()</a>, <a class="el" href="classWorker.html#ab00110a7e34f562b95871864cff36cf4">codegen</a>, <a class="el" href="classLexInterface.html#ae8c3345a335336383283df312f56598b">LexInterface::Init()</a>, <a class="el" href="classWorker.html#a23dd9436ca490ac594f750707f1cc4a5">lex</a>, <a class="el" href="classWorker.html#a79de9d49434fc6a83361ac264463d588">parser</a> , 以及 <a class="el" href="classWorker.html#ae702d2d5e9ac6b5a1365381b9b48b591">script_runner</a>.</p>
+
+<p>参考自 <a class="el" href="classWorker.html#a833f0ce8280e5a56f125220506e4ba28">Create()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac685e27edd32bdf71640c8bb5cb56602"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Worker::MetaGen </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classWorker.html#ab00110a7e34f562b95871864cff36cf4">codegen</a> , 以及 <a class="el" href="classCodeGen.html#a7beb48f29e66df095309368bc0e50309">CodeGen::MakeMeta()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab7946480d976c0479ee1982af612db7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Worker::Run </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classWorker.html#ab00110a7e34f562b95871864cff36cf4">codegen</a>, <a class="el" href="classScriptRunner.html#a1c7ebeb23f4f0a7231a55f2797c2d3c6">ScriptRunner::getRoot()</a>, <a class="el" href="classWorker.html#a23dd9436ca490ac594f750707f1cc4a5">lex</a>, <a class="el" href="classCodeGen.html#a5a8a0e42c7e2e20bceec27dd98615950">CodeGen::Make()</a>, <a class="el" href="classGrammer__Node.html#a5d6e73b04c2b2ad059db4bdc9b7e87e9">Grammer_Node::NewNode()</a>, <a class="el" href="classParser.html#a8b443c488f9e7155a691f91b332b11f9">Parser::Parse()</a>, <a class="el" href="classWorker.html#a79de9d49434fc6a83361ac264463d588">parser</a>, <a class="el" href="classCodeGen.html#a8c9ad5a223f7363a1f58a90f7b1d5496">CodeGen::PreScan()</a>, <a class="el" href="classNode.html#a9920eb88d846024cc0d436123beb1f9a">Node::print()</a>, <a class="el" href="BNFParser_8cpp.html#aa853fcf202c1c7498d198cf828a9d6bb">root</a>, <a class="el" href="classWorker.html#ae702d2d5e9ac6b5a1365381b9b48b591">script_runner</a> , 以及 <a class="el" href="classLexInterface.html#aab3204a2bb021e75918baf04a86186e7">LexInterface::setData()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ab00110a7e34f562b95871864cff36cf4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCodeGen.html">CodeGen</a>* Worker::codegen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classWorker.html#a45660737d5cdbbf636c38dc763cf060a">getCodegen()</a>, <a class="el" href="classWorker.html#a353641f48b1c294b24e4fb313ae99eca">Init()</a>, <a class="el" href="classWorker.html#ac685e27edd32bdf71640c8bb5cb56602">MetaGen()</a> , 以及 <a class="el" href="classWorker.html#ab7946480d976c0479ee1982af612db7f">Run()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a23dd9436ca490ac594f750707f1cc4a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLexInterface.html">LexInterface</a>* Worker::lex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classWorker.html#ab5d7649c9e6314f5f333e51f30ff2edb">getLex()</a>, <a class="el" href="classWorker.html#a353641f48b1c294b24e4fb313ae99eca">Init()</a> , 以及 <a class="el" href="classWorker.html#ab7946480d976c0479ee1982af612db7f">Run()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a79de9d49434fc6a83361ac264463d588"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classParser.html">Parser</a>* Worker::parser</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classWorker.html#ab3e17931d3684e071c717ea5cfcc7c22">getParser()</a>, <a class="el" href="classWorker.html#a353641f48b1c294b24e4fb313ae99eca">Init()</a> , 以及 <a class="el" href="classWorker.html#ab7946480d976c0479ee1982af612db7f">Run()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae702d2d5e9ac6b5a1365381b9b48b591"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classScriptRunner.html">ScriptRunner</a>* Worker::script_runner</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classWorker.html#aee29086ea9183c61475dfe4f4930d4aa">getScriptRunner()</a>, <a class="el" href="classWorker.html#a353641f48b1c294b24e4fb313ae99eca">Init()</a> , 以及 <a class="el" href="classWorker.html#ab7946480d976c0479ee1982af612db7f">Run()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Builder/include/<a class="el" href="Worker_8h_source.html">Worker.h</a></li>
+<li>Builder/src/<a class="el" href="Worker_8cpp.html">Worker.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classWorker.html">Worker</a></li>
+  </ul>
+</div>
+</body>
+</html>

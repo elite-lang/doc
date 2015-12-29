@@ -1,0 +1,127 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Elite: RedApple/includes/Model/IntNode.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/elite-lang/Elite" title="Elite GitHub Repository"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('IntNode_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">IntNode.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="IntNode_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef _INTNODE_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _INTNODE_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Node_8h.html">Node.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classIntNode.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classIntNode.html">IntNode</a>: <span class="keyword">public</span> <a class="code" href="classNode.html">Node</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>: </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">static</span> <a class="code" href="classIntNode.html">IntNode</a>* <a class="code" href="classNode.html#a8d3f418011e67b879c280d20b1506692">Create</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* num);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> <a class="code" href="classIntNode.html#a52439be26f5db56f76302375bd27c360">codeGen</a>(<a class="code" href="classCodeGenContext.html">CodeGenContext</a>* context); </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classIntNode.html#a2fb8289b0a7abb7e9cd257d1a36289ec">printSelf</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16">NodeType</a> <a class="code" href="classIntNode.html#afafa1dead80d3563ddb88f15078a0642">getType</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classIntNode.html#a4dd06c77ce8305b13ce46c5ca884b2f4">   17</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classNode.html">Node</a>* <a class="code" href="classIntNode.html#a4dd06c77ce8305b13ce46c5ca884b2f4">copy</a>() {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classIntNode.html#a431a4fdc5b471e11acf97097ac2f6f11">IntNode</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classIntNode.html#a431a4fdc5b471e11acf97097ac2f6f11">IntNode</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* num);</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classIntNode.html#a2860ed155744819d3480d07cba1c55d0">   22</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classIntNode.html#a2860ed155744819d3480d07cba1c55d0">value</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif //_INTNODE_H</span></div>
+<div class="ttc" id="classNode_html_a8d3f418011e67b879c280d20b1506692"><div class="ttname"><a href="classNode.html#a8d3f418011e67b879c280d20b1506692">Node::Create</a></div><div class="ttdeci">static Node * Create()</div><div class="ttdoc">构造一个空节点 </div><div class="ttdef"><b>Definition:</b> Node.cpp:35</div></div>
+<div class="ttc" id="classNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdoc">List的基本组成元素，表示一个代码中的基本节点 </div><div class="ttdef"><b>Definition:</b> Node.h:37</div></div>
+<div class="ttc" id="classIntNode_html_afafa1dead80d3563ddb88f15078a0642"><div class="ttname"><a href="classIntNode.html#afafa1dead80d3563ddb88f15078a0642">IntNode::getType</a></div><div class="ttdeci">virtual NodeType getType()</div><div class="ttdoc">获取节点类型 </div><div class="ttdef"><b>Definition:</b> IntNode.cpp:25</div></div>
+<div class="ttc" id="Node_8h_html"><div class="ttname"><a href="Node_8h.html">Node.h</a></div></div>
+<div class="ttc" id="classIntNode_html"><div class="ttname"><a href="classIntNode.html">IntNode</a></div><div class="ttdef"><b>Definition:</b> IntNode.h:11</div></div>
+<div class="ttc" id="lvalue_8h_html_a5cf798ba07bb6fdacc84cf8077774eb5"><div class="ttname"><a href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a></div><div class="ttdeci">shared_ptr&lt; lvalue &gt; LValue</div><div class="ttdef"><b>Definition:</b> lvalue.h:17</div></div>
+<div class="ttc" id="classIntNode_html_a431a4fdc5b471e11acf97097ac2f6f11"><div class="ttname"><a href="classIntNode.html#a431a4fdc5b471e11acf97097ac2f6f11">IntNode::IntNode</a></div><div class="ttdeci">IntNode(const char *num)</div><div class="ttdef"><b>Definition:</b> IntNode.cpp:17</div></div>
+<div class="ttc" id="Node_8h_html_acac9cbaeea226ed297804c012dc12b16"><div class="ttname"><a href="Node_8h.html#acac9cbaeea226ed297804c012dc12b16">NodeType</a></div><div class="ttdeci">NodeType</div><div class="ttdef"><b>Definition:</b> Node.h:14</div></div>
+<div class="ttc" id="classIntNode_html_a4dd06c77ce8305b13ce46c5ca884b2f4"><div class="ttname"><a href="classIntNode.html#a4dd06c77ce8305b13ce46c5ca884b2f4">IntNode::copy</a></div><div class="ttdeci">virtual Node * copy()</div><div class="ttdef"><b>Definition:</b> IntNode.h:17</div></div>
+<div class="ttc" id="classCodeGenContext_html"><div class="ttname"><a href="classCodeGenContext.html">CodeGenContext</a></div><div class="ttdoc">代码生成上下文, 是代码生成中的关键信息存储类 </div><div class="ttdef"><b>Definition:</b> CodeGenContext.h:37</div></div>
+<div class="ttc" id="classIntNode_html_a52439be26f5db56f76302375bd27c360"><div class="ttname"><a href="classIntNode.html#a52439be26f5db56f76302375bd27c360">IntNode::codeGen</a></div><div class="ttdeci">virtual LValue codeGen(CodeGenContext *context)</div><div class="ttdoc">重要的代码生成函数 </div><div class="ttdef"><b>Definition:</b> ModelCodeGen.cpp:19</div></div>
+<div class="ttc" id="classIntNode_html_a2fb8289b0a7abb7e9cd257d1a36289ec"><div class="ttname"><a href="classIntNode.html#a2fb8289b0a7abb7e9cd257d1a36289ec">IntNode::printSelf</a></div><div class="ttdeci">virtual void printSelf()</div><div class="ttdef"><b>Definition:</b> IntNode.cpp:21</div></div>
+<div class="ttc" id="classIntNode_html_a2860ed155744819d3480d07cba1c55d0"><div class="ttname"><a href="classIntNode.html#a2860ed155744819d3480d07cba1c55d0">IntNode::value</a></div><div class="ttdeci">int value</div><div class="ttdef"><b>Definition:</b> IntNode.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fb1dbf84419a0512642bc84350a32c62.html">RedApple</a></li><li class="navelem"><a class="el" href="dir_125373505b90ecc962e4090cea3a22c6.html">includes</a></li><li class="navelem"><a class="el" href="dir_7e54d196fa82852f6de94acf6af84d9f.html">Model</a></li><li class="navelem"><a class="el" href="IntNode_8h.html">IntNode.h</a></li>
+  </ul>
+</div>
+</body>
+</html>

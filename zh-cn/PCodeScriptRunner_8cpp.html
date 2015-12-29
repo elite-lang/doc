@@ -1,0 +1,434 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Elite: LR_Scanner/src/PCodeScriptRunner.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/elite-lang/Elite" title="Elite GitHub Repository"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('PCodeScriptRunner_8cpp.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">PCodeScriptRunner.cpp 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="PCodeScriptRunner_8h_source.html">PCodeScriptRunner.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="Grammer__Node_8h_source.html">Grammer_Node.h</a>&quot;</code><br/>
+<code>#include &quot;lua.hpp&quot;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a498eaa80e54d1a43505bd19aab3afbc5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCodeScriptRunner_8cpp.html#a498eaa80e54d1a43505bd19aab3afbc5">find_id</a> (lua_State *L)</td></tr>
+<tr class="separator:a498eaa80e54d1a43505bd19aab3afbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f5e80ce8dea1b3e0ef5be47053112f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCodeScriptRunner_8cpp.html#a23f5e80ce8dea1b3e0ef5be47053112f">save_id</a> (lua_State *L)</td></tr>
+<tr class="separator:a23f5e80ce8dea1b3e0ef5be47053112f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a931d7d90e1a31b9859cd2d4dcc1ba593"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCodeScriptRunner_8cpp.html#a931d7d90e1a31b9859cd2d4dcc1ba593">make_code</a> (lua_State *L)</td></tr>
+<tr class="separator:a931d7d90e1a31b9859cd2d4dcc1ba593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa408483469b3569bd45c422e94f67d9a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCodeScriptRunner_8cpp.html#aa408483469b3569bd45c422e94f67d9a">write_code</a> (lua_State *L)</td></tr>
+<tr class="separator:aa408483469b3569bd45c422e94f67d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a024eb1d492da85d2a81fa11b70b90401"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCodeScriptRunner_8cpp.html#a024eb1d492da85d2a81fa11b70b90401">now_pointer</a> (lua_State *L)</td></tr>
+<tr class="separator:a024eb1d492da85d2a81fa11b70b90401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ffad3c497f6ce8980677a1399b07d80"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCodeScriptRunner_8cpp.html#a1ffad3c497f6ce8980677a1399b07d80">push_stack</a> (lua_State *L)</td></tr>
+<tr class="separator:a1ffad3c497f6ce8980677a1399b07d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dee1ce35f7842b7bdc1ef4d4904e16e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCodeScriptRunner_8cpp.html#a6dee1ce35f7842b7bdc1ef4d4904e16e">pop_stack</a> (lua_State *L)</td></tr>
+<tr class="separator:a6dee1ce35f7842b7bdc1ef4d4904e16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af55b63c0df1c36e1f11c2cb16b37545a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCodeScriptRunner_8cpp.html#af55b63c0df1c36e1f11c2cb16b37545a">exitfunc</a> (lua_State *L)</td></tr>
+<tr class="separator:af55b63c0df1c36e1f11c2cb16b37545a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a1254f172005c36c145e4abb4b343acbc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classScriptRunner.html">ScriptRunner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCodeScriptRunner_8cpp.html#a1254f172005c36c145e4abb4b343acbc">runner</a></td></tr>
+<tr class="separator:a1254f172005c36c145e4abb4b343acbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a39941447447a702cf75eea2c16222"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCodeScriptRunner_8cpp.html#ad3a39941447447a702cf75eea2c16222">cachecode</a></td></tr>
+<tr class="separator:ad3a39941447447a702cf75eea2c16222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e8a1bb0aea9665edada851a245973b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classIDTable.html">IDTable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCodeScriptRunner_8cpp.html#a44e8a1bb0aea9665edada851a245973b">idtable</a></td></tr>
+<tr class="separator:a44e8a1bb0aea9665edada851a245973b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6335f2ea9f97980b5ea6e06eb11748ed"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCodeGenerator.html">CodeGenerator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PCodeScriptRunner_8cpp.html#a6335f2ea9f97980b5ea6e06eb11748ed">generator</a></td></tr>
+<tr class="separator:a6335f2ea9f97980b5ea6e06eb11748ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="af55b63c0df1c36e1f11c2cb16b37545a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int exitfunc </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classPCodeScriptRunner.html#a828c786e1fe76c69669bfda4eb83dd48">PCodeScriptRunner::Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a498eaa80e54d1a43505bd19aab3afbc5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int find_id </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="structid.html#a08e34ddda47e3d68e0a2e68146169b7d">id::address</a>, <a class="el" href="classIDTable.html#a3d13796af3023862020921df792f1300">IDTable::find()</a>, <a class="el" href="structid.html#a6f7aa15dd11aab7908bb10f37c5eebf6">id::kind</a>, <a class="el" href="structid.html#a75c7da963bbf8b7d564864b4e6a67279">id::level</a> , 以及 <a class="el" href="structid.html#af3af8a99537777d536ddb68dec011e4f">id::type</a>.</p>
+
+<p>参考自 <a class="el" href="classPCodeScriptRunner.html#a828c786e1fe76c69669bfda4eb83dd48">PCodeScriptRunner::Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a931d7d90e1a31b9859cd2d4dcc1ba593"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int make_code </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classIDTable.html#a685019c2a7da6cb2f46c389dada6f41b">IDTable::getLevel()</a> , 以及 <a class="el" href="classCodeGenerator.html#addcbf3fbd2cf4bc9fe1ff9783d936684">CodeGenerator::Write()</a>.</p>
+
+<p>参考自 <a class="el" href="classPCodeScriptRunner.html#a828c786e1fe76c69669bfda4eb83dd48">PCodeScriptRunner::Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a024eb1d492da85d2a81fa11b70b90401"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int now_pointer </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classCodeGenerator.html#a2003fac08982785ae10654300efadd1d">CodeGenerator::getPointer()</a>.</p>
+
+<p>参考自 <a class="el" href="classPCodeScriptRunner.html#a828c786e1fe76c69669bfda4eb83dd48">PCodeScriptRunner::Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6dee1ce35f7842b7bdc1ef4d4904e16e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int pop_stack </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classIDTable.html#aba8a3e9cca0f1b34c87a76af9a5e0619">IDTable::pop()</a>.</p>
+
+<p>参考自 <a class="el" href="classPCodeScriptRunner.html#a828c786e1fe76c69669bfda4eb83dd48">PCodeScriptRunner::Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ffad3c497f6ce8980677a1399b07d80"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int push_stack </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classIDTable.html#ae80bc7b19a1cb84825c15ffb6e501bc8">IDTable::push()</a>.</p>
+
+<p>参考自 <a class="el" href="classPCodeScriptRunner.html#a828c786e1fe76c69669bfda4eb83dd48">PCodeScriptRunner::Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a23f5e80ce8dea1b3e0ef5be47053112f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int save_id </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="structid.html#a08e34ddda47e3d68e0a2e68146169b7d">id::address</a>, <a class="el" href="classIDTable.html#a3d13796af3023862020921df792f1300">IDTable::find()</a>, <a class="el" href="classIDTable.html#a685019c2a7da6cb2f46c389dada6f41b">IDTable::getLevel()</a>, <a class="el" href="classIDTable.html#a0e2eac77208bd19753b07e91cf21ff4b">IDTable::insert()</a>, <a class="el" href="structid.html#a6f7aa15dd11aab7908bb10f37c5eebf6">id::kind</a>, <a class="el" href="structid.html#a75c7da963bbf8b7d564864b4e6a67279">id::level</a> , 以及 <a class="el" href="structid.html#af3af8a99537777d536ddb68dec011e4f">id::type</a>.</p>
+
+<p>参考自 <a class="el" href="classPCodeScriptRunner.html#a828c786e1fe76c69669bfda4eb83dd48">PCodeScriptRunner::Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa408483469b3569bd45c422e94f67d9a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int write_code </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classCodeGenerator.html#a1648a604073c7441c91ea1165654206c">CodeGenerator::WritePointer()</a>.</p>
+
+<p>参考自 <a class="el" href="classPCodeScriptRunner.html#a828c786e1fe76c69669bfda4eb83dd48">PCodeScriptRunner::Init()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="ad3a39941447447a702cf75eea2c16222"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cachecode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6335f2ea9f97980b5ea6e06eb11748ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCodeGenerator.html">CodeGenerator</a>* generator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a44e8a1bb0aea9665edada851a245973b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classIDTable.html">IDTable</a>* idtable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1254f172005c36c145e4abb4b343acbc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classScriptRunner.html">ScriptRunner</a>* runner</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ef88c6a543216cd8b8576f223a666a0e.html">LR_Scanner</a></li><li class="navelem"><a class="el" href="dir_c05985b4852730f5c926c23eebc45673.html">src</a></li><li class="navelem"><a class="el" href="PCodeScriptRunner_8cpp.html">PCodeScriptRunner.cpp</a></li>
+  </ul>
+</div>
+</body>
+</html>

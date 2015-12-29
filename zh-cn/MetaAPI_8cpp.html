@@ -1,0 +1,1167 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Elite: MetaScriptRunner/src/MetaAPI.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/elite-lang/Elite" title="Elite GitHub Repository"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('MetaAPI_8cpp.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">MetaAPI.cpp 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;oolua/oolua.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="nodes_8h_source.html">Model/nodes.h</a>&quot;</code><br/>
+<code>#include &quot;assert.h&quot;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a2ec5532c06cea263241ac360ef454195"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a2ec5532c06cea263241ac360ef454195">include_meta_api</a> (const char *filename)</td></tr>
+<tr class="separator:a2ec5532c06cea263241ac360ef454195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc90f26377e0b823d7ef01743d9783ff"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#acc90f26377e0b823d7ef01743d9783ff">add_bnf_meta_api</a> (const char *bnf)</td></tr>
+<tr class="separator:acc90f26377e0b823d7ef01743d9783ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c2a8984e798b857408bc0f97819a58"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#af7c2a8984e798b857408bc0f97819a58">add_bnf_file_meta_api</a> (const char *filename)</td></tr>
+<tr class="separator:af7c2a8984e798b857408bc0f97819a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab6f41bd8d29e47b522d42a548e34eeb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#aab6f41bd8d29e47b522d42a548e34eeb">load_default_bnf</a> ()</td></tr>
+<tr class="separator:aab6f41bd8d29e47b522d42a548e34eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea7dede1a3761406b649015f1fb3c07"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a5ea7dede1a3761406b649015f1fb3c07">load_empty_bnf</a> ()</td></tr>
+<tr class="separator:a5ea7dede1a3761406b649015f1fb3c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eeb8b8e6f312a665aad52c02ab64b14"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a4eeb8b8e6f312a665aad52c02ab64b14">parse_file</a> (const char *filename)</td></tr>
+<tr class="separator:a4eeb8b8e6f312a665aad52c02ab64b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9b24c1413d35463e395de2292d04ce"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#aca9b24c1413d35463e395de2292d04ce">print_bnf</a> ()</td></tr>
+<tr class="separator:aca9b24c1413d35463e395de2292d04ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1a3c806719cc75132f77586d8b70ee"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a4e1a3c806719cc75132f77586d8b70ee">setroot_meta_api</a> (<a class="el" href="classNode.html">Node</a> *p)</td></tr>
+<tr class="separator:a4e1a3c806719cc75132f77586d8b70ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e883b87c23d237f756f31f9fb626034"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a1e883b87c23d237f756f31f9fb626034">newnode_meta_api</a> ()</td></tr>
+<tr class="separator:a1e883b87c23d237f756f31f9fb626034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc064bf39f8e01dc686fda914a1fc62"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#aabc064bf39f8e01dc686fda914a1fc62">newnull_meta_api</a> ()</td></tr>
+<tr class="separator:aabc064bf39f8e01dc686fda914a1fc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc50e0fdcc78136a23e299929708c3f3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#acc50e0fdcc78136a23e299929708c3f3">newparent_meta_api</a> (<a class="el" href="classNode.html">Node</a> *n)</td></tr>
+<tr class="separator:acc50e0fdcc78136a23e299929708c3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5775b6bdc0f6e73b7f09fe8fe79a147"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#aa5775b6bdc0f6e73b7f09fe8fe79a147">getlist_meta_api</a> (<a class="el" href="classNode.html">Node</a> *n)</td></tr>
+<tr class="separator:aa5775b6bdc0f6e73b7f09fe8fe79a147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b33c84f06231db70ac46809aa777708"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a3b33c84f06231db70ac46809aa777708">new_stringnode_meta_api</a> (const char *str)</td></tr>
+<tr class="separator:a3b33c84f06231db70ac46809aa777708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4600c5da2e92daf341b7fb641a018b1d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a4600c5da2e92daf341b7fb641a018b1d">new_idnode_meta_api</a> (const char *str)</td></tr>
+<tr class="separator:a4600c5da2e92daf341b7fb641a018b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5325739232b1d7d96d9b81642ace79"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a4d5325739232b1d7d96d9b81642ace79">new_intnode_meta_api</a> (const char *str)</td></tr>
+<tr class="separator:a4d5325739232b1d7d96d9b81642ace79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaca2d77c65912633fd16da294b0a7094"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#aaca2d77c65912633fd16da294b0a7094">new_floatnode_meta_api</a> (const char *str)</td></tr>
+<tr class="separator:aaca2d77c65912633fd16da294b0a7094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac39dc619b50ad9687e06e0ea8dafca55"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#ac39dc619b50ad9687e06e0ea8dafca55">new_typenode_meta_api</a> (const char *str, bool is_const, bool is_source)</td></tr>
+<tr class="separator:ac39dc619b50ad9687e06e0ea8dafca55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c0537dd5671f099382f53edd757a04"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a62c0537dd5671f099382f53edd757a04">add_brother_meta_api</a> (<a class="el" href="classNode.html">Node</a> *node1, <a class="el" href="classNode.html">Node</a> *node2)</td></tr>
+<tr class="separator:a62c0537dd5671f099382f53edd757a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae677570da4560ce011b5ae620b72d6e0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#ae677570da4560ce011b5ae620b72d6e0">add_children_meta_api</a> (<a class="el" href="classNode.html">Node</a> *node1, <a class="el" href="classNode.html">Node</a> *node2)</td></tr>
+<tr class="separator:ae677570da4560ce011b5ae620b72d6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac858c1900938e5415496f4eef3dc179b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#ac858c1900938e5415496f4eef3dc179b">adddimension_meta_api</a> (<a class="el" href="classNode.html">Node</a> *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="separator:ac858c1900938e5415496f4eef3dc179b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a39c9ad72b812705868b8a44a3dfa6a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a3a39c9ad72b812705868b8a44a3dfa6a">l_make_list_meta_api</a> (lua_State *L)</td></tr>
+<tr class="separator:a3a39c9ad72b812705868b8a44a3dfa6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6fb73051e8052bd47fbf6791631af7b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#ab6fb73051e8052bd47fbf6791631af7b">l_setroot_meta_api</a> (lua_State *vm)</td></tr>
+<tr class="separator:ab6fb73051e8052bd47fbf6791631af7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d289486f6609163382c697c8963401"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#aa0d289486f6609163382c697c8963401">l_newnode_meta_api</a> (lua_State *vm)</td></tr>
+<tr class="separator:aa0d289486f6609163382c697c8963401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fa0186604552173ecd5ebafe16d282"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a44fa0186604552173ecd5ebafe16d282">l_newnull_meta_api</a> (lua_State *vm)</td></tr>
+<tr class="separator:a44fa0186604552173ecd5ebafe16d282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622bdce08f76cd9e3b38358aa7576538"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a622bdce08f76cd9e3b38358aa7576538">l_newparent_meta_api</a> (lua_State *vm)</td></tr>
+<tr class="separator:a622bdce08f76cd9e3b38358aa7576538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32cd5c47b4421a7a5916948aa09f219b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a32cd5c47b4421a7a5916948aa09f219b">l_getlist_meta_api</a> (lua_State *vm)</td></tr>
+<tr class="separator:a32cd5c47b4421a7a5916948aa09f219b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab597843a66f3ce341001d7df0c54dc25"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#ab597843a66f3ce341001d7df0c54dc25">l_new_stringnode_meta_api</a> (lua_State *vm)</td></tr>
+<tr class="separator:ab597843a66f3ce341001d7df0c54dc25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd70bb6af29112654062aec1858f0d5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a3fd70bb6af29112654062aec1858f0d5">l_new_idnode_meta_api</a> (lua_State *vm)</td></tr>
+<tr class="separator:a3fd70bb6af29112654062aec1858f0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19532c252d158ed318c2d78a7bc55afc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a19532c252d158ed318c2d78a7bc55afc">l_new_intnode_meta_api</a> (lua_State *vm)</td></tr>
+<tr class="separator:a19532c252d158ed318c2d78a7bc55afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18176d27d49da72fbb27516fce6e9bd8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a18176d27d49da72fbb27516fce6e9bd8">l_new_floatnode_meta_api</a> (lua_State *vm)</td></tr>
+<tr class="separator:a18176d27d49da72fbb27516fce6e9bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2178a34c9af7541ded4d5bd80a19dc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#ade2178a34c9af7541ded4d5bd80a19dc">l_addbrother_meta_api</a> (lua_State *vm)</td></tr>
+<tr class="separator:ade2178a34c9af7541ded4d5bd80a19dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4417ab1f8cd31811969f5aafac46d57"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#aa4417ab1f8cd31811969f5aafac46d57">l_addchildren_meta_api</a> (lua_State *vm)</td></tr>
+<tr class="separator:aa4417ab1f8cd31811969f5aafac46d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163fcc906e89a3c27d36d6e88a6f6689"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a163fcc906e89a3c27d36d6e88a6f6689">l_new_typenode_meta_api</a> (lua_State *vm)</td></tr>
+<tr class="separator:a163fcc906e89a3c27d36d6e88a6f6689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4daa649de369a3aa8c1e8287f8140f8c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a4daa649de369a3aa8c1e8287f8140f8c">l_adddimension_meta_api</a> (lua_State *vm)</td></tr>
+<tr class="separator:a4daa649de369a3aa8c1e8287f8140f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8bbed2e8ef01bc14264ad84f35d6094"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#ab8bbed2e8ef01bc14264ad84f35d6094">InitMetaAPI</a> (lua_State *L)</td></tr>
+<tr class="separator:ab8bbed2e8ef01bc14264ad84f35d6094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a903dad23f192ca13380d3327cd1be347"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MetaAPI_8cpp.html#a903dad23f192ca13380d3327cd1be347">node_root</a></td></tr>
+<tr class="separator:a903dad23f192ca13380d3327cd1be347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="af7c2a8984e798b857408bc0f97819a58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int add_bnf_file_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc90f26377e0b823d7ef01743d9783ff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int add_bnf_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>bnf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a62c0537dd5671f099382f53edd757a04"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void add_brother_meta_api </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#abc1158891442ed222ce34ee2802212ec">Node::addBrother()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#ade2178a34c9af7541ded4d5bd80a19dc">l_addbrother_meta_api()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae677570da4560ce011b5ae620b72d6e0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void add_children_meta_api </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#a40c43f56d1873059f6886a84bfc31c61">Node::addChildren()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#aa4417ab1f8cd31811969f5aafac46d57">l_addchildren_meta_api()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac858c1900938e5415496f4eef3dc179b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void adddimension_meta_api </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classTypeNode.html#aa00d7e10a8e7edc29fd23506e70b190a">TypeNode::addDimension()</a> , 以及 <a class="el" href="classNode.html#ad9968cf59137b1a6adbe35529488b103">Node::isTypeNode()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#a4daa649de369a3aa8c1e8287f8140f8c">l_adddimension_meta_api()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa5775b6bdc0f6e73b7f09fe8fe79a147"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classNode.html">Node</a>* getlist_meta_api </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#a06260e70f7aca9a81e196e38c1df5701">Node::getList()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#a32cd5c47b4421a7a5916948aa09f219b">l_getlist_meta_api()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ec5532c06cea263241ac360ef454195"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int include_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab8bbed2e8ef01bc14264ad84f35d6094"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitMetaAPI </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="MetaAPI_8cpp.html#ade2178a34c9af7541ded4d5bd80a19dc">l_addbrother_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#aa4417ab1f8cd31811969f5aafac46d57">l_addchildren_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#a4daa649de369a3aa8c1e8287f8140f8c">l_adddimension_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#a32cd5c47b4421a7a5916948aa09f219b">l_getlist_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#a3a39c9ad72b812705868b8a44a3dfa6a">l_make_list_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#a18176d27d49da72fbb27516fce6e9bd8">l_new_floatnode_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#a3fd70bb6af29112654062aec1858f0d5">l_new_idnode_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#a19532c252d158ed318c2d78a7bc55afc">l_new_intnode_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#ab597843a66f3ce341001d7df0c54dc25">l_new_stringnode_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#a163fcc906e89a3c27d36d6e88a6f6689">l_new_typenode_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#aa0d289486f6609163382c697c8963401">l_newnode_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#a44fa0186604552173ecd5ebafe16d282">l_newnull_meta_api()</a>, <a class="el" href="MetaAPI_8cpp.html#a622bdce08f76cd9e3b38358aa7576538">l_newparent_meta_api()</a> , 以及 <a class="el" href="MetaAPI_8cpp.html#ab6fb73051e8052bd47fbf6791631af7b">l_setroot_meta_api()</a>.</p>
+
+<p>参考自 <a class="el" href="classMetaScriptRunner.html#aa713fdcb4613e0ba73e22b38bd2ef66f">MetaScriptRunner::Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ade2178a34c9af7541ded4d5bd80a19dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int l_addbrother_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>vm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="MetaAPI_8cpp.html#a62c0537dd5671f099382f53edd757a04">add_brother_meta_api()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaScriptRunner_8cpp.html#a4018e037f83e1b5655a64a5d97e00b6e">InitMetaAPI()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4417ab1f8cd31811969f5aafac46d57"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int l_addchildren_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>vm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="MetaAPI_8cpp.html#ae677570da4560ce011b5ae620b72d6e0">add_children_meta_api()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaScriptRunner_8cpp.html#a4018e037f83e1b5655a64a5d97e00b6e">InitMetaAPI()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4daa649de369a3aa8c1e8287f8140f8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int l_adddimension_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>vm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="MetaAPI_8cpp.html#ac858c1900938e5415496f4eef3dc179b">adddimension_meta_api()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaScriptRunner_8cpp.html#a4018e037f83e1b5655a64a5d97e00b6e">InitMetaAPI()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a32cd5c47b4421a7a5916948aa09f219b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int l_getlist_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>vm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="MetaAPI_8cpp.html#aa5775b6bdc0f6e73b7f09fe8fe79a147">getlist_meta_api()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaScriptRunner_8cpp.html#a4018e037f83e1b5655a64a5d97e00b6e">InitMetaAPI()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a39c9ad72b812705868b8a44a3dfa6a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int l_make_list_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#a0c6a57a788f92cee7211f0dbc1263e80">Node::makeList()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaScriptRunner_8cpp.html#a4018e037f83e1b5655a64a5d97e00b6e">InitMetaAPI()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a18176d27d49da72fbb27516fce6e9bd8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int l_new_floatnode_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>vm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="MetaAPI_8cpp.html#aaca2d77c65912633fd16da294b0a7094">new_floatnode_meta_api()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaScriptRunner_8cpp.html#a4018e037f83e1b5655a64a5d97e00b6e">InitMetaAPI()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3fd70bb6af29112654062aec1858f0d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int l_new_idnode_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>vm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="MetaAPI_8cpp.html#a4600c5da2e92daf341b7fb641a018b1d">new_idnode_meta_api()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaScriptRunner_8cpp.html#a4018e037f83e1b5655a64a5d97e00b6e">InitMetaAPI()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a19532c252d158ed318c2d78a7bc55afc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int l_new_intnode_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>vm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="MetaAPI_8cpp.html#a4d5325739232b1d7d96d9b81642ace79">new_intnode_meta_api()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaScriptRunner_8cpp.html#a4018e037f83e1b5655a64a5d97e00b6e">InitMetaAPI()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab597843a66f3ce341001d7df0c54dc25"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int l_new_stringnode_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>vm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="MetaAPI_8cpp.html#a3b33c84f06231db70ac46809aa777708">new_stringnode_meta_api()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaScriptRunner_8cpp.html#a4018e037f83e1b5655a64a5d97e00b6e">InitMetaAPI()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a163fcc906e89a3c27d36d6e88a6f6689"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int l_new_typenode_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>vm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="MetaAPI_8cpp.html#ac39dc619b50ad9687e06e0ea8dafca55">new_typenode_meta_api()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaScriptRunner_8cpp.html#a4018e037f83e1b5655a64a5d97e00b6e">InitMetaAPI()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0d289486f6609163382c697c8963401"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int l_newnode_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>vm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="MetaAPI_8cpp.html#a1e883b87c23d237f756f31f9fb626034">newnode_meta_api()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaScriptRunner_8cpp.html#a4018e037f83e1b5655a64a5d97e00b6e">InitMetaAPI()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a44fa0186604552173ecd5ebafe16d282"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int l_newnull_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>vm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="MetaAPI_8cpp.html#aabc064bf39f8e01dc686fda914a1fc62">newnull_meta_api()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaScriptRunner_8cpp.html#a4018e037f83e1b5655a64a5d97e00b6e">InitMetaAPI()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a622bdce08f76cd9e3b38358aa7576538"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int l_newparent_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>vm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="MetaAPI_8cpp.html#acc50e0fdcc78136a23e299929708c3f3">newparent_meta_api()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaScriptRunner_8cpp.html#a4018e037f83e1b5655a64a5d97e00b6e">InitMetaAPI()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6fb73051e8052bd47fbf6791631af7b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int l_setroot_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>vm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="MetaAPI_8cpp.html#a4e1a3c806719cc75132f77586d8b70ee">setroot_meta_api()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaScriptRunner_8cpp.html#a4018e037f83e1b5655a64a5d97e00b6e">InitMetaAPI()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab6f41bd8d29e47b522d42a548e34eeb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int load_default_bnf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ea7dede1a3761406b649015f1fb3c07"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int load_empty_bnf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaca2d77c65912633fd16da294b0a7094"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classNode.html">Node</a>* new_floatnode_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#a8d3f418011e67b879c280d20b1506692">Node::Create()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#a18176d27d49da72fbb27516fce6e9bd8">l_new_floatnode_meta_api()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4600c5da2e92daf341b7fb641a018b1d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classNode.html">Node</a>* new_idnode_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#a8d3f418011e67b879c280d20b1506692">Node::Create()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#a3fd70bb6af29112654062aec1858f0d5">l_new_idnode_meta_api()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d5325739232b1d7d96d9b81642ace79"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classNode.html">Node</a>* new_intnode_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#a8d3f418011e67b879c280d20b1506692">Node::Create()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#a19532c252d158ed318c2d78a7bc55afc">l_new_intnode_meta_api()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b33c84f06231db70ac46809aa777708"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classNode.html">Node</a>* new_stringnode_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#a8d3f418011e67b879c280d20b1506692">Node::Create()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#ab597843a66f3ce341001d7df0c54dc25">l_new_stringnode_meta_api()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac39dc619b50ad9687e06e0ea8dafca55"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classNode.html">Node</a>* new_typenode_meta_api </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_const</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#a8d3f418011e67b879c280d20b1506692">Node::Create()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#a163fcc906e89a3c27d36d6e88a6f6689">l_new_typenode_meta_api()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e883b87c23d237f756f31f9fb626034"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classNode.html">Node</a>* newnode_meta_api </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#a8d3f418011e67b879c280d20b1506692">Node::Create()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#aa0d289486f6609163382c697c8963401">l_newnode_meta_api()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aabc064bf39f8e01dc686fda914a1fc62"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classNode.html">Node</a>* newnull_meta_api </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#a44fa0186604552173ecd5ebafe16d282">l_newnull_meta_api()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acc50e0fdcc78136a23e299929708c3f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classNode.html">Node</a>* newparent_meta_api </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classNode.html#a8d3f418011e67b879c280d20b1506692">Node::Create()</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#a622bdce08f76cd9e3b38358aa7576538">l_newparent_meta_api()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4eeb8b8e6f312a665aad52c02ab64b14"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int parse_file </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aca9b24c1413d35463e395de2292d04ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int print_bnf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e1a3c806719cc75132f77586d8b70ee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void setroot_meta_api </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="MetaAPI_8cpp.html#a903dad23f192ca13380d3327cd1be347">node_root</a>.</p>
+
+<p>参考自 <a class="el" href="MetaAPI_8cpp.html#ab6fb73051e8052bd47fbf6791631af7b">l_setroot_meta_api()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a903dad23f192ca13380d3327cd1be347"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNode.html">Node</a>* node_root</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classMetaScriptRunner.html#a1e1eb34bd8b3bd00dbc48d1a72f39599">MetaScriptRunner::Finished()</a> , 以及 <a class="el" href="MetaAPI_8cpp.html#a4e1a3c806719cc75132f77586d8b70ee">setroot_meta_api()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_442f57d44f2f9f9550ffc9eb2c88feb0.html">MetaScriptRunner</a></li><li class="navelem"><a class="el" href="dir_efcc0336ec38d23ca9e52906313ab61c.html">src</a></li><li class="navelem"><a class="el" href="MetaAPI_8cpp.html">MetaAPI.cpp</a></li>
+  </ul>
+</div>
+</body>
+</html>

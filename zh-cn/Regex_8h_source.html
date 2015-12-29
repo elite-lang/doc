@@ -1,0 +1,253 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Elite: Lex/include/Regex.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/elite-lang/Elite" title="Elite GitHub Repository"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Regex_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Regex.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Regex_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef REGEX_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REGEX_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stack&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CharSet_8h.html">CharSet.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="EquivalenceClass_8h.html">EquivalenceClass.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">struct </span><a class="code" href="structnode.html">node</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structnode__func.html">   15</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structnode__func.html">node_func</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structnode__func.html#a38f1741a0929c2d3ac0701759cb65382">   17</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structnode__func.html#a38f1741a0929c2d3ac0701759cb65382">num</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structnode__func.html#afc00a0960036e148da6a49c149a10902">   18</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structnode__func.html#afc00a0960036e148da6a49c149a10902">nullable</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structnode__func.html#a15f2d18a3eb939aa8125c816707fe27d">   19</a></span>&#160;    std::set&lt;node*&gt; <a class="code" href="structnode__func.html#a15f2d18a3eb939aa8125c816707fe27d">firstpos</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structnode__func.html#a313ff18e84178d6f79e0c500d3dd1d53">   20</a></span>&#160;    std::set&lt;node*&gt; <a class="code" href="structnode__func.html#a313ff18e84178d6f79e0c500d3dd1d53">lastpos</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structnode__func.html#a02ab8293388d9ecc6781f9b5bb5e0036">   21</a></span>&#160;    std::set&lt;node*&gt; <a class="code" href="structnode__func.html#a02ab8293388d9ecc6781f9b5bb5e0036">followpos</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structnode.html">   27</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structnode.html">node</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structnode.html#a22a8c9208225c949d26f371f8b82bc36">   29</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structnode.html#a22a8c9208225c949d26f371f8b82bc36">type</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">   30</a></span>&#160;    <a class="code" href="structnode.html">node</a>* <a class="code" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">left</a>; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structnode.html#abdc86d4c8604c481752953af3235fc47">   31</a></span>&#160;    <a class="code" href="structnode.html">node</a>* <a class="code" href="structnode.html#abdc86d4c8604c481752953af3235fc47">right</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structnode.html#a469e8cae8070f7d8280822f39f2b4ba0">   32</a></span>&#160;    <a class="code" href="classCharSet.html">CharSet</a>* <a class="code" href="structnode.html#a469e8cae8070f7d8280822f39f2b4ba0">data</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structnode.html#a3531b83e6f456fea92bfb3859dc9f3d4">   33</a></span>&#160;    std::set&lt;unsigned short&gt; <a class="code" href="structnode.html#a3531b83e6f456fea92bfb3859dc9f3d4">class_set</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structnode.html#a1a5ee95fc6a3b95e33776f413dabf4ff">   34</a></span>&#160;    <a class="code" href="structnode__func.html">node_func</a>* <a class="code" href="structnode.html#a1a5ee95fc6a3b95e33776f413dabf4ff">func</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structnode.html#a572a6ba9870a823b3a355ea0034abff3">   35</a></span>&#160;    <a class="code" href="structnode.html#a572a6ba9870a823b3a355ea0034abff3">node</a>(<span class="keywordtype">int</span> _type, <a class="code" href="structnode.html">node</a>* _left, <a class="code" href="structnode.html">node</a>* _right, <a class="code" href="classCharSet.html">CharSet</a>* pSet){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        this-&gt;<a class="code" href="structnode.html#a22a8c9208225c949d26f371f8b82bc36">type</a> = _type;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        this-&gt;<a class="code" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">left</a> = _left;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        this-&gt;<a class="code" href="structnode.html#abdc86d4c8604c481752953af3235fc47">right</a> = _right;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        this-&gt;<a class="code" href="structnode.html#a469e8cae8070f7d8280822f39f2b4ba0">data</a> = pSet;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structnode.html#a482f83436a89f09d289b26144d817adf">   41</a></span>&#160;    <a class="code" href="structnode.html#a482f83436a89f09d289b26144d817adf">~node</a>()</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">delete</span> <a class="code" href="structnode.html#a469e8cae8070f7d8280822f39f2b4ba0">data</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">delete</span> <a class="code" href="structnode.html#a1a5ee95fc6a3b95e33776f413dabf4ff">func</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">delete</span> <a class="code" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">left</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">delete</span> <a class="code" href="structnode.html#abdc86d4c8604c481752953af3235fc47">right</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="Regex_8h.html#a0ba4788506864f7f9177d17483e2f017">   50</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="Regex_8h.html#a0ba4788506864f7f9177d17483e2f017">node_type</a>[][3] = {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {0,0,0},    <span class="comment">// id=0 leaf node</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {1,2,2},    <span class="comment">// id=1 cat, it will combine two nodes</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {<span class="charliteral">&#39;|&#39;</span>,2,1},  <span class="comment">// id=2 or</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {<span class="charliteral">&#39;*&#39;</span>,1,3},  <span class="comment">// id=3 0 or many</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {<span class="charliteral">&#39;+&#39;</span>,1,3},  <span class="comment">// id=4</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {<span class="charliteral">&#39;?&#39;</span>,1,3},  <span class="comment">// id=5</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {<span class="charliteral">&#39;/&#39;</span>,2,1}   <span class="comment">// id=6 look forward</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">//  {0,2}       // id=7 it used to make the left node repeat right node times</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classRegex.html">   65</a></span>&#160;<span class="keyword">class </span><a class="code" href="classRegex.html">Regex</a></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classRegex.html#aac844880235ca7d00251aca1cc406c45">Regex</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classRegex.html#a4b32acda8c0843ee5a68ebccba4ad993">~Regex</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// it&#39;s same as init method</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classRegex.html#aac844880235ca7d00251aca1cc406c45">Regex</a>(<span class="keyword">const</span> <a class="code" href="classestring.html">estring</a>&amp; <a class="code" href="classRegex.html#a16df2d6e4a3766296703fc29bc0e51f8">pattern</a>, <a class="code" href="classEquivalenceClass.html">EquivalenceClass</a>* <a class="code" href="classRegex.html#ac2e63ace870e1b30d64cb4060bb6de77">pEClass</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classRegex.html#a350b55ffd2c9546aff11849056aaa789">init</a>(<span class="keyword">const</span> <a class="code" href="classestring.html">estring</a>&amp; pattern, <a class="code" href="classEquivalenceClass.html">EquivalenceClass</a>* pEClass = NULL);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classRegex.html#ab863d9f2742c2fc35115b8c8e6369834">   76</a></span>&#160;    <a class="code" href="structnode.html">node</a>* <a class="code" href="classRegex.html#ab863d9f2742c2fc35115b8c8e6369834">getRoot</a>() { <span class="keywordflow">return</span> <a class="code" href="classRegex.html#a00026a094e8e8a97c37f5db3c68ac749">root</a>; }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// === setter and getter ===</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRegex.html#ae55e1f39293328c89a09c95749b6ade0">setEClass</a>(<a class="code" href="classEquivalenceClass.html">EquivalenceClass</a>* pEClass);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classEquivalenceClass.html">EquivalenceClass</a>* <a class="code" href="classRegex.html#aee12f9d4f5ab7123296cba02e883ba1e">getEClass</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classRegex.html#a946af0b21b6adf153bb2a1e3de505c72">   82</a></span>&#160;    std::string <a class="code" href="classRegex.html#a946af0b21b6adf153bb2a1e3de505c72">getPattern</a>() { <span class="keywordflow">return</span> pattern.<a class="code" href="classestring.html#ab9a702fd726125225603de8e98b144f7">to_utf8</a>(); }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRegex.html#af5d263038af60f5905856444fe44af0a">run</a>(<a class="code" href="estring_8h.html#acea88e8fac52c2c3cda414cd0686d6a0">echar_t</a> c);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classCharSet.html">CharSet</a>* <a class="code" href="classRegex.html#a895555ad486189374488ed6176b8e688">makeEscape</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRegex.html#a58711b805dc9e4ce0af54117369e20cc">doCharSet</a>(<a class="code" href="classCharSet.html">CharSet</a>*);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRegex.html#ac37bb2b7b80d7f90b1127b612f527540">doOperater</a>(<a class="code" href="estring_8h.html#acea88e8fac52c2c3cda414cd0686d6a0">echar_t</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRegex.html#a985532edee97ac2be34e9750d62cb26a">operate</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRegex.html#abc80d8e2d060bbc39fd143baac10bd4c">putOperater</a>(<a class="code" href="estring_8h.html#acea88e8fac52c2c3cda414cd0686d6a0">echar_t</a> c);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRegex.html#af84951ec342d73d3fd9c06fc8d1a3cba">push</a>(<a class="code" href="estring_8h.html#acea88e8fac52c2c3cda414cd0686d6a0">echar_t</a> c);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRegex.html#a5cff4afa6283bf2c8951951683b6f87d">pop</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// ===================</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// member variable</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// ===================</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classRegex.html#a16df2d6e4a3766296703fc29bc0e51f8">   99</a></span>&#160;    <a class="code" href="classestring.html">estring</a> <a class="code" href="classRegex.html#a16df2d6e4a3766296703fc29bc0e51f8">pattern</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classRegex.html#afa527513e49474ccc701e665ef914eb1">  101</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classRegex.html#afa527513e49474ccc701e665ef914eb1">pointer</a> = 0;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// it&#39;s the root of the tree</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classRegex.html#a00026a094e8e8a97c37f5db3c68ac749">  104</a></span>&#160;    <a class="code" href="structnode.html">node</a>* <a class="code" href="classRegex.html#a00026a094e8e8a97c37f5db3c68ac749">root</a>; <span class="comment">// for test ,so put it in public</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classRegex.html#a2f280b34990f7ee4192688bd6a28f428">  106</a></span>&#160;    std::stack&lt;echar_t&gt; <a class="code" href="classRegex.html#a2f280b34990f7ee4192688bd6a28f428">operater_stack</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classRegex.html#a29db38c72b71da5c3fa61d25ddd599f2">  107</a></span>&#160;    std::stack&lt;node*&gt; <a class="code" href="classRegex.html#a29db38c72b71da5c3fa61d25ddd599f2">obj_stack</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classRegex.html#ac2e63ace870e1b30d64cb4060bb6de77">  109</a></span>&#160;    <a class="code" href="classEquivalenceClass.html">EquivalenceClass</a>* <a class="code" href="classRegex.html#ac2e63ace870e1b30d64cb4060bb6de77">pEClass</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classRegex.html#a84f4489dd0b672fc07f4f281575277cc">  111</a></span>&#160;    <a class="code" href="classestring.html">estring</a> <a class="code" href="classRegex.html#a84f4489dd0b672fc07f4f281575277cc">tempSet</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classRegex.html#aedfdceb22e6ba81338fede92c2c3adbf">  112</a></span>&#160;    <a class="code" href="classestring.html">estring</a> <a class="code" href="classRegex.html#aedfdceb22e6ba81338fede92c2c3adbf">tempLeftInt</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classRegex.html#a2a02a133b507b2aa121a607f2d2f1c05">  113</a></span>&#160;    <a class="code" href="classestring.html">estring</a> <a class="code" href="classRegex.html#a2a02a133b507b2aa121a607f2d2f1c05">tempRightInt</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classRegex.html#abccb2a6ce6bf7ce6e0daaff6b9251c22">  115</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classRegex.html#abccb2a6ce6bf7ce6e0daaff6b9251c22">isEnd</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif // REGEX_H</span></div>
+<div class="ttc" id="classRegex_html_abccb2a6ce6bf7ce6e0daaff6b9251c22"><div class="ttname"><a href="classRegex.html#abccb2a6ce6bf7ce6e0daaff6b9251c22">Regex::isEnd</a></div><div class="ttdeci">bool isEnd</div><div class="ttdef"><b>Definition:</b> Regex.h:115</div></div>
+<div class="ttc" id="classEquivalenceClass_html"><div class="ttname"><a href="classEquivalenceClass.html">EquivalenceClass</a></div><div class="ttdef"><b>Definition:</b> EquivalenceClass.h:17</div></div>
+<div class="ttc" id="classestring_html_ab9a702fd726125225603de8e98b144f7"><div class="ttname"><a href="classestring.html#ab9a702fd726125225603de8e98b144f7">estring::to_utf8</a></div><div class="ttdeci">std::string to_utf8()</div><div class="ttdef"><b>Definition:</b> estring.cpp:146</div></div>
+<div class="ttc" id="structnode_html"><div class="ttname"><a href="structnode.html">node</a></div><div class="ttdoc">lex中正则表达式的节点结构体 </div><div class="ttdef"><b>Definition:</b> Regex.h:27</div></div>
+<div class="ttc" id="structnode_html_a482f83436a89f09d289b26144d817adf"><div class="ttname"><a href="structnode.html#a482f83436a89f09d289b26144d817adf">node::~node</a></div><div class="ttdeci">~node()</div><div class="ttdef"><b>Definition:</b> Regex.h:41</div></div>
+<div class="ttc" id="classRegex_html_a350b55ffd2c9546aff11849056aaa789"><div class="ttname"><a href="classRegex.html#a350b55ffd2c9546aff11849056aaa789">Regex::init</a></div><div class="ttdeci">bool init(const estring &amp;pattern, EquivalenceClass *pEClass=NULL)</div><div class="ttdef"><b>Definition:</b> Regex.cpp:19</div></div>
+<div class="ttc" id="EquivalenceClass_8h_html"><div class="ttname"><a href="EquivalenceClass_8h.html">EquivalenceClass.h</a></div></div>
+<div class="ttc" id="classRegex_html_aee12f9d4f5ab7123296cba02e883ba1e"><div class="ttname"><a href="classRegex.html#aee12f9d4f5ab7123296cba02e883ba1e">Regex::getEClass</a></div><div class="ttdeci">EquivalenceClass * getEClass()</div><div class="ttdef"><b>Definition:</b> Regex.cpp:338</div></div>
+<div class="ttc" id="classestring_html"><div class="ttname"><a href="classestring.html">estring</a></div><div class="ttdoc">内部使用utf16LE编码的字符串类, 能够实现编码的字符识别和转换 </div><div class="ttdef"><b>Definition:</b> estring.h:21</div></div>
+<div class="ttc" id="structnode__func_html_a15f2d18a3eb939aa8125c816707fe27d"><div class="ttname"><a href="structnode__func.html#a15f2d18a3eb939aa8125c816707fe27d">node_func::firstpos</a></div><div class="ttdeci">std::set&lt; node * &gt; firstpos</div><div class="ttdef"><b>Definition:</b> Regex.h:19</div></div>
+<div class="ttc" id="structnode_html_a469e8cae8070f7d8280822f39f2b4ba0"><div class="ttname"><a href="structnode.html#a469e8cae8070f7d8280822f39f2b4ba0">node::data</a></div><div class="ttdeci">CharSet * data</div><div class="ttdef"><b>Definition:</b> Regex.h:32</div></div>
+<div class="ttc" id="classRegex_html_a00026a094e8e8a97c37f5db3c68ac749"><div class="ttname"><a href="classRegex.html#a00026a094e8e8a97c37f5db3c68ac749">Regex::root</a></div><div class="ttdeci">node * root</div><div class="ttdef"><b>Definition:</b> Regex.h:104</div></div>
+<div class="ttc" id="estring_8h_html_acea88e8fac52c2c3cda414cd0686d6a0"><div class="ttname"><a href="estring_8h.html#acea88e8fac52c2c3cda414cd0686d6a0">echar_t</a></div><div class="ttdeci">uint16_t echar_t</div><div class="ttdef"><b>Definition:</b> estring.h:16</div></div>
+<div class="ttc" id="classRegex_html_a16df2d6e4a3766296703fc29bc0e51f8"><div class="ttname"><a href="classRegex.html#a16df2d6e4a3766296703fc29bc0e51f8">Regex::pattern</a></div><div class="ttdeci">estring pattern</div><div class="ttdef"><b>Definition:</b> Regex.h:99</div></div>
+<div class="ttc" id="classRegex_html_ab863d9f2742c2fc35115b8c8e6369834"><div class="ttname"><a href="classRegex.html#ab863d9f2742c2fc35115b8c8e6369834">Regex::getRoot</a></div><div class="ttdeci">node * getRoot()</div><div class="ttdef"><b>Definition:</b> Regex.h:76</div></div>
+<div class="ttc" id="classRegex_html_a985532edee97ac2be34e9750d62cb26a"><div class="ttname"><a href="classRegex.html#a985532edee97ac2be34e9750d62cb26a">Regex::operate</a></div><div class="ttdeci">void operate()</div><div class="ttdef"><b>Definition:</b> Regex.cpp:230</div></div>
+<div class="ttc" id="classCharSet_html"><div class="ttname"><a href="classCharSet.html">CharSet</a></div><div class="ttdoc">一个UTF-16字符集 </div><div class="ttdef"><b>Definition:</b> CharSet.h:34</div></div>
+<div class="ttc" id="structnode_html_a7cbff55ff448f557223f79299056e9b1"><div class="ttname"><a href="structnode.html#a7cbff55ff448f557223f79299056e9b1">node::left</a></div><div class="ttdeci">node * left</div><div class="ttdef"><b>Definition:</b> Regex.h:30</div></div>
+<div class="ttc" id="classRegex_html_abc80d8e2d060bbc39fd143baac10bd4c"><div class="ttname"><a href="classRegex.html#abc80d8e2d060bbc39fd143baac10bd4c">Regex::putOperater</a></div><div class="ttdeci">void putOperater(echar_t c)</div><div class="ttdef"><b>Definition:</b> Regex.cpp:250</div></div>
+<div class="ttc" id="Regex_8h_html_a0ba4788506864f7f9177d17483e2f017"><div class="ttname"><a href="Regex_8h.html#a0ba4788506864f7f9177d17483e2f017">node_type</a></div><div class="ttdeci">const char node_type[][3]</div><div class="ttdef"><b>Definition:</b> Regex.h:50</div></div>
+<div class="ttc" id="classRegex_html_ac2e63ace870e1b30d64cb4060bb6de77"><div class="ttname"><a href="classRegex.html#ac2e63ace870e1b30d64cb4060bb6de77">Regex::pEClass</a></div><div class="ttdeci">EquivalenceClass * pEClass</div><div class="ttdef"><b>Definition:</b> Regex.h:109</div></div>
+<div class="ttc" id="classRegex_html"><div class="ttname"><a href="classRegex.html">Regex</a></div><div class="ttdoc">正则表达式类 </div><div class="ttdef"><b>Definition:</b> Regex.h:65</div></div>
+<div class="ttc" id="classRegex_html_a946af0b21b6adf153bb2a1e3de505c72"><div class="ttname"><a href="classRegex.html#a946af0b21b6adf153bb2a1e3de505c72">Regex::getPattern</a></div><div class="ttdeci">std::string getPattern()</div><div class="ttdef"><b>Definition:</b> Regex.h:82</div></div>
+<div class="ttc" id="classRegex_html_a84f4489dd0b672fc07f4f281575277cc"><div class="ttname"><a href="classRegex.html#a84f4489dd0b672fc07f4f281575277cc">Regex::tempSet</a></div><div class="ttdeci">estring tempSet</div><div class="ttdef"><b>Definition:</b> Regex.h:111</div></div>
+<div class="ttc" id="structnode__func_html_a313ff18e84178d6f79e0c500d3dd1d53"><div class="ttname"><a href="structnode__func.html#a313ff18e84178d6f79e0c500d3dd1d53">node_func::lastpos</a></div><div class="ttdeci">std::set&lt; node * &gt; lastpos</div><div class="ttdef"><b>Definition:</b> Regex.h:20</div></div>
+<div class="ttc" id="structnode__func_html_a02ab8293388d9ecc6781f9b5bb5e0036"><div class="ttname"><a href="structnode__func.html#a02ab8293388d9ecc6781f9b5bb5e0036">node_func::followpos</a></div><div class="ttdeci">std::set&lt; node * &gt; followpos</div><div class="ttdef"><b>Definition:</b> Regex.h:21</div></div>
+<div class="ttc" id="structnode_html_abdc86d4c8604c481752953af3235fc47"><div class="ttname"><a href="structnode.html#abdc86d4c8604c481752953af3235fc47">node::right</a></div><div class="ttdeci">node * right</div><div class="ttdef"><b>Definition:</b> Regex.h:31</div></div>
+<div class="ttc" id="classRegex_html_a895555ad486189374488ed6176b8e688"><div class="ttname"><a href="classRegex.html#a895555ad486189374488ed6176b8e688">Regex::makeEscape</a></div><div class="ttdeci">CharSet * makeEscape()</div><div class="ttdef"><b>Definition:</b> Regex.cpp:258</div></div>
+<div class="ttc" id="classRegex_html_a5cff4afa6283bf2c8951951683b6f87d"><div class="ttname"><a href="classRegex.html#a5cff4afa6283bf2c8951951683b6f87d">Regex::pop</a></div><div class="ttdeci">void pop()</div><div class="ttdef"><b>Definition:</b> Regex.cpp:215</div></div>
+<div class="ttc" id="structnode_html_a3531b83e6f456fea92bfb3859dc9f3d4"><div class="ttname"><a href="structnode.html#a3531b83e6f456fea92bfb3859dc9f3d4">node::class_set</a></div><div class="ttdeci">std::set&lt; unsigned short &gt; class_set</div><div class="ttdef"><b>Definition:</b> Regex.h:33</div></div>
+<div class="ttc" id="structnode_html_a22a8c9208225c949d26f371f8b82bc36"><div class="ttname"><a href="structnode.html#a22a8c9208225c949d26f371f8b82bc36">node::type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> Regex.h:29</div></div>
+<div class="ttc" id="classRegex_html_a2f280b34990f7ee4192688bd6a28f428"><div class="ttname"><a href="classRegex.html#a2f280b34990f7ee4192688bd6a28f428">Regex::operater_stack</a></div><div class="ttdeci">std::stack&lt; echar_t &gt; operater_stack</div><div class="ttdef"><b>Definition:</b> Regex.h:106</div></div>
+<div class="ttc" id="structnode__func_html_a38f1741a0929c2d3ac0701759cb65382"><div class="ttname"><a href="structnode__func.html#a38f1741a0929c2d3ac0701759cb65382">node_func::num</a></div><div class="ttdeci">int num</div><div class="ttdef"><b>Definition:</b> Regex.h:17</div></div>
+<div class="ttc" id="classRegex_html_aedfdceb22e6ba81338fede92c2c3adbf"><div class="ttname"><a href="classRegex.html#aedfdceb22e6ba81338fede92c2c3adbf">Regex::tempLeftInt</a></div><div class="ttdeci">estring tempLeftInt</div><div class="ttdef"><b>Definition:</b> Regex.h:112</div></div>
+<div class="ttc" id="classRegex_html_a29db38c72b71da5c3fa61d25ddd599f2"><div class="ttname"><a href="classRegex.html#a29db38c72b71da5c3fa61d25ddd599f2">Regex::obj_stack</a></div><div class="ttdeci">std::stack&lt; node * &gt; obj_stack</div><div class="ttdef"><b>Definition:</b> Regex.h:107</div></div>
+<div class="ttc" id="CharSet_8h_html"><div class="ttname"><a href="CharSet_8h.html">CharSet.h</a></div></div>
+<div class="ttc" id="classRegex_html_a58711b805dc9e4ce0af54117369e20cc"><div class="ttname"><a href="classRegex.html#a58711b805dc9e4ce0af54117369e20cc">Regex::doCharSet</a></div><div class="ttdeci">void doCharSet(CharSet *)</div><div class="ttdef"><b>Definition:</b> Regex.cpp:160</div></div>
+<div class="ttc" id="structnode_html_a572a6ba9870a823b3a355ea0034abff3"><div class="ttname"><a href="structnode.html#a572a6ba9870a823b3a355ea0034abff3">node::node</a></div><div class="ttdeci">node(int _type, node *_left, node *_right, CharSet *pSet)</div><div class="ttdef"><b>Definition:</b> Regex.h:35</div></div>
+<div class="ttc" id="classRegex_html_ac37bb2b7b80d7f90b1127b612f527540"><div class="ttname"><a href="classRegex.html#ac37bb2b7b80d7f90b1127b612f527540">Regex::doOperater</a></div><div class="ttdeci">void doOperater(echar_t)</div><div class="ttdef"><b>Definition:</b> Regex.cpp:226</div></div>
+<div class="ttc" id="classRegex_html_af5d263038af60f5905856444fe44af0a"><div class="ttname"><a href="classRegex.html#af5d263038af60f5905856444fe44af0a">Regex::run</a></div><div class="ttdeci">void run(echar_t c)</div><div class="ttdef"><b>Definition:</b> Regex.cpp:43</div></div>
+<div class="ttc" id="structnode__func_html"><div class="ttname"><a href="structnode__func.html">node_func</a></div><div class="ttdoc">lex正则表达式求自动机的中间变量 </div><div class="ttdef"><b>Definition:</b> Regex.h:15</div></div>
+<div class="ttc" id="classRegex_html_a4b32acda8c0843ee5a68ebccba4ad993"><div class="ttname"><a href="classRegex.html#a4b32acda8c0843ee5a68ebccba4ad993">Regex::~Regex</a></div><div class="ttdeci">~Regex()</div><div class="ttdef"><b>Definition:</b> Regex.cpp:10</div></div>
+<div class="ttc" id="classRegex_html_afa527513e49474ccc701e665ef914eb1"><div class="ttname"><a href="classRegex.html#afa527513e49474ccc701e665ef914eb1">Regex::pointer</a></div><div class="ttdeci">int pointer</div><div class="ttdef"><b>Definition:</b> Regex.h:101</div></div>
+<div class="ttc" id="classRegex_html_ae55e1f39293328c89a09c95749b6ade0"><div class="ttname"><a href="classRegex.html#ae55e1f39293328c89a09c95749b6ade0">Regex::setEClass</a></div><div class="ttdeci">void setEClass(EquivalenceClass *pEClass)</div><div class="ttdef"><b>Definition:</b> Regex.cpp:333</div></div>
+<div class="ttc" id="structnode__func_html_afc00a0960036e148da6a49c149a10902"><div class="ttname"><a href="structnode__func.html#afc00a0960036e148da6a49c149a10902">node_func::nullable</a></div><div class="ttdeci">bool nullable</div><div class="ttdef"><b>Definition:</b> Regex.h:18</div></div>
+<div class="ttc" id="classRegex_html_a2a02a133b507b2aa121a607f2d2f1c05"><div class="ttname"><a href="classRegex.html#a2a02a133b507b2aa121a607f2d2f1c05">Regex::tempRightInt</a></div><div class="ttdeci">estring tempRightInt</div><div class="ttdef"><b>Definition:</b> Regex.h:113</div></div>
+<div class="ttc" id="classRegex_html_af84951ec342d73d3fd9c06fc8d1a3cba"><div class="ttname"><a href="classRegex.html#af84951ec342d73d3fd9c06fc8d1a3cba">Regex::push</a></div><div class="ttdeci">void push(echar_t c)</div><div class="ttdef"><b>Definition:</b> Regex.cpp:179</div></div>
+<div class="ttc" id="structnode_html_a1a5ee95fc6a3b95e33776f413dabf4ff"><div class="ttname"><a href="structnode.html#a1a5ee95fc6a3b95e33776f413dabf4ff">node::func</a></div><div class="ttdeci">node_func * func</div><div class="ttdef"><b>Definition:</b> Regex.h:34</div></div>
+<div class="ttc" id="classRegex_html_aac844880235ca7d00251aca1cc406c45"><div class="ttname"><a href="classRegex.html#aac844880235ca7d00251aca1cc406c45">Regex::Regex</a></div><div class="ttdeci">Regex()</div><div class="ttdef"><b>Definition:</b> Regex.cpp:5</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3b18ba538acf98deeedf839a5eea3c05.html">Lex</a></li><li class="navelem"><a class="el" href="dir_301710a6ab4b531174ad1898c4afb43d.html">include</a></li><li class="navelem"><a class="el" href="Regex_8h.html">Regex.h</a></li>
+  </ul>
+</div>
+</body>
+</html>

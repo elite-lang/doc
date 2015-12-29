@@ -1,0 +1,190 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Elite: LR_Scanner/src/LRCore.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/elite-lang/Elite" title="Elite GitHub Repository"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('LRCore_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">LRCore.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="LRCore_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">* @Author: sxf</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">* @Date:   2015-01-03 18:42:35</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* @Last Modified by:   sxf</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">* @Last Modified time: 2015-11-02 18:47:19</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef LR_CORE_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LR_CORE_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="LexInterface_8h.html">LexInterface.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Grammer__Node_8h.html">Grammer_Node.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ScriptRunner_8h.html">ScriptRunner.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="LRTable_8h.html">LRTable.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stack&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classLRCore.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLRCore.html">LRCore</a> </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classLRCore.html#a677ec915c559f2c023c344c77dc982c7">   21</a></span>&#160;    <a class="code" href="classLRCore.html#a677ec915c559f2c023c344c77dc982c7">LRCore</a>() {}</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classLRCore.html#af2b7a46b3ba8afb4a5c6370e7e9b9748">   22</a></span>&#160;    <a class="code" href="classLRCore.html#af2b7a46b3ba8afb4a5c6370e7e9b9748">~LRCore</a>() {}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classGrammer__Node.html">Grammer_Node</a>* Run();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//======= setter and getter =========</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classLRCore.html#a222c3770b4eb242631085da61841443a">   27</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLRCore.html#a222c3770b4eb242631085da61841443a">setLex</a>(<a class="code" href="classLexInterface.html">LexInterface</a>* _l) { <a class="code" href="Main_8cpp.html#a9a24dd9bd46ce043756cc48c3a8b2e22">lex</a> = _l; }</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classLRCore.html#af6157e33366e085cbd3062170d3f12c3">   28</a></span>&#160;    <a class="code" href="classLexInterface.html">LexInterface</a>* <a class="code" href="classLRCore.html#af6157e33366e085cbd3062170d3f12c3">getLex</a>() { <span class="keywordflow">return</span> <a class="code" href="Main_8cpp.html#a9a24dd9bd46ce043756cc48c3a8b2e22">lex</a>; } </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classLRCore.html#a1f392f75a5bb79cddd7fd7996ecb82dc">   30</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLRCore.html#a1f392f75a5bb79cddd7fd7996ecb82dc">setTable</a>(<a class="code" href="classLRTable.html">LRTable</a>* _t) { table = _t; }</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classLRCore.html#a192628fba15a8924c6a3ac1493ffb94a">   31</a></span>&#160;    <a class="code" href="classLRTable.html">LRTable</a>* <a class="code" href="classLRCore.html#a192628fba15a8924c6a3ac1493ffb94a">getTable</a>() { <span class="keywordflow">return</span> table; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classLRCore.html#a6e5357c878bbae6ac33f10436d614931">   33</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLRCore.html#a6e5357c878bbae6ac33f10436d614931">setVMap</a>(<a class="code" href="structVMap.html">VMap</a>* _v) { vmap = _v; }</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classLRCore.html#a6877f4718a80f72fbdf78e3fd832169a">   34</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLRCore.html#a6877f4718a80f72fbdf78e3fd832169a">setBnflist</a>(vector&lt;BNF*&gt;* _bnfs) { bnflist = _bnfs; }</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classLRCore.html#a668d6cdc578eb9c10c64a3f3dde3a33e">   35</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLRCore.html#a668d6cdc578eb9c10c64a3f3dde3a33e">setAst</a>(<a class="code" href="classGrammer__Node.html">Grammer_Node</a>* _ast) { ast = _ast; }</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classLRCore.html#ad15e0cecece39b7bae52f6fcf3486ff1">   36</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLRCore.html#ad15e0cecece39b7bae52f6fcf3486ff1">setScriptRunner</a>(<a class="code" href="classScriptRunner.html">ScriptRunner</a>* _s) { script_runner = _s; }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> Shift(<span class="keywordtype">int</span>,<a class="code" href="structToken.html">Token</a>* t); <span class="comment">// 移入</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> Shift(<span class="keywordtype">int</span>,<a class="code" href="classGrammer__Node.html">Grammer_Node</a>*); <span class="comment">// 移入,处理节点用</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// 三个参数分别是，要规约的语法项id，规约时的父节点</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> Reduce(<span class="keywordtype">int</span>,<a class="code" href="classGrammer__Node.html">Grammer_Node</a>*&amp;); <span class="comment">// 规约</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// Token过滤器，能够检测词法中的内容</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// 如果发现有和语法中定义的const，内容相同的Token</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// 会将该返回的id改写为const的id</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="structToken.html">Token</a>* TokenFliter(<a class="code" href="structToken.html">Token</a>*);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classLRCore.html#a187c045813ba361f4c016b59e111f5bf">   50</a></span>&#160;    <a class="code" href="classGrammer__Node.html">Grammer_Node</a>* <a class="code" href="classLRCore.html#a187c045813ba361f4c016b59e111f5bf">ast</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// 分析栈</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classLRCore.html#ae360bb22920bfeccb12eb9814b037771">   52</a></span>&#160;    deque&lt;int&gt; <a class="code" href="classLRCore.html#ae360bb22920bfeccb12eb9814b037771">LRStack</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// 节点栈</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classLRCore.html#aafd5df5750b8164f279289ee22b365d9">   54</a></span>&#160;    stack&lt;Grammer_Node*&gt; <a class="code" href="classLRCore.html#aafd5df5750b8164f279289ee22b365d9">NodeStack</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// 词法分析程序</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classLRCore.html#ae7a5f4cb76800df9d3f942288f0d5d73">   56</a></span>&#160;    <a class="code" href="classLexInterface.html">LexInterface</a>* <a class="code" href="classLRCore.html#ae7a5f4cb76800df9d3f942288f0d5d73">lex</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// BNF列表</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classLRCore.html#a36bee87fd8d3596333a5044472a32777">   58</a></span>&#160;    vector&lt;BNF*&gt;* <a class="code" href="classLRCore.html#a36bee87fd8d3596333a5044472a32777">bnflist</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// 语法符号对照表</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classLRCore.html#acac531c2fddcbfca72e0ce0acb638ebd">   60</a></span>&#160;    <a class="code" href="structVMap.html">VMap</a>* <a class="code" href="classLRCore.html#acac531c2fddcbfca72e0ce0acb638ebd">vmap</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// LR分析表</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classLRCore.html#abc77a2033abef605c0af3b9683a020b4">   62</a></span>&#160;    <a class="code" href="classLRTable.html">LRTable</a>* <a class="code" href="classLRCore.html#abc77a2033abef605c0af3b9683a020b4">table</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// 脚本执行器</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classLRCore.html#a3027f49b3979446ee26abbe6ef34e73b">   64</a></span>&#160;    <a class="code" href="classScriptRunner.html">ScriptRunner</a>* <a class="code" href="classLRCore.html#a3027f49b3979446ee26abbe6ef34e73b">script_runner</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif // LR_CORE_H</span></div>
+<div class="ttc" id="Main_8cpp_html_a9a24dd9bd46ce043756cc48c3a8b2e22"><div class="ttname"><a href="Main_8cpp.html#a9a24dd9bd46ce043756cc48c3a8b2e22">lex</a></div><div class="ttdeci">Lex lex</div><div class="ttdef"><b>Definition:</b> Main.cpp:21</div></div>
+<div class="ttc" id="classLRCore_html_a668d6cdc578eb9c10c64a3f3dde3a33e"><div class="ttname"><a href="classLRCore.html#a668d6cdc578eb9c10c64a3f3dde3a33e">LRCore::setAst</a></div><div class="ttdeci">void setAst(Grammer_Node *_ast)</div><div class="ttdef"><b>Definition:</b> LRCore.h:35</div></div>
+<div class="ttc" id="ScriptRunner_8h_html"><div class="ttname"><a href="ScriptRunner_8h.html">ScriptRunner.h</a></div></div>
+<div class="ttc" id="classLRCore_html_a677ec915c559f2c023c344c77dc982c7"><div class="ttname"><a href="classLRCore.html#a677ec915c559f2c023c344c77dc982c7">LRCore::LRCore</a></div><div class="ttdeci">LRCore()</div><div class="ttdef"><b>Definition:</b> LRCore.h:21</div></div>
+<div class="ttc" id="classLexInterface_html"><div class="ttname"><a href="classLexInterface.html">LexInterface</a></div><div class="ttdoc">Lex的关键接口 </div><div class="ttdef"><b>Definition:</b> LexInterface.h:25</div></div>
+<div class="ttc" id="structVMap_html"><div class="ttname"><a href="structVMap.html">VMap</a></div><div class="ttdef"><b>Definition:</b> VMap.h:10</div></div>
+<div class="ttc" id="classLRCore_html_a6e5357c878bbae6ac33f10436d614931"><div class="ttname"><a href="classLRCore.html#a6e5357c878bbae6ac33f10436d614931">LRCore::setVMap</a></div><div class="ttdeci">void setVMap(VMap *_v)</div><div class="ttdef"><b>Definition:</b> LRCore.h:33</div></div>
+<div class="ttc" id="classLRCore_html_acac531c2fddcbfca72e0ce0acb638ebd"><div class="ttname"><a href="classLRCore.html#acac531c2fddcbfca72e0ce0acb638ebd">LRCore::vmap</a></div><div class="ttdeci">VMap * vmap</div><div class="ttdef"><b>Definition:</b> LRCore.h:60</div></div>
+<div class="ttc" id="structToken_html"><div class="ttname"><a href="structToken.html">Token</a></div><div class="ttdef"><b>Definition:</b> LexInterface.h:12</div></div>
+<div class="ttc" id="LexInterface_8h_html"><div class="ttname"><a href="LexInterface_8h.html">LexInterface.h</a></div></div>
+<div class="ttc" id="classLRCore_html_a192628fba15a8924c6a3ac1493ffb94a"><div class="ttname"><a href="classLRCore.html#a192628fba15a8924c6a3ac1493ffb94a">LRCore::getTable</a></div><div class="ttdeci">LRTable * getTable()</div><div class="ttdef"><b>Definition:</b> LRCore.h:31</div></div>
+<div class="ttc" id="classLRCore_html_a3027f49b3979446ee26abbe6ef34e73b"><div class="ttname"><a href="classLRCore.html#a3027f49b3979446ee26abbe6ef34e73b">LRCore::script_runner</a></div><div class="ttdeci">ScriptRunner * script_runner</div><div class="ttdef"><b>Definition:</b> LRCore.h:64</div></div>
+<div class="ttc" id="classLRCore_html_af2b7a46b3ba8afb4a5c6370e7e9b9748"><div class="ttname"><a href="classLRCore.html#af2b7a46b3ba8afb4a5c6370e7e9b9748">LRCore::~LRCore</a></div><div class="ttdeci">~LRCore()</div><div class="ttdef"><b>Definition:</b> LRCore.h:22</div></div>
+<div class="ttc" id="classLRCore_html_af6157e33366e085cbd3062170d3f12c3"><div class="ttname"><a href="classLRCore.html#af6157e33366e085cbd3062170d3f12c3">LRCore::getLex</a></div><div class="ttdeci">LexInterface * getLex()</div><div class="ttdef"><b>Definition:</b> LRCore.h:28</div></div>
+<div class="ttc" id="classLRCore_html_a222c3770b4eb242631085da61841443a"><div class="ttname"><a href="classLRCore.html#a222c3770b4eb242631085da61841443a">LRCore::setLex</a></div><div class="ttdeci">void setLex(LexInterface *_l)</div><div class="ttdef"><b>Definition:</b> LRCore.h:27</div></div>
+<div class="ttc" id="classLRCore_html_ad15e0cecece39b7bae52f6fcf3486ff1"><div class="ttname"><a href="classLRCore.html#ad15e0cecece39b7bae52f6fcf3486ff1">LRCore::setScriptRunner</a></div><div class="ttdeci">void setScriptRunner(ScriptRunner *_s)</div><div class="ttdef"><b>Definition:</b> LRCore.h:36</div></div>
+<div class="ttc" id="Grammer__Node_8h_html"><div class="ttname"><a href="Grammer__Node_8h.html">Grammer_Node.h</a></div></div>
+<div class="ttc" id="classLRCore_html_a187c045813ba361f4c016b59e111f5bf"><div class="ttname"><a href="classLRCore.html#a187c045813ba361f4c016b59e111f5bf">LRCore::ast</a></div><div class="ttdeci">Grammer_Node * ast</div><div class="ttdef"><b>Definition:</b> LRCore.h:50</div></div>
+<div class="ttc" id="classLRCore_html_aafd5df5750b8164f279289ee22b365d9"><div class="ttname"><a href="classLRCore.html#aafd5df5750b8164f279289ee22b365d9">LRCore::NodeStack</a></div><div class="ttdeci">stack&lt; Grammer_Node * &gt; NodeStack</div><div class="ttdef"><b>Definition:</b> LRCore.h:54</div></div>
+<div class="ttc" id="classLRCore_html_a6877f4718a80f72fbdf78e3fd832169a"><div class="ttname"><a href="classLRCore.html#a6877f4718a80f72fbdf78e3fd832169a">LRCore::setBnflist</a></div><div class="ttdeci">void setBnflist(vector&lt; BNF * &gt; *_bnfs)</div><div class="ttdef"><b>Definition:</b> LRCore.h:34</div></div>
+<div class="ttc" id="classLRCore_html_abc77a2033abef605c0af3b9683a020b4"><div class="ttname"><a href="classLRCore.html#abc77a2033abef605c0af3b9683a020b4">LRCore::table</a></div><div class="ttdeci">LRTable * table</div><div class="ttdef"><b>Definition:</b> LRCore.h:62</div></div>
+<div class="ttc" id="classLRCore_html_a36bee87fd8d3596333a5044472a32777"><div class="ttname"><a href="classLRCore.html#a36bee87fd8d3596333a5044472a32777">LRCore::bnflist</a></div><div class="ttdeci">vector&lt; BNF * &gt; * bnflist</div><div class="ttdef"><b>Definition:</b> LRCore.h:58</div></div>
+<div class="ttc" id="classLRCore_html_a1f392f75a5bb79cddd7fd7996ecb82dc"><div class="ttname"><a href="classLRCore.html#a1f392f75a5bb79cddd7fd7996ecb82dc">LRCore::setTable</a></div><div class="ttdeci">void setTable(LRTable *_t)</div><div class="ttdef"><b>Definition:</b> LRCore.h:30</div></div>
+<div class="ttc" id="classScriptRunner_html"><div class="ttname"><a href="classScriptRunner.html">ScriptRunner</a></div><div class="ttdoc">脚本解析器类(其实这个类应该放到MetaScriptRunner中) </div><div class="ttdef"><b>Definition:</b> ScriptRunner.h:17</div></div>
+<div class="ttc" id="classGrammer__Node_html"><div class="ttname"><a href="classGrammer__Node.html">Grammer_Node</a></div><div class="ttdoc">BNF语法节点 </div><div class="ttdef"><b>Definition:</b> Grammer_Node.h:19</div></div>
+<div class="ttc" id="classLRCore_html_ae360bb22920bfeccb12eb9814b037771"><div class="ttname"><a href="classLRCore.html#ae360bb22920bfeccb12eb9814b037771">LRCore::LRStack</a></div><div class="ttdeci">deque&lt; int &gt; LRStack</div><div class="ttdef"><b>Definition:</b> LRCore.h:52</div></div>
+<div class="ttc" id="LRTable_8h_html"><div class="ttname"><a href="LRTable_8h.html">LRTable.h</a></div></div>
+<div class="ttc" id="classLRTable_html"><div class="ttname"><a href="classLRTable.html">LRTable</a></div><div class="ttdef"><b>Definition:</b> LRTable.h:15</div></div>
+<div class="ttc" id="classLRCore_html_ae7a5f4cb76800df9d3f942288f0d5d73"><div class="ttname"><a href="classLRCore.html#ae7a5f4cb76800df9d3f942288f0d5d73">LRCore::lex</a></div><div class="ttdeci">LexInterface * lex</div><div class="ttdef"><b>Definition:</b> LRCore.h:56</div></div>
+<div class="ttc" id="classLRCore_html"><div class="ttname"><a href="classLRCore.html">LRCore</a></div><div class="ttdef"><b>Definition:</b> LRCore.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ef88c6a543216cd8b8576f223a666a0e.html">LR_Scanner</a></li><li class="navelem"><a class="el" href="dir_c05985b4852730f5c926c23eebc45673.html">src</a></li><li class="navelem"><a class="el" href="LRCore_8h.html">LRCore.h</a></li>
+  </ul>
+</div>
+</body>
+</html>

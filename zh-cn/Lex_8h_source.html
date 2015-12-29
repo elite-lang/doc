@@ -1,0 +1,183 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Elite: Lex/include/Lex.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/elite-lang/Elite" title="Elite GitHub Repository"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Lex_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Lex.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Lex_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">* @Author: sxf</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">* @Date:   2014-10-02 20:30:46</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* @Last Modified by:   sxf</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">* @Last Modified time: 2015-12-29 20:45:10</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef LEX_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LEX_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="LexInterface_8h.html">LexInterface.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="classRuleManager.html">RuleManager</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="classDFA.html">DFA</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span><a class="code" href="classDFACore.html">DFACore</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span><a class="code" href="classEquivalenceClass.html">EquivalenceClass</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classLex.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLex.html">Lex</a> : <span class="keyword">public</span> <a class="code" href="classLexInterface.html">LexInterface</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classLex.html">Lex</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    ~<a class="code" href="classLex.html">Lex</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="structToken.html">Token</a>* Read();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Init(<span class="keyword">const</span> <span class="keywordtype">char</span>* pData = NULL);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> ReadConfig(<span class="keyword">const</span> <span class="keywordtype">char</span>* path = NULL);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> AddRule(<span class="keyword">const</span> <span class="keywordtype">char</span>* pName, <span class="keyword">const</span> <span class="keywordtype">char</span>* pattern); <span class="comment">// return the rule&#39;s id</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">int</span> FindRule(<span class="keyword">const</span> <span class="keywordtype">char</span>* pName);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* getRule(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> getRuleSize();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> InitCore();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// ============================================</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// getter and setter </span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// ============================================</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* getData();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setData(<span class="keyword">const</span> <span class="keywordtype">char</span>* pData);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classDFA.html">DFA</a>* getMainDFA();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classDFA.html">DFA</a>* combineAllDFA();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> testin(vector&lt; int &gt; newvec, vector&lt; vector&lt; int &gt; &gt; statelist);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> testequal(vector&lt; int &gt; , vector&lt; int &gt; );</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> addStopState(vector&lt;int&gt;&amp;,<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> printvec(vector&lt;int&gt; v);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// ============================================</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// member variable</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// ============================================</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classLex.html#a9a9f130fa248f7f0b64a640be0eebcaf">   77</a></span>&#160;    <a class="code" href="classDFA.html">DFA</a>* <a class="code" href="classLex.html#a9a9f130fa248f7f0b64a640be0eebcaf">mainDFA</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classLex.html#a8ee1f8eacac9f80c199582c3d8b021ab">   80</a></span>&#160;    <a class="code" href="classDFACore.html">DFACore</a>* <a class="code" href="classLex.html#a8ee1f8eacac9f80c199582c3d8b021ab">core</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classLex.html#a3adb881576c1df14c16cc79f8d182231">   83</a></span>&#160;    <a class="code" href="classEquivalenceClass.html">EquivalenceClass</a>* <a class="code" href="classLex.html#a3adb881576c1df14c16cc79f8d182231">pEClass</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classLex.html#adfd23fd13e5db01edb86a99ec61b1a9f">   84</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* pData = NULL; <span class="comment">//all the data need to be splited</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classLex.html#a4b7cd0600aef0ee4c07adcbb565952ed">   87</a></span>&#160;    <span class="keywordtype">int</span> pointer = 0; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classLex.html#a0218d90e8ebddbaecf6278ebae5e5576">   90</a></span>&#160;    <a class="code" href="classRuleManager.html">RuleManager</a>* <a class="code" href="classLex.html#a0218d90e8ebddbaecf6278ebae5e5576">ruleManager</a>; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//if the class is declared before defined, use it must be a pointer.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">//because the complier didn&#39;t know how much memory it need to allocated.</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif //LEX_H</span></div>
+<div class="ttc" id="classEquivalenceClass_html"><div class="ttname"><a href="classEquivalenceClass.html">EquivalenceClass</a></div><div class="ttdef"><b>Definition:</b> EquivalenceClass.h:17</div></div>
+<div class="ttc" id="classLex_html"><div class="ttname"><a href="classLex.html">Lex</a></div><div class="ttdoc">Lex is the main controller for the system. </div><div class="ttdef"><b>Definition:</b> Lex.h:26</div></div>
+<div class="ttc" id="classLexInterface_html"><div class="ttname"><a href="classLexInterface.html">LexInterface</a></div><div class="ttdoc">Lex的关键接口 </div><div class="ttdef"><b>Definition:</b> LexInterface.h:25</div></div>
+<div class="ttc" id="structToken_html"><div class="ttname"><a href="structToken.html">Token</a></div><div class="ttdef"><b>Definition:</b> LexInterface.h:12</div></div>
+<div class="ttc" id="LexInterface_8h_html"><div class="ttname"><a href="LexInterface_8h.html">LexInterface.h</a></div></div>
+<div class="ttc" id="classDFACore_html"><div class="ttname"><a href="classDFACore.html">DFACore</a></div><div class="ttdef"><b>Definition:</b> DFACore.h:7</div></div>
+<div class="ttc" id="classRuleManager_html"><div class="ttname"><a href="classRuleManager.html">RuleManager</a></div><div class="ttdef"><b>Definition:</b> RuleManager.h:43</div></div>
+<div class="ttc" id="classDFA_html"><div class="ttname"><a href="classDFA.html">DFA</a></div><div class="ttdoc">DFA类是一个基本的DFA自动机类，支持从正则式创建、 </div><div class="ttdef"><b>Definition:</b> DFA.h:12</div></div>
+<div class="ttc" id="classLex_html_a9a9f130fa248f7f0b64a640be0eebcaf"><div class="ttname"><a href="classLex.html#a9a9f130fa248f7f0b64a640be0eebcaf">Lex::mainDFA</a></div><div class="ttdeci">DFA * mainDFA</div><div class="ttdoc">Main dfa for all dfa combine to one. </div><div class="ttdef"><b>Definition:</b> Lex.h:77</div></div>
+<div class="ttc" id="classLex_html_a0218d90e8ebddbaecf6278ebae5e5576"><div class="ttname"><a href="classLex.html#a0218d90e8ebddbaecf6278ebae5e5576">Lex::ruleManager</a></div><div class="ttdeci">RuleManager * ruleManager</div><div class="ttdoc">used to manage the rules </div><div class="ttdef"><b>Definition:</b> Lex.h:90</div></div>
+<div class="ttc" id="classLex_html_a3adb881576c1df14c16cc79f8d182231"><div class="ttname"><a href="classLex.html#a3adb881576c1df14c16cc79f8d182231">Lex::pEClass</a></div><div class="ttdeci">EquivalenceClass * pEClass</div><div class="ttdoc">the Equivalence Class 等价类表 </div><div class="ttdef"><b>Definition:</b> Lex.h:83</div></div>
+<div class="ttc" id="classLex_html_a8ee1f8eacac9f80c199582c3d8b021ab"><div class="ttname"><a href="classLex.html#a8ee1f8eacac9f80c199582c3d8b021ab">Lex::core</a></div><div class="ttdeci">DFACore * core</div><div class="ttdoc">the core of main DFA </div><div class="ttdef"><b>Definition:</b> Lex.h:80</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3b18ba538acf98deeedf839a5eea3c05.html">Lex</a></li><li class="navelem"><a class="el" href="dir_301710a6ab4b531174ad1898c4afb43d.html">include</a></li><li class="navelem"><a class="el" href="Lex_8h.html">Lex.h</a></li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Elite: RedApple/includes/CodeGenContext.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/elite-lang/Elite" title="Elite GitHub Repository"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('CodeGenContext_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CodeGenContext.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="CodeGenContext_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">* @Author: sxf</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">* @Date:   2015-10-10 18:44:44</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* @Last Modified by:   sxf</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">* @Last Modified time: 2015-12-26 15:10:36</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">* </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">* 代码生成的上下文类, 是C实现宏的最核心功能类</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef CODE_GEN_CONTENT_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CODE_GEN_CONTENT_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Node_8h.html">Model/Node.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stack&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="llcg_8h.html">LLCG/llcg.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="StructModel_8h.html">MetaModel/StructModel.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="FunctionModel_8h.html">MetaModel/FunctionModel.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="MacroModel_8h.html">MetaModel/MacroModel.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CodeGenFunction_8h.html">CodeGenFunction.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span><a class="code" href="classIDTable.html">IDTable</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">struct </span><a class="code" href="structid.html">id</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classCodeGenContext.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCodeGenContext.html">CodeGenContext</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classCodeGenContext.html">CodeGenContext</a>(<a class="code" href="classNode.html">Node</a>* <a class="code" href="structnode.html">node</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    ~<a class="code" href="classCodeGenContext.html">CodeGenContext</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> PreMacro();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> PreInit();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> PreTypeInit();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> Init();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> MacroMake(<a class="code" href="classNode.html">Node</a>* node);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classCodeGenContext.html#a78aad6d2a2a12b7673d99694a23a8534">   77</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCodeGenContext.html#a78aad6d2a2a12b7673d99694a23a8534">MacroMakeAll</a>(<a class="code" href="classNode.html">Node</a>* node) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        MacroMake(node);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="classICodeGenFunction.html">ICodeGenFunction</a>* getMacro(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; str);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// C++注册宏</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// void AddMacros(const FuncReg* macro_funcs); // 为只添加不替换保留</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> AddOrReplaceMacros(<span class="keyword">const</span> <a class="code" href="struct__funcReg.html">FuncReg</a>* <a class="code" href="packages_2test2_2cplug_2main_8cpp.html#a8ff335d4ad7f4dabd247f039b880cd00">macro_funcs</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> AddOrReplaceMacros(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="classICodeGenFunction.html">ICodeGenFunction</a>* func);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> RemoveAllMacros(); </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// 获取当前模块中已注册的函数</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> getFunction(<a class="code" href="classNode.html">Node</a>* node);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> getFunction(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> nowFunction(<a class="code" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> _nowFunc);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// 用户宏的查找与声明设置</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    shared_ptr&lt;MacroModel&gt; getUserMacro(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span>  setUserMacro(<span class="keyword">const</span> std::string&amp; name, <a class="code" href="classNode.html">Node</a>* node);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    shared_ptr&lt;FunctionModel&gt; getFunctionModel(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    shared_ptr&lt;StructModel&gt; getStructModel(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">void</span> ScanOther(<a class="code" href="classNode.html">Node</a>* node);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// 类型的定义和查找</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> DefType(<span class="keywordtype">string</span> name, <a class="code" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> t);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> FindType(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> FindType(<a class="code" href="classNode.html">Node</a>*);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> FindSrcType(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> FindSrcType(<a class="code" href="classNode.html">Node</a>*);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">void</span> DefVar(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> addr);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <a class="code" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> FindVar(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">void</span> SaveMacros();</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">void</span> RecoverMacros();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="classCodeGenContext.html#a2cfdf5b81fe1e34aeaa9bce4eacc6032">  152</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCodeGenContext.html#a2cfdf5b81fe1e34aeaa9bce4eacc6032">isSave</a>() { <span class="keywordflow">return</span> _save; }</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classCodeGenContext.html#ae3efc8994b0fd5a0923871855105b3a6">  153</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCodeGenContext.html#ae3efc8994b0fd5a0923871855105b3a6">setIsSave</a>(<span class="keywordtype">bool</span> save) { _save = save; }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">id</span>* FindST(<a class="code" href="classNode.html">Node</a>* node) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">id</span>* FindST(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; str) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classCodeGenContext.html#af2a3c50c86076a42971ed4f8bda8a8a4">  157</a></span>&#160;    <a class="code" href="classIDTable.html">IDTable</a>* <a class="code" href="classCodeGenContext.html#af2a3c50c86076a42971ed4f8bda8a8a4">st</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classCodeGenContext.html#a0660b9322c336b2417be8b7e52eeba84">  163</a></span>&#160;    <a class="code" href="classllcg.html">llcg</a>* <a class="code" href="classCodeGenContext.html#a0660b9322c336b2417be8b7e52eeba84">getLLCG</a>() { <span class="keywordflow">return</span> codeGenerator; }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classCodeGenContext.html#a625e90f37ea3b12d75e5501faac473bb">  167</a></span>&#160;    <a class="code" href="classllcg.html">llcg</a>* <a class="code" href="classCodeGenContext.html#a625e90f37ea3b12d75e5501faac473bb">codeGenerator</a>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classCodeGenContext.html#a5f7523d8f52dc51a30dc4eccc23cd720">  173</a></span>&#160;    <a class="code" href="classNode.html">Node</a>* <a class="code" href="classCodeGenContext.html#a5f7523d8f52dc51a30dc4eccc23cd720">root</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="classCodeGenContext.html#a41420fd366affb639a9dba7dc024b7f3">  179</a></span>&#160;    map&lt;string, ICodeGenFunction*&gt; <a class="code" href="classCodeGenContext.html#a41420fd366affb639a9dba7dc024b7f3">macro_map</a>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="classCodeGenContext.html#a5b3f7e53a92f728853c922f51408f51d">  185</a></span>&#160;    stack&lt;map&lt;string, ICodeGenFunction*&gt; &gt; <a class="code" href="classCodeGenContext.html#a5b3f7e53a92f728853c922f51408f51d">macro_save_stack</a>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">void</span> setNormalType();</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="classCodeGenContext.html#a0d822dbd185cb1cb2d2f4434fb109185">  192</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCodeGenContext.html#a0d822dbd185cb1cb2d2f4434fb109185">_save</a>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;};</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#endif // CODE_GEN_CONTENT_H</span></div>
+<div class="ttc" id="classCodeGenContext_html_a2cfdf5b81fe1e34aeaa9bce4eacc6032"><div class="ttname"><a href="classCodeGenContext.html#a2cfdf5b81fe1e34aeaa9bce4eacc6032">CodeGenContext::isSave</a></div><div class="ttdeci">bool isSave()</div><div class="ttdef"><b>Definition:</b> CodeGenContext.h:152</div></div>
+<div class="ttc" id="structnode_html"><div class="ttname"><a href="structnode.html">node</a></div><div class="ttdoc">lex中正则表达式的节点结构体 </div><div class="ttdef"><b>Definition:</b> Regex.h:27</div></div>
+<div class="ttc" id="classNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdoc">List的基本组成元素，表示一个代码中的基本节点 </div><div class="ttdef"><b>Definition:</b> Node.h:37</div></div>
+<div class="ttc" id="classICodeGenFunction_html"><div class="ttname"><a href="classICodeGenFunction.html">ICodeGenFunction</a></div><div class="ttdef"><b>Definition:</b> ICodeGenFunction.h:15</div></div>
+<div class="ttc" id="MacroModel_8h_html"><div class="ttname"><a href="MacroModel_8h.html">MacroModel.h</a></div></div>
+<div class="ttc" id="Node_8h_html"><div class="ttname"><a href="Node_8h.html">Node.h</a></div></div>
+<div class="ttc" id="llcg_8h_html"><div class="ttname"><a href="llcg_8h.html">llcg.h</a></div></div>
+<div class="ttc" id="classCodeGenContext_html_a5f7523d8f52dc51a30dc4eccc23cd720"><div class="ttname"><a href="classCodeGenContext.html#a5f7523d8f52dc51a30dc4eccc23cd720">CodeGenContext::root</a></div><div class="ttdeci">Node * root</div><div class="ttdoc">语法树根节点 </div><div class="ttdef"><b>Definition:</b> CodeGenContext.h:173</div></div>
+<div class="ttc" id="classCodeGenContext_html_a0660b9322c336b2417be8b7e52eeba84"><div class="ttname"><a href="classCodeGenContext.html#a0660b9322c336b2417be8b7e52eeba84">CodeGenContext::getLLCG</a></div><div class="ttdeci">llcg * getLLCG()</div><div class="ttdoc">获取低层次代码生成器，目前只有llvm </div><div class="ttdef"><b>Definition:</b> CodeGenContext.h:163</div></div>
+<div class="ttc" id="classCodeGenContext_html_a78aad6d2a2a12b7673d99694a23a8534"><div class="ttname"><a href="classCodeGenContext.html#a78aad6d2a2a12b7673d99694a23a8534">CodeGenContext::MacroMakeAll</a></div><div class="ttdeci">void MacroMakeAll(Node *node)</div><div class="ttdoc">递归翻译该节点下的所有宏 </div><div class="ttdef"><b>Definition:</b> CodeGenContext.h:77</div></div>
+<div class="ttc" id="structid_html"><div class="ttname"><a href="structid.html">id</a></div><div class="ttdoc">栈式符号表返回的临时对象, 用来打包类型信息和值等, 无需释放资源 </div><div class="ttdef"><b>Definition:</b> idmap.h:9</div></div>
+<div class="ttc" id="FunctionModel_8h_html"><div class="ttname"><a href="FunctionModel_8h.html">FunctionModel.h</a></div></div>
+<div class="ttc" id="lvalue_8h_html_a5cf798ba07bb6fdacc84cf8077774eb5"><div class="ttname"><a href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a></div><div class="ttdeci">shared_ptr&lt; lvalue &gt; LValue</div><div class="ttdef"><b>Definition:</b> lvalue.h:17</div></div>
+<div class="ttc" id="classCodeGenContext_html_a0d822dbd185cb1cb2d2f4434fb109185"><div class="ttname"><a href="classCodeGenContext.html#a0d822dbd185cb1cb2d2f4434fb109185">CodeGenContext::_save</a></div><div class="ttdeci">bool _save</div><div class="ttdef"><b>Definition:</b> CodeGenContext.h:192</div></div>
+<div class="ttc" id="CodeGenFunction_8h_html"><div class="ttname"><a href="CodeGenFunction_8h.html">CodeGenFunction.h</a></div></div>
+<div class="ttc" id="StructModel_8h_html"><div class="ttname"><a href="StructModel_8h.html">StructModel.h</a></div></div>
+<div class="ttc" id="classCodeGenContext_html_af2a3c50c86076a42971ed4f8bda8a8a4"><div class="ttname"><a href="classCodeGenContext.html#af2a3c50c86076a42971ed4f8bda8a8a4">CodeGenContext::st</a></div><div class="ttdeci">IDTable * st</div><div class="ttdef"><b>Definition:</b> CodeGenContext.h:157</div></div>
+<div class="ttc" id="classIDTable_html"><div class="ttname"><a href="classIDTable.html">IDTable</a></div><div class="ttdoc">简易栈式符号表，需要在进入函数后手动压栈等操作 </div><div class="ttdef"><b>Definition:</b> idtable.h:8</div></div>
+<div class="ttc" id="classCodeGenContext_html"><div class="ttname"><a href="classCodeGenContext.html">CodeGenContext</a></div><div class="ttdoc">代码生成上下文, 是代码生成中的关键信息存储类 </div><div class="ttdef"><b>Definition:</b> CodeGenContext.h:37</div></div>
+<div class="ttc" id="classllcg_html"><div class="ttname"><a href="classllcg.html">llcg</a></div><div class="ttdoc">核心接口类 底层代码生成器 Low-Level Code Generator 整个底层的聚合接口 </div><div class="ttdef"><b>Definition:</b> llcg.h:26</div></div>
+<div class="ttc" id="packages_2test2_2cplug_2main_8cpp_html_a8ff335d4ad7f4dabd247f039b880cd00"><div class="ttname"><a href="packages_2test2_2cplug_2main_8cpp.html#a8ff335d4ad7f4dabd247f039b880cd00">macro_funcs</a></div><div class="ttdeci">static const FuncReg macro_funcs[]</div><div class="ttdef"><b>Definition:</b> main.cpp:19</div></div>
+<div class="ttc" id="classCodeGenContext_html_a5b3f7e53a92f728853c922f51408f51d"><div class="ttname"><a href="classCodeGenContext.html#a5b3f7e53a92f728853c922f51408f51d">CodeGenContext::macro_save_stack</a></div><div class="ttdeci">stack&lt; map&lt; string, ICodeGenFunction * &gt; &gt; macro_save_stack</div><div class="ttdoc">这个栈是用来临时保存上面的查询表的 </div><div class="ttdef"><b>Definition:</b> CodeGenContext.h:185</div></div>
+<div class="ttc" id="struct__funcReg_html"><div class="ttname"><a href="struct__funcReg.html">_funcReg</a></div><div class="ttdoc">宏翻译函数注册结构体 </div><div class="ttdef"><b>Definition:</b> CodeGenFunction.h:39</div></div>
+<div class="ttc" id="classCodeGenContext_html_a41420fd366affb639a9dba7dc024b7f3"><div class="ttname"><a href="classCodeGenContext.html#a41420fd366affb639a9dba7dc024b7f3">CodeGenContext::macro_map</a></div><div class="ttdeci">map&lt; string, ICodeGenFunction * &gt; macro_map</div><div class="ttdoc">宏定义表，用来查找是否有该宏定义的 </div><div class="ttdef"><b>Definition:</b> CodeGenContext.h:179</div></div>
+<div class="ttc" id="classCodeGenContext_html_a625e90f37ea3b12d75e5501faac473bb"><div class="ttname"><a href="classCodeGenContext.html#a625e90f37ea3b12d75e5501faac473bb">CodeGenContext::codeGenerator</a></div><div class="ttdeci">llcg * codeGenerator</div><div class="ttdef"><b>Definition:</b> CodeGenContext.h:167</div></div>
+<div class="ttc" id="classCodeGenContext_html_ae3efc8994b0fd5a0923871855105b3a6"><div class="ttname"><a href="classCodeGenContext.html#ae3efc8994b0fd5a0923871855105b3a6">CodeGenContext::setIsSave</a></div><div class="ttdeci">void setIsSave(bool save)</div><div class="ttdef"><b>Definition:</b> CodeGenContext.h:153</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fb1dbf84419a0512642bc84350a32c62.html">RedApple</a></li><li class="navelem"><a class="el" href="dir_125373505b90ecc962e4090cea3a22c6.html">includes</a></li><li class="navelem"><a class="el" href="CodeGenContext_8h.html">CodeGenContext.h</a></li>
+  </ul>
+</div>
+</body>
+</html>

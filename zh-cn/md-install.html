@@ -1,0 +1,160 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Elite: 安装教程</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/elite-lang/Elite" title="Elite GitHub Repository"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('md-install.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">安装教程 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="toc"><h3>目录</h3>
+<ul><li class="level1"><a href="#ins-precompiled">使用预编译版</a></li>
+<li class="level1"><a href="#ins-compile">从源码编译安装</a><ul><li class="level2"><a href="#ins-linux">Linux环境下的编译</a></li>
+<li class="level2"><a href="#ins-mac">MacOSX环境下的编译</a></li>
+<li class="level2"><a href="#ins-windows">Windows环境下的编译</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="textblock"><h1><a class="anchor" id="ins-precompiled"></a>
+使用预编译版</h1>
+<p>如果您仅仅是想使用Elite去开发应用程序，那么推荐您下载我们预编译好的版本</p>
+<p>下载页：</p>
+<p>仅仅需要您配置好环境变量即可，Mac &amp; Linux： </p>
+<pre class="fragment">// for elite 
+export ELITE_HOME=【您的Elitei安装目录】
+export PATH=$ELITE_HOME/bin:$PATH
+</pre><p>Windows用户：</p>
+<h1><a class="anchor" id="ins-compile"></a>
+从源码编译安装</h1>
+<p>首先，从源码编译安装能够提供给您更丰富的自定义功能，您可以通过修改配置，使用不同的版本。而且自行编译安装，您可以任意修改任何默认配置代码和添加删除功能，这对于开发人员和需要定制化软件的人员更为方便。</p>
+<p>首先预先您使用git clone完整的项目仓库，请注意使用<code>--recursive</code>参数来下载全部子项目： </p>
+<pre class="fragment">git clone --depth=1 --recursive git@github.com:elite-lang/Elite.git 
+</pre><h2><a class="anchor" id="ins-linux"></a>
+Linux环境下的编译</h2>
+<h4>开发环境和依赖项</h4>
+<p>本项目是在Ubuntu14.04 64位系统下开发的，依赖以下开发库：</p>
+<ul>
+<li>cmake-2.8</li>
+<li>LLVM-3.6</li>
+<li>flex-2.5</li>
+<li>bison-3.0</li>
+<li>lua-5.2</li>
+<li>oolua-2.0</li>
+<li>dyncall-0.8</li>
+</ul>
+<p>Ubuntu14.04 用户可以直接使用如下命令从源中安装以上软件包： </p>
+<pre class="fragment">sudo apt-get install cmake llvm-3.6-dev libglibmm-2.4-dev flex bison libedit-dev 
+</pre><p>ubuntu源中LLVM-3.6的CMake脚本存在bug，如果您安装了llvm-3.6-dev后cmake项目时仍找不到LLVM，那么请执行下面的脚本修复: </p>
+<pre class="fragment">sudo sh ./scripts/fix_ubuntu_llvm.sh
+</pre><h4>编译选项</h4>
+<p>默认Release编译时，只需要您在项目根目录下执行： </p>
+<pre class="fragment">make release
+</pre><p>或者您可以手动自行配置编译参数： </p>
+<pre class="fragment">mkdir build &amp;&amp; cd build
+cmake ..        //cmake配置
+make deps       //下载并构建依赖项目 
+make elite      //构建项目
+</pre><p>可选的编译参数有：</p>
+<table class="doxtable">
+<tr>
+<th>参数 </th><th>描述 </th><th>默认参数  </th></tr>
+<tr>
+<td>CMAKE_BUILD_TYPE </td><td>构建类型 </td><td>Debug </td></tr>
+<tr>
+<td>BUILD_TEST </td><td>是否构建测试 </td><td>OFF </td></tr>
+<tr>
+<td>COVERAGE_FLAG </td><td>覆盖率测试 </td><td>OFF </td></tr>
+</table>
+<p>使用时可以如下添加到CMake指令后 </p>
+<pre class="fragment">cmake -DCMAKE_BUILD_TYPE=Release
+</pre><h2><a class="anchor" id="ins-mac"></a>
+MacOSX环境下的编译</h2>
+<p>Mac下的编译方式同样为CMake，构建方式也完全一致，仅仅是依赖项的安装有所区别。</p>
+<h4>依赖项和工具</h4>
+<h2><a class="anchor" id="ins-windows"></a>
+Windows环境下的编译</h2>
+<p>Windows下支持使用VS2013及以上版本，不建议使用MinGW和Cygwin等兼容平台。 </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+  </ul>
+</div>
+</body>
+</html>

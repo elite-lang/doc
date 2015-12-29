@@ -1,0 +1,712 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Elite: LR_parser类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygenextra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="topbanner"><a href="https://github.com/elite-lang/Elite" title="Elite GitHub Repository"><i class="githublogo"></i></a></div>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classLR__parser.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classLR__parser-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">LR_parser类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="LR__parser_8h_source.html">LR_parser.h</a>&gt;</code></p>
+<div class="dynheader">
+类 LR_parser 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classLR__parser.png" usemap="#LR_parser_map" alt=""/>
+  <map id="LR_parser_map" name="LR_parser_map">
+<area href="classParser.html" title="核心的语法分析器接口 " alt="Parser" shape="rect" coords="0,0,71,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a33881a414f5ec14f3d858aca3f0d6718"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a33881a414f5ec14f3d858aca3f0d6718">LR_parser</a> ()</td></tr>
+<tr class="separator:a33881a414f5ec14f3d858aca3f0d6718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a867e0f0beb337eb7f515018acdbc95d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a867e0f0beb337eb7f515018acdbc95d2">~LR_parser</a> ()</td></tr>
+<tr class="separator:a867e0f0beb337eb7f515018acdbc95d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf49e53209353494d0d8891daf10b372"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#acf49e53209353494d0d8891daf10b372">BuildParser</a> ()</td></tr>
+<tr class="memdesc:acf49e53209353494d0d8891daf10b372"><td class="mdescLeft">&#160;</td><td class="mdescRight">构建解析器  <a href="#acf49e53209353494d0d8891daf10b372">更多...</a><br/></td></tr>
+<tr class="separator:acf49e53209353494d0d8891daf10b372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a723c537cd2b3ace2b6132ab279178d2c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a723c537cd2b3ace2b6132ab279178d2c">BuildParser</a> (const char *)</td></tr>
+<tr class="memdesc:a723c537cd2b3ace2b6132ab279178d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">先AddBNF，再构建解析器  <a href="#a723c537cd2b3ace2b6132ab279178d2c">更多...</a><br/></td></tr>
+<tr class="separator:a723c537cd2b3ace2b6132ab279178d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a465f13004d5b97c0e8f8ce39fe126954"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a465f13004d5b97c0e8f8ce39fe126954">AddBNF</a> (const char *)</td></tr>
+<tr class="memdesc:a465f13004d5b97c0e8f8ce39fe126954"><td class="mdescLeft">&#160;</td><td class="mdescRight">将EBNF的描述文件传入，用来构建LR语法解析器  <a href="#a465f13004d5b97c0e8f8ce39fe126954">更多...</a><br/></td></tr>
+<tr class="separator:a465f13004d5b97c0e8f8ce39fe126954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b9cffc03992eac1224b8d24b3708d57"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a0b9cffc03992eac1224b8d24b3708d57">Parse</a> (<a class="el" href="classGrammer__Node.html">Grammer_Node</a> *<a class="el" href="BNFParser_8cpp.html#aa853fcf202c1c7498d198cf828a9d6bb">root</a>)</td></tr>
+<tr class="memdesc:a0b9cffc03992eac1224b8d24b3708d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">解析文本  <a href="#a0b9cffc03992eac1224b8d24b3708d57">更多...</a><br/></td></tr>
+<tr class="separator:a0b9cffc03992eac1224b8d24b3708d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b48b2ed78e696045b69aad54b4e979c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a5b48b2ed78e696045b69aad54b4e979c">setLex</a> (<a class="el" href="classLexInterface.html">LexInterface</a> *)</td></tr>
+<tr class="memdesc:a5b48b2ed78e696045b69aad54b4e979c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置词法分析器  <a href="#a5b48b2ed78e696045b69aad54b4e979c">更多...</a><br/></td></tr>
+<tr class="separator:a5b48b2ed78e696045b69aad54b4e979c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76468d349fec2618e5b2e88037bda980"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a76468d349fec2618e5b2e88037bda980">setScriptRunner</a> (<a class="el" href="classScriptRunner.html">ScriptRunner</a> *sr)</td></tr>
+<tr class="memdesc:a76468d349fec2618e5b2e88037bda980"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置脚本解析器  <a href="#a76468d349fec2618e5b2e88037bda980">更多...</a><br/></td></tr>
+<tr class="separator:a76468d349fec2618e5b2e88037bda980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9b8a69c27d276cc71380c8d7d9a14c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a2f9b8a69c27d276cc71380c8d7d9a14c">setBaseVtSize</a> (int size)</td></tr>
+<tr class="memdesc:a2f9b8a69c27d276cc71380c8d7d9a14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置非终结符的个数 set the Base Vt size of <a class="el" href="classLex.html" title="Lex is the main controller for the system. ">Lex</a>  <a href="#a2f9b8a69c27d276cc71380c8d7d9a14c">更多...</a><br/></td></tr>
+<tr class="separator:a2f9b8a69c27d276cc71380c8d7d9a14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a6e442f9d550581dc30d28880961a7854"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a6e442f9d550581dc30d28880961a7854">ExtendBNF</a> ()</td></tr>
+<tr class="separator:a6e442f9d550581dc30d28880961a7854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91850e2fd23cbd34ca9278967c5fcbfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a91850e2fd23cbd34ca9278967c5fcbfe">MakeID</a> ()</td></tr>
+<tr class="separator:a91850e2fd23cbd34ca9278967c5fcbfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a731c5853b16ec86be16e6592249b487f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a731c5853b16ec86be16e6592249b487f">print_GOTO</a> (vector&lt; <a class="el" href="classItemCollection.html">ItemCollection</a> * &gt; vec)</td></tr>
+<tr class="separator:a731c5853b16ec86be16e6592249b487f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a4cfca9ad9809b8817c54b6d1014c5224"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLexInterface.html">LexInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a4cfca9ad9809b8817c54b6d1014c5224">lex</a></td></tr>
+<tr class="separator:a4cfca9ad9809b8817c54b6d1014c5224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e7a0b032833750a3ce5fcec6587595b"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classBNF.html">BNF</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a2e7a0b032833750a3ce5fcec6587595b">bnflist</a></td></tr>
+<tr class="separator:a2e7a0b032833750a3ce5fcec6587595b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8de8ffef480dd8dadcf012c313a4655"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBNF.html">BNF</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#ac8de8ffef480dd8dadcf012c313a4655">mainbnf</a></td></tr>
+<tr class="separator:ac8de8ffef480dd8dadcf012c313a4655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8beb443fa4c7150f5c82613ca4c646"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVMap.html">VMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#afc8beb443fa4c7150f5c82613ca4c646">vmap</a></td></tr>
+<tr class="separator:afc8beb443fa4c7150f5c82613ca4c646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ae9ac3dab30115be0a75b116cf0b1e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLRCore.html">LRCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a9ae9ac3dab30115be0a75b116cf0b1e1">core</a></td></tr>
+<tr class="separator:a9ae9ac3dab30115be0a75b116cf0b1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6527d0b55f0f48eafe6f6413311eb7f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLRTable.html">LRTable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a6527d0b55f0f48eafe6f6413311eb7f1">table</a></td></tr>
+<tr class="separator:a6527d0b55f0f48eafe6f6413311eb7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8b9cef9ea3eba4083fea1f01b764e27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBNFParser.html">BNFParser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#ac8b9cef9ea3eba4083fea1f01b764e27">bnfparser</a></td></tr>
+<tr class="separator:ac8b9cef9ea3eba4083fea1f01b764e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f9f533e734a76aa32c51ceda7021913"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a8f9f533e734a76aa32c51ceda7021913">cfg_filepath</a></td></tr>
+<tr class="separator:a8f9f533e734a76aa32c51ceda7021913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classParser"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classParser')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="classParser.html">Parser</a></td></tr>
+<tr class="memitem:a749676684ba70a96244dbb6bd6bc5394 inherit pub_static_methods_classParser"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classParser.html">Parser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser.html#a749676684ba70a96244dbb6bd6bc5394">NewLRParser</a> ()</td></tr>
+<tr class="memdesc:a749676684ba70a96244dbb6bd6bc5394 inherit pub_static_methods_classParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">构建特点的LALR解析器  <a href="#a749676684ba70a96244dbb6bd6bc5394">更多...</a><br/></td></tr>
+<tr class="separator:a749676684ba70a96244dbb6bd6bc5394 inherit pub_static_methods_classParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a33881a414f5ec14f3d858aca3f0d6718"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LR_parser::LR_parser </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a867e0f0beb337eb7f515018acdbc95d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LR_parser::~LR_parser </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a465f13004d5b97c0e8f8ce39fe126954"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LR_parser::AddBNF </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将EBNF的描述文件传入，用来构建LR语法解析器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">BNF配置文件路径</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="classParser.html#a955aee2713369abcee28ff28b3358ed9">Parser</a>.</p>
+
+<p>参考 <a class="el" href="classBNFParser.html#ac82bde242076404c536b6d57b1d110c9">BNFParser::Analysis()</a>, <a class="el" href="classLR__parser.html#a2e7a0b032833750a3ce5fcec6587595b">bnflist</a>, <a class="el" href="classLR__parser.html#ac8b9cef9ea3eba4083fea1f01b764e27">bnfparser</a>, <a class="el" href="classBNF.html#afa66a62c8d21aa45e65a6dca386f0ce2">BNF::BuildAllBNF()</a>, <a class="el" href="classLR__parser.html#a8f9f533e734a76aa32c51ceda7021913">cfg_filepath</a>, <a class="el" href="structVMap.html#a69928ee72beff81f57240a4f1c1bc385">VMap::constSize</a>, <a class="el" href="classLR__parser.html#a6e442f9d550581dc30d28880961a7854">ExtendBNF()</a>, <a class="el" href="classLexInterface.html#a04c2fc67b9a4de05ded90069992793ab">LexInterface::getRule()</a>, <a class="el" href="classLexInterface.html#a52df9d845dc23afd8431317b16bf5a56">LexInterface::getRuleSize()</a>, <a class="el" href="structVMap.html#af1c29680b17c31df85caf80626e33f8b">VMap::InsertVt()</a>, <a class="el" href="classLR__parser.html#a4cfca9ad9809b8817c54b6d1014c5224">lex</a>, <a class="el" href="classLR__parser.html#a91850e2fd23cbd34ca9278967c5fcbfe">MakeID()</a>, <a class="el" href="classBNFParser.html#a4b646e6927415950126c10ec1d67828a">BNFParser::MakePrecedence()</a>, <a class="el" href="BNFParser_8cpp.html#aa853fcf202c1c7498d198cf828a9d6bb">root</a> , 以及 <a class="el" href="classLR__parser.html#afc8beb443fa4c7150f5c82613ca4c646">vmap</a>.</p>
+
+<p>参考自 <a class="el" href="classLR__parser.html#a723c537cd2b3ace2b6132ab279178d2c">BuildParser()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acf49e53209353494d0d8891daf10b372"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LR_parser::BuildParser </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构建解析器 </p>
+
+<p>实现了 <a class="el" href="classParser.html#a1bd418a26a264474f4d84bfaebee1ea9">Parser</a>.</p>
+
+<p>参考 <a class="el" href="classLR__parser.html#a2e7a0b032833750a3ce5fcec6587595b">bnflist</a>, <a class="el" href="classLR__parser.html#ac8b9cef9ea3eba4083fea1f01b764e27">bnfparser</a>, <a class="el" href="classLALRTable.html#a2671b65d38c2522cca59815bfbb9b692">LALRTable::BuildTable()</a>, <a class="el" href="classLR__parser.html#a8f9f533e734a76aa32c51ceda7021913">cfg_filepath</a>, <a class="el" href="structVMap.html#ab627541c52117e5c42b8f179e07249b5">VMap::constMax</a>, <a class="el" href="structVMap.html#a69928ee72beff81f57240a4f1c1bc385">VMap::constSize</a>, <a class="el" href="classFileUtils.html#a08c4491b555ec82ce6fbded7fd1ed7f2">FileUtils::isNeedUpdate()</a>, <a class="el" href="classLALRTable.html#a2d9fb8d2b102401c9a2306b84226ae40">LALRTable::Load()</a>, <a class="el" href="classLR__parser.html#ac8de8ffef480dd8dadcf012c313a4655">mainbnf</a>, <a class="el" href="classItemCollection.html#aea913a62030b6f739b964c7ac18ace1f">ItemCollection::MakeLALRItems()</a>, <a class="el" href="classItemCollection.html#a48dbbf7498014c00a348f78caa72a8aa">ItemCollection::MakeLR0Items()</a>, <a class="el" href="classLALRTable.html#aa8fc54fb6630609789ae70d9d24eee54">LALRTable::Save()</a>, <a class="el" href="classLR__parser.html#a6527d0b55f0f48eafe6f6413311eb7f1">table</a> , 以及 <a class="el" href="classLR__parser.html#afc8beb443fa4c7150f5c82613ca4c646">vmap</a>.</p>
+
+<p>参考自 <a class="el" href="classLR__parser.html#a723c537cd2b3ace2b6132ab279178d2c">BuildParser()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a723c537cd2b3ace2b6132ab279178d2c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LR_parser::BuildParser </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>先AddBNF，再构建解析器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">BNF配置文件路径</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="classParser.html#a94aa55991c39ebf1cff9a5e750b981a1">Parser</a>.</p>
+
+<p>参考 <a class="el" href="classLR__parser.html#a465f13004d5b97c0e8f8ce39fe126954">AddBNF()</a> , 以及 <a class="el" href="classLR__parser.html#acf49e53209353494d0d8891daf10b372">BuildParser()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e442f9d550581dc30d28880961a7854"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LR_parser::ExtendBNF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classBNF.html#af05dead926c98c49e012ed1b92341d4a">BNF::addBNFdata()</a>, <a class="el" href="classLR__parser.html#a2e7a0b032833750a3ce5fcec6587595b">bnflist</a>, <a class="el" href="classState.html#abc172088da8328c72ae3425df8b06e1a">State::id</a>, <a class="el" href="structVMap.html#a0ba3734396ef2d94a24f7f23d27e083f">VMap::InsertVn()</a>, <a class="el" href="classLR__parser.html#ac8de8ffef480dd8dadcf012c313a4655">mainbnf</a>, <a class="el" href="classBNF.html#a792b83c06454bed27a01709fa8769499">BNF::setID()</a>, <a class="el" href="classBNF.html#a5635937785e7e6309f1a0ab67d91b19e">BNF::setRoot()</a>, <a class="el" href="classState.html#a165cda4aedac6816067a06ae938628d4">State::state_class</a>, <a class="el" href="classState.html#a3f6f58f2679ad7181eabeb161f5b7f2a">State::state_type</a>, <a class="el" href="State_8h.html#a1615968a92950438f6e67a28e9d56e5ca338f0b1773c656a2647feb9e2bf6be09">statement</a> , 以及 <a class="el" href="classLR__parser.html#afc8beb443fa4c7150f5c82613ca4c646">vmap</a>.</p>
+
+<p>参考自 <a class="el" href="classLR__parser.html#a465f13004d5b97c0e8f8ce39fe126954">AddBNF()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a91850e2fd23cbd34ca9278967c5fcbfe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LR_parser::MakeID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classLR__parser.html#a2e7a0b032833750a3ce5fcec6587595b">bnflist</a>, <a class="el" href="State_8h.html#a1615968a92950438f6e67a28e9d56e5ca995640a12d5339aabee76a933fb5f519">constant</a>, <a class="el" href="State_8h.html#a1615968a92950438f6e67a28e9d56e5caf0dcc7af8439b813b9715842b6bfdb0f">epsilon</a>, <a class="el" href="classBNF.html#ae2138e4041ec8e8590bb753041dd0690">BNF::getBNFdata()</a>, <a class="el" href="structVMap.html#a4d3c29115fb8dee6e0986530c2629787">VMap::getConst()</a>, <a class="el" href="classBNF.html#a3f75110a39ef6cb73c32bbb16c9549f1">BNF::getRoot()</a>, <a class="el" href="structVMap.html#aaadf79e82a5e95038270d2bbfcd4f633">VMap::getVn()</a>, <a class="el" href="structVMap.html#aa3c8680196f29f9250dd70c6966c499a">VMap::getVt()</a>, <a class="el" href="classState.html#abc172088da8328c72ae3425df8b06e1a">State::id</a>, <a class="el" href="classState.html#a165cda4aedac6816067a06ae938628d4">State::state_class</a>, <a class="el" href="classState.html#a3e76ae1fef81d78836e37bdceecca0f7">State::state_const</a>, <a class="el" href="classState.html#a3f6f58f2679ad7181eabeb161f5b7f2a">State::state_type</a>, <a class="el" href="State_8h.html#a1615968a92950438f6e67a28e9d56e5ca338f0b1773c656a2647feb9e2bf6be09">statement</a>, <a class="el" href="State_8h.html#a1615968a92950438f6e67a28e9d56e5cad2c8f587b1a86f19ae367dbd08bd6e6c">temporality</a>, <a class="el" href="State_8h.html#a1615968a92950438f6e67a28e9d56e5ca677408aa0ed8ac39972c18fb7b5603f0">terminal</a> , 以及 <a class="el" href="classLR__parser.html#afc8beb443fa4c7150f5c82613ca4c646">vmap</a>.</p>
+
+<p>参考自 <a class="el" href="classLR__parser.html#a465f13004d5b97c0e8f8ce39fe126954">AddBNF()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b9cffc03992eac1224b8d24b3708d57"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LR_parser::Parse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGrammer__Node.html">Grammer_Node</a> *&#160;</td>
+          <td class="paramname"><em>root</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解析文本 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>空的语法树节点, 将会被用作根节点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>正常为0, 错误返回异常码 </dd></dl>
+
+<p>实现了 <a class="el" href="classParser.html#a8b443c488f9e7155a691f91b332b11f9">Parser</a>.</p>
+
+<p>参考 <a class="el" href="classLR__parser.html#a2e7a0b032833750a3ce5fcec6587595b">bnflist</a>, <a class="el" href="classLR__parser.html#a9ae9ac3dab30115be0a75b116cf0b1e1">core</a>, <a class="el" href="classDebugMsg.html#a3b255bf842ac7327d82c0d296cf8f4df">DebugMsg::isDebug()</a>, <a class="el" href="classLR__parser.html#a4cfca9ad9809b8817c54b6d1014c5224">lex</a>, <a class="el" href="classDebugMsg.html#a49628744d8e2ddca6af6efcd782e5be0">DebugMsg::parser_close()</a>, <a class="el" href="classDebugMsg.html#a2880dfdd4030137c25d22ee4ba54e926">DebugMsg::parser_dbg()</a>, <a class="el" href="structVMap.html#a434e1649b89634a446e766b7c4b9320f">VMap::printAll()</a>, <a class="el" href="classLRTable.html#a3609661036a21b6b175dfd422f4bd991">LRTable::printTable()</a>, <a class="el" href="classLRCore.html#a7ef63e74a414653d139aef842a816dc9">LRCore::Run()</a>, <a class="el" href="classLRCore.html#a668d6cdc578eb9c10c64a3f3dde3a33e">LRCore::setAst()</a>, <a class="el" href="classLRCore.html#a6877f4718a80f72fbdf78e3fd832169a">LRCore::setBnflist()</a>, <a class="el" href="classLRCore.html#a222c3770b4eb242631085da61841443a">LRCore::setLex()</a>, <a class="el" href="classLRCore.html#a1f392f75a5bb79cddd7fd7996ecb82dc">LRCore::setTable()</a>, <a class="el" href="classLRCore.html#a6e5357c878bbae6ac33f10436d614931">LRCore::setVMap()</a>, <a class="el" href="classLR__parser.html#a6527d0b55f0f48eafe6f6413311eb7f1">table</a> , 以及 <a class="el" href="classLR__parser.html#afc8beb443fa4c7150f5c82613ca4c646">vmap</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a731c5853b16ec86be16e6592249b487f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LR_parser::print_GOTO </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="classItemCollection.html">ItemCollection</a> * &gt;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="structVMap.html#a69928ee72beff81f57240a4f1c1bc385">VMap::constSize</a>, <a class="el" href="classItemCollection.html#a9457a8d784653c6c1607830c12c5a7ef">ItemCollection::getID()</a>, <a class="el" href="classItemCollection.html#af88965e11cb1ea0b90cdfb1f6c9e1882">ItemCollection::GOTO()</a>, <a class="el" href="classItemCollection.html#a03c360d4d8d2abf4bac125cf5ee566e2">ItemCollection::printSpread()</a> , 以及 <a class="el" href="classLR__parser.html#afc8beb443fa4c7150f5c82613ca4c646">vmap</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f9b8a69c27d276cc71380c8d7d9a14c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LR_parser::setBaseVtSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置非终结符的个数 set the Base Vt size of <a class="el" href="classLex.html" title="Lex is the main controller for the system. ">Lex</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>非终结符个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="classParser.html#abb30015a1c530d3bbd8673683e5f4313">Parser</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b48b2ed78e696045b69aad54b4e979c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LR_parser::setLex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classLexInterface.html">LexInterface</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置词法分析器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Lex接口的词法分析器</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="classParser.html#a826fe888d441c50929ccc028d0146abc">Parser</a>.</p>
+
+<p>参考 <a class="el" href="classLR__parser.html#a4cfca9ad9809b8817c54b6d1014c5224">lex</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a76468d349fec2618e5b2e88037bda980"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LR_parser::setScriptRunner </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classScriptRunner.html">ScriptRunner</a> *&#160;</td>
+          <td class="paramname"><em>sr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置脚本解析器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sr</td><td>脚本解析器类 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="classParser.html#a4da6ecc0a3cae5b6e6a7415febe610a1">Parser</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a2e7a0b032833750a3ce5fcec6587595b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="classBNF.html">BNF</a>*&gt; LR_parser::bnflist</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classLR__parser.html#a465f13004d5b97c0e8f8ce39fe126954">AddBNF()</a>, <a class="el" href="classLR__parser.html#acf49e53209353494d0d8891daf10b372">BuildParser()</a>, <a class="el" href="classLR__parser.html#a6e442f9d550581dc30d28880961a7854">ExtendBNF()</a>, <a class="el" href="classLR__parser.html#a91850e2fd23cbd34ca9278967c5fcbfe">MakeID()</a> , 以及 <a class="el" href="classLR__parser.html#a0b9cffc03992eac1224b8d24b3708d57">Parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8b9cef9ea3eba4083fea1f01b764e27"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBNFParser.html">BNFParser</a>* LR_parser::bnfparser</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classLR__parser.html#a465f13004d5b97c0e8f8ce39fe126954">AddBNF()</a> , 以及 <a class="el" href="classLR__parser.html#acf49e53209353494d0d8891daf10b372">BuildParser()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f9f533e734a76aa32c51ceda7021913"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string LR_parser::cfg_filepath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classLR__parser.html#a465f13004d5b97c0e8f8ce39fe126954">AddBNF()</a> , 以及 <a class="el" href="classLR__parser.html#acf49e53209353494d0d8891daf10b372">BuildParser()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ae9ac3dab30115be0a75b116cf0b1e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLRCore.html">LRCore</a> LR_parser::core</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classLR__parser.html#a0b9cffc03992eac1224b8d24b3708d57">Parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4cfca9ad9809b8817c54b6d1014c5224"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLexInterface.html">LexInterface</a>* LR_parser::lex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classLR__parser.html#a465f13004d5b97c0e8f8ce39fe126954">AddBNF()</a>, <a class="el" href="classLR__parser.html#a0b9cffc03992eac1224b8d24b3708d57">Parse()</a> , 以及 <a class="el" href="classLR__parser.html#a5b48b2ed78e696045b69aad54b4e979c">setLex()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8de8ffef480dd8dadcf012c313a4655"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBNF.html">BNF</a>* LR_parser::mainbnf</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classLR__parser.html#acf49e53209353494d0d8891daf10b372">BuildParser()</a> , 以及 <a class="el" href="classLR__parser.html#a6e442f9d550581dc30d28880961a7854">ExtendBNF()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6527d0b55f0f48eafe6f6413311eb7f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLRTable.html">LRTable</a>* LR_parser::table</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classLR__parser.html#acf49e53209353494d0d8891daf10b372">BuildParser()</a> , 以及 <a class="el" href="classLR__parser.html#a0b9cffc03992eac1224b8d24b3708d57">Parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc8beb443fa4c7150f5c82613ca4c646"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVMap.html">VMap</a> LR_parser::vmap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classLR__parser.html#a465f13004d5b97c0e8f8ce39fe126954">AddBNF()</a>, <a class="el" href="classLR__parser.html#acf49e53209353494d0d8891daf10b372">BuildParser()</a>, <a class="el" href="classLR__parser.html#a6e442f9d550581dc30d28880961a7854">ExtendBNF()</a>, <a class="el" href="classLR__parser.html#a91850e2fd23cbd34ca9278967c5fcbfe">MakeID()</a>, <a class="el" href="classLR__parser.html#a0b9cffc03992eac1224b8d24b3708d57">Parse()</a> , 以及 <a class="el" href="classLR__parser.html#a731c5853b16ec86be16e6592249b487f">print_GOTO()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>LR_Scanner/src/<a class="el" href="LR__parser_8h_source.html">LR_parser.h</a></li>
+<li>LR_Scanner/src/<a class="el" href="LR__parser_8cpp.html">LR_parser.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classLR__parser.html">LR_parser</a></li>
+  </ul>
+</div>
+</body>
+</html>
