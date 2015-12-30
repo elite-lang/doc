@@ -80,7 +80,33 @@ $(document).ready(function(){initNavTree('md-lex.html','');});
 <div class="title">词法分析器文档 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>为了支持Elite语法可变的特性，我们也设计了一款高效的词法分析器，方便用户在需要时，修改默认的词法配置。 </p>
+<div class="toc"><h3>目录</h3>
+<ul><li class="level1"><a href="#lex-basic">词法分析器的基本配置</a></li>
+<li class="level1"><a href="#lex-super">Lex词法分析器的高级支持</a><ul><li class="level2"><a href="#lex-i18n">国际化支持</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="textblock"><p>为了支持Elite语法可变的特性，我们也设计了一款高效的词法分析器，方便用户在需要时，修改默认的词法配置。</p>
+<h1><a class="anchor" id="lex-basic"></a>
+词法分析器的基本配置</h1>
+<p>词法分析器的配置非常简单，是一个类似ini的文件。 我们需要在每一行前指定一条token的名字，等号后面接一个正则表达式。下面是一个例子： </p>
+<pre class="fragment">int=[0-9]+
+float=[0-9]*\.[0-9]*
+id=[a-zA-Z_]\w*
+opta= =|\+=|\-=
+optc= [*/]
+optd= [+\-]
+opte= &gt;|&lt;|&lt;=|&gt;=|==|!=
+other=[(){},;:]
+ignore=\s+
+</pre><p>注意：词法分析器的<code>=</code>前不能有多余的空格，之后可以有，这是为了适应不同语言的token命名</p>
+<p><code>ignore</code>是一条特殊的匹配，表示所有的要忽略的词法元素，所有匹配到的元素都将自动忽略，不会传递到语法分析器中。</p>
+<h1><a class="anchor" id="lex-super"></a>
+Lex词法分析器的高级支持</h1>
+<p>Lex词法分析器拥有众多优良特性，例如：Unicode支持，自动编码识别等。使用这些特性能够使得编译器更加方便，更加智能。</p>
+<h2><a class="anchor" id="lex-i18n"></a>
+国际化支持</h2>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->

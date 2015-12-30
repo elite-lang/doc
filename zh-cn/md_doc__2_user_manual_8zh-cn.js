@@ -17,6 +17,11 @@ var md_doc__2_user_manual_8zh_cn =
       ] ],
       [ "强大的宏机制", "md-default-lang-ref.html#lang-ref-macro", null ]
     ] ],
-    [ "词法分析器文档", "md-lex.html", null ],
+    [ "词法分析器文档", "md-lex.html", [
+      [ "词法分析器的基本配置", "md-lex.html#lex-basic", null ],
+      [ "Lex词法分析器的高级支持", "md-lex.html#lex-super", [
+        [ "国际化支持", "md-lex.html#lex-i18n", null ]
+      ] ]
+    ] ],
     [ "语法分析器文档", "md-parser.html", null ]
 ];
