@@ -111,6 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a759487a7034d6ef6d2aa855b1d545efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae1825764c88b641783278ad193f75a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuilder.html#aae1825764c88b641783278ad193f75a4">AddLibPath</a> (std::string path)</td></tr>
 <tr class="separator:aae1825764c88b641783278ad193f75a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46231602e0be6e52bf2c1af7c8c7f9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuilder.html#ab46231602e0be6e52bf2c1af7c8c7f9e">AddLinkArgs</a> (std::string args)</td></tr>
+<tr class="separator:ab46231602e0be6e52bf2c1af7c8c7f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad88f8053cfc2655a8530a14b70cb9d7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuilder.html#ad88f8053cfc2655a8530a14b70cb9d7a">setDebugFilePath</a> (const char *path)</td></tr>
 <tr class="separator:ad88f8053cfc2655a8530a14b70cb9d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5db55f75d2da978c5db96539d33656f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuilder.html#ab5db55f75d2da978c5db96539d33656f">setWorker</a> (<a class="el" href="classWorker.html">Worker</a> *<a class="el" href="classBuilder.html#abb7af1bc98442efb3de7a0a7f7ca0668">worker</a>)</td></tr>
@@ -129,6 +131,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a989fda58af904d7ce00f97afda458ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a850f1a4be35da17638a4a1ef20bf1401"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuilder.html#a850f1a4be35da17638a4a1ef20bf1401">~Builder</a> ()</td></tr>
 <tr class="separator:a850f1a4be35da17638a4a1ef20bf1401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84b304679927736254c780797d85503c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuilder.html#a84b304679927736254c780797d85503c">call_llc</a> (std::string filein)</td></tr>
+<tr class="separator:a84b304679927736254c780797d85503c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc7e682513b6a3f85cb5b7b083d5b7c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuilder.html#afbc7e682513b6a3f85cb5b7b083d5b7c">call_ld</a> (std::string filein, std::string fileout)</td></tr>
+<tr class="separator:afbc7e682513b6a3f85cb5b7b083d5b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -136,10 +142,6 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="separator:a5804dcceef13e475c65d20c81ab80a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3841a61330f91fb157110ded85e32da4"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuilder.html#a3841a61330f91fb157110ded85e32da4">get_file_name</a> (const char *filename)</td></tr>
 <tr class="separator:a3841a61330f91fb157110ded85e32da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84b304679927736254c780797d85503c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuilder.html#a84b304679927736254c780797d85503c">call_llc</a> (std::string filein)</td></tr>
-<tr class="separator:a84b304679927736254c780797d85503c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbc7e682513b6a3f85cb5b7b083d5b7c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuilder.html#afbc7e682513b6a3f85cb5b7b083d5b7c">call_ld</a> (std::string filein, std::string fileout)</td></tr>
-<tr class="separator:afbc7e682513b6a3f85cb5b7b083d5b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -147,6 +149,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:abb7af1bc98442efb3de7a0a7f7ca0668"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62e9b4e53f47d06afab807cb2d12037d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuilder.html#a62e9b4e53f47d06afab807cb2d12037d">buildpath</a></td></tr>
 <tr class="separator:a62e9b4e53f47d06afab807cb2d12037d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0852f1812eb6276008ee3c374d68307"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuilder.html#ac0852f1812eb6276008ee3c374d68307">link_args</a></td></tr>
+<tr class="separator:ac0852f1812eb6276008ee3c374d68307"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>项目构建器 </p>
@@ -172,8 +176,6 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>References <a class="el" href="classWorker.html#a4f5dcc91e2e8157f7ce3615ad3353b17">Worker::CreateDefault()</a>, <a class="el" href="classPathGetter.html#a5be922bd099f2394eadcdd379fa020d1">PathGetter::getDefaultLexCfg()</a>, <a class="el" href="classPathGetter.html#ac1e544df2fa5437529ede6cd4d081f68">PathGetter::getDefaultParserCfg()</a>, and <a class="el" href="classPathGetter.html#a4ecc7ec8e3e887bffe62ae4dbc8f2cc5">PathGetter::getElitePackagesPath()</a>.</p>
 
 </div>
 </div>
@@ -210,6 +212,22 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab46231602e0be6e52bf2c1af7c8c7f9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Builder::AddLinkArgs </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -281,6 +299,8 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="classFileUtils.html#a3fb9e40b884eecaab12110b7b76572ee">FileUtils::fileReader()</a>, <a class="el" href="classPathUtils.html#a28b4928c1b5862e02c822f70415bb273">PathUtils::native()</a>, and <a class="el" href="classPathGetter.html#a201a97525326b07fa59c267f904810f9">PathGetter::testFile()</a>.</p>
 
+<p>Referenced by <a class="el" href="src_2main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c">main()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a119442acb86fbc0edb22408707a0935f"></a>
@@ -306,6 +326,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="src_2main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c">main()</a>.</p>
 
 </div>
 </div>
@@ -336,7 +358,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -362,7 +384,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -383,6 +405,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="src_2main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c">main()</a>.</p>
 
 </div>
 </div>
@@ -491,6 +515,8 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="classFileUtils.html#acc6f08f12157030fd37d55b7b967831d">FileUtils::create_directory()</a>.</p>
 
+<p>Referenced by <a class="el" href="src_2main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c">main()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad88f8053cfc2655a8530a14b70cb9d7a"></a>
@@ -509,6 +535,8 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="classDebugMsg.html#ab6703dc8896602ec5cd83fd3dbe0b3cf">DebugMsg::setDebugFilePath()</a>.</p>
 
+<p>Referenced by <a class="el" href="src_2main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c">main()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab5db55f75d2da978c5db96539d33656f"></a>
@@ -525,6 +553,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Referenced by <a class="el" href="src_2main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c">main()</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -537,6 +567,26 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">std::string Builder::buildpath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac0852f1812eb6276008ee3c374d68307"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Builder::link_args</td>
         </tr>
       </table>
   </td>

@@ -15,6 +15,6 @@ var searchData=
   ['nowblock',['nowBlock',['../classllcg__llvm.html#a13513ef4cedc683325d887bb4de3de90',1,'llcg_llvm']]],
   ['nowfunc',['nowFunc',['../classllcg__llvm.html#a6a688578d228591f167e17fd6efb5209',1,'llcg_llvm']]],
   ['nowline',['nowline',['../classDFACore.html#a9a9d4713328dde8320fe464961508efc',1,'DFACore']]],
-  ['nullable',['nullable',['../structnode__func.html#afc00a0960036e148da6a49c149a10902',1,'node_func::nullable()'],['../classItemCollection.html#a8c076634ad11ca0fd488a1425b1d25d9',1,'ItemCollection::NULLABLE()']]],
+  ['nullable',['NULLABLE',['../classItemCollection.html#a8c076634ad11ca0fd488a1425b1d25d9',1,'ItemCollection::NULLABLE()'],['../structnode__func.html#afc00a0960036e148da6a49c149a10902',1,'node_func::nullable()']]],
   ['num',['num',['../structnode__func.html#a38f1741a0929c2d3ac0701759cb65382',1,'node_func']]]
 ];

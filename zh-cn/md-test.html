@@ -86,7 +86,10 @@ $(document).ready(function(){initNavTree('md-test.html','');});
 <li class="level2"><a href="#test-dev">编写测试用例</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#full-test">集成测试</a></li>
+<li class="level1"><a href="#full-test">集成测试</a><ul><li class="level2"><a href="#full-test-run">运行集成测试</a></li>
+<li class="level2"><a href="#full-test-dev">编写集成测试用例</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="textblock"><p>测试是项目可靠和稳定的保障，目前测试用例尚不完善，欢迎帮忙完善测试代码，编写更全的测试用例。</p>
@@ -117,10 +120,22 @@ make
 <div class="line"><span class="preprocessor"></span></div>
 <div class="line"><a class="code" href="EstringTest_8cpp.html#a9a275956b418267d527776c4ba111917">__ESTRING_TEST__</a>(Construction)</div>
 <div class="line">{</div>
-<div class="line"></div>
+<div class="line">    <a class="code" href="classestring.html">estring</a> str(<span class="stringliteral">&quot;您好&quot;</span>);</div>
+<div class="line">    <span class="keywordtype">string</span> hello(<span class="stringliteral">&quot;您好&quot;</span>);</div>
+<div class="line">    <a class="code" href="classestring.html">estring</a> str2(hello);</div>
 <div class="line">}</div>
 </div><!-- fragment --><h1><a class="anchor" id="full-test"></a>
 集成测试</h1>
+<h2><a class="anchor" id="full-test-run"></a>
+运行集成测试</h2>
+<p>集成测试需要依赖python2，请提前自行安装好python解释器。</p>
+<p>然后在项目文件夹下执行 </p>
+<pre class="fragment">./EliteTest/full-test/run_test.py
+</pre><p>即可运行集成测试。</p>
+<h2><a class="anchor" id="full-test-dev"></a>
+编写集成测试用例</h2>
+<p>一个集成测试是由源代码、期待的正确输出结果两部分组成，需要时，还可以增加文件读入。 源码需要统一命名为<code>test.elite</code>，正确的输出结果统一命名为test.out</p>
+<p>full_test目录下可以放任意名称的文件夹作为该测试用例的名字。 </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->

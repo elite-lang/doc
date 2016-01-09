@@ -106,7 +106,7 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a95e7e37f116179b72f4e53e216257bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7983fb6bc49c344617fdbff02ef1fc50"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__l.html#a7983fb6bc49c344617fdbff02ef1fc50">l_GetOrInsertFunction</a> (<a class="el" href="classFunctionModel.html">FunctionModel</a> *fmodel)=0</td></tr>
 <tr class="separator:a7983fb6bc49c344617fdbff02ef1fc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ba4718a3c6c0c111117b078dd1e31f4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__l.html#a6ba4718a3c6c0c111117b078dd1e31f4">l_GetOrInsertFunction</a> (const string &amp;name, <a class="el" href="classlvalue.html">lvalue</a> *func_type)=0</td></tr>
+<tr class="memitem:a6ba4718a3c6c0c111117b078dd1e31f4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__l.html#a6ba4718a3c6c0c111117b078dd1e31f4">l_GetOrInsertFunction</a> (const string &amp;name, <a class="el" href="classlvalue.html">lvalue</a> *<a class="el" href="PackageJIT_8cpp.html#a0ca397d54b1158d48fafee5345745c82">func_type</a>)=0</td></tr>
 <tr class="separator:a6ba4718a3c6c0c111117b078dd1e31f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e3a5c9d68d9e4358dcff4cbba9cbfd8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__l.html#a2e3a5c9d68d9e4358dcff4cbba9cbfd8">l_GetOrInsertFunction</a> (const string &amp;name, <a class="el" href="classlvalue.html">lvalue</a> *ret_type, vector&lt; <a class="el" href="classlvalue.html">lvalue</a> * &gt; &amp;types, bool isNotSure=false)=0</td></tr>
 <tr class="separator:a2e3a5c9d68d9e4358dcff4cbba9cbfd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,14 +160,14 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a6082faae9ac484ae6eff96135e4310cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe737a6e3d7d1159879416522d3b3a49"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__l.html#abe737a6e3d7d1159879416522d3b3a49">l_DoUntil</a> (<a class="el" href="classlvalue.html">lvalue</a> *<a class="el" href="State_8h.html#a1615968a92950438f6e67a28e9d56e5ca338f0b1773c656a2647feb9e2bf6be09">statement</a>, <a class="el" href="classlvalue.html">lvalue</a> *pd)=0</td></tr>
 <tr class="separator:abe737a6e3d7d1159879416522d3b3a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57e94598122959e4dceda0a46be94d13"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__l.html#a57e94598122959e4dceda0a46be94d13">l_New</a> (<a class="el" href="classlvalue.html">lvalue</a> *var_type, vector&lt; <a class="el" href="classlvalue.html">lvalue</a> * &gt; &amp;args)=0</td></tr>
-<tr class="separator:a57e94598122959e4dceda0a46be94d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0962dc60b8555f6db12db1562dfe43db"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__l.html#a0962dc60b8555f6db12db1562dfe43db">l_NewArray</a> (<a class="el" href="classlvalue.html">lvalue</a> *var_type, vector&lt; <a class="el" href="classlvalue.html">lvalue</a> * &gt; &amp;wd)=0</td></tr>
-<tr class="separator:a0962dc60b8555f6db12db1562dfe43db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac17963cf0f5e6bc24db05cb03bf2a7af"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__l.html#ac17963cf0f5e6bc24db05cb03bf2a7af">l_Delete</a> (<a class="el" href="classlvalue.html">lvalue</a> *pointer)=0</td></tr>
-<tr class="separator:ac17963cf0f5e6bc24db05cb03bf2a7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac978866a5403678f6df98b2260b46a4e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__l.html#ac978866a5403678f6df98b2260b46a4e">l_DeleteArray</a> (<a class="el" href="classlvalue.html">lvalue</a> *pointer)=0</td></tr>
-<tr class="separator:ac978866a5403678f6df98b2260b46a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631aa53bf2dcadb04c3bf41a96ead01c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__l.html#a631aa53bf2dcadb04c3bf41a96ead01c">l_New</a> (<a class="el" href="classlvalue.html">lvalue</a> *var_type, vector&lt; <a class="el" href="classlvalue.html">lvalue</a> * &gt; &amp;args, const string &amp;funcname=&quot;&quot;)=0</td></tr>
+<tr class="separator:a631aa53bf2dcadb04c3bf41a96ead01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b496f71e3a04dc345e46812c884d5a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__l.html#a09b496f71e3a04dc345e46812c884d5a">l_NewArray</a> (<a class="el" href="classlvalue.html">lvalue</a> *var_type, vector&lt; <a class="el" href="classlvalue.html">lvalue</a> * &gt; &amp;wd, const string &amp;funcname=&quot;&quot;)=0</td></tr>
+<tr class="separator:a09b496f71e3a04dc345e46812c884d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b162b69887c51da313d439a7bec9dc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__l.html#a08b162b69887c51da313d439a7bec9dc">l_Delete</a> (<a class="el" href="classlvalue.html">lvalue</a> *pointer, const string &amp;funcname=&quot;&quot;)=0</td></tr>
+<tr class="separator:a08b162b69887c51da313d439a7bec9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9563ce7a1730400a06e6d4e857f007f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__l.html#ab9563ce7a1730400a06e6d4e857f007f">l_DeleteArray</a> (<a class="el" href="classlvalue.html">lvalue</a> *pointer, const string &amp;funcname=&quot;&quot;)=0</td></tr>
+<tr class="separator:ab9563ce7a1730400a06e6d4e857f007f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a727f4d07476b13f5c2b1f42f020b5a2c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__l.html#a727f4d07476b13f5c2b1f42f020b5a2c">l_Return</a> ()=0</td></tr>
 <tr class="separator:a727f4d07476b13f5c2b1f42f020b5a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3706d54a943659cd56f64107f424ea9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__l.html#aa3706d54a943659cd56f64107f424ea9">l_Return</a> (<a class="el" href="classlvalue.html">lvalue</a> *var)=0</td></tr>
@@ -705,7 +705,7 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac17963cf0f5e6bc24db05cb03bf2a7af"></a>
+<a class="anchor" id="a08b162b69887c51da313d439a7bec9dc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -716,8 +716,18 @@ Public 成员函数</h2></td></tr>
           <td class="memname">virtual <a class="el" href="classlvalue.html">lvalue</a>* llcg_l::l_Delete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classlvalue.html">lvalue</a> *&#160;</td>
-          <td class="paramname"><em>pointer</em></td><td>)</td>
+          <td class="paramname"><em>pointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>funcname</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -727,11 +737,11 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>在 <a class="el" href="classllcg__llvm.html#a8dd288272a2173db014731dec74eb59b">llcg_llvm</a> 内被实现.</p>
+<p>在 <a class="el" href="classllcg__llvm.html#ab58f8080258cbb9eefa161e497dea678">llcg_llvm</a> 内被实现.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac978866a5403678f6df98b2260b46a4e"></a>
+<a class="anchor" id="ab9563ce7a1730400a06e6d4e857f007f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -742,8 +752,18 @@ Public 成员函数</h2></td></tr>
           <td class="memname">virtual <a class="el" href="classlvalue.html">lvalue</a>* llcg_l::l_DeleteArray </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classlvalue.html">lvalue</a> *&#160;</td>
-          <td class="paramname"><em>pointer</em></td><td>)</td>
+          <td class="paramname"><em>pointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>funcname</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -753,7 +773,7 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>在 <a class="el" href="classllcg__llvm.html#a9bfaaa8e36a346ef83c321413c88c5c5">llcg_llvm</a> 内被实现.</p>
+<p>在 <a class="el" href="classllcg__llvm.html#a1af71c32ee8e9fd3dda0945df28d9fe4">llcg_llvm</a> 内被实现.</p>
 
 </div>
 </div>
@@ -1543,7 +1563,7 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a57e94598122959e4dceda0a46be94d13"></a>
+<a class="anchor" id="a631aa53bf2dcadb04c3bf41a96ead01c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1560,7 +1580,13 @@ Public 成员函数</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">vector&lt; <a class="el" href="classlvalue.html">lvalue</a> * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>funcname</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1575,11 +1601,11 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>在 <a class="el" href="classllcg__llvm.html#a6e03a3a2d2ad18cbceb72c493ada7abc">llcg_llvm</a> 内被实现.</p>
+<p>在 <a class="el" href="classllcg__llvm.html#a1163fbd172ff40160f61d2fc2dc74f9e">llcg_llvm</a> 内被实现.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0962dc60b8555f6db12db1562dfe43db"></a>
+<a class="anchor" id="a09b496f71e3a04dc345e46812c884d5a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1596,7 +1622,13 @@ Public 成员函数</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">vector&lt; <a class="el" href="classlvalue.html">lvalue</a> * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>wd</em>&#160;</td>
+          <td class="paramname"><em>wd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>funcname</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1611,7 +1643,7 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>在 <a class="el" href="classllcg__llvm.html#a557523174bb298d07b2652e9d431e362">llcg_llvm</a> 内被实现.</p>
+<p>在 <a class="el" href="classllcg__llvm.html#a381aeffbd15db673a3fbf2e9d93bf18a">llcg_llvm</a> 内被实现.</p>
 
 </div>
 </div>

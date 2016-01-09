@@ -1,9 +1,9 @@
 var NAVTREE =
 [
   [ "Elite", "index.html", [
-    [ "Elite项目简介", "md_doc__1_introduce_8zh-cn.html", null ],
-    [ "用户帮助手册", "md_doc__2_user_manual_8zh-cn.html", "md_doc__2_user_manual_8zh-cn" ],
-    [ "开发者文档", "md_doc__3_developers_manual_8zh-cn.html", "md_doc__3_developers_manual_8zh-cn" ],
+    [ "Elite项目简介", "md-introduce.html", null ],
+    [ "用户帮助手册", "md-user-manual.html", "md-user-manual" ],
+    [ "开发者文档", "md-develop.html", "md-develop" ],
     [ "命名空间", null, [
       [ "命名空间列表", "namespaces.html", "namespaces" ]
     ] ],
@@ -39,13 +39,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "BNFParser_8cpp.html",
-"PCodeScriptRunner_8cpp.html#af55b63c0df1c36e1f11c2cb16b37545a",
-"classCodeGenContext.html#a2cfdf5b81fe1e34aeaa9bce4eacc6032",
-"classIDMap.html#ad72f36a65d662dab6611d92346766055",
-"classMetaScriptRunner.html#a859caa9b6b3c432f83de9a1594435a7b",
-"classWorker.html#a4f5dcc91e2e8157f7ce3615ad3353b17",
-"classllcg__llvm.html#ad83348e2d2055d5eaad717656ebafa26",
-"globals_t.html"
+"PCodeScriptRunner_8cpp.html#a6dee1ce35f7842b7bdc1ef4d4904e16e",
+"classCharSet.html#a22d7f327d8ae3667897b8b718dbc508e",
+"classFunctionModel.html#ab7067de8510fc6941a0a32f63323cfd2",
+"classLex.html#a3e3e82f7b5373531577a142424c1b139",
+"classScriptRunner.html#a31990ea9ec40fa1fb4e5ac836ccc63c3",
+"classllcg__llvm.html#a13bf605dc51adc5da47c3d48ee2c4825",
+"functions_enum.html",
+"structcJSON.html#aa6b47e9a4b0e0a26f519b1a2b6739983"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

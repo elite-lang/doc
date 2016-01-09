@@ -108,6 +108,10 @@ $(document).ready(function(){initNavTree('classDebugMsg.html','');});
 <tr class="separator:a2880dfdd4030137c25d22ee4ba54e926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49628744d8e2ddca6af6efcd782e5be0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebugMsg.html#a49628744d8e2ddca6af6efcd782e5be0">parser_close</a> ()</td></tr>
 <tr class="separator:a49628744d8e2ddca6af6efcd782e5be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af05b903f3477291d8624edd7f0abc5f3"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebugMsg.html#af05b903f3477291d8624edd7f0abc5f3">parser_save</a> ()</td></tr>
+<tr class="separator:af05b903f3477291d8624edd7f0abc5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2151920c2335999d435a5c6d8011eb80"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebugMsg.html#a2151920c2335999d435a5c6d8011eb80">parser_save_close</a> ()</td></tr>
+<tr class="separator:a2151920c2335999d435a5c6d8011eb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05b7eac64573c27df1e650bec8f16daa"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebugMsg.html#a05b7eac64573c27df1e650bec8f16daa">red_dbg</a> ()</td></tr>
 <tr class="memdesc:a05b7eac64573c27df1e650bec8f16daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取解析器的debug输出文件流  <a href="#a05b7eac64573c27df1e650bec8f16daa">更多...</a><br/></td></tr>
 <tr class="separator:a05b7eac64573c27df1e650bec8f16daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +149,10 @@ $(document).ready(function(){initNavTree('classDebugMsg.html','');});
 </table>
 </div><div class="memdoc">
 
+<p>参考 <a class="el" href="classDebugMsg.html#a7a1fb6ae018ed3d50d89320f3e53fc16">instance</a>.</p>
+
+<p>参考自 <a class="el" href="classDebugMsg.html#a3b255bf842ac7327d82c0d296cf8f4df">isDebug()</a> , 以及 <a class="el" href="classDebugMsg.html#ab6703dc8896602ec5cd83fd3dbe0b3cf">setDebugFilePath()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3b255bf842ac7327d82c0d296cf8f4df"></a>
@@ -170,7 +178,9 @@ $(document).ready(function(){initNavTree('classDebugMsg.html','');});
 
 <p>判断是否Debug模式 </p>
 
-<p>参考自 <a class="el" href="classLR__parser.html#a0b9cffc03992eac1224b8d24b3708d57">LR_parser::Parse()</a>.</p>
+<p>参考 <a class="el" href="classDebugMsg.html#afbd0fb00453ff617700db0203ce70a10">getInstance()</a> , 以及 <a class="el" href="classDebugMsg__Private.html#af7039955ec8d8c6e322e91292116168e">DebugMsg_Private::is_debug_mode</a>.</p>
+
+<p>参考自 <a class="el" href="classLR__parser.html#a0b9cffc03992eac1224b8d24b3708d57">LR_parser::Parse()</a> , 以及 <a class="el" href="classLR__parser.html#a15b81d5c065acb2447e238e70405a5e3">LR_parser::save_log()</a>.</p>
 
 </div>
 </div>
@@ -274,6 +284,56 @@ $(document).ready(function(){initNavTree('classDebugMsg.html','');});
 
 </div>
 </div>
+<a class="anchor" id="af05b903f3477291d8624edd7f0abc5f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; DebugMsg::parser_save </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classLR__parser.html#a15b81d5c065acb2447e238e70405a5e3">LR_parser::save_log()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2151920c2335999d435a5c6d8011eb80"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DebugMsg::parser_save_close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classLR__parser.html#a15b81d5c065acb2447e238e70405a5e3">LR_parser::save_log()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0bb4e2342041717741506e60336121ba"></a>
 <div class="memitem">
 <div class="memproto">
@@ -352,6 +412,8 @@ $(document).ready(function(){initNavTree('classDebugMsg.html','');});
   </dd>
 </dl>
 
+<p>参考 <a class="el" href="classDebugMsg.html#afbd0fb00453ff617700db0203ce70a10">getInstance()</a> , 以及 <a class="el" href="classDebugMsg__Private.html#af7039955ec8d8c6e322e91292116168e">DebugMsg_Private::is_debug_mode</a>.</p>
+
 <p>参考自 <a class="el" href="classBuilder.html#ad88f8053cfc2655a8530a14b70cb9d7a">Builder::setDebugFilePath()</a>.</p>
 
 </div>
@@ -375,10 +437,13 @@ $(document).ready(function(){initNavTree('classDebugMsg.html','');});
 </table>
 </div><div class="memdoc">
 
+<p>参考自 <a class="el" href="classDebugMsg.html#afbd0fb00453ff617700db0203ce70a10">getInstance()</a>.</p>
+
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>ExIconv/include/<a class="el" href="DebugMsg_8h_source.html">DebugMsg.h</a></li>
+<li>ExIconv/include/<a class="el" href="DebugMsg__Simple_8h_source.html">DebugMsg_Simple.h</a></li>
 <li>ExIconv/src/<a class="el" href="DebugMsg_8cpp.html">DebugMsg.cpp</a></li>
 </ul>
 </div><!-- contents -->

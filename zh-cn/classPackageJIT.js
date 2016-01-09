@@ -5,5 +5,6 @@ var classPackageJIT =
     [ "AddSymbol", "classPackageJIT.html#a5cabbb3ce17b28c5359104e934426e93", null ],
     [ "getInstance", "classPackageJIT.html#a5d71ef977acd0245e9d919c2722d82e0", null ],
     [ "LoadPlugin", "classPackageJIT.html#a9915f47a7f880030c51b6cbfce6ef49b", null ],
+    [ "RunPlugin", "classPackageJIT.html#a027097d83340ca9bee69f83bbc19f3f1", null ],
     [ "priv", "classPackageJIT.html#a2147ac914a4d602de2e151fdcee48780", null ]
 ];

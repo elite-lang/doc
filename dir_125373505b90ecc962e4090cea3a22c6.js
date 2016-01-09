@@ -11,6 +11,9 @@ var dir_125373505b90ecc962e4090cea3a22c6 =
       [ "CodeGenContext", "classCodeGenContext.html", "classCodeGenContext" ]
     ] ],
     [ "CodeGenFunction.h", "CodeGenFunction_8h.html", "CodeGenFunction_8h" ],
+    [ "ICodeGenContext.h", "ICodeGenContext_8h.html", [
+      [ "ICodeGenContext", "classICodeGenContext.html", "classICodeGenContext" ]
+    ] ],
     [ "ICodeGenFunction.h", "ICodeGenFunction_8h.html", [
       [ "ICodeGenFunction", "classICodeGenFunction.html", "classICodeGenFunction" ]
     ] ],

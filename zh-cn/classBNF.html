@@ -80,8 +80,10 @@ $(document).ready(function(){initNavTree('classBNF.html','');});
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
 <a href="#pro-static-methods">静态 Protected 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
 <a href="#pri-attribs">Private 属性</a> &#124;
 <a href="#pri-static-attribs">静态 Private 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
 <a href="classBNF-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">BNF类 参考</div>  </div>
@@ -127,6 +129,12 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a5401ca31e83f713ce1e653238f9fa199"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNF.html#a5401ca31e83f713ce1e653238f9fa199">BuildFromNode</a> (<a class="el" href="classState.html">State</a> *, <a class="el" href="structVMap.html">VMap</a> &amp;)</td></tr>
 <tr class="separator:a5401ca31e83f713ce1e653238f9fa199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:aa7669e534f28f1032dbca04109d36137"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
+<tr class="memitem:aa7669e534f28f1032dbca04109d36137"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBNF.html#aa7669e534f28f1032dbca04109d36137">serialize</a> (Archive &amp;ar)</td></tr>
+<tr class="separator:aa7669e534f28f1032dbca04109d36137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private 属性</h2></td></tr>
 <tr class="memitem:a413beb82c8d4f5ce43fdb86a4483da59"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNF.html#a413beb82c8d4f5ce43fdb86a4483da59">id</a></td></tr>
@@ -146,6 +154,11 @@ Private 属性</h2></td></tr>
 <tr class="separator:a699d914a146255c4cf62c1d3e50559f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c58a31fce4052f562c271535e71b3f7"><td class="memItemLeft" align="right" valign="top">static vector&lt; <a class="el" href="classBNF.html">BNF</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNF.html#a9c58a31fce4052f562c271535e71b3f7">bnfs</a></td></tr>
 <tr class="separator:a9c58a31fce4052f562c271535e71b3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:ab2f44cbb59a08132f4c843e5225bba0e"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNF.html#ab2f44cbb59a08132f4c843e5225bba0e">cereal::access</a></td></tr>
+<tr class="separator:ab2f44cbb59a08132f4c843e5225bba0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">构造及析构函数说明</h2>
 <a class="anchor" id="a77266729891a94929ac426c34b7d8127"></a>
@@ -459,6 +472,34 @@ Private 属性</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa7669e534f28f1032dbca04109d36137"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Archive &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BNF::serialize </td>
+          <td>(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em>ar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="BNFParser_8cpp.html#aa853fcf202c1c7498d198cf828a9d6bb">root</a> , 以及 <a class="el" href="State_8h.html#a1615968a92950438f6e67a28e9d56e5cac702b3d108d7da2d3148e402b47a5e41">script</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a792b83c06454bed27a01709fa8769499"></a>
 <div class="memitem">
 <div class="memproto">
@@ -510,6 +551,27 @@ Private 属性</h2></td></tr>
 <p>参考 <a class="el" href="BNFParser_8cpp.html#aa853fcf202c1c7498d198cf828a9d6bb">root</a>.</p>
 
 <p>参考自 <a class="el" href="classLR__parser.html#a6e442f9d550581dc30d28880961a7854">LR_parser::ExtendBNF()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a class="anchor" id="ab2f44cbb59a08132f4c843e5225bba0e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class cereal::access</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

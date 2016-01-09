@@ -80,6 +80,7 @@ $(document).ready(function(){initNavTree('classLR__parser.html','');});
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pri-methods">Private 成员函数</a> &#124;
 <a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
 <a href="classLR__parser-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">LR_parser类 参考</div>  </div>
@@ -133,6 +134,11 @@ Private 成员函数</h2></td></tr>
 <tr class="separator:a91850e2fd23cbd34ca9278967c5fcbfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a731c5853b16ec86be16e6592249b487f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a731c5853b16ec86be16e6592249b487f">print_GOTO</a> (vector&lt; <a class="el" href="classItemCollection.html">ItemCollection</a> * &gt; vec)</td></tr>
 <tr class="separator:a731c5853b16ec86be16e6592249b487f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b81d5c065acb2447e238e70405a5e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a15b81d5c065acb2447e238e70405a5e3">save_log</a> ()</td></tr>
+<tr class="separator:a15b81d5c065acb2447e238e70405a5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb088d20ac04e94d826b83ccec60a5ec"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
+<tr class="memitem:abb088d20ac04e94d826b83ccec60a5ec"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classLR__parser.html#abb088d20ac04e94d826b83ccec60a5ec">serialize</a> (Archive &amp;ar)</td></tr>
+<tr class="separator:abb088d20ac04e94d826b83ccec60a5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private 属性</h2></td></tr>
@@ -152,6 +158,11 @@ Private 属性</h2></td></tr>
 <tr class="separator:ac8b9cef9ea3eba4083fea1f01b764e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f9f533e734a76aa32c51ceda7021913"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#a8f9f533e734a76aa32c51ceda7021913">cfg_filepath</a></td></tr>
 <tr class="separator:a8f9f533e734a76aa32c51ceda7021913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:ab2f44cbb59a08132f4c843e5225bba0e"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLR__parser.html#ab2f44cbb59a08132f4c843e5225bba0e">cereal::access</a></td></tr>
+<tr class="separator:ab2f44cbb59a08132f4c843e5225bba0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 额外继承的成员函数</h2></td></tr>
@@ -384,7 +395,7 @@ Private 属性</h2></td></tr>
 
 <p>实现了 <a class="el" href="classParser.html#a8b443c488f9e7155a691f91b332b11f9">Parser</a>.</p>
 
-<p>参考 <a class="el" href="classLR__parser.html#a2e7a0b032833750a3ce5fcec6587595b">bnflist</a>, <a class="el" href="classLR__parser.html#a9ae9ac3dab30115be0a75b116cf0b1e1">core</a>, <a class="el" href="classDebugMsg.html#a3b255bf842ac7327d82c0d296cf8f4df">DebugMsg::isDebug()</a>, <a class="el" href="classLR__parser.html#a4cfca9ad9809b8817c54b6d1014c5224">lex</a>, <a class="el" href="classDebugMsg.html#a49628744d8e2ddca6af6efcd782e5be0">DebugMsg::parser_close()</a>, <a class="el" href="classDebugMsg.html#a2880dfdd4030137c25d22ee4ba54e926">DebugMsg::parser_dbg()</a>, <a class="el" href="structVMap.html#a434e1649b89634a446e766b7c4b9320f">VMap::printAll()</a>, <a class="el" href="classLRTable.html#a3609661036a21b6b175dfd422f4bd991">LRTable::printTable()</a>, <a class="el" href="classLRCore.html#a7ef63e74a414653d139aef842a816dc9">LRCore::Run()</a>, <a class="el" href="classLRCore.html#a668d6cdc578eb9c10c64a3f3dde3a33e">LRCore::setAst()</a>, <a class="el" href="classLRCore.html#a6877f4718a80f72fbdf78e3fd832169a">LRCore::setBnflist()</a>, <a class="el" href="classLRCore.html#a222c3770b4eb242631085da61841443a">LRCore::setLex()</a>, <a class="el" href="classLRCore.html#a1f392f75a5bb79cddd7fd7996ecb82dc">LRCore::setTable()</a>, <a class="el" href="classLRCore.html#a6e5357c878bbae6ac33f10436d614931">LRCore::setVMap()</a>, <a class="el" href="classLR__parser.html#a6527d0b55f0f48eafe6f6413311eb7f1">table</a> , 以及 <a class="el" href="classLR__parser.html#afc8beb443fa4c7150f5c82613ca4c646">vmap</a>.</p>
+<p>参考 <a class="el" href="classLR__parser.html#a2e7a0b032833750a3ce5fcec6587595b">bnflist</a>, <a class="el" href="classLR__parser.html#a9ae9ac3dab30115be0a75b116cf0b1e1">core</a>, <a class="el" href="classDebugMsg.html#a3b255bf842ac7327d82c0d296cf8f4df">DebugMsg::isDebug()</a>, <a class="el" href="classLR__parser.html#a4cfca9ad9809b8817c54b6d1014c5224">lex</a>, <a class="el" href="classDebugMsg.html#a49628744d8e2ddca6af6efcd782e5be0">DebugMsg::parser_close()</a>, <a class="el" href="classDebugMsg.html#a2880dfdd4030137c25d22ee4ba54e926">DebugMsg::parser_dbg()</a>, <a class="el" href="structVMap.html#a434e1649b89634a446e766b7c4b9320f">VMap::printAll()</a>, <a class="el" href="classLRTable.html#a3609661036a21b6b175dfd422f4bd991">LRTable::printTable()</a>, <a class="el" href="classLRCore.html#a7ef63e74a414653d139aef842a816dc9">LRCore::Run()</a>, <a class="el" href="classLR__parser.html#a15b81d5c065acb2447e238e70405a5e3">save_log()</a>, <a class="el" href="classLRCore.html#a668d6cdc578eb9c10c64a3f3dde3a33e">LRCore::setAst()</a>, <a class="el" href="classLRCore.html#a6877f4718a80f72fbdf78e3fd832169a">LRCore::setBnflist()</a>, <a class="el" href="classLRCore.html#a222c3770b4eb242631085da61841443a">LRCore::setLex()</a>, <a class="el" href="classLRCore.html#a1f392f75a5bb79cddd7fd7996ecb82dc">LRCore::setTable()</a>, <a class="el" href="classLRCore.html#a6e5357c878bbae6ac33f10436d614931">LRCore::setVMap()</a>, <a class="el" href="classLR__parser.html#a6527d0b55f0f48eafe6f6413311eb7f1">table</a> , 以及 <a class="el" href="classLR__parser.html#afc8beb443fa4c7150f5c82613ca4c646">vmap</a>.</p>
 
 </div>
 </div>
@@ -411,6 +422,59 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>参考 <a class="el" href="structVMap.html#a69928ee72beff81f57240a4f1c1bc385">VMap::constSize</a>, <a class="el" href="classItemCollection.html#a9457a8d784653c6c1607830c12c5a7ef">ItemCollection::getID()</a>, <a class="el" href="classItemCollection.html#af88965e11cb1ea0b90cdfb1f6c9e1882">ItemCollection::GOTO()</a>, <a class="el" href="classItemCollection.html#a03c360d4d8d2abf4bac125cf5ee566e2">ItemCollection::printSpread()</a> , 以及 <a class="el" href="classLR__parser.html#afc8beb443fa4c7150f5c82613ca4c646">vmap</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a15b81d5c065acb2447e238e70405a5e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LR_parser::save_log </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classDebugMsg.html#a3b255bf842ac7327d82c0d296cf8f4df">DebugMsg::isDebug()</a>, <a class="el" href="classDebugMsg.html#af05b903f3477291d8624edd7f0abc5f3">DebugMsg::parser_save()</a>, <a class="el" href="classDebugMsg.html#a2151920c2335999d435a5c6d8011eb80">DebugMsg::parser_save_close()</a>, <a class="el" href="classLR__parser.html#a6527d0b55f0f48eafe6f6413311eb7f1">table</a> , 以及 <a class="el" href="classLR__parser.html#afc8beb443fa4c7150f5c82613ca4c646">vmap</a>.</p>
+
+<p>参考自 <a class="el" href="classLR__parser.html#a0b9cffc03992eac1224b8d24b3708d57">Parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abb088d20ac04e94d826b83ccec60a5ec"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Archive &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LR_parser::serialize </td>
+          <td>(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em>ar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -515,6 +579,27 @@ Private 属性</h2></td></tr>
 </dl>
 
 <p>实现了 <a class="el" href="classParser.html#a4da6ecc0a3cae5b6e6a7415febe610a1">Parser</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a class="anchor" id="ab2f44cbb59a08132f4c843e5225bba0e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class cereal::access</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -669,7 +754,7 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>参考自 <a class="el" href="classLR__parser.html#acf49e53209353494d0d8891daf10b372">BuildParser()</a> , 以及 <a class="el" href="classLR__parser.html#a0b9cffc03992eac1224b8d24b3708d57">Parse()</a>.</p>
+<p>参考自 <a class="el" href="classLR__parser.html#acf49e53209353494d0d8891daf10b372">BuildParser()</a>, <a class="el" href="classLR__parser.html#a0b9cffc03992eac1224b8d24b3708d57">Parse()</a> , 以及 <a class="el" href="classLR__parser.html#a15b81d5c065acb2447e238e70405a5e3">save_log()</a>.</p>
 
 </div>
 </div>
@@ -691,7 +776,7 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>参考自 <a class="el" href="classLR__parser.html#a465f13004d5b97c0e8f8ce39fe126954">AddBNF()</a>, <a class="el" href="classLR__parser.html#acf49e53209353494d0d8891daf10b372">BuildParser()</a>, <a class="el" href="classLR__parser.html#a6e442f9d550581dc30d28880961a7854">ExtendBNF()</a>, <a class="el" href="classLR__parser.html#a91850e2fd23cbd34ca9278967c5fcbfe">MakeID()</a>, <a class="el" href="classLR__parser.html#a0b9cffc03992eac1224b8d24b3708d57">Parse()</a> , 以及 <a class="el" href="classLR__parser.html#a731c5853b16ec86be16e6592249b487f">print_GOTO()</a>.</p>
+<p>参考自 <a class="el" href="classLR__parser.html#a465f13004d5b97c0e8f8ce39fe126954">AddBNF()</a>, <a class="el" href="classLR__parser.html#acf49e53209353494d0d8891daf10b372">BuildParser()</a>, <a class="el" href="classLR__parser.html#a6e442f9d550581dc30d28880961a7854">ExtendBNF()</a>, <a class="el" href="classLR__parser.html#a91850e2fd23cbd34ca9278967c5fcbfe">MakeID()</a>, <a class="el" href="classLR__parser.html#a0b9cffc03992eac1224b8d24b3708d57">Parse()</a>, <a class="el" href="classLR__parser.html#a731c5853b16ec86be16e6592249b487f">print_GOTO()</a> , 以及 <a class="el" href="classLR__parser.html#a15b81d5c065acb2447e238e70405a5e3">save_log()</a>.</p>
 
 </div>
 </div>

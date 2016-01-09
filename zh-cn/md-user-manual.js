@@ -1,4 +1,4 @@
-var md_doc__2_user_manual_8zh_cn =
+var md_user_manual =
 [
     [ "安装教程", "md-install.html", [
       [ "使用预编译版", "md-install.html#ins-precompiled", null ],

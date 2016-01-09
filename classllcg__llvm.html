@@ -81,6 +81,7 @@ $(document).ready(function(){initNavTree('classllcg__llvm.html','');});
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="classllcg__llvm-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">llcg_llvm Class Reference</div>  </div>
@@ -111,7 +112,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a88f2b191469ca62e40e6038e9c01d367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af334ec8f4f0a662af978e24c1dc50b72"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#af334ec8f4f0a662af978e24c1dc50b72">GetOrInsertFunction</a> (<a class="el" href="classFunctionModel.html">FunctionModel</a> *fmodel)</td></tr>
 <tr class="separator:af334ec8f4f0a662af978e24c1dc50b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0922481c39e736dec716cd40af6c632"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#aa0922481c39e736dec716cd40af6c632">GetOrInsertFunction</a> (const string &amp;name, <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> func_type)</td></tr>
+<tr class="memitem:aa0922481c39e736dec716cd40af6c632"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#aa0922481c39e736dec716cd40af6c632">GetOrInsertFunction</a> (const string &amp;name, <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> <a class="el" href="PackageJIT_8cpp.html#a0ca397d54b1158d48fafee5345745c82">func_type</a>)</td></tr>
 <tr class="separator:aa0922481c39e736dec716cd40af6c632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeec8797730f3f87c30460f4aa9770158"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#aeec8797730f3f87c30460f4aa9770158">GetOrInsertFunction</a> (const string &amp;name, <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> ret_type, vector&lt; <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> &gt; &amp;types, bool isNotSure=false)</td></tr>
 <tr class="separator:aeec8797730f3f87c30460f4aa9770158"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,14 +166,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a764f9f4311665a2c8716e55dca6a82b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc1b57f1e7555f4af32c1206252720f5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#adc1b57f1e7555f4af32c1206252720f5">DoUntil</a> (<a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> <a class="el" href="State_8h.html#a1615968a92950438f6e67a28e9d56e5ca338f0b1773c656a2647feb9e2bf6be09">statement</a>, <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> pd)</td></tr>
 <tr class="separator:adc1b57f1e7555f4af32c1206252720f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ec74c0b123c08cb31cbddd2c74763c3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a5ec74c0b123c08cb31cbddd2c74763c3">New</a> (<a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> var_type, vector&lt; <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> &gt; &amp;args)</td></tr>
-<tr class="separator:a5ec74c0b123c08cb31cbddd2c74763c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bd9f98d2ea3d9a47e112d57fb18f01d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a1bd9f98d2ea3d9a47e112d57fb18f01d">NewArray</a> (<a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> var_type, vector&lt; <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> &gt; &amp;wd)</td></tr>
-<tr class="separator:a1bd9f98d2ea3d9a47e112d57fb18f01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedebe3c41e8f0c7fef5011fadcd07815"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#aedebe3c41e8f0c7fef5011fadcd07815">Delete</a> (<a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> pointer)</td></tr>
-<tr class="separator:aedebe3c41e8f0c7fef5011fadcd07815"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07527ee311b8f38e492e4bee1688c724"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a07527ee311b8f38e492e4bee1688c724">DeleteArray</a> (<a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> pointer)</td></tr>
-<tr class="separator:a07527ee311b8f38e492e4bee1688c724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9645ba2dacdbaff7abb2c63c1f64f534"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a9645ba2dacdbaff7abb2c63c1f64f534">New</a> (<a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> var_type, vector&lt; <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> &gt; &amp;args, const string &amp;funcname=&quot;&quot;)</td></tr>
+<tr class="separator:a9645ba2dacdbaff7abb2c63c1f64f534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee0cb768a84498aa952668e8e31a8bc3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#aee0cb768a84498aa952668e8e31a8bc3">NewArray</a> (<a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> var_type, vector&lt; <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> &gt; &amp;wd, const string &amp;funcname=&quot;&quot;)</td></tr>
+<tr class="separator:aee0cb768a84498aa952668e8e31a8bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31aeca3cf220a9e2aab8d1cde3ab91ee"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a31aeca3cf220a9e2aab8d1cde3ab91ee">Delete</a> (<a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> pointer, const string &amp;funcname=&quot;&quot;)</td></tr>
+<tr class="separator:a31aeca3cf220a9e2aab8d1cde3ab91ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91adcc1b7fd51a6108f838c10b9c278b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a91adcc1b7fd51a6108f838c10b9c278b">DeleteArray</a> (<a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> pointer, const string &amp;funcname=&quot;&quot;)</td></tr>
+<tr class="separator:a91adcc1b7fd51a6108f838c10b9c278b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ce5eab0b9ded010c36b89c05b825e6d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a4ce5eab0b9ded010c36b89c05b825e6d">Return</a> ()</td></tr>
 <tr class="separator:a4ce5eab0b9ded010c36b89c05b825e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60ab5060b721dcd8266ed01ad5ed2788"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a60ab5060b721dcd8266ed01ad5ed2788">Return</a> (<a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> var)</td></tr>
@@ -219,7 +220,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ada48e07f0882b861c66bcfa9f013513c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17ed2596a5ed1283631670acad0fdf8f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a17ed2596a5ed1283631670acad0fdf8f">l_GetOrInsertFunction</a> (<a class="el" href="classFunctionModel.html">FunctionModel</a> *fmodel)</td></tr>
 <tr class="separator:a17ed2596a5ed1283631670acad0fdf8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66fff01a27a19ff3f224c0a8b08d506e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a66fff01a27a19ff3f224c0a8b08d506e">l_GetOrInsertFunction</a> (const string &amp;name, <a class="el" href="classlvalue.html">lvalue</a> *func_type)</td></tr>
+<tr class="memitem:a66fff01a27a19ff3f224c0a8b08d506e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a66fff01a27a19ff3f224c0a8b08d506e">l_GetOrInsertFunction</a> (const string &amp;name, <a class="el" href="classlvalue.html">lvalue</a> *<a class="el" href="PackageJIT_8cpp.html#a0ca397d54b1158d48fafee5345745c82">func_type</a>)</td></tr>
 <tr class="separator:a66fff01a27a19ff3f224c0a8b08d506e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af79fe8614433a75d7e9434142aeeea25"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#af79fe8614433a75d7e9434142aeeea25">l_GetOrInsertFunction</a> (const string &amp;name, <a class="el" href="classlvalue.html">lvalue</a> *ret_type, vector&lt; <a class="el" href="classlvalue.html">lvalue</a> * &gt; &amp;types, bool isNotSure=false)</td></tr>
 <tr class="separator:af79fe8614433a75d7e9434142aeeea25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,14 +274,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac08127501cc33027dbd1b2283429cadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dbea65e1fd55d3be56e7fb74039baa2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a7dbea65e1fd55d3be56e7fb74039baa2">l_DoUntil</a> (<a class="el" href="classlvalue.html">lvalue</a> *<a class="el" href="State_8h.html#a1615968a92950438f6e67a28e9d56e5ca338f0b1773c656a2647feb9e2bf6be09">statement</a>, <a class="el" href="classlvalue.html">lvalue</a> *pd)</td></tr>
 <tr class="separator:a7dbea65e1fd55d3be56e7fb74039baa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e03a3a2d2ad18cbceb72c493ada7abc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a6e03a3a2d2ad18cbceb72c493ada7abc">l_New</a> (<a class="el" href="classlvalue.html">lvalue</a> *var_type, vector&lt; <a class="el" href="classlvalue.html">lvalue</a> * &gt; &amp;args)</td></tr>
-<tr class="separator:a6e03a3a2d2ad18cbceb72c493ada7abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a557523174bb298d07b2652e9d431e362"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a557523174bb298d07b2652e9d431e362">l_NewArray</a> (<a class="el" href="classlvalue.html">lvalue</a> *var_type, vector&lt; <a class="el" href="classlvalue.html">lvalue</a> * &gt; &amp;wd)</td></tr>
-<tr class="separator:a557523174bb298d07b2652e9d431e362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dd288272a2173db014731dec74eb59b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a8dd288272a2173db014731dec74eb59b">l_Delete</a> (<a class="el" href="classlvalue.html">lvalue</a> *pointer)</td></tr>
-<tr class="separator:a8dd288272a2173db014731dec74eb59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bfaaa8e36a346ef83c321413c88c5c5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a9bfaaa8e36a346ef83c321413c88c5c5">l_DeleteArray</a> (<a class="el" href="classlvalue.html">lvalue</a> *pointer)</td></tr>
-<tr class="separator:a9bfaaa8e36a346ef83c321413c88c5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1163fbd172ff40160f61d2fc2dc74f9e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a1163fbd172ff40160f61d2fc2dc74f9e">l_New</a> (<a class="el" href="classlvalue.html">lvalue</a> *var_type, vector&lt; <a class="el" href="classlvalue.html">lvalue</a> * &gt; &amp;args, const string &amp;funcname=&quot;&quot;)</td></tr>
+<tr class="separator:a1163fbd172ff40160f61d2fc2dc74f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381aeffbd15db673a3fbf2e9d93bf18a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a381aeffbd15db673a3fbf2e9d93bf18a">l_NewArray</a> (<a class="el" href="classlvalue.html">lvalue</a> *var_type, vector&lt; <a class="el" href="classlvalue.html">lvalue</a> * &gt; &amp;wd, const string &amp;funcname=&quot;&quot;)</td></tr>
+<tr class="separator:a381aeffbd15db673a3fbf2e9d93bf18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58f8080258cbb9eefa161e497dea678"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#ab58f8080258cbb9eefa161e497dea678">l_Delete</a> (<a class="el" href="classlvalue.html">lvalue</a> *pointer, const string &amp;funcname=&quot;&quot;)</td></tr>
+<tr class="separator:ab58f8080258cbb9eefa161e497dea678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af71c32ee8e9fd3dda0945df28d9fe4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a1af71c32ee8e9fd3dda0945df28d9fe4">l_DeleteArray</a> (<a class="el" href="classlvalue.html">lvalue</a> *pointer, const string &amp;funcname=&quot;&quot;)</td></tr>
+<tr class="separator:a1af71c32ee8e9fd3dda0945df28d9fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada3a22de9f4f12fdb7915c1c7673afad"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#ada3a22de9f4f12fdb7915c1c7673afad">l_Return</a> ()</td></tr>
 <tr class="separator:ada3a22de9f4f12fdb7915c1c7673afad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60142e4515567d340253e425e960d10d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlvalue.html">lvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a60142e4515567d340253e425e960d10d">l_Return</a> (<a class="el" href="classlvalue.html">lvalue</a> *var)</td></tr>
@@ -336,6 +337,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a94f563f4f5bf4f73050080a79a277423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaaef758bbe90de3d294ab1c8e071301"><td class="memItemLeft" align="right" valign="top">BasicBlock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#adaaef758bbe90de3d294ab1c8e071301">createBlock</a> (Function *f)</td></tr>
 <tr class="separator:adaaef758bbe90de3d294ab1c8e071301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05a02086a53f2b71ff984ca6d480ef0"><td class="memItemLeft" align="right" valign="top">FunctionType *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#ac05a02086a53f2b71ff984ca6d480ef0">getMallocType</a> ()</td></tr>
+<tr class="separator:ac05a02086a53f2b71ff984ca6d480ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a9799b2853eca209732b5410548881e"><td class="memItemLeft" align="right" valign="top">FunctionType *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a0a9799b2853eca209732b5410548881e">getMallocArrayType</a> ()</td></tr>
+<tr class="separator:a0a9799b2853eca209732b5410548881e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -356,6 +361,13 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a6a688578d228591f167e17fd6efb5209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13513ef4cedc683325d887bb4de3de90"><td class="memItemLeft" align="right" valign="top">BasicBlock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a13513ef4cedc683325d887bb4de3de90">nowBlock</a></td></tr>
 <tr class="separator:a13513ef4cedc683325d887bb4de3de90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a681547a36f3ae33257a7d2e53e800bd4"><td class="memItemLeft" align="right" valign="top">static FunctionType *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a681547a36f3ae33257a7d2e53e800bd4">malloc_type</a> = NULL</td></tr>
+<tr class="separator:a681547a36f3ae33257a7d2e53e800bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a6d8b4807713a4fcff88df3ab0c9167"><td class="memItemLeft" align="right" valign="top">static FunctionType *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllcg__llvm.html#a3a6d8b4807713a4fcff88df3ab0c9167">malloc_array_type</a> = NULL</td></tr>
+<tr class="separator:a3a6d8b4807713a4fcff88df3ab0c9167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -973,7 +985,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aedebe3c41e8f0c7fef5011fadcd07815"></a>
+<a class="anchor" id="a31aeca3cf220a9e2aab8d1cde3ab91ee"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -984,8 +996,18 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> llcg_llvm::Delete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td>
-          <td class="paramname"><em>pointer</em></td><td>)</td>
+          <td class="paramname"><em>pointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>funcname</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -995,13 +1017,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classllcg.html#a6fd4e7ef4fcf5c6f4536909c23531dd2">llcg</a>.</p>
+<p>Implements <a class="el" href="classllcg.html#a5af1a2d7826f3e35eed86bdf343e6828">llcg</a>.</p>
 
 <p>References <a class="el" href="llvm__value_8h.html#ae3a807f613e0854f3757fa69da7fd11f">LLVALUE</a>, and <a class="el" href="classllcg__llvm.html#a13513ef4cedc683325d887bb4de3de90">nowBlock</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a07527ee311b8f38e492e4bee1688c724"></a>
+<a class="anchor" id="a91adcc1b7fd51a6108f838c10b9c278b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1012,8 +1034,18 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> llcg_llvm::DeleteArray </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a>&#160;</td>
-          <td class="paramname"><em>pointer</em></td><td>)</td>
+          <td class="paramname"><em>pointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>funcname</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1023,7 +1055,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classllcg.html#aac645bfac8da29ecf17436bbb387d8c3">llcg</a>.</p>
+<p>Implements <a class="el" href="classllcg.html#a3c055cd1f92eb72a1ff1724434dff96d">llcg</a>.</p>
 
 </div>
 </div>
@@ -1378,7 +1410,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classllcg.html#af8c0af0098f755759d9e3e5990709d53">llcg</a>.</p>
 
-<p>References <a class="el" href="llvm__type_8h.html#a7d104d0e2f0fd0b7efb8b69d6d463a45">LLTYPE</a>.</p>
+<p>References <a class="el" href="llvm__type_8h.html#a7d104d0e2f0fd0b7efb8b69d6d463a45">LLTYPE</a>, and <a class="el" href="classllcg__llvm.html#a681547a36f3ae33257a7d2e53e800bd4">malloc_type</a>.</p>
 
 </div>
 </div>
@@ -1449,6 +1481,58 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Referenced by <a class="el" href="classllcg__llvm.html#a6ec54ad3c1e22c0cbe519067054f4440">ConstString()</a>, <a class="el" href="classllcg__llvm.html#a13bf605dc51adc5da47c3d48ee2c4825">l_ConstString()</a>, <a class="el" href="classllcg__llvm.html#a85511fbd0dfdea1d5e9a5582281812fb">l_MakeMetaList()</a>, and <a class="el" href="classllcg__llvm.html#a74c932a7721c8c3f95cdd33d55c1f1c8">MakeMetaList()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a9799b2853eca209732b5410548881e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FunctionType * llcg_llvm::getMallocArrayType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classllcg__llvm.html#a96ddf2dac92cb8dd722ff8c867caa0e8">context</a>, and <a class="el" href="classllcg__llvm.html#a3a6d8b4807713a4fcff88df3ab0c9167">malloc_array_type</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac05a02086a53f2b71ff984ca6d480ef0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FunctionType * llcg_llvm::getMallocType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classllcg__llvm.html#a96ddf2dac92cb8dd722ff8c867caa0e8">context</a>, and <a class="el" href="classllcg__llvm.html#a681547a36f3ae33257a7d2e53e800bd4">malloc_type</a>.</p>
+
+<p>Referenced by <a class="el" href="classllcg__llvm.html#a9645ba2dacdbaff7abb2c63c1f64f534">New()</a>, and <a class="el" href="classllcg__llvm.html#aee0cb768a84498aa952668e8e31a8bc3">NewArray()</a>.</p>
 
 </div>
 </div>
@@ -2312,7 +2396,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8dd288272a2173db014731dec74eb59b"></a>
+<a class="anchor" id="ab58f8080258cbb9eefa161e497dea678"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -2323,8 +2407,18 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classlvalue.html">lvalue</a> * llcg_llvm::l_Delete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classlvalue.html">lvalue</a> *&#160;</td>
-          <td class="paramname"><em>pointer</em></td><td>)</td>
+          <td class="paramname"><em>pointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>funcname</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -2334,13 +2428,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classllcg__l.html#ac17963cf0f5e6bc24db05cb03bf2a7af">llcg_l</a>.</p>
+<p>Implements <a class="el" href="classllcg__l.html#a08b162b69887c51da313d439a7bec9dc">llcg_l</a>.</p>
 
 <p>References <a class="el" href="classllcg__llvm.html#a13513ef4cedc683325d887bb4de3de90">nowBlock</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9bfaaa8e36a346ef83c321413c88c5c5"></a>
+<a class="anchor" id="a1af71c32ee8e9fd3dda0945df28d9fe4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -2351,8 +2445,18 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classlvalue.html">lvalue</a> * llcg_llvm::l_DeleteArray </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classlvalue.html">lvalue</a> *&#160;</td>
-          <td class="paramname"><em>pointer</em></td><td>)</td>
+          <td class="paramname"><em>pointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>funcname</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -2362,7 +2466,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classllcg__l.html#ac978866a5403678f6df98b2260b46a4e">llcg_l</a>.</p>
+<p>Implements <a class="el" href="classllcg__l.html#ab9563ce7a1730400a06e6d4e857f007f">llcg_l</a>.</p>
 
 </div>
 </div>
@@ -3188,7 +3292,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6e03a3a2d2ad18cbceb72c493ada7abc"></a>
+<a class="anchor" id="a1163fbd172ff40160f61d2fc2dc74f9e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -3205,7 +3309,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">vector&lt; <a class="el" href="classlvalue.html">lvalue</a> * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>funcname</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3220,13 +3330,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classllcg__l.html#a57e94598122959e4dceda0a46be94d13">llcg_l</a>.</p>
+<p>Implements <a class="el" href="classllcg__l.html#a631aa53bf2dcadb04c3bf41a96ead01c">llcg_l</a>.</p>
 
 <p>References <a class="el" href="classllcg__llvm.html#a96ddf2dac92cb8dd722ff8c867caa0e8">context</a>, and <a class="el" href="classllcg__llvm.html#a13513ef4cedc683325d887bb4de3de90">nowBlock</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a557523174bb298d07b2652e9d431e362"></a>
+<a class="anchor" id="a381aeffbd15db673a3fbf2e9d93bf18a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -3243,7 +3353,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">vector&lt; <a class="el" href="classlvalue.html">lvalue</a> * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>wd</em>&#160;</td>
+          <td class="paramname"><em>wd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>funcname</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3258,7 +3374,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classllcg__l.html#a0962dc60b8555f6db12db1562dfe43db">llcg_l</a>.</p>
+<p>Implements <a class="el" href="classllcg__l.html#a09b496f71e3a04dc345e46812c884d5a">llcg_l</a>.</p>
 
 <p>References <a class="el" href="classllcg__llvm.html#a96ddf2dac92cb8dd722ff8c867caa0e8">context</a>, <a class="el" href="classlvalue.html#ae00a945188dcd7db45b2be1410e13718">lvalue::getPointerTo()</a>, <a class="el" href="classllcg__llvm.html#ad428f787241b4bf6ef85204328e104ed">M</a>, and <a class="el" href="classllcg__llvm.html#a13513ef4cedc683325d887bb4de3de90">nowBlock</a>.</p>
 
@@ -3782,7 +3898,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5ec74c0b123c08cb31cbddd2c74763c3"></a>
+<a class="anchor" id="a9645ba2dacdbaff7abb2c63c1f64f534"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -3799,7 +3915,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">vector&lt; <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>funcname</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3814,13 +3936,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classllcg.html#a479d7ec82df2c0623a6bfa7c960e334e">llcg</a>.</p>
+<p>Implements <a class="el" href="classllcg.html#abe957497e38ee8ae910dcf6adf23cd01">llcg</a>.</p>
 
-<p>References <a class="el" href="classllcg__llvm.html#a96ddf2dac92cb8dd722ff8c867caa0e8">context</a>, <a class="el" href="llvm__type_8h.html#a7d104d0e2f0fd0b7efb8b69d6d463a45">LLTYPE</a>, and <a class="el" href="classllcg__llvm.html#a13513ef4cedc683325d887bb4de3de90">nowBlock</a>.</p>
+<p>References <a class="el" href="classllcg__llvm.html#a96ddf2dac92cb8dd722ff8c867caa0e8">context</a>, <a class="el" href="classllcg__llvm.html#ac05a02086a53f2b71ff984ca6d480ef0">getMallocType()</a>, <a class="el" href="llvm__type_8h.html#a7d104d0e2f0fd0b7efb8b69d6d463a45">LLTYPE</a>, <a class="el" href="classllcg__llvm.html#ad428f787241b4bf6ef85204328e104ed">M</a>, and <a class="el" href="classllcg__llvm.html#a13513ef4cedc683325d887bb4de3de90">nowBlock</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1bd9f98d2ea3d9a47e112d57fb18f01d"></a>
+<a class="anchor" id="aee0cb768a84498aa952668e8e31a8bc3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -3837,7 +3959,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">vector&lt; <a class="el" href="lvalue_8h.html#a5cf798ba07bb6fdacc84cf8077774eb5">LValue</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>wd</em>&#160;</td>
+          <td class="paramname"><em>wd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>funcname</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3852,9 +3980,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classllcg.html#ad694535cdbd9157a4ec8021618a830fc">llcg</a>.</p>
+<p>Implements <a class="el" href="classllcg.html#a611baafb4ec6579a423f5077e19b34f9">llcg</a>.</p>
 
-<p>References <a class="el" href="classllcg__llvm.html#a96ddf2dac92cb8dd722ff8c867caa0e8">context</a>, <a class="el" href="llvm__type_8h.html#a7d104d0e2f0fd0b7efb8b69d6d463a45">LLTYPE</a>, <a class="el" href="llvm__value_8h.html#ae3a807f613e0854f3757fa69da7fd11f">LLVALUE</a>, <a class="el" href="classllcg__llvm.html#ad428f787241b4bf6ef85204328e104ed">M</a>, and <a class="el" href="classllcg__llvm.html#a13513ef4cedc683325d887bb4de3de90">nowBlock</a>.</p>
+<p>References <a class="el" href="classllcg__llvm.html#a96ddf2dac92cb8dd722ff8c867caa0e8">context</a>, <a class="el" href="classllcg__llvm.html#ac05a02086a53f2b71ff984ca6d480ef0">getMallocType()</a>, <a class="el" href="llvm__type_8h.html#a7d104d0e2f0fd0b7efb8b69d6d463a45">LLTYPE</a>, <a class="el" href="llvm__value_8h.html#ae3a807f613e0854f3757fa69da7fd11f">LLVALUE</a>, <a class="el" href="classllcg__llvm.html#ad428f787241b4bf6ef85204328e104ed">M</a>, and <a class="el" href="classllcg__llvm.html#a13513ef4cedc683325d887bb4de3de90">nowBlock</a>.</p>
 
 </div>
 </div>
@@ -4400,7 +4528,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classllcg__llvm.html#a263cbf50476b30bdd3ddaf5ceb325e19">BeginModule()</a>, <a class="el" href="classllcg__llvm.html#a971c9c4970e4fd960a02a569d29c2653">ConstDouble()</a>, <a class="el" href="classllcg__llvm.html#add5afa72a0c2ed6ec373dbf8480b7fd6">ConstInt()</a>, <a class="el" href="classllcg__llvm.html#a94f563f4f5bf4f73050080a79a277423">createBlock()</a>, <a class="el" href="classllcg__llvm.html#a7e149226cda66e77ef2b960755856eb9">DeclareStruct()</a>, <a class="el" href="classllcg__llvm.html#ade876fa64b1fcb459d4ed6312e1f949b">Dot()</a>, <a class="el" href="classllcg__llvm.html#af43eac4374db7f3126f16174f91e026c">Double()</a>, <a class="el" href="classllcg__llvm.html#a3b9e36417841935052792cfb1bbb5238">Float()</a>, <a class="el" href="classllcg__llvm.html#acf1e8acf37f79ffe5f2c8c06dbb95b34">FunctionBodyEnd()</a>, <a class="el" href="classllcg__llvm.html#ae62f8df89759be37277db8c34ef74423">Int16()</a>, <a class="el" href="classllcg__llvm.html#ac0b65dd7eb6966c91035a0429522e2d1">Int32()</a>, <a class="el" href="classllcg__llvm.html#af00684e8fdc8a3828da612af3b55cd0e">Int64()</a>, <a class="el" href="classllcg__llvm.html#ae7d16b753f30610f43fba3e2f1c13bec">Int8()</a>, <a class="el" href="classllcg__llvm.html#ad0d346cb1b332e42fd992e0244f1f069">l_BeginModule()</a>, <a class="el" href="classllcg__llvm.html#a208b3bfb2d171807bdc4bc6c05952ebb">l_ConstDouble()</a>, <a class="el" href="classllcg__llvm.html#ab3791e7cff0778632d7a2b0ae667ad17">l_ConstInt()</a>, <a class="el" href="classllcg__llvm.html#a1fcb4015575fc28781a7d1087f126a84">l_DeclareStruct()</a>, <a class="el" href="classllcg__llvm.html#a87b4798db9b5760758173b3221770eda">l_Dot()</a>, <a class="el" href="classllcg__llvm.html#a0085d74729b0d24263206710a4ce2b47">l_Double()</a>, <a class="el" href="classllcg__llvm.html#ab1c7a820ef140e17511ae8827397c2ec">l_Float()</a>, <a class="el" href="classllcg__llvm.html#a9b4ecafcec0e0f7886aa916a3115ce6d">l_FunctionBodyEnd()</a>, <a class="el" href="classllcg__llvm.html#aabce887b51df4725d9bf8b2c5f17741f">l_Int16()</a>, <a class="el" href="classllcg__llvm.html#a1460c3a068abcb8d249189f3f89543bf">l_Int32()</a>, <a class="el" href="classllcg__llvm.html#a6cc76b999468d0cb1bb0559355411375">l_Int64()</a>, <a class="el" href="classllcg__llvm.html#ae3be34b01900bc547c9dc9870cd6f963">l_Int8()</a>, <a class="el" href="classllcg__llvm.html#a6bc33bb217369a5869d72c3209787dda">l_MakeMetaModule()</a>, <a class="el" href="classllcg__llvm.html#a6e03a3a2d2ad18cbceb72c493ada7abc">l_New()</a>, <a class="el" href="classllcg__llvm.html#a557523174bb298d07b2652e9d431e362">l_NewArray()</a>, <a class="el" href="classllcg__llvm.html#aee1599472e718bb355c7ae80262e8e8f">l_Opt1()</a>, <a class="el" href="classllcg__llvm.html#ada3a22de9f4f12fdb7915c1c7673afad">l_Return()</a>, <a class="el" href="classllcg__llvm.html#aeba0da2fbe3cc56809fb0f28ca07c80d">l_Select()</a>, <a class="el" href="classllcg__llvm.html#ad9edd557cf8dfcc9c6a56b744b6eb5fe">l_Void()</a>, <a class="el" href="classllcg__llvm.html#a95aa747fc28f54bb1515b3ccf0928f90">llcg_llvm()</a>, <a class="el" href="classllcg__llvm.html#acb9a239fbe07b8ede8b916912fa35148">MakeMetaModule()</a>, <a class="el" href="classllcg__llvm.html#a5ec74c0b123c08cb31cbddd2c74763c3">New()</a>, <a class="el" href="classllcg__llvm.html#a1bd9f98d2ea3d9a47e112d57fb18f01d">NewArray()</a>, <a class="el" href="classllcg__llvm.html#a23a483146ee9602b7bf9a2626cc4634f">Opt1()</a>, <a class="el" href="classllcg__llvm.html#a06139e8542d00be5a3a7c3592fe2dbfa">ptrMove()</a>, <a class="el" href="classllcg__llvm.html#a4ce5eab0b9ded010c36b89c05b825e6d">Return()</a>, <a class="el" href="classllcg__llvm.html#a7d687cc304f7397b6443fcec16f569d1">Select()</a>, and <a class="el" href="classllcg__llvm.html#a2337b566a11d7be262f25ee36f523c8b">Void()</a>.</p>
+<p>Referenced by <a class="el" href="classllcg__llvm.html#a263cbf50476b30bdd3ddaf5ceb325e19">BeginModule()</a>, <a class="el" href="classllcg__llvm.html#a971c9c4970e4fd960a02a569d29c2653">ConstDouble()</a>, <a class="el" href="classllcg__llvm.html#add5afa72a0c2ed6ec373dbf8480b7fd6">ConstInt()</a>, <a class="el" href="classllcg__llvm.html#a94f563f4f5bf4f73050080a79a277423">createBlock()</a>, <a class="el" href="classllcg__llvm.html#a7e149226cda66e77ef2b960755856eb9">DeclareStruct()</a>, <a class="el" href="classllcg__llvm.html#ade876fa64b1fcb459d4ed6312e1f949b">Dot()</a>, <a class="el" href="classllcg__llvm.html#af43eac4374db7f3126f16174f91e026c">Double()</a>, <a class="el" href="classllcg__llvm.html#a3b9e36417841935052792cfb1bbb5238">Float()</a>, <a class="el" href="classllcg__llvm.html#acf1e8acf37f79ffe5f2c8c06dbb95b34">FunctionBodyEnd()</a>, <a class="el" href="classllcg__llvm.html#a0a9799b2853eca209732b5410548881e">getMallocArrayType()</a>, <a class="el" href="classllcg__llvm.html#ac05a02086a53f2b71ff984ca6d480ef0">getMallocType()</a>, <a class="el" href="classllcg__llvm.html#ae62f8df89759be37277db8c34ef74423">Int16()</a>, <a class="el" href="classllcg__llvm.html#ac0b65dd7eb6966c91035a0429522e2d1">Int32()</a>, <a class="el" href="classllcg__llvm.html#af00684e8fdc8a3828da612af3b55cd0e">Int64()</a>, <a class="el" href="classllcg__llvm.html#ae7d16b753f30610f43fba3e2f1c13bec">Int8()</a>, <a class="el" href="classllcg__llvm.html#ad0d346cb1b332e42fd992e0244f1f069">l_BeginModule()</a>, <a class="el" href="classllcg__llvm.html#a208b3bfb2d171807bdc4bc6c05952ebb">l_ConstDouble()</a>, <a class="el" href="classllcg__llvm.html#ab3791e7cff0778632d7a2b0ae667ad17">l_ConstInt()</a>, <a class="el" href="classllcg__llvm.html#a1fcb4015575fc28781a7d1087f126a84">l_DeclareStruct()</a>, <a class="el" href="classllcg__llvm.html#a87b4798db9b5760758173b3221770eda">l_Dot()</a>, <a class="el" href="classllcg__llvm.html#a0085d74729b0d24263206710a4ce2b47">l_Double()</a>, <a class="el" href="classllcg__llvm.html#ab1c7a820ef140e17511ae8827397c2ec">l_Float()</a>, <a class="el" href="classllcg__llvm.html#a9b4ecafcec0e0f7886aa916a3115ce6d">l_FunctionBodyEnd()</a>, <a class="el" href="classllcg__llvm.html#aabce887b51df4725d9bf8b2c5f17741f">l_Int16()</a>, <a class="el" href="classllcg__llvm.html#a1460c3a068abcb8d249189f3f89543bf">l_Int32()</a>, <a class="el" href="classllcg__llvm.html#a6cc76b999468d0cb1bb0559355411375">l_Int64()</a>, <a class="el" href="classllcg__llvm.html#ae3be34b01900bc547c9dc9870cd6f963">l_Int8()</a>, <a class="el" href="classllcg__llvm.html#a6bc33bb217369a5869d72c3209787dda">l_MakeMetaModule()</a>, <a class="el" href="classllcg__llvm.html#a1163fbd172ff40160f61d2fc2dc74f9e">l_New()</a>, <a class="el" href="classllcg__llvm.html#a381aeffbd15db673a3fbf2e9d93bf18a">l_NewArray()</a>, <a class="el" href="classllcg__llvm.html#aee1599472e718bb355c7ae80262e8e8f">l_Opt1()</a>, <a class="el" href="classllcg__llvm.html#ada3a22de9f4f12fdb7915c1c7673afad">l_Return()</a>, <a class="el" href="classllcg__llvm.html#aeba0da2fbe3cc56809fb0f28ca07c80d">l_Select()</a>, <a class="el" href="classllcg__llvm.html#ad9edd557cf8dfcc9c6a56b744b6eb5fe">l_Void()</a>, <a class="el" href="classllcg__llvm.html#a95aa747fc28f54bb1515b3ccf0928f90">llcg_llvm()</a>, <a class="el" href="classllcg__llvm.html#acb9a239fbe07b8ede8b916912fa35148">MakeMetaModule()</a>, <a class="el" href="classllcg__llvm.html#a9645ba2dacdbaff7abb2c63c1f64f534">New()</a>, <a class="el" href="classllcg__llvm.html#aee0cb768a84498aa952668e8e31a8bc3">NewArray()</a>, <a class="el" href="classllcg__llvm.html#a23a483146ee9602b7bf9a2626cc4634f">Opt1()</a>, <a class="el" href="classllcg__llvm.html#a06139e8542d00be5a3a7c3592fe2dbfa">ptrMove()</a>, <a class="el" href="classllcg__llvm.html#a4ce5eab0b9ded010c36b89c05b825e6d">Return()</a>, <a class="el" href="classllcg__llvm.html#a7d687cc304f7397b6443fcec16f569d1">Select()</a>, and <a class="el" href="classllcg__llvm.html#a2337b566a11d7be262f25ee36f523c8b">Void()</a>.</p>
 
 </div>
 </div>
@@ -4422,7 +4550,51 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classllcg__llvm.html#a263cbf50476b30bdd3ddaf5ceb325e19">BeginModule()</a>, <a class="el" href="classllcg__llvm.html#a6ec54ad3c1e22c0cbe519067054f4440">ConstString()</a>, <a class="el" href="classllcg__llvm.html#a9881dd310125ebf1e2a37299b66e3399">DefGlobalVar()</a>, <a class="el" href="classllcg__llvm.html#aed524d195b180a7f7a9879aa19346d63">getFunction()</a>, <a class="el" href="classllcg__llvm.html#aa0922481c39e736dec716cd40af6c632">GetOrInsertFunction()</a>, <a class="el" href="classllcg__llvm.html#ad0d346cb1b332e42fd992e0244f1f069">l_BeginModule()</a>, <a class="el" href="classllcg__llvm.html#a13bf605dc51adc5da47c3d48ee2c4825">l_ConstString()</a>, <a class="el" href="classllcg__llvm.html#a0ae40e0f5821dd48d9735abd3d4ded7e">l_DefGlobalVar()</a>, <a class="el" href="classllcg__llvm.html#ab2e02ea2bc65f5da7e6cb4ab013a8f1a">l_getFunction()</a>, <a class="el" href="classllcg__llvm.html#a66fff01a27a19ff3f224c0a8b08d506e">l_GetOrInsertFunction()</a>, <a class="el" href="classllcg__llvm.html#a85511fbd0dfdea1d5e9a5582281812fb">l_MakeMetaList()</a>, <a class="el" href="classllcg__llvm.html#a6bc33bb217369a5869d72c3209787dda">l_MakeMetaModule()</a>, <a class="el" href="classllcg__llvm.html#a557523174bb298d07b2652e9d431e362">l_NewArray()</a>, <a class="el" href="classllcg__llvm.html#ae02191befa3e9b71c633f338f84e67ce">l_VerifyAndWrite()</a>, <a class="el" href="classllcg__llvm.html#a74c932a7721c8c3f95cdd33d55c1f1c8">MakeMetaList()</a>, <a class="el" href="classllcg__llvm.html#acb9a239fbe07b8ede8b916912fa35148">MakeMetaModule()</a>, <a class="el" href="classllcg__llvm.html#a1bd9f98d2ea3d9a47e112d57fb18f01d">NewArray()</a>, <a class="el" href="classllcg__llvm.html#ad53432771c4828e82effbba49a8e52f7">register_stdlib()</a>, <a class="el" href="classllcg__llvm.html#ae577281211a5cc3ed98366f78bc0a1aa">VerifyAndWrite()</a>, and <a class="el" href="classllcg__llvm.html#a36df609a557c18221b76f6b594be79a3">verifyModuleAndWrite()</a>.</p>
+<p>Referenced by <a class="el" href="classllcg__llvm.html#a263cbf50476b30bdd3ddaf5ceb325e19">BeginModule()</a>, <a class="el" href="classllcg__llvm.html#a6ec54ad3c1e22c0cbe519067054f4440">ConstString()</a>, <a class="el" href="classllcg__llvm.html#a9881dd310125ebf1e2a37299b66e3399">DefGlobalVar()</a>, <a class="el" href="classllcg__llvm.html#aed524d195b180a7f7a9879aa19346d63">getFunction()</a>, <a class="el" href="classllcg__llvm.html#aa0922481c39e736dec716cd40af6c632">GetOrInsertFunction()</a>, <a class="el" href="classllcg__llvm.html#ad0d346cb1b332e42fd992e0244f1f069">l_BeginModule()</a>, <a class="el" href="classllcg__llvm.html#a13bf605dc51adc5da47c3d48ee2c4825">l_ConstString()</a>, <a class="el" href="classllcg__llvm.html#a0ae40e0f5821dd48d9735abd3d4ded7e">l_DefGlobalVar()</a>, <a class="el" href="classllcg__llvm.html#ab2e02ea2bc65f5da7e6cb4ab013a8f1a">l_getFunction()</a>, <a class="el" href="classllcg__llvm.html#a66fff01a27a19ff3f224c0a8b08d506e">l_GetOrInsertFunction()</a>, <a class="el" href="classllcg__llvm.html#a85511fbd0dfdea1d5e9a5582281812fb">l_MakeMetaList()</a>, <a class="el" href="classllcg__llvm.html#a6bc33bb217369a5869d72c3209787dda">l_MakeMetaModule()</a>, <a class="el" href="classllcg__llvm.html#a381aeffbd15db673a3fbf2e9d93bf18a">l_NewArray()</a>, <a class="el" href="classllcg__llvm.html#ae02191befa3e9b71c633f338f84e67ce">l_VerifyAndWrite()</a>, <a class="el" href="classllcg__llvm.html#a74c932a7721c8c3f95cdd33d55c1f1c8">MakeMetaList()</a>, <a class="el" href="classllcg__llvm.html#acb9a239fbe07b8ede8b916912fa35148">MakeMetaModule()</a>, <a class="el" href="classllcg__llvm.html#a9645ba2dacdbaff7abb2c63c1f64f534">New()</a>, <a class="el" href="classllcg__llvm.html#aee0cb768a84498aa952668e8e31a8bc3">NewArray()</a>, <a class="el" href="classllcg__llvm.html#ad53432771c4828e82effbba49a8e52f7">register_stdlib()</a>, <a class="el" href="classllcg__llvm.html#ae577281211a5cc3ed98366f78bc0a1aa">VerifyAndWrite()</a>, and <a class="el" href="classllcg__llvm.html#a36df609a557c18221b76f6b594be79a3">verifyModuleAndWrite()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a6d8b4807713a4fcff88df3ab0c9167"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FunctionType * llcg_llvm::malloc_array_type = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="classllcg__llvm.html#a0a9799b2853eca209732b5410548881e">getMallocArrayType()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a681547a36f3ae33257a7d2e53e800bd4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FunctionType * llcg_llvm::malloc_type = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="classllcg__llvm.html#a88f2b191469ca62e40e6038e9c01d367">FuncType()</a>, and <a class="el" href="classllcg__llvm.html#ac05a02086a53f2b71ff984ca6d480ef0">getMallocType()</a>.</p>
 
 </div>
 </div>
@@ -4466,7 +4638,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classllcg__llvm.html#ae929389e6207469a2228412d527b99ef">Assignment()</a>, <a class="el" href="classllcg__llvm.html#aa369899be206b879199f2560a89fdff6">Call()</a>, <a class="el" href="classllcg__llvm.html#af723577549ead579dd5e8d92077779dc">Cmp()</a>, <a class="el" href="classllcg__llvm.html#a94f563f4f5bf4f73050080a79a277423">createBlock()</a>, <a class="el" href="classllcg__llvm.html#a0c185dafb1c4660f8091551294a29380">DefVar()</a>, <a class="el" href="classllcg__llvm.html#aedebe3c41e8f0c7fef5011fadcd07815">Delete()</a>, <a class="el" href="classllcg__llvm.html#ade876fa64b1fcb459d4ed6312e1f949b">Dot()</a>, <a class="el" href="classllcg__llvm.html#af17c0ae5071f41885b21447db9441aae">FunctionBodyBegin()</a>, <a class="el" href="classllcg__llvm.html#acf1e8acf37f79ffe5f2c8c06dbb95b34">FunctionBodyEnd()</a>, <a class="el" href="classllcg__llvm.html#a3bdc6b283828ec9d14cd5b97ddaac157">GetNowBasicBlock()</a>, <a class="el" href="classllcg__llvm.html#ae97bfb45c7a99b655c21b09dfada7f9e">l_Assignment()</a>, <a class="el" href="classllcg__llvm.html#a1605837bcf59e7ba272063808cb0ba2e">l_Call()</a>, <a class="el" href="classllcg__llvm.html#ad4b5d4483f05632dc4e13a5290833e17">l_Cmp()</a>, <a class="el" href="classllcg__llvm.html#ad9d3f7ddee557e1814af5016c19e00cf">l_DefVar()</a>, <a class="el" href="classllcg__llvm.html#a8dd288272a2173db014731dec74eb59b">l_Delete()</a>, <a class="el" href="classllcg__llvm.html#a87b4798db9b5760758173b3221770eda">l_Dot()</a>, <a class="el" href="classllcg__llvm.html#acb78f3fb31f9378025ec66aaa81aff3b">l_FunctionBodyBegin()</a>, <a class="el" href="classllcg__llvm.html#a9b4ecafcec0e0f7886aa916a3115ce6d">l_FunctionBodyEnd()</a>, <a class="el" href="classllcg__llvm.html#a013e31f18c9fdfc37742c858f4ef6ac8">l_GetNowBasicBlock()</a>, <a class="el" href="classllcg__llvm.html#a886384303e0d8eebb9625a48c43aa8b7">l_Load()</a>, <a class="el" href="classllcg__llvm.html#a6e03a3a2d2ad18cbceb72c493ada7abc">l_New()</a>, <a class="el" href="classllcg__llvm.html#a557523174bb298d07b2652e9d431e362">l_NewArray()</a>, <a class="el" href="classllcg__llvm.html#aee1599472e718bb355c7ae80262e8e8f">l_Opt1()</a>, <a class="el" href="classllcg__llvm.html#a5a097156b6d844d516df0c8421cc41df">l_Opt2()</a>, <a class="el" href="classllcg__llvm.html#ada3a22de9f4f12fdb7915c1c7673afad">l_Return()</a>, <a class="el" href="classllcg__llvm.html#aeba0da2fbe3cc56809fb0f28ca07c80d">l_Select()</a>, <a class="el" href="classllcg__llvm.html#ac3d24a7b3c5e53c45cd549da0f0fd562">l_Store()</a>, <a class="el" href="classllcg__llvm.html#aa5580177ec4bf6169da5a6cff842d55f">Load()</a>, <a class="el" href="classllcg__llvm.html#a5ec74c0b123c08cb31cbddd2c74763c3">New()</a>, <a class="el" href="classllcg__llvm.html#a1bd9f98d2ea3d9a47e112d57fb18f01d">NewArray()</a>, <a class="el" href="classllcg__llvm.html#a23a483146ee9602b7bf9a2626cc4634f">Opt1()</a>, <a class="el" href="classllcg__llvm.html#a7941fe0490614689ca0f75b6adae5539">Opt2()</a>, <a class="el" href="classllcg__llvm.html#a06139e8542d00be5a3a7c3592fe2dbfa">ptrMove()</a>, <a class="el" href="classllcg__llvm.html#a4ce5eab0b9ded010c36b89c05b825e6d">Return()</a>, <a class="el" href="classllcg__llvm.html#a7d687cc304f7397b6443fcec16f569d1">Select()</a>, and <a class="el" href="classllcg__llvm.html#ab1566439e1b27a2d15ee872770b7b036">Store()</a>.</p>
+<p>Referenced by <a class="el" href="classllcg__llvm.html#ae929389e6207469a2228412d527b99ef">Assignment()</a>, <a class="el" href="classllcg__llvm.html#aa369899be206b879199f2560a89fdff6">Call()</a>, <a class="el" href="classllcg__llvm.html#af723577549ead579dd5e8d92077779dc">Cmp()</a>, <a class="el" href="classllcg__llvm.html#a94f563f4f5bf4f73050080a79a277423">createBlock()</a>, <a class="el" href="classllcg__llvm.html#a0c185dafb1c4660f8091551294a29380">DefVar()</a>, <a class="el" href="classllcg__llvm.html#a31aeca3cf220a9e2aab8d1cde3ab91ee">Delete()</a>, <a class="el" href="classllcg__llvm.html#ade876fa64b1fcb459d4ed6312e1f949b">Dot()</a>, <a class="el" href="classllcg__llvm.html#af17c0ae5071f41885b21447db9441aae">FunctionBodyBegin()</a>, <a class="el" href="classllcg__llvm.html#acf1e8acf37f79ffe5f2c8c06dbb95b34">FunctionBodyEnd()</a>, <a class="el" href="classllcg__llvm.html#a3bdc6b283828ec9d14cd5b97ddaac157">GetNowBasicBlock()</a>, <a class="el" href="classllcg__llvm.html#ae97bfb45c7a99b655c21b09dfada7f9e">l_Assignment()</a>, <a class="el" href="classllcg__llvm.html#a1605837bcf59e7ba272063808cb0ba2e">l_Call()</a>, <a class="el" href="classllcg__llvm.html#ad4b5d4483f05632dc4e13a5290833e17">l_Cmp()</a>, <a class="el" href="classllcg__llvm.html#ad9d3f7ddee557e1814af5016c19e00cf">l_DefVar()</a>, <a class="el" href="classllcg__llvm.html#ab58f8080258cbb9eefa161e497dea678">l_Delete()</a>, <a class="el" href="classllcg__llvm.html#a87b4798db9b5760758173b3221770eda">l_Dot()</a>, <a class="el" href="classllcg__llvm.html#acb78f3fb31f9378025ec66aaa81aff3b">l_FunctionBodyBegin()</a>, <a class="el" href="classllcg__llvm.html#a9b4ecafcec0e0f7886aa916a3115ce6d">l_FunctionBodyEnd()</a>, <a class="el" href="classllcg__llvm.html#a013e31f18c9fdfc37742c858f4ef6ac8">l_GetNowBasicBlock()</a>, <a class="el" href="classllcg__llvm.html#a886384303e0d8eebb9625a48c43aa8b7">l_Load()</a>, <a class="el" href="classllcg__llvm.html#a1163fbd172ff40160f61d2fc2dc74f9e">l_New()</a>, <a class="el" href="classllcg__llvm.html#a381aeffbd15db673a3fbf2e9d93bf18a">l_NewArray()</a>, <a class="el" href="classllcg__llvm.html#aee1599472e718bb355c7ae80262e8e8f">l_Opt1()</a>, <a class="el" href="classllcg__llvm.html#a5a097156b6d844d516df0c8421cc41df">l_Opt2()</a>, <a class="el" href="classllcg__llvm.html#ada3a22de9f4f12fdb7915c1c7673afad">l_Return()</a>, <a class="el" href="classllcg__llvm.html#aeba0da2fbe3cc56809fb0f28ca07c80d">l_Select()</a>, <a class="el" href="classllcg__llvm.html#ac3d24a7b3c5e53c45cd549da0f0fd562">l_Store()</a>, <a class="el" href="classllcg__llvm.html#aa5580177ec4bf6169da5a6cff842d55f">Load()</a>, <a class="el" href="classllcg__llvm.html#a9645ba2dacdbaff7abb2c63c1f64f534">New()</a>, <a class="el" href="classllcg__llvm.html#aee0cb768a84498aa952668e8e31a8bc3">NewArray()</a>, <a class="el" href="classllcg__llvm.html#a23a483146ee9602b7bf9a2626cc4634f">Opt1()</a>, <a class="el" href="classllcg__llvm.html#a7941fe0490614689ca0f75b6adae5539">Opt2()</a>, <a class="el" href="classllcg__llvm.html#a06139e8542d00be5a3a7c3592fe2dbfa">ptrMove()</a>, <a class="el" href="classllcg__llvm.html#a4ce5eab0b9ded010c36b89c05b825e6d">Return()</a>, <a class="el" href="classllcg__llvm.html#a7d687cc304f7397b6443fcec16f569d1">Select()</a>, and <a class="el" href="classllcg__llvm.html#ab1566439e1b27a2d15ee872770b7b036">Store()</a>.</p>
 
 </div>
 </div>

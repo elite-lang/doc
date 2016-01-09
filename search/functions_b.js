@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['macromake',['MacroMake',['../classCodeGenContext.html#a692a0fa38d81fd42262db75209bf929f',1,'CodeGenContext']]],
-  ['macromakeall',['MacroMakeAll',['../classCodeGenContext.html#a78aad6d2a2a12b7673d99694a23a8534',1,'CodeGenContext']]],
+  ['macromake',['MacroMake',['../classCodeGenContext.html#a692a0fa38d81fd42262db75209bf929f',1,'CodeGenContext::MacroMake()'],['../classICodeGenContext.html#a81e0ac10033452ee96de35a8b1949eea',1,'ICodeGenContext::MacroMake()']]],
+  ['macromakeall',['MacroMakeAll',['../classCodeGenContext.html#ae3d2c9c717635234504994e73c6bb35a',1,'CodeGenContext::MacroMakeAll()'],['../classICodeGenContext.html#a9b1ca3f999bd45be72453cd0b9510264',1,'ICodeGenContext::MacroMakeAll()']]],
   ['macromodel',['MacroModel',['../classMacroModel.html#a59dd026515395a29c98b078f2c453aff',1,'MacroModel']]],
   ['main',['main',['../Main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Main.cpp'],['../LR__Scanner_2src_2main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c',1,'main(int argc, const char *argv[]):&#160;main.cpp'],['../MetaScriptRunner_2src_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089',1,'main(int argc, char const *argv[]):&#160;main.cpp'],['../RedApple_2src_2main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c',1,'main(int argc, const char *argv[]):&#160;main.cpp'],['../src_2main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c',1,'main(int argc, const char *argv[]):&#160;main.cpp']]],
   ['make',['Make',['../classCodeGen.html#a5a8a0e42c7e2e20bceec27dd98615950',1,'CodeGen::Make()'],['../classRedCodeGen.html#a3301167e6a003b69331276326140e7a3',1,'RedCodeGen::Make()']]],
@@ -26,7 +26,7 @@ var searchData=
   ['makeprecedence',['MakePrecedence',['../classBNFParser.html#a4b646e6927415950126c10ec1d67828a',1,'BNFParser']]],
   ['makeset',['makeSet',['../classEquivalenceClass.html#aa790ea9eefc79b7545b3fcaa14d43819',1,'EquivalenceClass']]],
   ['makespreadmap',['MakeSpreadMap',['../classItemCollection.html#ac38e2db7c908fb192f6d34b41bb3a257',1,'ItemCollection']]],
-  ['malloc_5farray',['malloc_array',['../runtime_8cpp.html#a3a0768e88334a22b27c37279f85a3c74',1,'runtime.cpp']]],
+  ['malloc_5farray',['malloc_array',['../RedApple_2runtime_2src_2runtime_8cpp.html#a3a0768e88334a22b27c37279f85a3c74',1,'runtime.cpp']]],
   ['marco',['Marco',['../classMacroTranslate.html#a7a6121485845470ab61613188212b25c',1,'MacroTranslate']]],
   ['marcoreplace',['marcoReplace',['../classMacroTranslate.html#a546f4a822efec7f9a56532699a019afc',1,'MacroTranslate']]],
   ['metagen',['MetaGen',['../classWorker.html#ac685e27edd32bdf71640c8bb5cb56602',1,'Worker']]],

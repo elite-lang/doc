@@ -8,6 +8,8 @@ var classState =
     [ "init", "classState.html#abe618d6673b514d93ccd6e4ced6ed992", null ],
     [ "operator=", "classState.html#a57229f2db32144885eef8b7d8da598ef", null ],
     [ "operator==", "classState.html#adb2136a330eddafe1e9e7e852a1af7d4", null ],
+    [ "serialize", "classState.html#aa7ec41a6c4de46a98440b758df481773", null ],
+    [ "cereal::access", "classState.html#ab2f44cbb59a08132f4c843e5225bba0e", null ],
     [ "brother", "classState.html#a4193a078ce9d5bf505a8ca2641aa3d85", null ],
     [ "children", "classState.html#a6444c2e7220a7dc1f3bc08e6a8523482", null ],
     [ "id", "classState.html#abc172088da8328c72ae3425df8b06e1a", null ],

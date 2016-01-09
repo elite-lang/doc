@@ -2,6 +2,9 @@ var searchData=
 [
   ['begin',['begin',['../classestring.html#a1bd80c7e411420306814097225efa9b1',1,'estring']]],
   ['beginmodule',['BeginModule',['../classllcg.html#a9fa979d3120e979341c4d15f5e554ad8',1,'llcg::BeginModule()'],['../classllcg__llvm.html#a263cbf50476b30bdd3ddaf5ceb325e19',1,'llcg_llvm::BeginModule()']]],
+  ['bgc_5felite_5fplugin_5finit',['bgc_elite_plugin_init',['../packages_2bgc_2src_2main_8cpp.html#ae2a5f23e28d95512b3914bfc0d0341c7',1,'main.cpp']]],
+  ['bgc_5fmalloc',['bgc_malloc',['../packages_2bgc_2src_2runtime_8cpp.html#ae79ab0cabda25315575f396f83092254',1,'runtime.cpp']]],
+  ['bgc_5fmalloc_5farray',['bgc_malloc_array',['../packages_2bgc_2src_2runtime_8cpp.html#ac380c58e6b9630bd2f2fd9ecf1b1f64b',1,'runtime.cpp']]],
   ['bnf',['BNF',['../classBNF.html#a77266729891a94929ac426c34b7d8127',1,'BNF']]],
   ['buildallbnf',['BuildAllBNF',['../classBNF.html#afa66a62c8d21aa45e65a6dca386f0ce2',1,'BNF']]],
   ['builder',['Builder',['../classBuilder.html#a989fda58af904d7ce00f97afda458ba4',1,'Builder']]],

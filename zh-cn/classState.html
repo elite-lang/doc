@@ -79,6 +79,8 @@ $(document).ready(function(){initNavTree('classState.html','');});
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
 <a href="classState-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">State类 参考</div>  </div>
@@ -128,6 +130,17 @@ Public 属性</h2></td></tr>
 <tr class="separator:a183ae901de9ef6d5808417611beb7a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a187ca0d18bc62bbf141adb5fc0efa6d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classState.html#a187ca0d18bc62bbf141adb5fc0efa6d1">isList</a> = true</td></tr>
 <tr class="separator:a187ca0d18bc62bbf141adb5fc0efa6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:aa7ec41a6c4de46a98440b758df481773"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
+<tr class="memitem:aa7ec41a6c4de46a98440b758df481773"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classState.html#aa7ec41a6c4de46a98440b758df481773">serialize</a> (Archive &amp;ar)</td></tr>
+<tr class="separator:aa7ec41a6c4de46a98440b758df481773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:ab2f44cbb59a08132f4c843e5225bba0e"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classState.html#ab2f44cbb59a08132f4c843e5225bba0e">cereal::access</a></td></tr>
+<tr class="separator:ab2f44cbb59a08132f4c843e5225bba0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">构造及析构函数说明</h2>
 <a class="anchor" id="ab91bb1dd5aa6260ab2a456581daf9ec2"></a>
@@ -271,6 +284,53 @@ Public 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>参考 <a class="el" href="classState.html#abc172088da8328c72ae3425df8b06e1a">id</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7ec41a6c4de46a98440b758df481773"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Archive &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void State::serialize </td>
+          <td>(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em>ar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a class="anchor" id="ab2f44cbb59a08132f4c843e5225bba0e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class cereal::access</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

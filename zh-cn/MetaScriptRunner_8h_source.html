@@ -80,11 +80,11 @@ $(document).ready(function(){initNavTree('MetaScriptRunner_8h_source.html','');}
 <div class="title">MetaScriptRunner.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="MetaScriptRunner_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
+<a href="MetaScriptRunner_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">* @Author: sxf</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">* @Date:   2015-11-05 21:21:50</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* @Last Modified by:   sxf</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">* @Last Modified time: 2015-12-26 14:36:28</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">* @Last Modified time: 2016-01-01 15:28:09</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
@@ -100,57 +100,81 @@ $(document).ready(function(){initNavTree('MetaScriptRunner_8h_source.html','');}
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="classPackageLoader.html">PackageLoader</a>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span><a class="code" href="classCodeGenContext.html">CodeGenContext</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMetaScriptRunner.html">MetaScriptRunner</a> : <span class="keyword">public</span> <a class="code" href="classScriptRunner.html">ScriptRunner</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Init();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classNode.html">Node</a>* getRoot(); <span class="comment">// 仅支持后端为RedApple的宏翻译系统，其余系统返回NULL</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Finished();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> <a class="code" href="classMetaScriptRunner.html">MetaScriptRunner</a>* Create();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> run_file (<span class="keywordtype">string</span> <span class="keyword">const</span> &amp;filename);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> load_file (<span class="keywordtype">string</span> <span class="keyword">const</span> &amp;filename);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">bool</span> load_chunk (<span class="keywordtype">string</span> <span class="keyword">const</span> &amp;chunk);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">bool</span> run_chunk (<span class="keywordtype">string</span> <span class="keyword">const</span> &amp;chunk);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> setUpLoader(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; path);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#a016c5b8fbabbb2d4512026c9ff8e3eeb">   91</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMetaScriptRunner.html#a016c5b8fbabbb2d4512026c9ff8e3eeb">setCodeGenContext</a>(<a class="code" href="classCodeGenContext.html">CodeGenContext</a>* ctx) { context = ctx; } </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#a580b85a804a71b204fff551597c987b8">   92</a></span>&#160;    <a class="code" href="classCodeGenContext.html">CodeGenContext</a>* <a class="code" href="classMetaScriptRunner.html#a580b85a804a71b204fff551597c987b8">getCodeGenContext</a>() { <span class="keywordflow">return</span> context; }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#ac7bfe7834c40de42a6454b8d3c4dd4ec">   94</a></span>&#160;    OOLUA::Script* <a class="code" href="classMetaScriptRunner.html#ac7bfe7834c40de42a6454b8d3c4dd4ec">vm</a>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#a28fb3731df23207b574c1c2ba7bb174f">   95</a></span>&#160;    <a class="code" href="classNode.html">Node</a>* <a class="code" href="classMetaScriptRunner.html#a28fb3731df23207b574c1c2ba7bb174f">root</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#a3e533466bb0c256a418d1097c1ac266b">   96</a></span>&#160;    <a class="code" href="classPackageLoader.html">PackageLoader</a>* <a class="code" href="classMetaScriptRunner.html#a3e533466bb0c256a418d1097c1ac266b">loader</a>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#a859caa9b6b3c432f83de9a1594435a7b">   97</a></span>&#160;    <a class="code" href="classCodeGenContext.html">CodeGenContext</a>* <a class="code" href="classMetaScriptRunner.html#a859caa9b6b3c432f83de9a1594435a7b">context</a>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classMetaScriptRunner.html">MetaScriptRunner</a>();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    ~<a class="code" href="classMetaScriptRunner.html">MetaScriptRunner</a>();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span><a class="code" href="classLexInterface.html">LexInterface</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span><a class="code" href="classParser.html">Parser</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span><a class="code" href="classBuilder.html">Builder</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMetaScriptRunner.html">MetaScriptRunner</a> : <span class="keyword">public</span> <a class="code" href="classScriptRunner.html">ScriptRunner</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Init();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classNode.html">Node</a>* getRoot(); <span class="comment">// 仅支持后端为RedApple的宏翻译系统，其余系统返回NULL</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Finished();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> <a class="code" href="classMetaScriptRunner.html">MetaScriptRunner</a>* Create();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> run_file (<span class="keywordtype">string</span> <span class="keyword">const</span> &amp;filename);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">bool</span> load_file (<span class="keywordtype">string</span> <span class="keyword">const</span> &amp;filename);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> load_chunk (<span class="keywordtype">string</span> <span class="keyword">const</span> &amp;chunk);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">bool</span> run_chunk (<span class="keywordtype">string</span> <span class="keyword">const</span> &amp;chunk);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> setUpLoader(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; path);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#a016c5b8fbabbb2d4512026c9ff8e3eeb">   94</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMetaScriptRunner.html#a016c5b8fbabbb2d4512026c9ff8e3eeb">setCodeGenContext</a>(<a class="code" href="classCodeGenContext.html">CodeGenContext</a>* ctx) { context = ctx; }</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#a580b85a804a71b204fff551597c987b8">   95</a></span>&#160;    <a class="code" href="classCodeGenContext.html">CodeGenContext</a>* <a class="code" href="classMetaScriptRunner.html#a580b85a804a71b204fff551597c987b8">getCodeGenContext</a>() { <span class="keywordflow">return</span> context; }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#aa7f09f37a42d8ab7fa50b99adcd64a12">   97</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMetaScriptRunner.html#aa7f09f37a42d8ab7fa50b99adcd64a12">setLex</a>(<a class="code" href="classLexInterface.html">LexInterface</a>* _lex) { <a class="code" href="Main_8cpp.html#a9a24dd9bd46ce043756cc48c3a8b2e22">lex</a> = _lex; }</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#aac4f5ba8c052ca630b34e93138e6b739">   98</a></span>&#160;    <a class="code" href="classLexInterface.html">LexInterface</a>* <a class="code" href="classMetaScriptRunner.html#aac4f5ba8c052ca630b34e93138e6b739">getLex</a>() { <span class="keywordflow">return</span> <a class="code" href="Main_8cpp.html#a9a24dd9bd46ce043756cc48c3a8b2e22">lex</a>; }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#a499a328d439eea6a3d63cbc5fd13ff9f">  100</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMetaScriptRunner.html#a499a328d439eea6a3d63cbc5fd13ff9f">setParser</a>(<a class="code" href="classParser.html">Parser</a>* _parser) { parser = _parser; }</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#a2464f4789c2ebee2b85598a9218d0920">  101</a></span>&#160;    <a class="code" href="classParser.html">Parser</a>* <a class="code" href="classMetaScriptRunner.html#a2464f4789c2ebee2b85598a9218d0920">getParser</a>() { <span class="keywordflow">return</span> parser; }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#aeca2b649eb6c370c6cd6fc9c932f8a4f">  103</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMetaScriptRunner.html#aeca2b649eb6c370c6cd6fc9c932f8a4f">setBuilder</a>(<a class="code" href="classBuilder.html">Builder</a>* _builder) { builder = _builder; }</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#ac591e0f68f0578c5abf9e8029643771d">  104</a></span>&#160;    <a class="code" href="classBuilder.html">Builder</a>* <a class="code" href="classMetaScriptRunner.html#ac591e0f68f0578c5abf9e8029643771d">getBuilder</a>() { <span class="keywordflow">return</span> builder; }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif // META_SCRIPT_RUNNER_H</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#ac7bfe7834c40de42a6454b8d3c4dd4ec">  107</a></span>&#160;    OOLUA::Script* <a class="code" href="classMetaScriptRunner.html#ac7bfe7834c40de42a6454b8d3c4dd4ec">vm</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#a28fb3731df23207b574c1c2ba7bb174f">  108</a></span>&#160;    <a class="code" href="classNode.html">Node</a>* <a class="code" href="classMetaScriptRunner.html#a28fb3731df23207b574c1c2ba7bb174f">root</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#a3e533466bb0c256a418d1097c1ac266b">  109</a></span>&#160;    <a class="code" href="classPackageLoader.html">PackageLoader</a>* loader = NULL;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#a859caa9b6b3c432f83de9a1594435a7b">  110</a></span>&#160;    <a class="code" href="classCodeGenContext.html">CodeGenContext</a>* context = NULL;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#a5335a0a7cfbb9b85869e719aaf113216">  111</a></span>&#160;    <a class="code" href="classLexInterface.html">LexInterface</a>* <a class="code" href="Main_8cpp.html#a9a24dd9bd46ce043756cc48c3a8b2e22">lex</a> = NULL;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#a1ae0c6a1852ceb8d8c5268f3f25c8ff4">  112</a></span>&#160;    <a class="code" href="classParser.html">Parser</a>* parser = NULL;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classMetaScriptRunner.html#a9b6a25b2e0aad9161e47ffb5faacc4e6">  113</a></span>&#160;    <a class="code" href="classBuilder.html">Builder</a>* builder = NULL;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="classMetaScriptRunner.html">MetaScriptRunner</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    ~<a class="code" href="classMetaScriptRunner.html">MetaScriptRunner</a>();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif // META_SCRIPT_RUNNER_H</span></div>
+<div class="ttc" id="Main_8cpp_html_a9a24dd9bd46ce043756cc48c3a8b2e22"><div class="ttname"><a href="Main_8cpp.html#a9a24dd9bd46ce043756cc48c3a8b2e22">lex</a></div><div class="ttdeci">Lex lex</div><div class="ttdef"><b>Definition:</b> Main.cpp:21</div></div>
 <div class="ttc" id="ScriptRunner_8h_html"><div class="ttname"><a href="ScriptRunner_8h.html">ScriptRunner.h</a></div></div>
 <div class="ttc" id="classNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdoc">List的基本组成元素，表示一个代码中的基本节点 </div><div class="ttdef"><b>Definition:</b> Node.h:37</div></div>
-<div class="ttc" id="classMetaScriptRunner_html_a859caa9b6b3c432f83de9a1594435a7b"><div class="ttname"><a href="classMetaScriptRunner.html#a859caa9b6b3c432f83de9a1594435a7b">MetaScriptRunner::context</a></div><div class="ttdeci">CodeGenContext * context</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:97</div></div>
+<div class="ttc" id="classMetaScriptRunner_html_aac4f5ba8c052ca630b34e93138e6b739"><div class="ttname"><a href="classMetaScriptRunner.html#aac4f5ba8c052ca630b34e93138e6b739">MetaScriptRunner::getLex</a></div><div class="ttdeci">LexInterface * getLex()</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:98</div></div>
+<div class="ttc" id="classMetaScriptRunner_html_aeca2b649eb6c370c6cd6fc9c932f8a4f"><div class="ttname"><a href="classMetaScriptRunner.html#aeca2b649eb6c370c6cd6fc9c932f8a4f">MetaScriptRunner::setBuilder</a></div><div class="ttdeci">void setBuilder(Builder *_builder)</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:103</div></div>
+<div class="ttc" id="classMetaScriptRunner_html_aa7f09f37a42d8ab7fa50b99adcd64a12"><div class="ttname"><a href="classMetaScriptRunner.html#aa7f09f37a42d8ab7fa50b99adcd64a12">MetaScriptRunner::setLex</a></div><div class="ttdeci">void setLex(LexInterface *_lex)</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:97</div></div>
+<div class="ttc" id="classLexInterface_html"><div class="ttname"><a href="classLexInterface.html">LexInterface</a></div><div class="ttdoc">Lex的关键接口 </div><div class="ttdef"><b>Definition:</b> LexInterface.h:25</div></div>
+<div class="ttc" id="classMetaScriptRunner_html_a499a328d439eea6a3d63cbc5fd13ff9f"><div class="ttname"><a href="classMetaScriptRunner.html#a499a328d439eea6a3d63cbc5fd13ff9f">MetaScriptRunner::setParser</a></div><div class="ttdeci">void setParser(Parser *_parser)</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:100</div></div>
 <div class="ttc" id="classPackageLoader_html"><div class="ttname"><a href="classPackageLoader.html">PackageLoader</a></div><div class="ttdoc">扩展包加载器 </div><div class="ttdef"><b>Definition:</b> PackageLoader.h:18</div></div>
-<div class="ttc" id="classCodeGenContext_html"><div class="ttname"><a href="classCodeGenContext.html">CodeGenContext</a></div><div class="ttdoc">代码生成上下文, 是代码生成中的关键信息存储类 </div><div class="ttdef"><b>Definition:</b> CodeGenContext.h:37</div></div>
-<div class="ttc" id="classMetaScriptRunner_html"><div class="ttname"><a href="classMetaScriptRunner.html">MetaScriptRunner</a></div><div class="ttdoc">元脚本解析器类 </div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:32</div></div>
-<div class="ttc" id="classMetaScriptRunner_html_a3e533466bb0c256a418d1097c1ac266b"><div class="ttname"><a href="classMetaScriptRunner.html#a3e533466bb0c256a418d1097c1ac266b">MetaScriptRunner::loader</a></div><div class="ttdeci">PackageLoader * loader</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:96</div></div>
+<div class="ttc" id="classMetaScriptRunner_html_ac591e0f68f0578c5abf9e8029643771d"><div class="ttname"><a href="classMetaScriptRunner.html#ac591e0f68f0578c5abf9e8029643771d">MetaScriptRunner::getBuilder</a></div><div class="ttdeci">Builder * getBuilder()</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:104</div></div>
+<div class="ttc" id="classCodeGenContext_html"><div class="ttname"><a href="classCodeGenContext.html">CodeGenContext</a></div><div class="ttdoc">代码生成上下文, 是代码生成中的关键信息存储类 </div><div class="ttdef"><b>Definition:</b> CodeGenContext.h:25</div></div>
+<div class="ttc" id="classBuilder_html"><div class="ttname"><a href="classBuilder.html">Builder</a></div><div class="ttdoc">项目构建器 </div><div class="ttdef"><b>Definition:</b> Builder.h:19</div></div>
+<div class="ttc" id="classMetaScriptRunner_html"><div class="ttname"><a href="classMetaScriptRunner.html">MetaScriptRunner</a></div><div class="ttdoc">元脚本解析器类 </div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:35</div></div>
+<div class="ttc" id="classMetaScriptRunner_html_a2464f4789c2ebee2b85598a9218d0920"><div class="ttname"><a href="classMetaScriptRunner.html#a2464f4789c2ebee2b85598a9218d0920">MetaScriptRunner::getParser</a></div><div class="ttdeci">Parser * getParser()</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:101</div></div>
 <div class="ttc" id="classScriptRunner_html"><div class="ttname"><a href="classScriptRunner.html">ScriptRunner</a></div><div class="ttdoc">脚本解析器类(其实这个类应该放到MetaScriptRunner中) </div><div class="ttdef"><b>Definition:</b> ScriptRunner.h:17</div></div>
-<div class="ttc" id="classMetaScriptRunner_html_ac7bfe7834c40de42a6454b8d3c4dd4ec"><div class="ttname"><a href="classMetaScriptRunner.html#ac7bfe7834c40de42a6454b8d3c4dd4ec">MetaScriptRunner::vm</a></div><div class="ttdeci">OOLUA::Script * vm</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:94</div></div>
-<div class="ttc" id="classMetaScriptRunner_html_a28fb3731df23207b574c1c2ba7bb174f"><div class="ttname"><a href="classMetaScriptRunner.html#a28fb3731df23207b574c1c2ba7bb174f">MetaScriptRunner::root</a></div><div class="ttdeci">Node * root</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:95</div></div>
-<div class="ttc" id="classMetaScriptRunner_html_a580b85a804a71b204fff551597c987b8"><div class="ttname"><a href="classMetaScriptRunner.html#a580b85a804a71b204fff551597c987b8">MetaScriptRunner::getCodeGenContext</a></div><div class="ttdeci">CodeGenContext * getCodeGenContext()</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:92</div></div>
-<div class="ttc" id="classMetaScriptRunner_html_a016c5b8fbabbb2d4512026c9ff8e3eeb"><div class="ttname"><a href="classMetaScriptRunner.html#a016c5b8fbabbb2d4512026c9ff8e3eeb">MetaScriptRunner::setCodeGenContext</a></div><div class="ttdeci">void setCodeGenContext(CodeGenContext *ctx)</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:91</div></div>
+<div class="ttc" id="classMetaScriptRunner_html_ac7bfe7834c40de42a6454b8d3c4dd4ec"><div class="ttname"><a href="classMetaScriptRunner.html#ac7bfe7834c40de42a6454b8d3c4dd4ec">MetaScriptRunner::vm</a></div><div class="ttdeci">OOLUA::Script * vm</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:107</div></div>
+<div class="ttc" id="classMetaScriptRunner_html_a28fb3731df23207b574c1c2ba7bb174f"><div class="ttname"><a href="classMetaScriptRunner.html#a28fb3731df23207b574c1c2ba7bb174f">MetaScriptRunner::root</a></div><div class="ttdeci">Node * root</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:108</div></div>
+<div class="ttc" id="classMetaScriptRunner_html_a580b85a804a71b204fff551597c987b8"><div class="ttname"><a href="classMetaScriptRunner.html#a580b85a804a71b204fff551597c987b8">MetaScriptRunner::getCodeGenContext</a></div><div class="ttdeci">CodeGenContext * getCodeGenContext()</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:95</div></div>
+<div class="ttc" id="classMetaScriptRunner_html_a016c5b8fbabbb2d4512026c9ff8e3eeb"><div class="ttname"><a href="classMetaScriptRunner.html#a016c5b8fbabbb2d4512026c9ff8e3eeb">MetaScriptRunner::setCodeGenContext</a></div><div class="ttdeci">void setCodeGenContext(CodeGenContext *ctx)</div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:94</div></div>
+<div class="ttc" id="classParser_html"><div class="ttname"><a href="classParser.html">Parser</a></div><div class="ttdoc">核心的语法分析器接口 </div><div class="ttdef"><b>Definition:</b> Parser.h:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->

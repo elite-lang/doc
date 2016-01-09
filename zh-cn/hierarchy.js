@@ -11,7 +11,6 @@ var hierarchy =
     [ "CodeGen", "classCodeGen.html", [
       [ "RedCodeGen", "classRedCodeGen.html", null ]
     ] ],
-    [ "CodeGenContext", "classCodeGenContext.html", null ],
     [ "CodeGenerator", "classCodeGenerator.html", null ],
     [ "cv", "structcv.html", null ],
     [ "DebugMsg", "classDebugMsg.html", null ],
@@ -28,6 +27,9 @@ var hierarchy =
     ] ],
     [ "FunctionMeta", "structFunctionMeta.html", null ],
     [ "Grammer_Node", "classGrammer__Node.html", null ],
+    [ "ICodeGenContext", "classICodeGenContext.html", [
+      [ "CodeGenContext", "classCodeGenContext.html", null ]
+    ] ],
     [ "ICodeGenFunction", "classICodeGenFunction.html", [
       [ "CodeGenFunction", "classCodeGenFunction.html", null ],
       [ "LuaGenFunction", "classLuaGenFunction.html", null ]

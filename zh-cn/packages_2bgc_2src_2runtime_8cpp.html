@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Elite: 开发者文档</title>
+<title>Elite: packages/bgc/src/runtime.cpp 文件参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -58,7 +58,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('md_doc__3_developers_manual_8zh-cn.html','');});
+$(document).ready(function(){initNavTree('packages_2bgc_2src_2runtime_8cpp.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -76,45 +76,74 @@ $(document).ready(function(){initNavTree('md_doc__3_developers_manual_8zh-cn.htm
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
   <div class="headertitle">
-<div class="title">开发者文档 </div>  </div>
+<div class="title">runtime.cpp 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>对于每一位贡献者，非常感谢您在百忙之中帮助改进我们的项目。Elite是一款开源软件，我们欢迎任何人帮助我们完善本项目。同时也欢迎您提出任何的意见和建议，帮助我们改进。</p>
-<h3>目录</h3>
-<ul>
-<li><a class="el" href="md-proj-struct.html">项目结构介绍</a></li>
-<li><a class="el" href="md-test.html">项目测试</a></li>
-</ul>
-<h3>贡献本项目</h3>
-<p>如果您是一位开发者，欢迎您帮助我们改进项目，再小的改变都值得我们尊敬。如果您是一位设计师或美术设计人员，欢迎您帮助我们改进项目宣传，包括Logo设计、网页美术设计、帮助文档风格设计。如果您想帮助我们，或与我们洽谈，请与我们联系：</p>
-<ul>
-<li>github：<a href="https://github.com/elite-lang/Elite">https://github.com/elite-lang/Elite</a></li>
-<li>邮箱：<a href="#" onclick="location.href='mai'+'lto:'+'sun'+'xf'+'anc'+'y@'+'gma'+'il'+'.co'+'m'; return false;">sunxf<span style="display: none;">.nosp@m.</span>ancy<span style="display: none;">.nosp@m.</span>@gmai<span style="display: none;">.nosp@m.</span>l.co<span style="display: none;">.nosp@m.</span>m</a></li>
-<li>gitter：<a href="https://gitter.im/elite-lang/Elite?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge">参与讨论</a></li>
-</ul>
-<p>贡献代码的流程非常简单，首先您需要从github上fork我们的项目到您的github账户中，通过阅读文档和相关讨论，了解到您具体要添加或修改的内容，您将代码修改完毕并传到您的仓库后，向我们的仓库发送PR即可。</p>
-<p>贡献代码需要注意的几点：</p>
-<ul>
-<li>在您添加一个功能或修改一个功能前，建议您先发一个Issue或任意形式与我们讨论，这样可以避免不同的人实现了相同的功能</li>
-<li>在您发送PR时，请填写好对应的Commit Message，让我们了解到您希望修改的内容</li>
-<li>不建议发送大PR，这会造成我们难以测试和审核您的修改</li>
-<li>如果您希望长期参与此项目，欢迎您加入到开发者团队，有经验的开发者我们会给予更高的项目修改及审核PR的权限</li>
-</ul>
-<h3>捐助本项目</h3>
-<p>如果您觉得本项目确实能为您的公司提供更好的工具，更方便您的使用，欢迎您捐助本项目。您的捐款能够让项目得到更多的资源，包括更优质的服务器、开发设备、全职的维护人员等，这将促进项目更快的发展，得到更好的维护。从而使得开发者和用户得到双赢，我们也将能够为企业提供更加优秀的开发工具和服务。</p>
-<h3>关于本手册</h3>
-<p>本手册适合希望开发Elite语言，为Elite增加扩展，修改Elite底层结构的开发者阅读。 本文档提供中英双语版，也欢迎贡献其他语言的翻译文档。</p>
-<ul>
-<li><a href="../index.html">English Documents</a></li>
-<li><a href="#">中文文档</a> </li>
-</ul>
-</div></div><!-- contents -->
+<div class="textblock"><code>#include &lt;gc/gc.h&gt;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;stdarg.h&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae79ab0cabda25315575f396f83092254"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="packages_2bgc_2src_2runtime_8cpp.html#ae79ab0cabda25315575f396f83092254">bgc_malloc</a> (int size)</td></tr>
+<tr class="separator:ae79ab0cabda25315575f396f83092254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac380c58e6b9630bd2f2fd9ecf1b1f64b"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="packages_2bgc_2src_2runtime_8cpp.html#ac380c58e6b9630bd2f2fd9ecf1b1f64b">bgc_malloc_array</a> (int size,...)</td></tr>
+<tr class="separator:ac380c58e6b9630bd2f2fd9ecf1b1f64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ae79ab0cabda25315575f396f83092254"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* bgc_malloc </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac380c58e6b9630bd2f2fd9ecf1b1f64b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* bgc_malloc_array </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="dir_93501a11e921083efbd154e0cdff5f10.html">packages</a></li><li class="navelem"><a class="el" href="dir_f7e0be2bfea4f635068dbb31f85c5407.html">bgc</a></li><li class="navelem"><a class="el" href="dir_35360462401fcb156a50479667d5cb81.html">src</a></li><li class="navelem"><a class="el" href="packages_2bgc_2src_2runtime_8cpp.html">runtime.cpp</a></li>
   </ul>
 </div>
 </body>

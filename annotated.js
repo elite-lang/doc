@@ -33,6 +33,7 @@ var annotated =
     [ "FunctionMeta", "structFunctionMeta.html", "structFunctionMeta" ],
     [ "FunctionModel", "classFunctionModel.html", "classFunctionModel" ],
     [ "Grammer_Node", "classGrammer__Node.html", "classGrammer__Node" ],
+    [ "ICodeGenContext", "classICodeGenContext.html", "classICodeGenContext" ],
     [ "ICodeGenFunction", "classICodeGenFunction.html", "classICodeGenFunction" ],
     [ "id", "structid.html", "structid" ],
     [ "IDMap", "classIDMap.html", "classIDMap" ],

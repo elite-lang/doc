@@ -83,88 +83,100 @@ $(document).ready(function(){initNavTree('VMap_8h_source.html','');});
 <a href="VMap_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="DebugMsg_8h.html">DebugMsg.h</a>&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cereal/types/map.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cereal/types/string.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef VMAP_H</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define VMAP_H</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structVMap.html">   10</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structVMap.html">VMap</a> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structVMap.html#aaf8706e0c08b30b5ccecf15158cb52b6">   11</a></span>&#160;    map&lt;string, int&gt; <a class="code" href="structVMap.html#aaf8706e0c08b30b5ccecf15158cb52b6">VnMap</a>; <span class="comment">// 用来处理非终结符</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structVMap.html#a49c68bf3f2563456cb5668c82ad1660a">   12</a></span>&#160;    map&lt;string, int&gt; <a class="code" href="structVMap.html#a49c68bf3f2563456cb5668c82ad1660a">VtMap</a>; <span class="comment">// 用来处理终结符</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structVMap.html#a9a066d53dc94afb207876d238d21365a">   13</a></span>&#160;    map&lt;string, int&gt; <a class="code" href="structVMap.html#a9a066d53dc94afb207876d238d21365a">ConstMap</a>; <span class="comment">// 用来处理静态终结符</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structVMap.html#a69928ee72beff81f57240a4f1c1bc385">   14</a></span>&#160;    <span class="keywordtype">int</span> constSize = 0;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structVMap.html#ab627541c52117e5c42b8f179e07249b5">   15</a></span>&#160;    <span class="keywordtype">int</span> constMax = 0;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structVMap.html#a0ba3734396ef2d94a24f7f23d27e083f">   16</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structVMap.html#a0ba3734396ef2d94a24f7f23d27e083f">InsertVn</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* s) {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">auto</span> i = VnMap.find(s);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">if</span> (i != VnMap.end()) <span class="keywordflow">return</span> i-&gt;second;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        VnMap[s] = ++constSize;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">return</span> constSize;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structVMap.html#aaadf79e82a5e95038270d2bbfcd4f633">   22</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structVMap.html#aaadf79e82a5e95038270d2bbfcd4f633">getVn</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* s){</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> VnMap[s];</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structVMap.html#af1c29680b17c31df85caf80626e33f8b">   26</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structVMap.html#af1c29680b17c31df85caf80626e33f8b">InsertVt</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* s, <span class="keywordtype">int</span> <span class="keywordtype">id</span>) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        VtMap[s] = id;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structVMap.html#aa3c8680196f29f9250dd70c6966c499a">   29</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structVMap.html#aa3c8680196f29f9250dd70c6966c499a">getVt</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* s){</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">if</span> (VtMap.find(s) == VtMap.end()) <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> VtMap[s];</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structVMap.html#a10767fc5decdf6fcc8d13289ea1cd88b">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structVMap.html#a10767fc5decdf6fcc8d13289ea1cd88b">InsertConst</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* s) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">auto</span> i = ConstMap.find(s);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">if</span> (i != ConstMap.end()) <span class="keywordflow">return</span> i-&gt;second;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        ConstMap[s] = ++constSize;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> constSize;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structVMap.html#a4d3c29115fb8dee6e0986530c2629787">   40</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structVMap.html#a4d3c29115fb8dee6e0986530c2629787">getConst</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* s){</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">if</span> (s == NULL) <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span> (ConstMap.find(s) == ConstMap.end()) <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> ConstMap[s];</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structVMap.html#a7adffa83a1d8621ecd4f82320f0462a6">   46</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structVMap.html#a7adffa83a1d8621ecd4f82320f0462a6">print</a>(map&lt;string,int&gt;&amp; V){</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">auto</span>&amp; fout = <a class="code" href="classDebugMsg.html#a2880dfdd4030137c25d22ee4ba54e926">DebugMsg::parser_dbg</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> p = V.begin(); p != V.end(); ++p)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            pair&lt;string, int&gt; t = *p;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            fout &lt;&lt;  t.first &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; t.second &lt;&lt; endl;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structVMap.html#a434e1649b89634a446e766b7c4b9320f">   54</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structVMap.html#a434e1649b89634a446e766b7c4b9320f">printAll</a>() {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">auto</span>&amp; fout = <a class="code" href="classDebugMsg.html#a2880dfdd4030137c25d22ee4ba54e926">DebugMsg::parser_dbg</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        fout &lt;&lt; <span class="stringliteral">&quot;===== Vn =====&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        print(VnMap);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        fout &lt;&lt; <span class="stringliteral">&quot;===== Vt =====&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        print(VtMap);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        fout &lt;&lt; <span class="stringliteral">&quot;===== Const =====&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        print(ConstMap);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// from Vn id to Vn index in the vector</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structVMap.html#a35af8383016909ca69a9ca552bba444d">   66</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structVMap.html#a35af8383016909ca69a9ca552bba444d">VnIDtoIndex</a>(<span class="keywordtype">int</span> p) { <span class="keywordflow">if</span> (p&lt;=constMax) <span class="keywordflow">return</span> -1;  <span class="keywordflow">return</span> p-constMax-1; }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef VMAP_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define VMAP_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structVMap.html">   12</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structVMap.html">VMap</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structVMap.html#aaf8706e0c08b30b5ccecf15158cb52b6">   13</a></span>&#160;    map&lt;string, int&gt; <a class="code" href="structVMap.html#aaf8706e0c08b30b5ccecf15158cb52b6">VnMap</a>; <span class="comment">// 用来处理非终结符</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structVMap.html#a49c68bf3f2563456cb5668c82ad1660a">   14</a></span>&#160;    map&lt;string, int&gt; <a class="code" href="structVMap.html#a49c68bf3f2563456cb5668c82ad1660a">VtMap</a>; <span class="comment">// 用来处理终结符</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structVMap.html#a9a066d53dc94afb207876d238d21365a">   15</a></span>&#160;    map&lt;string, int&gt; <a class="code" href="structVMap.html#a9a066d53dc94afb207876d238d21365a">ConstMap</a>; <span class="comment">// 用来处理静态终结符</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structVMap.html#a69928ee72beff81f57240a4f1c1bc385">   16</a></span>&#160;    <span class="keywordtype">int</span> constSize = 0;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structVMap.html#ab627541c52117e5c42b8f179e07249b5">   17</a></span>&#160;    <span class="keywordtype">int</span> constMax = 0;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structVMap.html#a0ba3734396ef2d94a24f7f23d27e083f">   18</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structVMap.html#a0ba3734396ef2d94a24f7f23d27e083f">InsertVn</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* s) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">auto</span> i = VnMap.find(s);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">if</span> (i != VnMap.end()) <span class="keywordflow">return</span> i-&gt;second;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        VnMap[s] = ++constSize;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> constSize;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structVMap.html#aaadf79e82a5e95038270d2bbfcd4f633">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structVMap.html#aaadf79e82a5e95038270d2bbfcd4f633">getVn</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* s){</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> VnMap[s];</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structVMap.html#af1c29680b17c31df85caf80626e33f8b">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structVMap.html#af1c29680b17c31df85caf80626e33f8b">InsertVt</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* s, <span class="keywordtype">int</span> <span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        VtMap[s] = id;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structVMap.html#aa3c8680196f29f9250dd70c6966c499a">   31</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structVMap.html#aa3c8680196f29f9250dd70c6966c499a">getVt</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* s){</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span> (VtMap.find(s) == VtMap.end()) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> VtMap[s];</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structVMap.html#a10767fc5decdf6fcc8d13289ea1cd88b">   36</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structVMap.html#a10767fc5decdf6fcc8d13289ea1cd88b">InsertConst</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* s) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">auto</span> i = ConstMap.find(s);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">if</span> (i != ConstMap.end()) <span class="keywordflow">return</span> i-&gt;second;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        ConstMap[s] = ++constSize;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> constSize;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structVMap.html#a4d3c29115fb8dee6e0986530c2629787">   42</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structVMap.html#a4d3c29115fb8dee6e0986530c2629787">getConst</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* s){</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> (s == NULL) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span> (ConstMap.find(s) == ConstMap.end()) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> ConstMap[s];</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structVMap.html#a7adffa83a1d8621ecd4f82320f0462a6">   48</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structVMap.html#a7adffa83a1d8621ecd4f82320f0462a6">print</a>(map&lt;string,int&gt;&amp; V){</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">auto</span>&amp; fout = <a class="code" href="classDebugMsg.html#a2880dfdd4030137c25d22ee4ba54e926">DebugMsg::parser_dbg</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> p = V.begin(); p != V.end(); ++p)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            pair&lt;string, int&gt; t = *p;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            fout &lt;&lt;  t.first &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; t.second &lt;&lt; endl;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structVMap.html#a434e1649b89634a446e766b7c4b9320f">   56</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structVMap.html#a434e1649b89634a446e766b7c4b9320f">printAll</a>() {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">auto</span>&amp; fout = <a class="code" href="classDebugMsg.html#a2880dfdd4030137c25d22ee4ba54e926">DebugMsg::parser_dbg</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        fout &lt;&lt; <span class="stringliteral">&quot;===== Vn =====&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        print(VnMap);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        fout &lt;&lt; <span class="stringliteral">&quot;===== Vt =====&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        print(VtMap);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        fout &lt;&lt; <span class="stringliteral">&quot;===== Const =====&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        print(ConstMap);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// from Vn id to Vn index in the vector</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="structVMap.html#a35af8383016909ca69a9ca552bba444d">   68</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structVMap.html#a35af8383016909ca69a9ca552bba444d">VnIDtoIndex</a>(<span class="keywordtype">int</span> p) { <span class="keywordflow">if</span> (p&lt;=constMax) <span class="keywordflow">return</span> -1;  <span class="keywordflow">return</span> p-constMax-1; }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="structVMap_html_a49c68bf3f2563456cb5668c82ad1660a"><div class="ttname"><a href="structVMap.html#a49c68bf3f2563456cb5668c82ad1660a">VMap::VtMap</a></div><div class="ttdeci">map&lt; string, int &gt; VtMap</div><div class="ttdef"><b>Definition:</b> VMap.h:12</div></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// 串行化</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Archive&gt;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structVMap.html#ac0ac3799b13ac71e44c5a3d9c5d03cc1">   73</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structVMap.html#ac0ac3799b13ac71e44c5a3d9c5d03cc1">serialize</a>(Archive &amp;ar)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="comment">// serialize things by passing them to the archive</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        ar( constSize, constMax, CEREAL_NVP(VnMap), CEREAL_NVP(VtMap), CEREAL_NVP(ConstMap) );</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="structVMap_html_a49c68bf3f2563456cb5668c82ad1660a"><div class="ttname"><a href="structVMap.html#a49c68bf3f2563456cb5668c82ad1660a">VMap::VtMap</a></div><div class="ttdeci">map&lt; string, int &gt; VtMap</div><div class="ttdef"><b>Definition:</b> VMap.h:14</div></div>
 <div class="ttc" id="DebugMsg_8h_html"><div class="ttname"><a href="DebugMsg_8h.html">DebugMsg.h</a></div></div>
-<div class="ttc" id="structVMap_html_a35af8383016909ca69a9ca552bba444d"><div class="ttname"><a href="structVMap.html#a35af8383016909ca69a9ca552bba444d">VMap::VnIDtoIndex</a></div><div class="ttdeci">int VnIDtoIndex(int p)</div><div class="ttdef"><b>Definition:</b> VMap.h:66</div></div>
-<div class="ttc" id="structVMap_html_a4d3c29115fb8dee6e0986530c2629787"><div class="ttname"><a href="structVMap.html#a4d3c29115fb8dee6e0986530c2629787">VMap::getConst</a></div><div class="ttdeci">int getConst(const char *s)</div><div class="ttdef"><b>Definition:</b> VMap.h:40</div></div>
-<div class="ttc" id="structVMap_html_aaadf79e82a5e95038270d2bbfcd4f633"><div class="ttname"><a href="structVMap.html#aaadf79e82a5e95038270d2bbfcd4f633">VMap::getVn</a></div><div class="ttdeci">int getVn(const char *s)</div><div class="ttdef"><b>Definition:</b> VMap.h:22</div></div>
-<div class="ttc" id="structVMap_html_aaf8706e0c08b30b5ccecf15158cb52b6"><div class="ttname"><a href="structVMap.html#aaf8706e0c08b30b5ccecf15158cb52b6">VMap::VnMap</a></div><div class="ttdeci">map&lt; string, int &gt; VnMap</div><div class="ttdef"><b>Definition:</b> VMap.h:11</div></div>
-<div class="ttc" id="structVMap_html"><div class="ttname"><a href="structVMap.html">VMap</a></div><div class="ttdef"><b>Definition:</b> VMap.h:10</div></div>
-<div class="ttc" id="structVMap_html_a10767fc5decdf6fcc8d13289ea1cd88b"><div class="ttname"><a href="structVMap.html#a10767fc5decdf6fcc8d13289ea1cd88b">VMap::InsertConst</a></div><div class="ttdeci">int InsertConst(const char *s)</div><div class="ttdef"><b>Definition:</b> VMap.h:34</div></div>
-<div class="ttc" id="structVMap_html_af1c29680b17c31df85caf80626e33f8b"><div class="ttname"><a href="structVMap.html#af1c29680b17c31df85caf80626e33f8b">VMap::InsertVt</a></div><div class="ttdeci">void InsertVt(const char *s, int id)</div><div class="ttdef"><b>Definition:</b> VMap.h:26</div></div>
-<div class="ttc" id="structVMap_html_a434e1649b89634a446e766b7c4b9320f"><div class="ttname"><a href="structVMap.html#a434e1649b89634a446e766b7c4b9320f">VMap::printAll</a></div><div class="ttdeci">void printAll()</div><div class="ttdef"><b>Definition:</b> VMap.h:54</div></div>
-<div class="ttc" id="structVMap_html_a9a066d53dc94afb207876d238d21365a"><div class="ttname"><a href="structVMap.html#a9a066d53dc94afb207876d238d21365a">VMap::ConstMap</a></div><div class="ttdeci">map&lt; string, int &gt; ConstMap</div><div class="ttdef"><b>Definition:</b> VMap.h:13</div></div>
-<div class="ttc" id="structVMap_html_aa3c8680196f29f9250dd70c6966c499a"><div class="ttname"><a href="structVMap.html#aa3c8680196f29f9250dd70c6966c499a">VMap::getVt</a></div><div class="ttdeci">int getVt(const char *s)</div><div class="ttdef"><b>Definition:</b> VMap.h:29</div></div>
-<div class="ttc" id="structVMap_html_a7adffa83a1d8621ecd4f82320f0462a6"><div class="ttname"><a href="structVMap.html#a7adffa83a1d8621ecd4f82320f0462a6">VMap::print</a></div><div class="ttdeci">void print(map&lt; string, int &gt; &amp;V)</div><div class="ttdef"><b>Definition:</b> VMap.h:46</div></div>
-<div class="ttc" id="classDebugMsg_html_a2880dfdd4030137c25d22ee4ba54e926"><div class="ttname"><a href="classDebugMsg.html#a2880dfdd4030137c25d22ee4ba54e926">DebugMsg::parser_dbg</a></div><div class="ttdeci">static std::ostream &amp; parser_dbg()</div><div class="ttdoc">获取解析器的debug输出文件流 </div><div class="ttdef"><b>Definition:</b> DebugMsg.cpp:68</div></div>
-<div class="ttc" id="structVMap_html_a0ba3734396ef2d94a24f7f23d27e083f"><div class="ttname"><a href="structVMap.html#a0ba3734396ef2d94a24f7f23d27e083f">VMap::InsertVn</a></div><div class="ttdeci">int InsertVn(const char *s)</div><div class="ttdef"><b>Definition:</b> VMap.h:16</div></div>
+<div class="ttc" id="structVMap_html_a35af8383016909ca69a9ca552bba444d"><div class="ttname"><a href="structVMap.html#a35af8383016909ca69a9ca552bba444d">VMap::VnIDtoIndex</a></div><div class="ttdeci">int VnIDtoIndex(int p)</div><div class="ttdef"><b>Definition:</b> VMap.h:68</div></div>
+<div class="ttc" id="structVMap_html_a4d3c29115fb8dee6e0986530c2629787"><div class="ttname"><a href="structVMap.html#a4d3c29115fb8dee6e0986530c2629787">VMap::getConst</a></div><div class="ttdeci">int getConst(const char *s)</div><div class="ttdef"><b>Definition:</b> VMap.h:42</div></div>
+<div class="ttc" id="structVMap_html_aaadf79e82a5e95038270d2bbfcd4f633"><div class="ttname"><a href="structVMap.html#aaadf79e82a5e95038270d2bbfcd4f633">VMap::getVn</a></div><div class="ttdeci">int getVn(const char *s)</div><div class="ttdef"><b>Definition:</b> VMap.h:24</div></div>
+<div class="ttc" id="structVMap_html_aaf8706e0c08b30b5ccecf15158cb52b6"><div class="ttname"><a href="structVMap.html#aaf8706e0c08b30b5ccecf15158cb52b6">VMap::VnMap</a></div><div class="ttdeci">map&lt; string, int &gt; VnMap</div><div class="ttdef"><b>Definition:</b> VMap.h:13</div></div>
+<div class="ttc" id="structVMap_html"><div class="ttname"><a href="structVMap.html">VMap</a></div><div class="ttdef"><b>Definition:</b> VMap.h:12</div></div>
+<div class="ttc" id="structVMap_html_a10767fc5decdf6fcc8d13289ea1cd88b"><div class="ttname"><a href="structVMap.html#a10767fc5decdf6fcc8d13289ea1cd88b">VMap::InsertConst</a></div><div class="ttdeci">int InsertConst(const char *s)</div><div class="ttdef"><b>Definition:</b> VMap.h:36</div></div>
+<div class="ttc" id="structVMap_html_af1c29680b17c31df85caf80626e33f8b"><div class="ttname"><a href="structVMap.html#af1c29680b17c31df85caf80626e33f8b">VMap::InsertVt</a></div><div class="ttdeci">void InsertVt(const char *s, int id)</div><div class="ttdef"><b>Definition:</b> VMap.h:28</div></div>
+<div class="ttc" id="structVMap_html_a434e1649b89634a446e766b7c4b9320f"><div class="ttname"><a href="structVMap.html#a434e1649b89634a446e766b7c4b9320f">VMap::printAll</a></div><div class="ttdeci">void printAll()</div><div class="ttdef"><b>Definition:</b> VMap.h:56</div></div>
+<div class="ttc" id="structVMap_html_a9a066d53dc94afb207876d238d21365a"><div class="ttname"><a href="structVMap.html#a9a066d53dc94afb207876d238d21365a">VMap::ConstMap</a></div><div class="ttdeci">map&lt; string, int &gt; ConstMap</div><div class="ttdef"><b>Definition:</b> VMap.h:15</div></div>
+<div class="ttc" id="structVMap_html_aa3c8680196f29f9250dd70c6966c499a"><div class="ttname"><a href="structVMap.html#aa3c8680196f29f9250dd70c6966c499a">VMap::getVt</a></div><div class="ttdeci">int getVt(const char *s)</div><div class="ttdef"><b>Definition:</b> VMap.h:31</div></div>
+<div class="ttc" id="structVMap_html_ac0ac3799b13ac71e44c5a3d9c5d03cc1"><div class="ttname"><a href="structVMap.html#ac0ac3799b13ac71e44c5a3d9c5d03cc1">VMap::serialize</a></div><div class="ttdeci">void serialize(Archive &amp;ar)</div><div class="ttdef"><b>Definition:</b> VMap.h:73</div></div>
+<div class="ttc" id="structVMap_html_a7adffa83a1d8621ecd4f82320f0462a6"><div class="ttname"><a href="structVMap.html#a7adffa83a1d8621ecd4f82320f0462a6">VMap::print</a></div><div class="ttdeci">void print(map&lt; string, int &gt; &amp;V)</div><div class="ttdef"><b>Definition:</b> VMap.h:48</div></div>
+<div class="ttc" id="classDebugMsg_html_a2880dfdd4030137c25d22ee4ba54e926"><div class="ttname"><a href="classDebugMsg.html#a2880dfdd4030137c25d22ee4ba54e926">DebugMsg::parser_dbg</a></div><div class="ttdeci">static std::ostream &amp; parser_dbg()</div><div class="ttdoc">获取解析器的debug输出文件流 </div><div class="ttdef"><b>Definition:</b> DebugMsg_Simple.h:28</div></div>
+<div class="ttc" id="structVMap_html_a0ba3734396ef2d94a24f7f23d27e083f"><div class="ttname"><a href="structVMap.html#a0ba3734396ef2d94a24f7f23d27e083f">VMap::InsertVn</a></div><div class="ttdeci">int InsertVn(const char *s)</div><div class="ttdef"><b>Definition:</b> VMap.h:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->

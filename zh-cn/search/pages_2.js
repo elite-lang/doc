@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['用户帮助手册',['用户帮助手册',['../md_doc__2_user_manual_8zh-cn.html',1,'']]]
+  ['文档构建',['文档构建',['../md-doc.html',1,'md-develop']]]
 ];

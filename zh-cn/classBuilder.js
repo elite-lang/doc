@@ -3,6 +3,7 @@ var classBuilder =
     [ "Builder", "classBuilder.html#a989fda58af904d7ce00f97afda458ba4", null ],
     [ "~Builder", "classBuilder.html#a850f1a4be35da17638a4a1ef20bf1401", null ],
     [ "AddLibPath", "classBuilder.html#aae1825764c88b641783278ad193f75a4", null ],
+    [ "AddLinkArgs", "classBuilder.html#ab46231602e0be6e52bf2c1af7c8c7f9e", null ],
     [ "AddLinkFile", "classBuilder.html#a1422bb5f1a3a1e64ce2ae593f4c0ea6c", null ],
     [ "AddLinkPath", "classBuilder.html#af43bc788628ebefca7c210809aac12d8", null ],
     [ "AddSearchPath", "classBuilder.html#a759487a7034d6ef6d2aa855b1d545efb", null ],
@@ -19,5 +20,6 @@ var classBuilder =
     [ "setDebugFilePath", "classBuilder.html#ad88f8053cfc2655a8530a14b70cb9d7a", null ],
     [ "setWorker", "classBuilder.html#ab5db55f75d2da978c5db96539d33656f", null ],
     [ "buildpath", "classBuilder.html#a62e9b4e53f47d06afab807cb2d12037d", null ],
+    [ "link_args", "classBuilder.html#ac0852f1812eb6276008ee3c374d68307", null ],
     [ "worker", "classBuilder.html#abb7af1bc98442efb3de7a0a7f7ca0668", null ]
 ];

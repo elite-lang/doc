@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Elite: Elite项目简介</title>
+<title>Elite: MetaScriptRunner/src/llcgAPI.cpp 文件参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -58,7 +58,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('md_doc__1_introduce_8zh-cn.html','');});
+$(document).ready(function(){initNavTree('llcgAPI_8cpp.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -76,42 +76,43 @@ $(document).ready(function(){initNavTree('md_doc__1_introduce_8zh-cn.html','');}
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
   <div class="headertitle">
-<div class="title">Elite项目简介 </div>  </div>
+<div class="title">llcgAPI.cpp 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Elite是一款编译器，同时也具有编译器生成器的功能，提供类似 <a href="http://dinosaur.compilertools.net/yacc/" title="yacc">yacc</a> 和 <a href="http://dinosaur.compilertools.net/lex/" title="lex">lex</a>的功能，能够解析用户自定义语法，并生成使用LALR分析法的编译器，做到了灵活多遍的语法形式。后端则依托 <a href="http://llvm.org/" title="LLVM">LLVM</a> 项目，实现了编译到llvm字节码的功能，并通过调用llvm工具链，最终生成机器码或通过jit解释执行。</p>
-<h2>Elite语言特性</h2>
-<ol type="1">
-<li>为用户保留了语法配置脚本、词法配置脚本接口，用来让用户自定义语言。</li>
-<li>使用lua作为元脚本，这是运行在编译器上的脚本，可以控制编译动作和编译器的工作方式。</li>
-<li>使用 <a href="http://llvm.org/" title="LLVM">LLVM</a> 作为后端代码生成器和跨平台的中间语言。生成的LLVM的bc文件( <a href="http://llvm.org/docs/LangRef.html" title="LLVM-IR">LLVM-IR</a> )，可以被打包成Elite的程序库。</li>
-<li>Elite是一门带有元数据的语言，拥有运行时环境，可以支持反射调用等功能。</li>
-<li>Elite拥有原生调用C函数的功能，可以和C库无缝链接到一起，生成最终的可执行程序。</li>
-<li>Elite拥有强大的宏支持，可以像lisp一样对代码在编译时进行处理</li>
-<li>Elite是编译型语言，生成的可执行程序是原生的，不依赖虚拟机。</li>
-<li>ELite也可以实现脚本化和Jit，但该部分还在开发中</li>
-<li>ELite是多遍翻译的语言，无需前向声明</li>
-</ol>
-<h2>Elite项目的结构</h2>
-<p>Elite项目为了实现可自定义语法这一特性，自行开发了词法分析器、语言分析器、后端代码生成器等组件，通过宏翻译机制，控制代码的生成。</p>
-<p>宏翻译是Elite项目中关键的概念，词法分析器和语法分析器，有点像lex和bison，但它们是脚本化的，更加灵活，语法翻译的配置脚本类似下面的： </p>
-<pre class="fragment">&lt;while_state&gt; = "while" "(" &lt;expr:exp&gt; ")" &lt;statement:s&gt; 
-                {{ return makeList(newIDNode("while"), exp, s); }}
-              ;
-</pre><p>这是一条while语句，语言动作要去控制生成一棵语法树，而这个语法树是类似lisp风格的，由宏组织而成的结构： </p>
-<pre class="fragment">(while (exp-state...) (statement...))
-</pre><p>这样的结构，能够被后端代码生成器识别，然后正确的翻译成一条语句</p>
-<h2>跨平台支持</h2>
-<p>我们的项目从一开始就考虑了跨平台的问题，Windows、Macos、Linux下都可以开发，支持VS2013版以后，gcc4.8以后，clang3.0以后，都可以开发我们的项目。</p>
-<h2>开发工具和语言</h2>
-<p>主要使用的语言是C++11，还附带嵌入式lua，部分GUI项目是用js开发的。 项目最初是在Ubuntu14.04的环境下开发的，目前Linux下的开发较多，其他系统的环境的工具链需要使用时手动配置一下。 主要的开发工具是clang套件和llvm套件。大部分依赖项我们都已经设置好git仓库地址，编译时会自动下载并编译。 </p>
-</div></div><!-- contents -->
+<div class="textblock"><code>#include &quot;oolua/oolua.h&quot;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a5c7cce44f237797273d6024670067467"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcgAPI_8cpp.html#a5c7cce44f237797273d6024670067467">InitLLCGAPI</a> (lua_State *L)</td></tr>
+<tr class="separator:a5c7cce44f237797273d6024670067467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a5c7cce44f237797273d6024670067467"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitLLCGAPI </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="dir_442f57d44f2f9f9550ffc9eb2c88feb0.html">MetaScriptRunner</a></li><li class="navelem"><a class="el" href="dir_efcc0336ec38d23ca9e52906313ab61c.html">src</a></li><li class="navelem"><a class="el" href="llcgAPI_8cpp.html">llcgAPI.cpp</a></li>
   </ul>
 </div>
 </body>

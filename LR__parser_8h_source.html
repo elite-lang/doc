@@ -80,7 +80,7 @@ $(document).ready(function(){initNavTree('LR__parser_8h_source.html','');});
 <div class="title">LR_parser.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="LR__parser_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
+<a href="LR__parser_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">* @Author: sxf</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">* @Date:   2015-01-01 19:40:28</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* @Last Modified by:   sxf</span></div>
@@ -109,15 +109,15 @@ $(document).ready(function(){initNavTree('LR__parser_8h_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="comment">// constructors</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classLR__parser.html">LR_parser</a>();</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ~<a class="code" href="classLR__parser.html">LR_parser</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// 构建解析器</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> BuildParser();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// 先AddBNF，再构建解析器</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> BuildParser(<span class="keyword">const</span> <span class="keywordtype">char</span>*);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// 将EBNF的描述文件传入，用来构建LR语法解析器</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddBNF(<span class="keyword">const</span> <span class="keywordtype">char</span>*);  </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddBNF(<span class="keyword">const</span> <span class="keywordtype">char</span>*);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// 解析文本</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> Parse(<a class="code" href="classGrammer__Node.html">Grammer_Node</a>* <a class="code" href="BNFParser_8cpp.html#aa853fcf202c1c7498d198cf828a9d6bb">root</a>);</div>
@@ -137,11 +137,11 @@ $(document).ready(function(){initNavTree('LR__parser_8h_source.html','');});
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classLR__parser.html#a4cfca9ad9809b8817c54b6d1014c5224">   56</a></span>&#160;    <a class="code" href="classLexInterface.html">LexInterface</a>* <a class="code" href="classLR__parser.html#a4cfca9ad9809b8817c54b6d1014c5224">lex</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classLR__parser.html#a2e7a0b032833750a3ce5fcec6587595b">   57</a></span>&#160;    vector&lt;BNF*&gt; <a class="code" href="classLR__parser.html#a2e7a0b032833750a3ce5fcec6587595b">bnflist</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classLR__parser.html#ac8de8ffef480dd8dadcf012c313a4655">   59</a></span>&#160;    <a class="code" href="classBNF.html">BNF</a>* <a class="code" href="classLR__parser.html#ac8de8ffef480dd8dadcf012c313a4655">mainbnf</a>; <span class="comment">// 增广文法中的根元素</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classLR__parser.html#afc8beb443fa4c7150f5c82613ca4c646">   61</a></span>&#160;    <a class="code" href="structVMap.html">VMap</a> <a class="code" href="classLR__parser.html#afc8beb443fa4c7150f5c82613ca4c646">vmap</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// 分析器内核</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classLR__parser.html#a9ae9ac3dab30115be0a75b116cf0b1e1">   64</a></span>&#160;    <a class="code" href="classLRCore.html">LRCore</a> <a class="code" href="classLR__parser.html#a9ae9ac3dab30115be0a75b116cf0b1e1">core</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// LR分析表</span></div>
@@ -152,16 +152,31 @@ $(document).ready(function(){initNavTree('LR__parser_8h_source.html','');});
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// 配置文件路径</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classLR__parser.html#a8f9f533e734a76aa32c51ceda7021913">   72</a></span>&#160;    std::string <a class="code" href="classLR__parser.html#a8f9f533e734a76aa32c51ceda7021913">cfg_filepath</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// 扩展 BNF，增加根元素</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> ExtendBNF();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// 给每一个state加上id</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> MakeID();</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> print_GOTO(vector&lt;ItemCollection*&gt; vec);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // LR_PARSER_H</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// 串行化</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> save_log();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classLR__parser.html#ab2f44cbb59a08132f4c843e5225bba0e">   85</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>cereal::access;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Archive&gt;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classLR__parser.html#abb088d20ac04e94d826b83ccec60a5ec">   88</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLR__parser.html#abb088d20ac04e94d826b83ccec60a5ec">serialize</a>(Archive &amp;ar)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="comment">// serialize things by passing them to the archive</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="classBNF.html">BNF</a>* p : bnflist) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            ar(*p);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif // LR_PARSER_H</span></div>
 <div class="ttc" id="VMap_8h_html"><div class="ttname"><a href="VMap_8h.html">VMap.h</a></div></div>
 <div class="ttc" id="LRCore_8h_html"><div class="ttname"><a href="LRCore_8h.html">LRCore.h</a></div></div>
 <div class="ttc" id="classLR__parser_html"><div class="ttname"><a href="classLR__parser.html">LR_parser</a></div><div class="ttdef"><b>Definition:</b> LR_parser.h:24</div></div>
@@ -170,8 +185,9 @@ $(document).ready(function(){initNavTree('LR__parser_8h_source.html','');});
 <div class="ttc" id="classLexInterface_html"><div class="ttname"><a href="classLexInterface.html">LexInterface</a></div><div class="ttdoc">Lex的关键接口 </div><div class="ttdef"><b>Definition:</b> LexInterface.h:25</div></div>
 <div class="ttc" id="classLR__parser_html_a2f9b8a69c27d276cc71380c8d7d9a14c"><div class="ttname"><a href="classLR__parser.html#a2f9b8a69c27d276cc71380c8d7d9a14c">LR_parser::setBaseVtSize</a></div><div class="ttdeci">virtual void setBaseVtSize(int size)</div><div class="ttdoc">设置非终结符的个数 set the Base Vt size of Lex </div><div class="ttdef"><b>Definition:</b> LR_parser.h:51</div></div>
 <div class="ttc" id="classLR__parser_html_a9ae9ac3dab30115be0a75b116cf0b1e1"><div class="ttname"><a href="classLR__parser.html#a9ae9ac3dab30115be0a75b116cf0b1e1">LR_parser::core</a></div><div class="ttdeci">LRCore core</div><div class="ttdef"><b>Definition:</b> LR_parser.h:64</div></div>
-<div class="ttc" id="structVMap_html"><div class="ttname"><a href="structVMap.html">VMap</a></div><div class="ttdef"><b>Definition:</b> VMap.h:10</div></div>
+<div class="ttc" id="structVMap_html"><div class="ttname"><a href="structVMap.html">VMap</a></div><div class="ttdef"><b>Definition:</b> VMap.h:12</div></div>
 <div class="ttc" id="Parser_8h_html"><div class="ttname"><a href="Parser_8h.html">Parser.h</a></div></div>
+<div class="ttc" id="classLR__parser_html_abb088d20ac04e94d826b83ccec60a5ec"><div class="ttname"><a href="classLR__parser.html#abb088d20ac04e94d826b83ccec60a5ec">LR_parser::serialize</a></div><div class="ttdeci">void serialize(Archive &amp;ar)</div><div class="ttdef"><b>Definition:</b> LR_parser.h:88</div></div>
 <div class="ttc" id="classLR__parser_html_a2e7a0b032833750a3ce5fcec6587595b"><div class="ttname"><a href="classLR__parser.html#a2e7a0b032833750a3ce5fcec6587595b">LR_parser::bnflist</a></div><div class="ttdeci">vector&lt; BNF * &gt; bnflist</div><div class="ttdef"><b>Definition:</b> LR_parser.h:57</div></div>
 <div class="ttc" id="classBNFParser_html"><div class="ttname"><a href="classBNFParser.html">BNFParser</a></div><div class="ttdoc">BNF解析器类, 负责解析BNF的定义文件 </div><div class="ttdef"><b>Definition:</b> BNFParser.h:21</div></div>
 <div class="ttc" id="classLR__parser_html_ac8b9cef9ea3eba4083fea1f01b764e27"><div class="ttname"><a href="classLR__parser.html#ac8b9cef9ea3eba4083fea1f01b764e27">LR_parser::bnfparser</a></div><div class="ttdeci">BNFParser * bnfparser</div><div class="ttdef"><b>Definition:</b> LR_parser.h:69</div></div>
@@ -180,7 +196,7 @@ $(document).ready(function(){initNavTree('LR__parser_8h_source.html','');});
 <div class="ttc" id="classLR__parser_html_a4cfca9ad9809b8817c54b6d1014c5224"><div class="ttname"><a href="classLR__parser.html#a4cfca9ad9809b8817c54b6d1014c5224">LR_parser::lex</a></div><div class="ttdeci">LexInterface * lex</div><div class="ttdef"><b>Definition:</b> LR_parser.h:56</div></div>
 <div class="ttc" id="classLR__parser_html_a6527d0b55f0f48eafe6f6413311eb7f1"><div class="ttname"><a href="classLR__parser.html#a6527d0b55f0f48eafe6f6413311eb7f1">LR_parser::table</a></div><div class="ttdeci">LRTable * table</div><div class="ttdef"><b>Definition:</b> LR_parser.h:66</div></div>
 <div class="ttc" id="BNFParser_8cpp_html_aa853fcf202c1c7498d198cf828a9d6bb"><div class="ttname"><a href="BNFParser_8cpp.html#aa853fcf202c1c7498d198cf828a9d6bb">root</a></div><div class="ttdeci">State * root</div><div class="ttdef"><b>Definition:</b> BNFParser.cpp:12</div></div>
-<div class="ttc" id="classBNF_html"><div class="ttname"><a href="classBNF.html">BNF</a></div><div class="ttdef"><b>Definition:</b> BNF.h:18</div></div>
+<div class="ttc" id="classBNF_html"><div class="ttname"><a href="classBNF.html">BNF</a></div><div class="ttdef"><b>Definition:</b> BNF.h:19</div></div>
 <div class="ttc" id="classScriptRunner_html"><div class="ttname"><a href="classScriptRunner.html">ScriptRunner</a></div><div class="ttdoc">脚本解析器类(其实这个类应该放到MetaScriptRunner中) </div><div class="ttdef"><b>Definition:</b> ScriptRunner.h:17</div></div>
 <div class="ttc" id="classLR__parser_html_afc8beb443fa4c7150f5c82613ca4c646"><div class="ttname"><a href="classLR__parser.html#afc8beb443fa4c7150f5c82613ca4c646">LR_parser::vmap</a></div><div class="ttdeci">VMap vmap</div><div class="ttdef"><b>Definition:</b> LR_parser.h:61</div></div>
 <div class="ttc" id="classGrammer__Node_html"><div class="ttname"><a href="classGrammer__Node.html">Grammer_Node</a></div><div class="ttdoc">BNF语法节点 </div><div class="ttdef"><b>Definition:</b> Grammer_Node.h:19</div></div>

@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('md-install.html','');});
 <p>如果您仅仅是想使用Elite去开发应用程序，那么推荐您下载我们预编译好的版本</p>
 <p>下载页：</p>
 <p>仅仅需要您配置好环境变量即可，Mac &amp; Linux： </p>
-<pre class="fragment">// for elite 
+<pre class="fragment">// for elite
 export ELITE_HOME=【您的Elitei安装目录】
 export PATH=$ELITE_HOME/bin:$PATH
 </pre><p>Windows用户：</p>
@@ -102,7 +102,7 @@ export PATH=$ELITE_HOME/bin:$PATH
 从源码编译安装</h1>
 <p>首先，从源码编译安装能够提供给您更丰富的自定义功能，您可以通过修改配置，使用不同的版本。而且自行编译安装，您可以任意修改任何默认配置代码和添加删除功能，这对于开发人员和需要定制化软件的人员更为方便。</p>
 <p>首先预先您使用git clone完整的项目仓库，请注意使用<code>--recursive</code>参数来下载全部子项目： </p>
-<pre class="fragment">git clone --depth=1 --recursive git@github.com:elite-lang/Elite.git 
+<pre class="fragment">git clone --depth=1 --recursive git@github.com:elite-lang/Elite.git
 </pre><h2><a class="anchor" id="ins-linux"></a>
 Linux环境下的编译</h2>
 <h4>开发环境和依赖项</h4>
@@ -117,7 +117,7 @@ Linux环境下的编译</h2>
 <li>dyncall-0.8</li>
 </ul>
 <p>Ubuntu14.04 用户可以直接使用如下命令从源中安装以上软件包： </p>
-<pre class="fragment">sudo apt-get install cmake llvm-3.6-dev libglibmm-2.4-dev flex bison libedit-dev 
+<pre class="fragment">sudo apt-get install cmake llvm-3.6-dev libglibmm-2.4-dev flex bison libedit-dev
 </pre><p>ubuntu源中LLVM-3.6的CMake脚本存在bug，如果您安装了llvm-3.6-dev后cmake项目时仍找不到LLVM，那么请执行下面的脚本修复: </p>
 <pre class="fragment">sudo sh ./scripts/fix_ubuntu_llvm.sh
 </pre><h4>编译选项</h4>
@@ -126,7 +126,7 @@ Linux环境下的编译</h2>
 </pre><p>或者您可以手动自行配置编译参数： </p>
 <pre class="fragment">mkdir build &amp;&amp; cd build
 cmake ..        //cmake配置
-make deps       //下载并构建依赖项目 
+make deps       //下载并构建依赖项目
 make elite      //构建项目
 </pre><p>可选的编译参数有：</p>
 <table class="doxtable">

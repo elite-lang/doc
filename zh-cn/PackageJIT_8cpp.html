@@ -77,7 +77,8 @@ $(document).ready(function(){initNavTree('PackageJIT_8cpp.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">类</a>  </div>
+<a href="#nested-classes">类</a> &#124;
+<a href="#typedef-members">类型定义</a>  </div>
   <div class="headertitle">
 <div class="title">PackageJIT.cpp 文件参考</div>  </div>
 </div><!--header-->
@@ -86,8 +87,12 @@ $(document).ready(function(){initNavTree('PackageJIT_8cpp.html','');});
 <code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;iostream&gt;</code><br/>
 <code>#include &quot;<a class="el" href="MetaScriptRunner_8h_source.html">MetaScriptRunner.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="ICodeGenContext_8h_source.html">ICodeGenContext.h</a>&quot;</code><br/>
 <code>#include &quot;llvm/ExecutionEngine/GenericValue.h&quot;</code><br/>
+<code>#include &quot;llvm/ExecutionEngine/MCJIT.h&quot;</code><br/>
 <code>#include &quot;llvm/ExecutionEngine/Interpreter.h&quot;</code><br/>
+<code>#include &quot;llvm/ExecutionEngine/SectionMemoryManager.h&quot;</code><br/>
+<code>#include &quot;llvm/IR/Verifier.h&quot;</code><br/>
 <code>#include &quot;llvm/IR/Constants.h&quot;</code><br/>
 <code>#include &quot;llvm/IR/DerivedTypes.h&quot;</code><br/>
 <code>#include &quot;llvm/IR/IRBuilder.h&quot;</code><br/>
@@ -101,12 +106,31 @@ $(document).ready(function(){initNavTree('PackageJIT_8cpp.html','');});
 <code>#include &lt;llvm/Support/MemoryBuffer.h&gt;</code><br/>
 <code>#include &quot;llvm/Support/raw_ostream.h&quot;</code><br/>
 <code>#include &lt;llvm/Support/DynamicLibrary.h&gt;</code><br/>
+<code>#include &quot;llvm/Support/Debug.h&quot;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 类</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPackageJIT__private.html">PackageJIT_private</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a0ca397d54b1158d48fafee5345745c82"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PackageJIT_8cpp.html#a0ca397d54b1158d48fafee5345745c82">func_type</a> )(<a class="el" href="classCodeGenContext.html">CodeGenContext</a> *)</td></tr>
+<tr class="separator:a0ca397d54b1158d48fafee5345745c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a0ca397d54b1158d48fafee5345745c82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* func_type)(<a class="el" href="classCodeGenContext.html">CodeGenContext</a> *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->

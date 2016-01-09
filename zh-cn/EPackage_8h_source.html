@@ -80,11 +80,11 @@ $(document).ready(function(){initNavTree('EPackage_8h_source.html','');});
 <div class="title">EPackage.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="EPackage_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
+<a href="EPackage_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">* @Author: sxf</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">* @Date:   2015-12-24 15:55:11</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* @Last Modified by:   sxf</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">* @Last Modified time: 2015-12-29 12:24:34</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">* @Last Modified time: 2016-01-01 13:28:11</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef E_PACKAGE_H</span></div>
@@ -107,35 +107,43 @@ $(document).ready(function(){initNavTree('EPackage_8h_source.html','');});
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; getVersion();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">bool</span> isDefaultLoad();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; getRuntime();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> isLoaded();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> isDefaultLoad();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> Load();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; getProp(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> isLoaded();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> Load();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> Run();</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classEPackage.html#a4012610d794a410839f050a052ddef0a">   73</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="classEPackage.html#a4012610d794a410839f050a052ddef0a">str_null</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classEPackage.html#a7d65b3f5a4d78b5b1aa4434a00d534b6">   76</a></span>&#160;    map&lt;string, string&gt; <a class="code" href="classEPackage.html#a7d65b3f5a4d78b5b1aa4434a00d534b6">props</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classEPackage.html#a0e3563257ca1cd9b400aee633844b7e6">   77</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classEPackage.html#a0e3563257ca1cd9b400aee633844b7e6">base_path</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classEPackage.html#ae184b6352d212212424b33e3febbb3e3">   78</a></span>&#160;    <a class="code" href="classMetaScriptRunner.html">MetaScriptRunner</a>* <a class="code" href="classEPackage.html#ae184b6352d212212424b33e3febbb3e3">msr</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> loadJson(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; json);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> insertProp(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; value);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif // E_PACKAGE_H</span></div>
-<div class="ttc" id="classEPackage_html_a4012610d794a410839f050a052ddef0a"><div class="ttname"><a href="classEPackage.html#a4012610d794a410839f050a052ddef0a">EPackage::str_null</a></div><div class="ttdeci">static string str_null</div><div class="ttdef"><b>Definition:</b> EPackage.h:73</div></div>
-<div class="ttc" id="classEPackage_html_a0e3563257ca1cd9b400aee633844b7e6"><div class="ttname"><a href="classEPackage.html#a0e3563257ca1cd9b400aee633844b7e6">EPackage::base_path</a></div><div class="ttdeci">string base_path</div><div class="ttdef"><b>Definition:</b> EPackage.h:77</div></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; getProp(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classEPackage.html#a4012610d794a410839f050a052ddef0a">   81</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="classEPackage.html#a4012610d794a410839f050a052ddef0a">str_null</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classEPackage.html#a7d65b3f5a4d78b5b1aa4434a00d534b6">   84</a></span>&#160;    map&lt;string, string&gt; <a class="code" href="classEPackage.html#a7d65b3f5a4d78b5b1aa4434a00d534b6">props</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classEPackage.html#a0e3563257ca1cd9b400aee633844b7e6">   85</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classEPackage.html#a0e3563257ca1cd9b400aee633844b7e6">base_path</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classEPackage.html#ae184b6352d212212424b33e3febbb3e3">   86</a></span>&#160;    <a class="code" href="classMetaScriptRunner.html">MetaScriptRunner</a>* <a class="code" href="classEPackage.html#ae184b6352d212212424b33e3febbb3e3">msr</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> loadJson(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; json);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> insertProp(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; value);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> addRuntimePath();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;};</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif // E_PACKAGE_H</span></div>
+<div class="ttc" id="classEPackage_html_a4012610d794a410839f050a052ddef0a"><div class="ttname"><a href="classEPackage.html#a4012610d794a410839f050a052ddef0a">EPackage::str_null</a></div><div class="ttdeci">static string str_null</div><div class="ttdef"><b>Definition:</b> EPackage.h:81</div></div>
+<div class="ttc" id="classEPackage_html_a0e3563257ca1cd9b400aee633844b7e6"><div class="ttname"><a href="classEPackage.html#a0e3563257ca1cd9b400aee633844b7e6">EPackage::base_path</a></div><div class="ttdeci">string base_path</div><div class="ttdef"><b>Definition:</b> EPackage.h:85</div></div>
 <div class="ttc" id="classEPackage_html"><div class="ttname"><a href="classEPackage.html">EPackage</a></div><div class="ttdoc">Elite的软件包扩展 </div><div class="ttdef"><b>Definition:</b> EPackage.h:24</div></div>
-<div class="ttc" id="classMetaScriptRunner_html"><div class="ttname"><a href="classMetaScriptRunner.html">MetaScriptRunner</a></div><div class="ttdoc">元脚本解析器类 </div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:32</div></div>
-<div class="ttc" id="classEPackage_html_a7d65b3f5a4d78b5b1aa4434a00d534b6"><div class="ttname"><a href="classEPackage.html#a7d65b3f5a4d78b5b1aa4434a00d534b6">EPackage::props</a></div><div class="ttdeci">map&lt; string, string &gt; props</div><div class="ttdef"><b>Definition:</b> EPackage.h:76</div></div>
-<div class="ttc" id="classEPackage_html_ae184b6352d212212424b33e3febbb3e3"><div class="ttname"><a href="classEPackage.html#ae184b6352d212212424b33e3febbb3e3">EPackage::msr</a></div><div class="ttdeci">MetaScriptRunner * msr</div><div class="ttdef"><b>Definition:</b> EPackage.h:78</div></div>
+<div class="ttc" id="classMetaScriptRunner_html"><div class="ttname"><a href="classMetaScriptRunner.html">MetaScriptRunner</a></div><div class="ttdoc">元脚本解析器类 </div><div class="ttdef"><b>Definition:</b> MetaScriptRunner.h:35</div></div>
+<div class="ttc" id="classEPackage_html_a7d65b3f5a4d78b5b1aa4434a00d534b6"><div class="ttname"><a href="classEPackage.html#a7d65b3f5a4d78b5b1aa4434a00d534b6">EPackage::props</a></div><div class="ttdeci">map&lt; string, string &gt; props</div><div class="ttdef"><b>Definition:</b> EPackage.h:84</div></div>
+<div class="ttc" id="classEPackage_html_ae184b6352d212212424b33e3febbb3e3"><div class="ttname"><a href="classEPackage.html#ae184b6352d212212424b33e3febbb3e3">EPackage::msr</a></div><div class="ttdeci">MetaScriptRunner * msr</div><div class="ttdef"><b>Definition:</b> EPackage.h:86</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->
